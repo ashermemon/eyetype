@@ -18,7 +18,9 @@ export default function KeyGrid({}: Props) {
               key={keyIndex}
               label={key}
               active={false}
-              onSelect={() => {}}
+              onSelect={() => {
+                console.log(`Key ${key} selected`);
+              }}
             />
           ))}
         </div>

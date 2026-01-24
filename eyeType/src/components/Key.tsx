@@ -10,7 +10,7 @@ type KeyProps = {
 export default function Key({ label, active, width, onSelect }: KeyProps) {
   return (
     <button className={active ? "key key-active" : "key"} onClick={onSelect}>
-      <span className="key-text">{label}</span>
+      <text className="key-text">{label}</text>
     </button>
   );
 }

@@ -1,11 +1,12 @@
 import React from "react";
+import KeyGrid from "../components/KeyGrid";
 
 type Props = {};
 
 export default function KeyboardPage({}: Props) {
   return (
-    <div style={{ fontSize: "32px", textAlign: "center", marginTop: "40px" }}>
-      Keyboard Page
+    <div className="fill-page">
+      <KeyGrid />
     </div>
   );
 }

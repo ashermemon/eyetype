@@ -14,11 +14,7 @@ export default function KeyboardPage({}: Props) {
   return (
     <div className="fill-page">
       <EyeTracking onGaze={handleTracking} />
-      {calibrated ? (
-        <KeyGrid />
-      ) : (
-        <Calibration onComplete={() => setCalibrated(true)} />
-      )}
+      {calibrated ? <KeyGrid /> : <Calibration />}
     </div>
   );
 }

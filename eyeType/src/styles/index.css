@@ -72,7 +72,7 @@ button:focus-visible {
 .key {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5%;
   aspect-ratio: 1 / 1;
 }
 
@@ -118,14 +118,26 @@ button:focus-visible {
 /* Calibration Stuff */
 
 .calibration-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
 }
+
 .calibration-point {
+  position: absolute;
   width: 5vw;
   height: 5vw;
-  border-radius: 100%;
-  background-color: #fff29c;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgb(255, 225, 135);
+}
+
+.calibration-text {
   position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
 }

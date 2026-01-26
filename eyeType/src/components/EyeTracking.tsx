@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import webgazer from "webgazer";
 
 type Props = {
@@ -18,11 +18,11 @@ export default function EyeTracking({ onGaze }: Props) {
         onGaze(data.x, data.y);
       })
       .begin();
-    webgazer.removeMouseEventListeners();
 
-    webgazer.showVideo(true);
-    webgazer.showFaceOverlay(true);
+    webgazer.showVideo(false);
     webgazer.showFaceFeedbackBox(true);
+    webgazer.showFaceOverlay(false);
+    webgazer.showPredictionPoints(false);
 
     return () => {
       webgazer.clearGazeListener();

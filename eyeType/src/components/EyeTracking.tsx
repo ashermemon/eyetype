@@ -7,9 +7,10 @@ type Props = {
 
 export default function EyeTracking({ onGaze }: Props) {
   useEffect(() => {
+    webgazer.clearData();
+    //webgazer.removeMouseEventListeners();
     webgazer
       .setRegression("ridge")
-
       .clearGazeListener()
       .setGazeListener(function (data: { x: number; y: number }) {
         if (data == null) {
@@ -20,9 +21,9 @@ export default function EyeTracking({ onGaze }: Props) {
       .begin();
 
     webgazer.showVideo(false);
-    webgazer.showFaceFeedbackBox(true);
     webgazer.showFaceOverlay(false);
-    webgazer.showPredictionPoints(false);
+    webgazer.showFaceFeedbackBox(true);
+    webgazer.showPredictionPoints(true);
 
     return () => {
       webgazer.clearGazeListener();

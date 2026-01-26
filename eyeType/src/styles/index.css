@@ -130,7 +130,7 @@ button:focus-visible {
   height: 5vw;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: rgb(255, 225, 135);
+  background: rgb(255, 135, 135);
 }
 
 .calibration-text {

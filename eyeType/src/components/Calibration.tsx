@@ -23,8 +23,8 @@ export default function Calibration({ onComplete }: Props) {
   const [displayText, setDisplayText] = useState("Calibrating eye tracker...");
   const [calibrating, setCalibrating] = useState(false);
 
-  const timeDelay = 500; //3000
-  const dotDelay = 500; //3000
+  const timeDelay = 3000;
+  const dotDelay = 3000;
 
   useEffect(() => {
     webgazer.showVideo(false);

@@ -3,14 +3,27 @@ import React from "react";
 type KeyProps = {
   label: string;
   active: boolean;
-  width?: number; // for special keys like enter
   onSelect: () => void;
+  row?: number;
+  col?: number;
 };
 
-export default function Key({ label, active, width, onSelect }: KeyProps) {
-  return (
-    <button className={active ? "key key-active" : "key"} onClick={onSelect}>
-      <span className="key-text">{label}</span>
-    </button>
-  );
-}
+const Key = React.forwardRef<HTMLButtonElement, KeyProps>(
+  ({ label, active, onSelect, row, col }, ref) => {
+    return (
+      <button
+        ref={ref}
+        className={active ? "key key-active" : "key"}
+        onClick={onSelect}
+        data-row={row}
+        data-col={col}
+      >
+        <span className="key-text">{label}</span>
+      </button>
+    );
+  },
+);
+
+Key.displayName = "Key";
+
+export default Key;

@@ -28,7 +28,8 @@ export default function Calibration({ onComplete }: Props) {
 
   useEffect(() => {
     webgazer.clearData();
-    webgazer.setRegression("ridge");
+    webgazer.setRegression("weightedRidge");
+    //webgazer.setTracker("trackingjs");
     webgazer.showPredictionPoints(true);
     webgazer.removeMouseEventListeners();
 

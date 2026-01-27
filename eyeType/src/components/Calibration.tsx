@@ -27,48 +27,77 @@ export default function Calibration({ onComplete }: Props) {
   const dotDelay = 3000;
 
   useEffect(() => {
-    webgazer.showVideo(false);
+    webgazer.clearData();
+    webgazer.setRegression("ridge");
+    webgazer.showPredictionPoints(true);
+    webgazer.removeMouseEventListeners();
 
-    setTimeout(() => setDisplayText("Look at the dot to calibrate"), timeDelay);
-    setTimeout(
-      () => setDisplayText("It will move every 3 seconds"),
-      2 * timeDelay,
-    );
-    setTimeout(
-      () =>
-        setDisplayText(
-          "Do not move your head or resize the window during or after calibration",
-        ),
-      3 * timeDelay,
-    );
-    setTimeout(
-      () => (
-        setDisplayText("Center your head within the box to begin"),
-        webgazer.showVideo(true)
+    webgazer.begin();
+    webgazer.showVideo(false);
+    webgazer.showFaceOverlay(false);
+    webgazer.showFaceFeedbackBox(true);
+    webgazer.showPredictionPoints(true);
+  }, []);
+  useEffect(() => {
+    const timers: number[] = [];
+
+    timers.push(
+      window.setTimeout(
+        () => setDisplayText("Look at the dot to calibrate"),
+        timeDelay,
       ),
-      4 * timeDelay,
+      window.setTimeout(
+        () => setDisplayText("It will move every 3 seconds"),
+        2 * timeDelay,
+      ),
+      window.setTimeout(
+        () =>
+          setDisplayText(
+            "Do not move your head or resize the window during or after calibration",
+          ),
+        3 * timeDelay,
+      ),
+      window.setTimeout(() => {
+        setDisplayText("Center your head within the box to begin");
+        webgazer.showVideo(true);
+      }, 4 * timeDelay),
     );
-    const calibrationSequence = setTimeout(() => {
+
+    const calibrationSequence = window.setTimeout(() => {
       setDisplayText("");
       setCalibrating(true);
-      const interval = setInterval(() => {
+
+      const recordInterval = window.setInterval(() => {
+        const point = points[currentIndex];
+        if (!point) return;
+
+        const px = (point.x / 100) * window.innerWidth;
+        const py = (point.y / 100) * window.innerHeight;
+        webgazer.recordScreenPosition(px, py, "calibration");
+      }, 50);
+
+      const interval = window.setInterval(() => {
         setCurrentIndex((index) => {
           if (index + 1 >= points.length) {
             clearInterval(interval);
+            clearInterval(recordInterval);
             setDisplayText("Calibration complete!");
             setCalibrating(false);
             webgazer.showVideo(false);
-
-            onComplete();
+            setTimeout(() => [setDisplayText(""), onComplete()], 4000);
             return index;
           }
           return index + 1;
         });
       }, dotDelay);
-
-      return () => clearInterval(interval);
     }, 5 * timeDelay);
-  }, [onComplete]);
+
+    timers.push(calibrationSequence);
+
+    return () => {
+      timers.forEach(clearTimeout);
+    };
+  }, []);
 
   return (
     <div className="calibration-container">

@@ -121,7 +121,7 @@ button:focus-visible {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 100;
+  z-index: 99999;
 }
 
 .calibration-point {

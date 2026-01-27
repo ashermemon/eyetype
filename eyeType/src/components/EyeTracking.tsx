@@ -7,27 +7,20 @@ type Props = {
 
 export default function EyeTracking({ onGaze }: Props) {
   useEffect(() => {
-    webgazer.clearData();
     //webgazer.removeMouseEventListeners();
-    webgazer
-      .setRegression("ridge")
-      .clearGazeListener()
-      .setGazeListener(function (data: { x: number; y: number }) {
-        if (data == null) {
-          return;
-        }
-        onGaze(data.x, data.y);
-      })
-      .begin();
-
-    webgazer.showVideo(false);
-    webgazer.showFaceOverlay(false);
-    webgazer.showFaceFeedbackBox(true);
-    webgazer.showPredictionPoints(true);
+    webgazer.clearGazeListener().setGazeListener(function (data: {
+      x: number;
+      y: number;
+    }) {
+      if (data == null) {
+        return;
+      }
+      onGaze(data.x, data.y);
+    });
 
     return () => {
-      webgazer.clearGazeListener();
-      webgazer.end();
+      //webgazer.clearGazeListener();
+      //webgazer.end();
     };
   }, [onGaze]);
 

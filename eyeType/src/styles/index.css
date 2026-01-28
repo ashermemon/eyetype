@@ -71,8 +71,8 @@ button:focus-visible {
 
 .key {
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5%;
+  border: 6px solid #ccc;
+  border-radius: 1vw;
   aspect-ratio: 1 / 1;
 }
 
@@ -116,7 +116,7 @@ button:focus-visible {
 
   flex-direction: column;
 
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* Calibration Stuff */
@@ -144,4 +144,64 @@ button:focus-visible {
   text-align: center;
   font-size: 2em;
   color: white;
+}
+
+.top-bar-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 12vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.top-bar-input {
+  background-color: #f0f0f0;
+  border: 6px solid #ccc;
+  border-radius: 1vw;
+  margin: 0;
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-input-text::selection {
+  background-color: transparent;
+}
+input.top-bar-input-text:focus {
+  outline: none;
+}
+
+.top-bar-input-text {
+  background-color: transparent;
+  border: none;
+  color: #19191b;
+  font-size: 5vh;
+  margin: 0;
+  line-height: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  user-select: none;
+  caret-color: transparent;
+}
+
+.button-text {
+  color: #19191b;
+  font-size: 3vh;
+  margin: 0;
+  line-height: 1;
+}
+.top-bar-button {
+  background-color: #f0f0f0;
+  border: 6px solid #ccc;
+  border-radius: 1vw;
+  padding: 0;
+}
+.top-bar-divider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }

@@ -1,8 +1,10 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type Dispatch, type SetStateAction } from "react";
 import Key from "./Key";
 
 type Props = {
   activeKey: { row: number; col: number } | null;
+  typedString: string;
+  setTypedString: Dispatch<SetStateAction<string>>;
 };
 
 const KEYBOARD = [
@@ -16,12 +18,14 @@ const NUMBOARD = [
   ["<", ">", "=", ":", ";", ",", "!", ".", "?", "ABC"],
 ];
 
-export default function KeyGrid({ activeKey }: Props) {
+export default function KeyGrid({
+  activeKey,
+  typedString,
+  setTypedString,
+}: Props) {
   const [keyboardBool, setKeyboardBool] = useState(true); //false for numboard, true for keyboard
 
   const currentKeyboard = keyboardBool ? KEYBOARD : NUMBOARD;
-
-  const [typedString, setTypedString] = useState("");
 
   function switchKeys() {
     setKeyboardBool((prev) => !prev);
@@ -31,9 +35,6 @@ export default function KeyGrid({ activeKey }: Props) {
 
   return (
     <div className="key-grid">
-      <h1>{typedString}</h1>
-      {/* <input type="text" value={typedString}></input> */}
-
       {currentKeyboard.map((row, rowIndex) => (
         <div key={rowIndex} className="key-row">
           {row.map((key, keyIndex) => (

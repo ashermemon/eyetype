@@ -3,6 +3,7 @@ import KeyGrid from "../components/KeyGrid";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import HighlightKey from "../components/HighlightKey";
+import PrimaryUI from "../components/PrimaryUI";
 
 type Props = {};
 
@@ -29,7 +30,7 @@ export default function KeyboardPage({}: Props) {
 
       <EyeTracking onGaze={(x, y) => setGaze({ x, y })} />
       <Calibration onComplete={() => setCalibrated(true)} />
-      {calibrated && <KeyGrid activeKey={activeKey} />}
+      {calibrated && <PrimaryUI activeKey={activeKey} />}
     </div>
   );
 }

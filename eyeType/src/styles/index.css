@@ -78,6 +78,16 @@ button:focus-visible {
   width: 100%;
 }
 
+.name-key {
+  background-color: #f0f0f0;
+  border: 6px solid #ccc;
+  border-radius: 1vw;
+  padding: 0px;
+  aspect-ratio: 2 / 1;
+  min-width: 0;
+  width: 100%;
+}
+
 .key-active {
   background-color: #f0f0f0;
   border: 6px solid #ca9335;
@@ -101,7 +111,6 @@ button:focus-visible {
   gap: 10px;
   box-sizing: border-box;
   flex: 0 0 auto;
-
   max-width: 100%;
   overflow: hidden;
 }
@@ -113,6 +122,7 @@ button:focus-visible {
   gap: 10px;
   min-width: 0;
 }
+
 .fill-page {
   width: 100vw;
   height: 100vh;

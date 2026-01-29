@@ -9,7 +9,7 @@ type Props = {
 
 export default function PrimaryUI({ activeKey }: Props) {
   const [typedString, setTypedString] = useState("");
-  const [keyboardNum, setKeyboardNum] = useState(0); //0 for keyboard, 1 for numboard, 2 for emojiboard
+  const [keyboardNum, setKeyboardNum] = useState(0); //0 for keyboard, 1 for numboard, 2 for emojiboard, 3 for name selector
 
   const inputRef = useRef<HTMLInputElement>(null);
   useLayoutEffect(() => {
@@ -22,6 +22,7 @@ export default function PrimaryUI({ activeKey }: Props) {
     <>
       <div className="box-container">
         <PredictedSentence sentenceText="I want to go to the park"></PredictedSentence>
+        {/* the prediction model's output will go in sentenceText along with the 2nd and 3rd most likely outputs */}
         <PredictedSentence sentenceText="I'm waiting to go to the pool"></PredictedSentence>
         <PredictedSentence sentenceText="I was trying to go to the point"></PredictedSentence>
       </div>
@@ -56,7 +57,7 @@ export default function PrimaryUI({ activeKey }: Props) {
                 color="#D04C4C"
                 textColor="#f0f0f0"
                 label="name"
-                onClick={() => console.log("name")}
+                onClick={() => setKeyboardNum(3)}
               />
             </>
           ) : (

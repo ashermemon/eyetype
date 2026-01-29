@@ -26,6 +26,12 @@ const EMOJIBOARD = [
   ["👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍"],
 ];
 
+const NAMESELECT = [
+  ["Newton", "Sam", "Preston", "Jacob", "Isaac"],
+  ["Einstien", "Jack", "Timothy", "Yousef", "Asher"],
+  ["Lorenzo", "Yuno", "Jason", "Justin", "Max"],
+];
+
 export default function KeyGrid({
   activeKey,
   typedString,
@@ -34,7 +40,13 @@ export default function KeyGrid({
   setKeyboardNum,
 }: Props) {
   const currentKeyboard =
-    keyboardNum == 0 ? KEYBOARD : keyboardNum == 1 ? NUMBOARD : EMOJIBOARD;
+    keyboardNum == 0
+      ? KEYBOARD
+      : keyboardNum == 1
+        ? NUMBOARD
+        : keyboardNum == 2
+          ? EMOJIBOARD
+          : NAMESELECT;
 
   function switchKeys() {
     setKeyboardNum((prev) => (prev == 1 ? 0 : 1));
@@ -45,13 +57,22 @@ export default function KeyGrid({
   return (
     <div className="key-grid">
       {currentKeyboard.map((row, rowIndex) => (
-        <div key={rowIndex} className="key-row">
+        <div
+          key={rowIndex}
+          className="key-row"
+          style={{
+            gridTemplateColumns:
+              keyboardNum === 3 ? `repeat(5, 1fr)` : `repeat(10, 1fr)`,
+            gap: keyboardNum === 3 ? 22.5 : 10,
+          }}
+        >
           {row.map((key, keyIndex) => (
             <Key
               key={keyIndex}
               label={key}
               row={rowIndex}
               col={keyIndex}
+              nameKey={keyboardNum == 3 ? true : false}
               ref={(original: any) => {
                 if (!keyRefs.current[rowIndex]) keyRefs.current[rowIndex] = [];
                 keyRefs.current[rowIndex][keyIndex] = original;
@@ -64,8 +85,14 @@ export default function KeyGrid({
                   switchKeys();
                 } else if (key === "⌫") {
                   if (typedString.length >= 1) {
-                    setTypedString((prev) => prev.slice(0, prev.length - 1));
+                    setTypedString((prev) => {
+                      const arr = Array.from(prev);
+                      arr.pop();
+                      return arr.join("");
+                    });
                   }
+                } else if (keyboardNum == 3) {
+                  setTypedString((prev) => prev + ` ${key} `);
                 } else {
                   setTypedString((prev) => prev + key);
                 }

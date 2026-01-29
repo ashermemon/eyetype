@@ -6,14 +6,15 @@ type KeyProps = {
   onSelect: () => void;
   row?: number;
   col?: number;
+  nameKey?: boolean;
 };
 
 const Key = React.forwardRef<HTMLButtonElement, KeyProps>(
-  ({ label, active, onSelect, row, col }, ref) => {
+  ({ label, active, onSelect, row, col, nameKey = false }, ref) => {
     return (
       <button
         ref={ref}
-        className={active ? "key key-active" : "key"}
+        className={`${nameKey ? `name-key` : `key`} ${active && `key-active`}`}
         onClick={onSelect}
         data-row={row}
         data-col={col}

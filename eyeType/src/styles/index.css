@@ -95,7 +95,7 @@ button:focus-visible {
 
 .key-text {
   color: #435058;
-  font-size: 3vw;
+  font-size: 3.7vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,10 +236,14 @@ input.top-bar-input-text:focus {
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: flex;
   align-items: center;
   flex: 1;
   min-height: 0;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .box-container {

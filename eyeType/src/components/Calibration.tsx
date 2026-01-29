@@ -23,8 +23,8 @@ export default function Calibration({ onComplete }: Props) {
   const [displayText, setDisplayText] = useState("Calibrating eye tracker...");
   const [calibrating, setCalibrating] = useState(false);
 
-  const timeDelay = 3000;
-  const dotDelay = 3000;
+  const timeDelay = 300;
+  const dotDelay = 300;
 
   useEffect(() => {
     webgazer.clearData();

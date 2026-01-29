@@ -5,6 +5,8 @@ type Props = {
   activeKey: { row: number; col: number } | null;
   typedString: string;
   setTypedString: Dispatch<SetStateAction<string>>;
+  keyboardNum: number;
+  setKeyboardNum: Dispatch<SetStateAction<number>>;
 };
 
 const KEYBOARD = [
@@ -18,17 +20,24 @@ const NUMBOARD = [
   ["<", ">", "=", ":", ";", ",", "!", ".", "?", "ABC"],
 ];
 
+const EMOJIBOARD = [
+  ["👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍"],
+  ["👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "⌫"],
+  ["👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍", "👍"],
+];
+
 export default function KeyGrid({
   activeKey,
   typedString,
   setTypedString,
+  keyboardNum,
+  setKeyboardNum,
 }: Props) {
-  const [keyboardBool, setKeyboardBool] = useState(true); //false for numboard, true for keyboard
-
-  const currentKeyboard = keyboardBool ? KEYBOARD : NUMBOARD;
+  const currentKeyboard =
+    keyboardNum == 0 ? KEYBOARD : keyboardNum == 1 ? NUMBOARD : EMOJIBOARD;
 
   function switchKeys() {
-    setKeyboardBool((prev) => !prev);
+    setKeyboardNum((prev) => (prev == 1 ? 0 : 1));
   }
 
   const keyRefs = useRef<(HTMLDivElement | null)[][]>([]);

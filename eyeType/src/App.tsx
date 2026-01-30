@@ -4,8 +4,14 @@ import SettingsPage from "./pages/settingsPage";
 import HomePage from "./pages/homePage";
 import "./styles/fonts.css";
 import "./styles/index.css";
+import { useEffect } from "react";
+import { loadVoices } from "./util/tts";
 
 function App() {
+  useEffect(() => {
+    loadVoices();
+  }, []);
+
   return (
     <Router>
       <Routes>

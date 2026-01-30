@@ -19,7 +19,7 @@ const Key = React.forwardRef<HTMLButtonElement, KeyProps>(
     return (
       <button
         ref={ref}
-        className={`${nameKey ? `name-key` : `key`} ${active && `key-active`}`}
+        className={`${nameKey ? `key name-key` : `key`} ${active && `key-active`}`}
         style={{
           backgroundColor: highAlert == true ? "#ffd6d6" : undefined,
           borderColor: highAlert == true ? "#D04C4C" : undefined,

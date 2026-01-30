@@ -21,10 +21,10 @@ export default function PrimaryUI({ activeKey }: Props) {
   return (
     <>
       <div className="box-container">
-        <PredictedSentence sentenceText="I want to go to the park"></PredictedSentence>
+        <PredictedSentence sentenceText="I want to go to the park 🤒. 🩺. 💊."></PredictedSentence>
         {/* the prediction model's output will go in sentenceText along with the 2nd and 3rd most likely outputs */}
-        <PredictedSentence sentenceText="I'm waiting to go to the pool"></PredictedSentence>
-        <PredictedSentence sentenceText="I was trying to go to the point"></PredictedSentence>
+        <PredictedSentence sentenceText="I'm waiting to go to the pool 🆘"></PredictedSentence>
+        <PredictedSentence sentenceText="I was trying to go to the point 👍"></PredictedSentence>
       </div>
       <div className="top-bar-container">
         <div className="top-bar-input">

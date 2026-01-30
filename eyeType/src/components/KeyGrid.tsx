@@ -23,14 +23,72 @@ const NUMBOARD = [
 const EMOJIBOARD = [
   ["👍", "👎", "❤️", "👋", "👏", "🙏", "🎉", "👀", "🥶", "🥵"],
   ["😀", "😢", "😟", "😡", "🥺", "😂", "😴", "🤒", "😭", "⌫"],
-  ["🆘", "🛑", "😖", "⏳", "💧", "🍽️", "🚻", "🛏️", "💊", "🧑‍⚕️"],
+  ["🆘", "🛑", "😖", "⏳", "💧", "🍽️", "🚻", "🛏️", "💊", "🩺"],
 ];
+
+const EMOJISTEXT = [
+  [
+    "Yes",
+    "No",
+    "Love",
+    "Hello",
+    "Good job",
+    "Thank you",
+    "Congratulations",
+    "Look here",
+    "It is too cold.",
+    "It is too hot.",
+  ],
+  [
+    "I am happy.",
+    "I am sad.",
+    "I am worried.",
+    "I am angry.",
+    "Please",
+    "That is funny.",
+    "I am sleepy.",
+    "I feel sick.",
+    "I am very upset.",
+    "",
+  ],
+  [
+    "Help! This is an emergency!",
+    "STOP PLEASE!",
+    "I am in pain.",
+    "Please wait",
+    "I am thirsty.",
+    "I am hungry.",
+    "I need to use the washroom.",
+    "I need to rest.",
+    "I need my medication.",
+    "I need a doctor.",
+  ],
+];
+
+const emojiToText = new Map<string, string>();
+
+for (let row = 0; row < EMOJIBOARD.length; row++) {
+  for (let column = 0; column < EMOJIBOARD[row].length; column++) {
+    const emoji = EMOJIBOARD[row][column];
+    const text = EMOJISTEXT[row][column];
+
+    if (emoji && text) {
+      emojiToText.set(emoji, text);
+    }
+  }
+}
 
 const NAMESELECT = [
   ["Newton", "Sam", "Preston", "Jacob", "Isaac"],
   ["Einstien", "Jack", "Timothy", "Yousef", "Asher"],
   ["Lorenzo", "Yuno", "Jason", "Justin", "Max"],
 ];
+
+export function toSpokenText(sentence: string) {
+  return Array.from(sentence)
+    .map((char) => emojiToText.get(char) ?? char)
+    .join("");
+}
 
 export default function KeyGrid({
   activeKey,

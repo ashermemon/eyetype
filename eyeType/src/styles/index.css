@@ -89,10 +89,16 @@ button:focus-visible {
 }
 
 .key-active {
-  background-color: #f0f0f0;
+  /*background-color: #42568d;
+  border: 6px solid #7cc6ff;*/
+  background-color: #fff1db;
   border: 6px solid #ca9335;
 }
-
+/*
+.key-active > .key-text {
+  color: #f0f0f0;
+}
+*/
 .key-text {
   color: #435058;
   font-size: 3.7vw;
@@ -255,4 +261,24 @@ input.top-bar-input-text:focus {
   padding-bottom: 0;
   box-sizing: border-box;
   min-height: 0;
+}
+
+.row-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  min-height: 0;
+  align-items: stretch;
+}
+.row-container button {
+  height: 100%;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }

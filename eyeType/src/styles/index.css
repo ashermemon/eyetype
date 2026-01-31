@@ -27,6 +27,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
@@ -46,9 +51,11 @@ button {
   transition: border-color 0.25s;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:selection {
+  background-color: transparent;
+}
+button:focus {
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -163,7 +170,13 @@ button:focus-visible {
   height: 5vw;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: rgb(255, 135, 135);
+  /*background-color: rgb(255, 235, 235);*/
+
+  /* background-color: rgb(255, 135, 135);*/
+  /*border: 6px solid #65e094; (green)*/
+
+  border: 6px solid rgb(255, 135, 135);
+  pointer-events: auto;
 }
 
 .calibration-text {
@@ -253,11 +266,11 @@ input.top-bar-input-text:focus {
   padding-top: 0px;
   padding-bottom: 0px;
   display: flex;
-  align-items: center;
+
   flex: 1;
   min-height: 0;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .box-container {

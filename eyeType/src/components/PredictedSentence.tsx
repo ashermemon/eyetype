@@ -21,7 +21,10 @@ export default function PredictedSentence({ sentenceText }: Props) {
   return (
     <div className={"row-container"}>
       <button className="sentence-container">
-        <text className="button-text" style={{ color: "#f0f0f0" }}>
+        <text
+          className="button-text"
+          style={{ color: "#f0f0f0", textAlign: "left", width: "100%" }}
+        >
           {sentenceText}
         </text>
       </button>

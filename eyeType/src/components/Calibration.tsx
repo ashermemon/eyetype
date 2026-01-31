@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import webgazer from "webgazer";
+import CalibrationPoint from "./CalibrationPoint";
 
 type Props = {
   onComplete: () => void;
@@ -23,12 +24,12 @@ export default function Calibration({ onComplete }: Props) {
   const [displayText, setDisplayText] = useState("Calibrating eye tracker...");
   const [calibrating, setCalibrating] = useState(false);
 
-  const timeDelay = 300;
-  const dotDelay = 300;
+  const timeDelay = 3000;
+  const dotDelay = 3000;
 
   useEffect(() => {
     webgazer.clearData();
-    webgazer.setRegression("weightedRidge");
+    webgazer.setRegression("ridge");
     //webgazer.setTracker("trackingjs");
     webgazer.showPredictionPoints(true);
     webgazer.removeMouseEventListeners();
@@ -103,13 +104,7 @@ export default function Calibration({ onComplete }: Props) {
   return (
     <div className="calibration-container">
       {calibrating ? (
-        <div
-          className="calibration-point"
-          style={{
-            left: points[currentIndex].x + "%",
-            top: points[currentIndex].y + "%",
-          }}
-        />
+        <CalibrationPoint point={points[currentIndex]} />
       ) : (
         <h2 className="calibration-text">{displayText}</h2>
       )}

@@ -94,8 +94,8 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
       if (interactiveElement.classList.contains("key")) {
         interactiveElement.classList.add("key-active");
         const row = Number(interactiveElement.getAttribute("data-row"));
-        const column = Number(interactiveElement.getAttribute("data-column"));
-        onHighlight(row, column);
+        const col = Number(interactiveElement.getAttribute("data-col"));
+        onHighlight(row, col);
       } else if (interactiveElement.classList.contains("top-bar-button")) {
         const highlightColor =
           interactiveElement.getAttribute("highlight-color") || "#ca9335";

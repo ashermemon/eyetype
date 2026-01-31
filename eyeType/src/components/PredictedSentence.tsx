@@ -20,14 +20,15 @@ type Props = {
 export default function PredictedSentence({ sentenceText }: Props) {
   return (
     <div className={"row-container"}>
-      <div className="sentence-container">
+      <button className="sentence-container">
         <text className="button-text" style={{ color: "#f0f0f0" }}>
           {sentenceText}
         </text>
-      </div>
+      </button>
       <div>
         <TopBarButton
           color="#6EC0FF"
+          highlightColor="#0088dd"
           textColor="#19191b"
           label="speak 💬"
           onClick={() => speakText(sentenceText)}

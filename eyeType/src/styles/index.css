@@ -91,14 +91,22 @@ button:focus-visible {
 .key-active {
   /*background-color: #42568d;
   border: 6px solid #7cc6ff;*/
-  background-color: #fff1db;
-  border: 6px solid #ca9335;
+  background-color: #fff1db !important;
+  border: 6px solid #ca9335 !important;
 }
 /*
 .key-active > .key-text {
   color: #f0f0f0;
 }
 */
+
+.button-active {
+  border: 6px solid;
+}
+
+.sentence-active {
+  border: 6px solid #6ec0ff !important;
+}
 .key-text {
   color: #435058;
   font-size: 3.7vw;

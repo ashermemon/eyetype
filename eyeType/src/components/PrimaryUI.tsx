@@ -42,6 +42,7 @@ export default function PrimaryUI({ activeKey }: Props) {
             <>
               <TopBarButton
                 color="#6EC0FF"
+                highlightColor="#0088dd"
                 textColor="#19191b"
                 label="spell"
                 onClick={() => console.log("spell")}
@@ -55,6 +56,7 @@ export default function PrimaryUI({ activeKey }: Props) {
 
               <TopBarButton
                 color="#D04C4C"
+                highlightColor="#a1300b"
                 textColor="#f0f0f0"
                 label="name"
                 onClick={() => setKeyboardNum(3)}

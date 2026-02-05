@@ -166,16 +166,12 @@ button:focus {
 
 .calibration-point {
   position: absolute;
-  width: 5vw;
-  height: 5vw;
-  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  /*background-color: rgb(255, 235, 235);*/
+  border: 3px solid white;
+  transform: translate(-50%, -50%);
 
-  /* background-color: rgb(255, 135, 135);*/
-  /*border: 6px solid #65e094; (green)*/
-
-  border: 6px solid rgb(255, 135, 135);
   pointer-events: auto;
 }
 
@@ -269,8 +265,6 @@ input.top-bar-input-text:focus {
 
   flex: 1;
   min-height: 0;
-  justify-content: flex-start;
-  padding-left: 20px;
 }
 
 .box-container {
@@ -302,4 +296,14 @@ input.top-bar-input-text:focus {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.row-container > .sentence-container {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.sentence-container .button-text {
+  text-align: left;
+  width: 100%;
 }

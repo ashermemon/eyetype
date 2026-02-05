@@ -30,6 +30,23 @@ export default function KeyboardPage({}: Props) {
 
       <EyeTracking onGaze={(x, y) => setGaze({ x, y })} />
       <Calibration onComplete={() => setCalibrated(true)} />
+      {gaze && (
+        <div
+          style={{
+            position: "fixed",
+            left: gaze.x,
+            top: gaze.y,
+            width: "10px",
+            height: "10px",
+            backgroundColor: "red",
+            borderRadius: "50%",
+            transform: "translate(-50%, -50%)",
+            pointerEvents: "none",
+            zIndex: 9999, 
+            boxShadow: "0 0 10px rgba(255, 0, 0, 0.5)",
+          }}
+        />
+      )}
       {calibrated && <PrimaryUI activeKey={activeKey} />}
     </div>
   );

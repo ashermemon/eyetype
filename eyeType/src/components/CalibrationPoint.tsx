@@ -1,40 +1,50 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type Point = {
   x: number;
   y: number;
 };
 
+
+
 type Props = {
   point: Point;
+  status: number;
 };
 
-export default function CalibrationPoint({ point }: Props) {
-  const [count, setCount] = useState(0);
-  const [green, setGreen] = useState(false);
+export default function CalibrationPoint({ point, status }: Props) {
+  // yellow: about to record (0)
+  // red: recording position (1)
+  // green: done (2)
 
+  const [opacity, setOpacity] = useState(1);
+  
   useEffect(() => {
-    setCount(0);
-    setGreen(false);
-  }, [point.x, point.y]);
+    if (status === 1) {
+        const interval = setInterval(() => {
+            setOpacity(opacity => opacity === 1 ? 0.5 : 1);
+        }, 500);
+        return () => clearInterval(interval);
+    } else {
+        setOpacity(1);
+    }
+  }, [status]);
+
+  let backgroundColor = "gray";
+  if (status === 0) backgroundColor = "#facc15"; 
+  if (status === 1) backgroundColor = "#ef4444"; 
+  if (status === 2) backgroundColor = "#22c55e"; 
+
   return (
-    <button
-      onClick={() => {
-        if (count < 5) {
-          setCount(count + 1);
-        } else if (count == 5) {
-          setGreen(true);
-        }
-      }}
+    <div
       className="calibration-point"
       style={{
+        opacity: opacity,
+        backgroundColor: backgroundColor,
         left: point.x + "%",
         top: point.y + "%",
+        transition: "background-color 0.3s, opacity 0.3s"
 
-        borderWidth: green ? 0 : undefined,
-        backgroundColor: green
-          ? "#65e094"
-          : `rgb(255, ${235 - count * 20}, ${235 - count * 20})`,
       }}
     />
   );

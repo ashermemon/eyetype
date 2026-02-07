@@ -3,19 +3,22 @@ from datasets import load_dataset
 import json 
 import os
 
+dailyDialogDataset = load_dataset("OpenRL/daily_dialog")
+AACConversationsDataset = load_dataset("willwade/AACConversations")
 
-dataset = load_dataset("OpenRL/daily_dialog")
+dailyDialogs = dailyDialogDataset["train"]["dialog"]
+aacTrain = AACConversationsDataset["train"]
 
-trainsplit = dataset["train"]
-
-dialogs = trainsplit["dialog"]
+aacDialogs = aacTrain["fully_corrected"]
+aacContexts = aacTrain["context_utterances"]
+aacLanguage = aacTrain["language_code"]
 
 tripletArray = []
 
 skippedcount = 0
 
 # Process all dialogs in train split
-for i, dialog in enumerate(dialogs):
+for i, dialog in enumerate(dailyDialogs):
     # combine all dialogue to check for profanity
     checkcombined = " ".join(dialog)
 
@@ -30,6 +33,12 @@ for i, dialog in enumerate(dialogs):
 
 
     print(f"Done {i+1} dialogs")
+
+for i, dialog in enumerate(aacDialogs):
+    if aacLanguage[i] in ["en-GB", "en-US", "en-CA", "en"]:
+        
+        clean_dialogs.add_sentence(dialog, tripletArray, contextValue=aacContexts[i])
+        print(f"Done {i+1} AAC dialogs")
 
 # save to JSON for training after
 with open("daily_dialog_triplets.json", "w", encoding="utf-8") as f:

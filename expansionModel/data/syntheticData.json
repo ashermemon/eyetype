@@ -1,0 +1,3003 @@
+[
+  {
+    "context": "You look like you are sliding down in your wheelchair. Do you need an adjustment?",
+    "abbreviation": "Y <Nurse Joy> .CYPMU?",
+    "target": "Yes Nurse Joy. Can you pull me up?"
+  },
+  {
+    "context": "The sun is shining right into your eyes. It looks bothersome.",
+    "abbreviation": " <Dad> CTPD?",
+    "target": "Dad can the blinds pull down?"
+  },
+  {
+    "context": "",
+    "abbreviation": "HM <Sarah> .INMHP.",
+    "target": "Help me Sarah. I need my head pillow."
+  },
+  {
+    "context": "I am going to the store. Do you want me to buy anything special for dinner?",
+    "abbreviation": " <Mom> IWLSS",
+    "target": "Mom I would like some soup."
+  },
+  {
+    "context": "Your breathing sounds a bit shallow today. How do you feel?",
+    "abbreviation": " <Dad> IFABSOB. C <Dr.Smith> .",
+    "target": "Dad I feel a bit short of breath. Call Dr. Smith."
+  },
+  {
+    "context": "The game is about to start. Do you want the volume up?",
+    "abbreviation": "Y <Mike> .TIU.",
+    "target": "Yes Mike. Turn it up."
+  },
+  {
+    "context": "",
+    "abbreviation": "MHL <Grandma> .",
+    "target": "My head hurts Grandma."
+  },
+  {
+    "context": "I can see you are trying to say something. Take your time.",
+    "abbreviation": "IWTGO <Alice> .",
+    "target": "I want to go outside Alice."
+  },
+  {
+    "context": "It is getting late. Are you ready for bed?",
+    "abbreviation": "N <Honey> .IWTWTM.",
+    "target": "No Honey. I want to watch the movie."
+  },
+  {
+    "context": "The nurse is asking about your pain level on a scale of one to ten.",
+    "abbreviation": "T <Dr. Jones> IIAS",
+    "target": "Tell Dr. Jones it is a seven."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Officer Dan> IHTRAC",
+    "target": "Officer Dan I have to report a crime."
+  },
+  {
+    "context": "I am going to adjust your feeding tube now.",
+    "abbreviation": "P <Nurse Ratched> BG.",
+    "target": "Please Nurse Ratched be gentle."
+  },
+  {
+    "context": "Your sister is here to visit. Should I send her in?",
+    "abbreviation": "Y <Lisa> .SHI.",
+    "target": "Yes Lisa. Send her in."
+  },
+  {
+    "context": "I can't find the remote control anywhere.",
+    "abbreviation": "IIOTTV <Sam> .",
+    "target": "It is on the TV stand Sam."
+  },
+  {
+    "context": "How are you enjoying the audiobook?",
+    "abbreviation": "IIB <Mary> .",
+    "target": "It is boring Mary."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Bro> WIGTW?",
+    "target": "Bro who is going to win?"
+  },
+  {
+    "context": "It is very cold in here. Do you want another blanket?",
+    "abbreviation": "Y <Aunt May> .IAF.",
+    "target": "Yes Aunt May. I am freezing."
+  },
+  {
+    "context": "I am going to stretch your legs now.",
+    "abbreviation": "O <Peter> .DHM.",
+    "target": "Okay Peter. Don't hurt me."
+  },
+  {
+    "context": "Your computer screen looks dusty. Shall I clean it?",
+    "abbreviation": "Y <Tom> .TIC.",
+    "target": "Yes Tom. That is clear."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Professor X> IHTAQ.",
+    "target": "Professor X I have to ask a question."
+  },
+  {
+    "context": "The dog is barking at the mailman again.",
+    "abbreviation": "TIB <Lassie> .",
+    "target": "That is barking Lassie."
+  },
+  {
+    "context": "Do you want coffee or tea this morning?",
+    "abbreviation": "C <Dear> .",
+    "target": "Coffee Dear."
+  },
+  {
+    "context": "I am leaving for work now. I will see you tonight.",
+    "abbreviation": "GL <Honey> .ILY.",
+    "target": "Good luck Honey. I love you."
+  },
+  {
+    "context": "",
+    "abbreviation": "WADWD <Mom> ?",
+    "target": "What are we doing Mom?"
+  },
+  {
+    "context": "Your pillow looks uncomfortable. Should I fluff it?",
+    "abbreviation": "Y <Nurse> .PDI.",
+    "target": "Yes Nurse. Please do it."
+  },
+  {
+    "context": "I brought you some flowers from the garden.",
+    "abbreviation": "TAB <Sweetie> .",
+    "target": "They are beautiful Sweetie."
+  },
+  {
+    "context": "Are you feeling warm enough?",
+    "abbreviation": "N <Dad> .ICFMF.",
+    "target": "No Dad. I can't feel my feet."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sir> IWLTO.",
+    "target": "Sir I would like to order."
+  },
+  {
+    "context": "The doctor said your tests came back good.",
+    "abbreviation": "TIG <Mom> .",
+    "target": "That is good Mom."
+  },
+  {
+    "context": "Do you need to use the restroom before we leave?",
+    "abbreviation": "N <Driver> .IAR.",
+    "target": "No Driver. I am ready."
+  },
+  {
+    "context": "I am going to put on some music.",
+    "abbreviation": "P <DJ> .PSJ.",
+    "target": "Please DJ. Play some jazz."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Madam> IWLTS.",
+    "target": "Madam I would like to speak."
+  },
+  {
+    "context": "Your friend John is on the phone.",
+    "abbreviation": "T <John> IAB.",
+    "target": "Tell John I am busy."
+  },
+  {
+    "context": "The room is too dark.",
+    "abbreviation": " <Alice> TOWL.",
+    "target": "Alice turn on the light."
+  },
+  {
+    "context": "I am going to help you brush your teeth.",
+    "abbreviation": "IG <Nurse> .",
+    "target": "I am good Nurse."
+  },
+  {
+    "context": "",
+    "abbreviation": "H <Sarah> .HAY?",
+    "target": "Hi Sarah. How are you?"
+  },
+  {
+    "context": "Do you want to wear the red shirt?",
+    "abbreviation": "N <Ma> .IWTB.",
+    "target": "No Ma. I want the blue."
+  },
+  {
+    "context": "It is raining outside.",
+    "abbreviation": "IHS <Dad> .",
+    "target": "I hate storms Dad."
+  },
+  {
+    "context": "I am going to read a book.",
+    "abbreviation": "WBO <Sis> ?",
+    "target": "What book one Sis?"
+  },
+  {
+    "context": "",
+    "abbreviation": " <Love> CYGMW?",
+    "target": "Love can you get me water?"
+  },
+  {
+    "context": "The cat is on the bed.",
+    "abbreviation": "SAGK <Kitty> .",
+    "target": "She is a good Kitty."
+  },
+  {
+    "context": "I am making dinner.",
+    "abbreviation": "WIFD <Chef> ?",
+    "target": "What is for dinner Chef?"
+  },
+  {
+    "context": "Do you need suction?",
+    "abbreviation": "Y <Therapist> .",
+    "target": "Yes Therapist."
+  },
+  {
+    "context": "",
+    "abbreviation": "TY <Sam> .",
+    "target": "Thank you Sam."
+  },
+  {
+    "context": "How is your head position?",
+    "abbreviation": "IHM <Helper> .",
+    "target": "It hurts me Helper."
+  },
+  {
+    "context": "I am going to change the channel.",
+    "abbreviation": "D <Brother> .",
+    "target": "Don't Brother."
+  },
+  {
+    "context": "Are you hungry?",
+    "abbreviation": "Y <Mom> .",
+    "target": "Yes Mom."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Doc> IHP.",
+    "target": "Doc I have pain."
+  },
+  {
+    "context": "I am going to open the window.",
+    "abbreviation": "N <Dad> .IIC.",
+    "target": "No Dad. It is cold."
+  },
+  {
+    "context": "Do you want to go out?",
+    "abbreviation": "Y <Friend> .",
+    "target": "Yes Friend."
+  },
+  {
+    "context": "I am going to wash your face.",
+    "abbreviation": "O <Nurse> .",
+    "target": "Okay Nurse."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Boss> IWBRL.",
+    "target": "Boss I will be running late."
+  },
+  {
+    "context": "The phone is ringing.",
+    "abbreviation": "WII <Son> ?",
+    "target": "Who is it Son?"
+  },
+  {
+    "context": "I am going to turn off the light.",
+    "abbreviation": "GN <Love> .",
+    "target": "Good night Love."
+  },
+  {
+    "context": "How is the soup?",
+    "abbreviation": "IIG <Cook> .",
+    "target": "It is good Cook."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Lady> IWLH.",
+    "target": "Lady I would like help."
+  },
+  {
+    "context": "I am going to fix your pillow.",
+    "abbreviation": "T <Kindness> .",
+    "target": "Thanks Kindness."
+  },
+  {
+    "context": "Do you want to sleep?",
+    "abbreviation": "N <Night> .",
+    "target": "No Night."
+  },
+  {
+    "context": "I am going to clean the room.",
+    "abbreviation": "T <Cleaner> .",
+    "target": "Thanks Cleaner."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Man> WTYD?",
+    "target": "Man what time you do?"
+  },
+  {
+    "context": "I am going to brush your hair.",
+    "abbreviation": "O <Stylist> .",
+    "target": "Okay Stylist."
+  },
+  {
+    "context": "Do you want to watch TV?",
+    "abbreviation": "Y <Viewer> .",
+    "target": "Yes Viewer."
+  },
+  {
+    "context": "I am going to move your foot.",
+    "abbreviation": "G <Mover> .",
+    "target": "Gently Mover."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Person> IWA.",
+    "target": "Person I want apple."
+  },
+  {
+    "context": "I am going to close the door.",
+    "abbreviation": "P <Door> .",
+    "target": "Please Door."
+  },
+  {
+    "context": "Do you want a drink?",
+    "abbreviation": "Y <Thirst> .",
+    "target": "Yes Thirst."
+  },
+  {
+    "context": "I am going to wipe your mouth.",
+    "abbreviation": "T <Wiper> .",
+    "target": "Thanks Wiper."
+  },
+  {
+    "context": "",
+    "abbreviation": " <One> IWL.",
+    "target": "One I would like."
+  },
+  {
+    "context": "I am going to fix the sheet.",
+    "abbreviation": "G <Fixer> .",
+    "target": "Good Fixer."
+  },
+  {
+    "context": "Do you want to sit up?",
+    "abbreviation": "Y <Sitter> .",
+    "target": "Yes Sitter."
+  },
+  {
+    "context": "I am going to take your temperature.",
+    "abbreviation": "O <Checker> .",
+    "target": "Okay Checker."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Self> IAD.",
+    "target": "Self I am done."
+  },
+
+  {
+    "context": "You look like you are trying to reach for something.",
+    "abbreviation": "CYGMMP <Dad> ?",
+    "target": "Can you get my phone Dad?"
+  },
+  {
+    "context": "I am heading out to the grocery store now.",
+    "abbreviation": "PBMAC <Mom> .",
+    "target": "Please buy me a chocolate Mom."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHL <Nurse Joy> .",
+    "target": "I have leg cramps Nurse Joy."
+  },
+  {
+    "context": "The news is predicting a storm for tonight.",
+    "abbreviation": "IHS <Honey> .",
+    "target": "I hate storms Honey."
+  },
+  {
+    "context": "I can see you are uncomfortable. What can I do?",
+    "abbreviation": "IWLTSU <Dr. Smith> .",
+    "target": "I would like to sit up Dr. Smith."
+  },
+  {
+    "context": "Do you want to watch the rest of the movie?",
+    "abbreviation": "N <Sam> .IIB.",
+    "target": "No Sam. It is boring."
+  },
+  {
+    "context": "",
+    "abbreviation": "TII <Officer Miller> .",
+    "target": "This is important Officer Miller."
+  },
+  {
+    "context": "I am going to adjust your feeding tube.",
+    "abbreviation": "PBC <Nurse> .",
+    "target": "Please be careful Nurse."
+  },
+  {
+    "context": "Your sister sent you a card. Should I read it?",
+    "abbreviation": "Y <Dad> .PRITM.",
+    "target": "Yes Dad. Please read it to me."
+  },
+  {
+    "context": "The room is getting very warm.",
+    "abbreviation": "CTOTF <Alice> ?",
+    "target": "Can turn on the fan Alice?"
+  },
+  {
+    "context": "",
+    "abbreviation": "WITA <Dr. Lee> ?",
+    "target": "When is the appointment Dr. Lee?"
+  },
+  {
+    "context": "I am making a playlist for you. What genre?",
+    "abbreviation": "IWLCM <DJ> .",
+    "target": "I would like classical music DJ."
+  },
+  {
+    "context": "It has been a long time since we saw your brother.",
+    "abbreviation": "IMH <Mom> .",
+    "target": "I miss him Mom."
+  },
+  {
+    "context": "I am going to check your blood pressure.",
+    "abbreviation": "TIA <Nurse> .",
+    "target": "Thank it already Nurse."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sweetie> CYCML?",
+    "target": "Sweetie can you check my leg?"
+  },
+  {
+    "context": "The sun is shining right on your face.",
+    "abbreviation": "PCTB <Darling> .",
+    "target": "Please close the blinds Darling."
+  },
+  {
+    "context": "Do you want to wear the blue shirt today?",
+    "abbreviation": "N <Ma> .IWTG.",
+    "target": "No Ma. I want the green."
+  },
+  {
+    "context": "I am going to move your wheelchair closer to the window.",
+    "abbreviation": "TIG <Paul> .",
+    "target": "That is good Paul."
+  },
+  {
+    "context": "",
+    "abbreviation": "HM <Sarah> .INMHP.",
+    "target": "Help me Sarah. I need my head pillow."
+  },
+  {
+    "context": "I am going to the pharmacy. Do you need a refill?",
+    "abbreviation": "Y <Son> .IGL.",
+    "target": "Yes Son. I get low."
+  },
+  {
+    "context": "How is the pain in your back today?",
+    "abbreviation": "IIWTT <Dr. Jones> .",
+    "target": "It is worse today Dr. Jones."
+  },
+  {
+    "context": "I am going to brush your hair now.",
+    "abbreviation": "TG <Stylist> .",
+    "target": "That good Stylist."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Professor> IHTQ.",
+    "target": "Professor I have two questions."
+  },
+  {
+    "context": "Do you want some water to drink?",
+    "abbreviation": "Y <Dear> .IMID.",
+    "target": "Yes Dear. My mouth is dry."
+  },
+  {
+    "context": "I am going to change the channel on the TV.",
+    "abbreviation": "D <Brother> .IWI.",
+    "target": "Don't Brother. I watch it."
+  },
+  {
+    "context": "Your friend Michael is on the phone.",
+    "abbreviation": "T <Michael> ICB.",
+    "target": "Tell Michael I call back."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sis> WAGTD?",
+    "target": "Sis when are going to dinner?"
+  },
+  {
+    "context": "I am going to wash your face with a warm cloth.",
+    "abbreviation": "TFGI <Nurse> .",
+    "target": "That feels good indeed Nurse."
+  },
+  {
+    "context": "Do you want to go to the park this afternoon?",
+    "abbreviation": "Y <Friend> .INFA.",
+    "target": "Yes Friend. I need fresh air."
+  },
+  {
+    "context": "I am going to fix the blanket on your feet.",
+    "abbreviation": "T <Kindness> .ICFMF.",
+    "target": "Thanks Kindness. I can't feel my feet."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Boss> IWBRLT.",
+    "target": "Boss I will be running late today."
+  },
+  {
+    "context": "The dog is barking at the mailman again.",
+    "abbreviation": "TIB <Lassie> .",
+    "target": "That is barking Lassie."
+  },
+  {
+    "context": "I am going to cook dinner. What do you want?",
+    "abbreviation": "IWLS <Chef> .",
+    "target": "I would like steak Chef."
+  },
+  {
+    "context": "Do you need to use the restroom?",
+    "abbreviation": "N <Caregiver> .IAG.",
+    "target": "No Caregiver. I am good."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Doctor> IHPIMS.",
+    "target": "Doctor I have pain in my stomach."
+  },
+  {
+    "context": "I am going to read a book to you.",
+    "abbreviation": "WB <Reader> ?",
+    "target": "Which book Reader?"
+  },
+  {
+    "context": "Do you want to listen to some jazz?",
+    "abbreviation": "Y <Musician> .ILJ.",
+    "target": "Yes Musician. I love jazz."
+  },
+  {
+    "context": "I am going to clean your glasses.",
+    "abbreviation": "T <Helper> .ICSCN.",
+    "target": "Thanks Helper. I can see clearly now."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Mom> IWH.",
+    "target": "Mom I was hungry."
+  },
+  {
+    "context": "I am going to turn off the lights.",
+    "abbreviation": "GN <Dad> .",
+    "target": "Good night Dad."
+  },
+  {
+    "context": "Do you need suction for your throat?",
+    "abbreviation": "Y <RT> .IB.",
+    "target": "Yes RT. It blocked."
+  },
+  {
+    "context": "I am going to move your arm to a better position.",
+    "abbreviation": "T <Mover> .IHH.",
+    "target": "Thanks Mover. It hurts here."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Grandma> ILY.",
+    "target": "Grandma I love you."
+  },
+  {
+    "context": "I am going to put on your shoes.",
+    "abbreviation": "N <Walker> .TS.",
+    "target": "No Walker. Too small."
+  },
+  {
+    "context": "Do you want to see the photos from the trip?",
+    "abbreviation": "Y <Traveler> .SM.",
+    "target": "Yes Traveler. Show me."
+  },
+  {
+    "context": "I am going to wipe your mouth.",
+    "abbreviation": "T <Wiper> .IM.",
+    "target": "Thanks Wiper. It messy."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sir> IWO.",
+    "target": "Sir I want out."
+  },
+  {
+    "context": "I am going to fix the pillow behind your head.",
+    "abbreviation": "T <Comforter> .TB.",
+    "target": "Thanks Comforter. That better."
+  },
+  {
+    "context": "Do you want to talk about it?",
+    "abbreviation": "N <Listener> .IT.",
+    "target": "No Listener. I tired."
+  },
+  {
+    "context": "I am going to open the window for some air.",
+    "abbreviation": "P <Opener> .IC.",
+    "target": "Please Opener. It cold."
+  },  {
+    "context": "The sun is shining right into your eyes.",
+    "abbreviation": "CYCTB <Mom> ?",
+    "target": "Can you close the blinds Mom?"
+  },
+  {
+    "context": "I am going to the kitchen. Do you want anything?",
+    "abbreviation": " <Dad> IWLAGOW.",
+    "target": "Dad I would like a glass of water."
+  },
+  {
+    "context": "You seem a bit restless in that chair.",
+    "abbreviation": " <Nurse Joy> IAIAP.",
+    "target": "Nurse Joy I am in a lot of pain."
+  },
+  {
+    "context": "I am going to put on a movie. Which one do you want?",
+    "abbreviation": " <Sarah> IWTWTSW.",
+    "target": "Sarah I want to watch Star Wars."
+  },
+  {
+    "context": "Your breathing sounds a little heavy.",
+    "abbreviation": " <Dr. Smith> IFABSOB.",
+    "target": "Dr. Smith I feel a bit short of breath."
+  },
+  {
+    "context": "The room is getting very cold.",
+    "abbreviation": "CYTMSB <Honey> ?",
+    "target": "Can you throw me some blankets Honey?"
+  },
+  {
+    "context": "I am going to adjust your headrest.",
+    "abbreviation": "T <Paul> TIB.",
+    "target": "Thanks Paul that is better."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHTGTTB <Nurse> .",
+    "target": "I have to go to the bathroom Nurse."
+  },
+  {
+    "context": "Your sister is calling on the phone.",
+    "abbreviation": "T <Lisa> IWCBL.",
+    "target": "Tell Lisa I will call back later."
+  },
+  {
+    "context": "I am going to feed you some soup now.",
+    "abbreviation": "P <Mom> IINVH.",
+    "target": "Please Mom it is not very hot."
+  },
+  {
+    "context": "Do you want to go outside for fresh air?",
+    "abbreviation": "Y <Mike> IWLTAGFW.",
+    "target": "Yes Mike I would like to go for walk."
+  },
+  {
+    "context": "I can see you are itching your nose.",
+    "abbreviation": "CYSITFM <Grandma> ?",
+    "target": "Can you scratch it for me Grandma?"
+  },
+  {
+    "context": "",
+    "abbreviation": " <Officer> IWTRACT.",
+    "target": "Officer I want to report a car theft."
+  },
+  {
+    "context": "I am going to change the music playlist.",
+    "abbreviation": "P <DJ> PSJ.",
+    "target": "Please DJ play some jazz."
+  },
+  {
+    "context": "How is the pain in your legs today?",
+    "abbreviation": "IIWTT <Dr. Lee> .",
+    "target": "It is worse today Dr. Lee."
+  },
+  {
+    "context": "The dog is barking loudly outside.",
+    "abbreviation": "IIVA <Dad> .",
+    "target": "It is very annoying Dad."
+  },
+  {
+    "context": "I am going to turn off the lights for the night.",
+    "abbreviation": "GN <Sweetie> ILY.",
+    "target": "Good night Sweetie I love you."
+  },
+  {
+    "context": "Do you need your reading glasses?",
+    "abbreviation": "Y <Alice> ICSC.",
+    "target": "Yes Alice I cannot see clearly."
+  },
+  {
+    "context": "",
+    "abbreviation": "WID <Tom> ?",
+    "target": "Where is Dog Tom?"
+  },
+  {
+    "context": "I am going to move your wheelchair to the table.",
+    "abbreviation": "T <Helper> IAH.",
+    "target": "Thanks Helper I am hungry."
+  },
+  {
+    "context": "Do you want coffee or tea this morning?",
+    "abbreviation": "IWLC <Ma> .",
+    "target": "I would like coffee Ma."
+  },
+  {
+    "context": "I am going to wash your face.",
+    "abbreviation": "PBUW <Nurse> .",
+    "target": "Please be using warm Nurse."
+  },
+  {
+    "context": "Your friend John is here to visit.",
+    "abbreviation": "H <John> IIGTSY.",
+    "target": "Hi John it is good to see you."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Boss> ICNITC.",
+    "target": "Boss I cannot come in today call."
+  },
+  {
+    "context": "I am going to fix your pillow.",
+    "abbreviation": "T <Kindness> MNH.",
+    "target": "Thanks Kindness my neck hurts."
+  },
+  {
+    "context": "Do you want to wear the red sweater?",
+    "abbreviation": "N <Sis> IWTB.",
+    "target": "No Sis I want the blue."
+  },
+  {
+    "context": "I am going to check your temperature.",
+    "abbreviation": "O <Doctor> .",
+    "target": "Okay Doctor."
+  },
+  {
+    "context": "The TV volume seems very loud.",
+    "abbreviation": "PTID <Brother> .",
+    "target": "Please turn it down Brother."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Love> CYGMA?",
+    "target": "Love can you get me apple?"
+  },
+  {
+    "context": "I am going to open the window.",
+    "abbreviation": "N <Dad> IIC.",
+    "target": "No Dad it is cold."
+  },
+  {
+    "context": "Do you need to use the bedpan?",
+    "abbreviation": "Y <Nurse> IAM.",
+    "target": "Yes Nurse I am messy."
+  },
+  {
+    "context": "I am going to brush your hair.",
+    "abbreviation": "TG <Stylist> .",
+    "target": "That good Stylist."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sir> IWO.",
+    "target": "Sir I want out."
+  },
+  {
+    "context": "I am going to wipe your mouth.",
+    "abbreviation": "T <Wiper> .",
+    "target": "Thanks Wiper."
+  },
+  {
+    "context": "Do you want to listen to the radio?",
+    "abbreviation": "N <Sam> IWPQ.",
+    "target": "No Sam I would prefer quiet."
+  },
+  {
+    "context": "I am going to move your foot.",
+    "abbreviation": "G <Mover> .",
+    "target": "Gently Mover."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Mom> IWH.",
+    "target": "Mom I was hungry."
+  },
+  {
+    "context": "I am going to clean the room.",
+    "abbreviation": "T <Cleaner> .",
+    "target": "Thanks Cleaner."
+  },
+  {
+    "context": "Do you want to sleep?",
+    "abbreviation": "Y <Sleeper> .",
+    "target": "Yes Sleeper."
+  },
+  {
+    "context": "I am going to fix the sheet.",
+    "abbreviation": "T <Fixer> .",
+    "target": "Thanks Fixer."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Friend> HAY?",
+    "target": "Friend how are you?"
+  },
+  {
+    "context": "I am going to change the channel.",
+    "abbreviation": "P <Watcher> .",
+    "target": "Please Watcher."
+  },
+  {
+    "context": "Do you want to drink?",
+    "abbreviation": "Y <Drinker> .",
+    "target": "Yes Drinker."
+  },
+  {
+    "context": "I am going to wash your hands.",
+    "abbreviation": "T <Washer> .",
+    "target": "Thanks Washer."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Bro> IWT.",
+    "target": "Bro I was thirsty."
+  },
+  {
+    "context": "I am going to move the chair.",
+    "abbreviation": "O <Mover> .",
+    "target": "Okay Mover."
+  },
+  {
+    "context": "Do you need suction?",
+    "abbreviation": "Y <Breather> .",
+    "target": "Yes Breather."
+  },
+  {
+    "context": "I am going to close the door.",
+    "abbreviation": "P <Privacy> .",
+    "target": "Please Privacy."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sis> IWA.",
+    "target": "Sis I was afraid."
+  },
+  {
+    "context": "I am going to read a book.",
+    "abbreviation": "WB <Reader> ?",
+    "target": "Which book Reader?"
+  },
+  {
+    "context": "Do you want to see the photos?",
+    "abbreviation": "Y <Visitor> .",
+    "target": "Yes Visitor."
+  },
+  {
+    "context": "I am going to comb your hair.",
+    "abbreviation": "G <Stylist> .",
+    "target": "Gently Stylist."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Dad> IWE.",
+    "target": "Dad I was excited."
+  },
+  {
+    "context": "I am going to turn off the fan.",
+    "abbreviation": "N <Hot> .",
+    "target": "No Hot."
+  },
+  {
+    "context": "Do you need anything else?",
+    "abbreviation": "N <Thanks> .",
+    "target": "No Thanks."
+  },
+  {
+    "context": "I am going to hold your hand.",
+    "abbreviation": "T <Love> .",
+    "target": "Thanks Love."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Ma> IWS.",
+    "target": "Ma I was sick."
+  },
+  {
+    "context": "I am going to scratch your nose.",
+    "abbreviation": "P <Itch> .",
+    "target": "Please Itch."
+  },
+  {
+    "context": "Do you want to watch a movie?",
+    "abbreviation": "Y <Watcher> .",
+    "target": "Yes Watcher."
+  },
+  {
+    "context": "I am going to fix your pillow.",
+    "abbreviation": "T <Comforter> .",
+    "target": "Thanks Comforter."
+  },
+  {
+    "context": "I feel like going for a drive today.",
+    "abbreviation": " <Driver> TWBG.",
+    "target": "Driver that would be good."
+  },
+  {
+    "context": "The doctor is asking where the pain is located.",
+    "abbreviation": "IIIML <Mom> .",
+    "target": "It is in my leg Mom."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Nurse> IHAH.",
+    "target": "Nurse I have a headache."
+  },
+  {
+    "context": "We are planning a trip to the beach.",
+    "abbreviation": " <Dad> ILTO.",
+    "target": "Dad I love the ocean."
+  },
+  {
+    "context": "I am going to adjust your medication dosage.",
+    "abbreviation": "WITA <Dr. Phil> ?",
+    "target": "Will it take affect Dr. Phil?"
+  },
+  {
+    "context": "Do you want to eat breakfast now?",
+    "abbreviation": "N <Honey> INH.",
+    "target": "No Honey I am not hungry."
+  },
+  {
+    "context": "The game is tied in the final minute.",
+    "abbreviation": "TIE <Bro> .",
+    "target": "This is exciting Bro."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Teacher> IHTFMH.",
+    "target": "Teacher I have to finish my homework."
+  },
+  {
+    "context": "I am going to put lotion on your dry skin.",
+    "abbreviation": "T <Caregiver> .",
+    "target": "Thanks Caregiver."
+  },
+  {
+    "context": "Do you want to sit in the garden?",
+    "abbreviation": "Y <Gardener> .",
+    "target": "Yes Gardener."
+  },
+  {
+    "context": "I am going to change the bandage.",
+    "abbreviation": "PBG <Medic> .",
+    "target": "Please be gentle Medic."
+  },
+  {
+    "context": "Are you comfortable?",
+    "abbreviation": "Y <Nurse> IAF.",
+    "target": "Yes Nurse I am fine."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Mom> WIFD?",
+    "target": "Mom what is for dinner?"
+  },
+  {
+    "context": "I am going to turn on the radio.",
+    "abbreviation": " <Dad> ILTM.",
+    "target": "Dad I like that music."
+  },
+  {
+    "context": "Do you need to use the restroom?",
+    "abbreviation": "Y <Assistant> .",
+    "target": "Yes Assistant."
+  },
+  {
+    "context": "I am going to move your arm.",
+    "abbreviation": "O <Therapist> .",
+    "target": "Okay Therapist."
+  },
+  {
+    "context": "How is the food?",
+    "abbreviation": "IIT <Chef> .",
+    "target": "It is tasty Chef."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Friend> IWMY.",
+    "target": "Friend I will miss you."
+  },
+  {
+    "context": "I am going to wash your hair.",
+    "abbreviation": "T <Stylist> .",
+    "target": "Thanks Stylist."
+  },
+  {
+    "context": "Do you want to see a movie?",
+    "abbreviation": "Y <Viewer> .",
+    "target": "Yes Viewer."
+  },
+  {
+    "context": "I am going to clean the floor.",
+    "abbreviation": "O <Cleaner> .",
+    "target": "Okay Cleaner."
+  },
+  {
+    "context": "I am going to fix the chair.",
+    "abbreviation": "T <Fixer> .",
+    "target": "Thanks Fixer."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sis> IWB.",
+    "target": "Sis I was busy."
+  },
+  {
+    "context": "I am going to check the mail.",
+    "abbreviation": "O <Helper> .",
+    "target": "Okay Helper."
+  },
+  {
+    "context": "Do you want to go home?",
+    "abbreviation": "Y <Driver> .",
+    "target": "Yes Driver."
+  },
+  {
+    "context": "I am going to open the box.",
+    "abbreviation": "P <Opener> .",
+    "target": "Please Opener."
+  },
+  {
+    "context": "I am going to close the window.",
+    "abbreviation": "T <Closer> .",
+    "target": "Thanks Closer."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Bro> IWT.",
+    "target": "Bro I was tired."
+  },
+  {
+    "context": "I am going to wipe the table.",
+    "abbreviation": "O <Wiper> .",
+    "target": "Okay Wiper."
+  },
+  {
+    "context": "Do you need a drink?",
+    "abbreviation": "Y <Server> .",
+    "target": "Yes Server."
+  },
+  {
+    "context": "I am going to move the bed.",
+    "abbreviation": "T <Mover> .",
+    "target": "Thanks Mover."
+  },
+  {
+    "context": "I am going to fix the light.",
+    "abbreviation": "G <Electrician> .",
+    "target": "Good Electrician."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Ma> IWS.",
+    "target": "Ma I was sad."
+  },
+  {
+    "context": "I am going to brush your teeth.",
+    "abbreviation": "O <Dentist> .",
+    "target": "Okay Dentist."
+  },
+  {
+    "context": "Do you want to read?",
+    "abbreviation": "Y <Librarian> .",
+    "target": "Yes Librarian."
+  },
+  {
+    "context": "I am going to wash the dishes.",
+    "abbreviation": "T <Washer> .",
+    "target": "Thanks Washer."
+  },
+  {
+    "context": "I am going to cook lunch.",
+    "abbreviation": "O <Cook> .",
+    "target": "Okay Cook."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Pa> IWH.",
+    "target": "Pa I was happy."
+  },
+  {
+    "context": "I am going to clean the car.",
+    "abbreviation": "T <Cleaner> .",
+    "target": "Thanks Cleaner."
+  },
+  {
+    "context": "Do you want to play?",
+    "abbreviation": "Y <Player> .",
+    "target": "Yes Player."
+  },
+  {
+    "context": "I am going to fix the door.",
+    "abbreviation": "G <Fixer> .",
+    "target": "Good Fixer."
+  },
+  {
+    "context": "I am going to move the sofa.",
+    "abbreviation": "T <Mover> .",
+    "target": "Thanks Mover."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Friend> IWC.",
+    "target": "Friend I was cold."
+  },
+  {
+    "context": "I am going to open the gate.",
+    "abbreviation": "P <Opener> .",
+    "target": "Please Opener."
+  },
+  {
+    "context": "Do you need help?",
+    "abbreviation": "Y <Helper> .",
+    "target": "Yes Helper."
+  },
+  {
+    "context": "I am going to close the book.",
+    "abbreviation": "O <Reader> .",
+    "target": "Okay Reader."
+  },
+  {
+    "context": "I am going to wipe the floor.",
+    "abbreviation": "T <Wiper> .",
+    "target": "Thanks Wiper."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Mom> IWL.",
+    "target": "Mom I was lost."
+  },
+  {
+    "context": "I am going to turn on the AC.",
+    "abbreviation": "T <Cooler> .",
+    "target": "Thanks Cooler."
+  },
+  {
+    "context": "Do you want to run?",
+    "abbreviation": "N <Runner> .",
+    "target": "No Runner."
+  },
+  {
+    "context": "I am going to fix the roof.",
+    "abbreviation": "G <Roofer> .",
+    "target": "Good Roofer."
+  },
+  {
+    "context": "I'm heading to the store now. Need anything?",
+    "abbreviation": " <Mom> PBMAB.",
+    "target": "Mom please buy me a book."
+  },
+  {
+    "context": "It's time for your medication.",
+    "abbreviation": " <Nurse> IIDST.",
+    "target": "Nurse is it difficult swallowing today."
+  },
+  {
+    "context": "The sun is really bright in here.",
+    "abbreviation": "C <Dad> PCLTB?",
+    "target": "Can Dad please close the blinds?"
+  },
+  {
+    "context": "",
+    "abbreviation": " <Sarah> IWLWTV.",
+    "target": "Sarah I would like watching TV."
+  },
+  {
+    "context": "How are you feeling this morning?",
+    "abbreviation": " <Dr. Smith> IMBA.",
+    "target": "Dr. Smith I am breathing alright."
+  },
+  {
+    "context": "I'm going to adjust your pillow.",
+    "abbreviation": "T <Honey> TIB.",
+    "target": "Thanks Honey that is better."
+  },
+  {
+    "context": "Do you want to listen to music?",
+    "abbreviation": "Y <Mike> PSJ.",
+    "target": "Yes Mike play some jazz."
+  },
+  {
+    "context": "Your sister is on the phone.",
+    "abbreviation": "T <Lisa> IWCBL.",
+    "target": "Tell Lisa I will call back later."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Officer> IWTRA.",
+    "target": "Officer I want to report accident."
+  },
+  {
+    "context": "I made some soup for lunch.",
+    "abbreviation": "I <Grandma> TIG.",
+    "target": "It Grandma that is good."
+  },
+  {
+    "context": "Are you comfortable in that position?",
+    "abbreviation": "N <Paul> MBLH.",
+    "target": "No Paul my back lower hurts."
+  },
+  {
+    "context": "I'm going to turn off the lights.",
+    "abbreviation": "GN <Sweetie> ILY.",
+    "target": "Good night Sweetie I love you."
+  },
+  {
+    "context": "Do you need your glasses?",
+    "abbreviation": "Y <Alice> ICSC.",
+    "target": "Yes Alice I cannot see clearly."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Tom> WID?",
+    "target": "Tom where is Dog?"
+  },
+  {
+    "context": "I'm moving your wheelchair to the table.",
+    "abbreviation": "T <Helper> IAH.",
+    "target": "Thanks Helper I am hungry."
+  },
+  {
+    "context": "Coffee or tea?",
+    "abbreviation": "IWLC <Ma> .",
+    "target": "I would like coffee Ma."
+  },
+  {
+    "context": "I'm going to wash your face.",
+    "abbreviation": "PBUW <Nurse> .",
+    "target": "Please be using warm Nurse."
+  },
+  {
+    "context": "John is here to visit.",
+    "abbreviation": "H <John> IIGTSY.",
+    "target": "Hi John it is good to see you."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Boss> ICNITC.",
+    "target": "Boss I cannot come in today call."
+  },
+  {
+    "context": "Fixing your pillow.",
+    "abbreviation": "T <Kindness> MNH.",
+    "target": "Thanks Kindness my neck hurts."
+  },
+  {
+    "context": "Red or blue sweater?",
+    "abbreviation": "N <Sis> IWTB.",
+    "target": "No Sis I want the blue."
+  },
+  {
+    "context": "Checking temperature.",
+    "abbreviation": "O <Doctor> .",
+    "target": "Okay Doctor."
+  },
+  {
+    "context": "TV is loud.",
+    "abbreviation": "PTID <Brother> .",
+    "target": "Please turn it down Brother."
+  },
+  {
+    "context": "",
+    "abbreviation": " <Love> CYGMA?",
+    "target": "Love can you get me apple?"
+  },
+  {
+    "context": "Opening window.",
+    "abbreviation": "N <Dad> IIC.",
+    "target": "No Dad it is cold."
+  },
+  {
+    "context": "Need bedpan?",
+    "abbreviation": "Y <Nurse> IAM.",
+    "target": "Yes Nurse I am messy."
+  },
+  {
+    "context": "Brushing hair.",
+    "abbreviation": "TG <Stylist> .",
+    "target": "That good Stylist."
+  },
+  {
+    "context": "The doctor is asking for specific details about where you are feeling the discomfort.",
+    "abbreviation": "IHASTIMLA <Dr. Stevens> .",
+    "target": "I have a sharp throbbing in my left arm Dr. Stevens."
+  },
+  {
+    "context": "I'm going to the grocery store. Is there anything specific you want for dinner tonight?",
+    "abbreviation": " <Mom> ,IWLSRPAD.",
+    "target": "Mom, I would like some roast pork and dumplings."
+  },
+  {
+    "context": "You seem very restless. Do you need to be repositioned in your chair?",
+    "abbreviation": "Y <Nurse Joy> .PMMTL.",
+    "target": "Yes Nurse Joy. Please move me to the left."
+  },
+  {
+    "context": "Your brother is on the phone and wants to know if you saw the football game last night.",
+    "abbreviation": "T <Mike> IWIATWE.",
+    "target": "Tell Mike I watched it and the win was exciting."
+  },
+  {
+    "context": "I noticed you've been coughing a lot since lunch. Do you need the suction machine?",
+    "abbreviation": "Y <Sarah> .IFLITIMT.",
+    "target": "Yes Sarah. I feel like there is trouble in my throat."
+  },
+  {
+    "context": "The sun is shining directly onto your screen and I can tell you're squinting.",
+    "abbreviation": " <Dad> ,CYPCTB?",
+    "target": "Dad, can you please close the blinds?"
+  },
+  {
+    "context": "I am about to leave for my shift. Is there anything else you need before the night nurse arrives?",
+    "abbreviation": " <Alice> ,PMMMAGOW.",
+    "target": "Alice, please make me a glass of water."
+  },
+  {
+    "context": "We are planning the family reunion for next month. Do you think you will be up for it?",
+    "abbreviation": "IDK <Honey> .IMBTBTT.",
+    "target": "I don't know Honey. I might be too busy by then."
+  },
+  {
+    "context": "I see you are trying to use the eye tracker but it seems to be drifting.",
+    "abbreviation": " <Tom> ,INTRCIM.",
+    "target": "Tom, I need to recalibrate it momentarily."
+  },
+  {
+    "context": "It is getting quite late and you have an early appointment tomorrow.",
+    "abbreviation": "IAGTBS <Mom> .",
+    "target": "I am going to bed soon Mom."
+  },
+  {
+    "context": "Your sister asked what you want for your birthday this year.",
+    "abbreviation": "T <Lisa> IJAWNA.",
+    "target": "Tell Lisa I just a want new audiobook."
+  },
+  {
+    "context": "The room temperature feels a bit chilly to me. Are you cold?",
+    "abbreviation": "Y <Nurse> .PCBMB?",
+    "target": "Yes Nurse. Please can bring my blanket?"
+  },
+  {
+    "context": "I am going to put on some music. Do you want the classical station or the jazz station?",
+    "abbreviation": "IWPJRT <Dad> .",
+    "target": "I would prefer jazz right today Dad."
+  },
+  {
+    "context": "You look like you are in pain. On a scale of one to ten, how bad is it?",
+    "abbreviation": "IAAS <Dr. Lee> .",
+    "target": "It is a seven Dr. Lee."
+  },
+  {
+    "context": "I am heading out to the library. Do you want me to return your books?",
+    "abbreviation": "Y <Sweetie> .TATOT.",
+    "target": "Yes Sweetie. They are on the table."
+  },
+  {
+    "context": "The cat keeps jumping up on your lap. Is she bothering you?",
+    "abbreviation": "N <Mom> .ILHCWM.",
+    "target": "No Mom. I love her cuddling with me."
+  },
+  {
+    "context": "I am going to adjust the footrests on your wheelchair. Tell me when it feels right.",
+    "abbreviation": "TIF <Paul> .TY.",
+    "target": "That is fine Paul. Thank you."
+  },
+  {
+    "context": "Do you want to watch the news or switch to a movie?",
+    "abbreviation": "LWM <Sam> .TND.",
+    "target": "Let's watch movie Sam. The news depressing."
+  },
+  {
+    "context": "I can see that you are frustrated with the typing speed today.",
+    "abbreviation": "IY <Sis> .ISST.",
+    "target": "It yes Sis. It so slow today."
+  },
+  {
+    "context": "The nurse said your oxygen levels are a little low this morning.",
+    "abbreviation": "IFABSOB <Doctor> .",
+    "target": "I feel a bit short of breath Doctor."
+  },
+  {
+    "context": "We have a choice of chicken soup or grilled cheese for lunch.",
+    "abbreviation": "IWLTS <Grandma> .",
+    "target": "I would like the soup Grandma."
+  },
+  {
+    "context": "I am going to help you brush your teeth now. Open wide.",
+    "abbreviation": "PBC <Nurse> .MGIAG.",
+    "target": "Please be careful Nurse. My gums is are good."
+  },
+  {
+    "context": "Your friend John sent a text asking how you are holding up.",
+    "abbreviation": "T <John> IAMBD.",
+    "target": "Tell John I am much better doing."
+  },
+  {
+    "context": "The television volume is very loud. Do you want me to lower it?",
+    "abbreviation": "Y <Dad> .IHME.",
+    "target": "Yes Dad. It hurting my ears."
+  },
+  {
+    "context": "I am going to clean your glasses. They look very smudged.",
+    "abbreviation": "T <Alice> .ICSBA.",
+    "target": "Thanks Alice. I can see better already."
+  },
+  {
+    "context": "Do you want to sit out on the porch for a while?",
+    "abbreviation": "N <Honey> .IITAO.",
+    "target": "No Honey. It is too allergies outside."
+  },
+  {
+    "context": "I am going to check your feeding tube site.",
+    "abbreviation": "IIT <Nurse> ?",
+    "target": "Is it tender Nurse?"
+  },
+  {
+    "context": "Your dad is asking if you want to go for a drive this weekend.",
+    "abbreviation": "T <Dad> IDFLI.",
+    "target": "Tell Dad I don't feel like it."
+  },
+  {
+    "context": "I am going to read the next chapter of the book. Are you ready?",
+    "abbreviation": "Y <Reader> .IAM.",
+    "target": "Yes Reader. I am moment."
+  },
+  {
+    "context": "The pillows are falling down behind your back.",
+    "abbreviation": "CYFM <Caregiver> ?",
+    "target": "Can you fix me Caregiver?"
+  },
+  {
+    "context": "I am going to wash your hair today. Is the water temperature okay?",
+    "abbreviation": "IIALH <Stylist> .",
+    "target": "It is a little hot Stylist."
+  },
+  {
+    "context": "Do you need to use the bathroom before we get in the car?",
+    "abbreviation": "N <Driver> .IAG.",
+    "target": "No Driver. I am good."
+  },
+  {
+    "context": "I am going to turn off the lights. Do you want the nightlight on?",
+    "abbreviation": "Y <Mom> .IDLTAD.",
+    "target": "Yes Mom. I don't like the all dark."
+  },
+  {
+    "context": "Your cousin is here to visit. Should I send him in?",
+    "abbreviation": "Y <Aunt> .SHI.",
+    "target": "Yes Aunt. Send him in."
+  },
+  {
+    "context": "I am going to rub some lotion on your dry skin.",
+    "abbreviation": "TFGI <Mary> .",
+    "target": "That feels good indeed Mary."
+  },
+  {
+    "context": "Do you want to wear the red shirt or the blue one?",
+    "abbreviation": "IWTB <Wife> .",
+    "target": "I want the blue Wife."
+  },
+  {
+    "context": "I am going to change the channel. Is there anything you want to watch?",
+    "abbreviation": "IWTS <Brother> .",
+    "target": "I want to sports Brother."
+  },
+  {
+    "context": "The dog is barking at the door.",
+    "abbreviation": "LHO <Dad> .",
+    "target": "Let him out Dad."
+  },
+  {
+    "context": "I am going to fix your blanket. It is falling off.",
+    "abbreviation": "T <Kindness> .",
+    "target": "Thanks Kindness."
+  },
+  {
+    "context": "Do you need a drink of water?",
+    "abbreviation": "Y <Nurse> .IMID.",
+    "target": "Yes Nurse. My mouth is dry."
+  },
+  {
+    "context": "I am going to move your arm to a more comfortable position.",
+    "abbreviation": "T <Helper> .IHH.",
+    "target": "Thanks Helper. It hurts here."
+  },
+  {
+    "context": "Do you want to call your son?",
+    "abbreviation": "Y <Mom> .DC.",
+    "target": "Yes Mom. Dial call."
+  },
+  {
+    "context": "I am going to close the window. It is getting windy.",
+    "abbreviation": "T <Dad> .IWC.",
+    "target": "Thanks Dad. I was cold."
+  },
+  {
+    "context": "I am going to wipe your face.",
+    "abbreviation": "O <Cleaner> .",
+    "target": "Okay Cleaner."
+  },
+  {
+    "context": "Do you need anything else before I go?",
+    "abbreviation": "N <Friend> .GN.",
+    "target": "No Friend. Good night."
+  },
+  {
+    "context": "I am going to check your blood pressure.",
+    "abbreviation": "O <Doctor> .",
+    "target": "Okay Doctor."
+  },
+  {
+    "context": "The music is too loud.",
+    "abbreviation": "TID <Sis> .",
+    "target": "Turn it down Sis."
+  },
+  {
+    "context": "I am going to brush your hair.",
+    "abbreviation": "BG <Stylist> .",
+    "target": "Be gentle Stylist."
+  },
+  {
+    "context": "Do you want to go to bed?",
+    "abbreviation": "Y <Tired> .",
+    "target": "Yes Tired."
+  },
+  {
+    "context": "I am going to clean up the room.",
+    "abbreviation": "T <Helper> .",
+    "target": "Thanks Helper."
+  },
+  {
+    "context": "How are you feeling about the surgery tomorrow?",
+    "abbreviation": "IAN <Dr. Phil> .",
+    "target": "I am nervous Dr. Phil."
+  },
+  {
+    "context": "I bought some new flowers for the vase.",
+    "abbreviation": "TAB <Love> .",
+    "target": "They are beautiful Love."
+  },
+  {
+    "context": "Do you want to reply to the email now?",
+    "abbreviation": "N <Secretary> .WDIL.",
+    "target": "No Secretary. We do it later."
+  },
+  {
+    "context": "I am going to stretch your legs.",
+    "abbreviation": "P <Therapist> .DHT.",
+    "target": "Please Therapist. Don't hurt them."
+  },
+  {
+    "context": "The sun is too bright.",
+    "abbreviation": "CTB <Mom> .",
+    "target": "Close the blinds Mom."
+  },
+  {
+    "context": "I am going to get the mail.",
+    "abbreviation": "BMBTB <Son> .",
+    "target": "Bring me the bills Son."
+  },
+  {
+    "context": "Do you want to see the doctor?",
+    "abbreviation": "N <Wife> .IAF.",
+    "target": "No Wife. I am fine."
+  },
+  {
+    "context": "I am going to wash the car.",
+    "abbreviation": "HF <Husband> .",
+    "target": "Have fun Husband."
+  },
+  {
+    "context": "The phone is ringing.",
+    "abbreviation": "WII <Dad> ?",
+    "target": "Who is it Dad?"
+  },
+  {
+    "context": "I am going to make coffee.",
+    "abbreviation": "MMAF <Honey> .",
+    "target": "Make me a fresh Honey."
+  },
+  {
+    "context": "Do you need help with the computer?",
+    "abbreviation": "Y <Tech> .IWTL.",
+    "target": "Yes Tech. It won't turn load."
+  },
+  {
+    "context": "I am going to take a nap.",
+    "abbreviation": "SW <Dear> .",
+    "target": "Sleep well Dear."
+  },
+  {
+    "context": "The kids are playing outside.",
+    "abbreviation": "T <Grandma> .",
+    "target": "That Grandma."
+  },
+  {
+    "context": "I am going to cook dinner.",
+    "abbreviation": "MMS <Chef> .",
+    "target": "Make me soup Chef."
+  },
+  {
+    "context": "Do you want to read?",
+    "abbreviation": "Y <Librarian> .",
+    "target": "Yes Librarian."
+  },
+  {
+    "context": "I am going to clean the floor.",
+    "abbreviation": "O <Maid> .",
+    "target": "Okay Maid."
+  },
+  {
+    "context": "I am going to fix the chair.",
+    "abbreviation": "T <Fixer> .",
+    "target": "Thanks Fixer."
+  },
+  {
+    "context": "The weather looks nice.",
+    "abbreviation": "LGO <Friend> .",
+    "target": "Let's go out Friend."
+  },
+  {
+    "context": "I am going to buy groceries.",
+    "abbreviation": "BMF <Mom> .",
+    "target": "Buy me fruit Mom."
+  },
+  {
+    "context": "Do you want to watch TV?",
+    "abbreviation": "Y <Viewer> .",
+    "target": "Yes Viewer."
+  },
+  {
+    "context": "I am going to wash clothes.",
+    "abbreviation": "O <Washer> .",
+    "target": "Okay Washer."
+  },
+  {
+    "context": "I am going to paint the wall.",
+    "abbreviation": "WC <Painter> ?",
+    "target": "What color Painter?"
+  },
+  {
+    "context": "Do you need money?",
+    "abbreviation": "N <Dad> .",
+    "target": "No Dad."
+  },
+  {
+    "context": "I am going to walk the dog.",
+    "abbreviation": "TB <Walker> .",
+    "target": "Take bag Walker."
+  },
+  {
+    "context": "The baby is crying.",
+    "abbreviation": "PCH <Mom> .",
+    "target": "Please check her Mom."
+  },
+  {
+    "context": "I am going to water the plants.",
+    "abbreviation": "T <Gardener> .",
+    "target": "Thanks Gardener."
+  },
+  {
+    "context": "Do you want to play a game?",
+    "abbreviation": "Y <Player> .",
+    "target": "Yes Player."
+  },
+  {
+    "context": "I am going to clean the window.",
+    "abbreviation": "O <Cleaner> .",
+    "target": "Okay Cleaner."
+  },
+  {
+    "context": "I am going to fix the light.",
+    "abbreviation": "T <Dad> .",
+    "target": "Thanks Dad."
+  },
+  {
+    "context": "The car is broken.",
+    "abbreviation": "C <Mechanic> .",
+    "target": "Call Mechanic."
+  },
+  {
+    "context": "I am going to bake a cake.",
+    "abbreviation": "YC <Baker> .",
+    "target": "Yum chocolate Baker."
+  },
+  {
+    "context": "Do you want to swim?",
+    "abbreviation": "N <Coach> .",
+    "target": "No Coach."
+  },
+  {
+    "context": "I am going to build a shed.",
+    "abbreviation": "GL <Builder> .",
+    "target": "Good luck Builder."
+  },
+  {
+    "context": "The internet is down.",
+    "abbreviation": "FII <Tech> .",
+    "target": "Fix it internet Tech."
+  },
+  {
+    "context": "I am going to sew the button.",
+    "abbreviation": "T <Tailor> .",
+    "target": "Thanks Tailor."
+  },
+  {
+    "context": "Do you want to dance?",
+    "abbreviation": "IC <Partner> .",
+    "target": "I can't Partner."
+  },
+  {
+    "context": "I am going to write a letter.",
+    "abbreviation": "WTI <Writer> .",
+    "target": "Write to it Writer."
+  },
+  {
+    "context": "The door is locked.",
+    "abbreviation": "UI <Key> .",
+    "target": "Unlock it Key."
+  },
+  {
+    "context": "I am going to run a race.",
+    "abbreviation": "G <Runner> .",
+    "target": "Go Runner."
+  },
+  {
+    "context": "Do you want to sing?",
+    "abbreviation": "N <Singer> .",
+    "target": "No Singer."
+  },
+  {
+    "context": "I am going to draw a picture.",
+    "abbreviation": "SM <Artist> .",
+    "target": "Show me Artist."
+  },
+  {
+    "context": "The food is cold.",
+    "abbreviation": "HI <Cook> .",
+    "target": "Heat it Cook."
+  },
+  {
+    "context": "I am going to cut the grass.",
+    "abbreviation": "O <Mower> .",
+    "target": "Okay Mower."
+  },
+  {
+    "context": "Do you want to fly?",
+    "abbreviation": "Y <Pilot> .",
+    "target": "Yes Pilot."
+  },
+  {
+    "context": "I am going to sell the house.",
+    "abbreviation": "W <Agent> ?",
+    "target": "Why Agent?"
+  },
+  {
+    "context": "The book is heavy.",
+    "abbreviation": "PDI <Reader> .",
+    "target": "Put down it Reader."
+  },
+  {
+    "context": "I am going to buy a new car.",
+    "abbreviation": "W <Buyer> ?",
+    "target": "Which Buyer?"
+  },
+  {
+    "context": "Do you want to learn?",
+    "abbreviation": "Y <Student> .",
+    "target": "Yes Student."
+  },
+  {
+    "context": "The doctor is asking how long you have been feeling this nausea.",
+    "abbreviation": "IHBFTWSL <Dr. Chen>",
+    "target": "I have been feeling this way since lunch Dr. Chen."
+  },
+  {
+    "context": "I am going to the mall. Is there anything specific you want me to look for?",
+    "abbreviation": " <Mom> PSMFNPS",
+    "target": "Mom please see me for new pair shoes."
+  },
+  {
+    "context": "You look a little uncomfortable in that position. Do you want to move?",
+    "abbreviation": "Y <Nurse> INTMML",
+    "target": "Yes Nurse I need to move my legs."
+  },
+  {
+    "context": "Your brother is asking if you want to come over for the holidays.",
+    "abbreviation": "T <Mike> IDTIUBFI",
+    "target": "Tell Mike I don't think I up be for it."
+  },
+  {
+    "context": "I see you keep looking at the thermostat. Is it too cold in here?",
+    "abbreviation": "Y <Honey> .CYPTHAT?",
+    "target": "Yes Honey. Can you please turn heat a touch?"
+  },
+  {
+    "context": "I am about to leave for the night. Do you have everything you need?",
+    "abbreviation": " <Sarah> PMMCIPS",
+    "target": "Sarah please make my charger is plugged sure."
+  },
+  {
+    "context": "The speech therapist wants to know if the new settings are better.",
+    "abbreviation": "T <Dr. Ray> TIAME",
+    "target": "Tell Dr. Ray this is a much easier."
+  },
+  {
+    "context": "We can watch a movie or listen to an audiobook. What do you prefer?",
+    "abbreviation": "IRLTA <Dad> .",
+    "target": "I rather listen to audiobooks Dad."
+  },
+  {
+    "context": "I noticed a red spot on your elbow. Does it hurt?",
+    "abbreviation": "IISA <Nurse> .",
+    "target": "It is sore actually Nurse."
+  },
+  {
+    "context": "Your sister sent you a video of her new puppy.",
+    "abbreviation": "SITM <Bro> IWTS",
+    "target": "Show it to me Bro I want to see."
+  },
+  {
+    "context": "I am going to adjust your headrest. Tell me when to stop.",
+    "abbreviation": "R <Paul> TIG",
+    "target": "Right Paul that is good."
+  },
+  {
+    "context": "Do you want to go out into the garden for some fresh air?",
+    "abbreviation": "N <Sweetie> ITTAO",
+    "target": "No Sweetie it too today allergies outside."
+  },
+  {
+    "context": "The nurse is asking if you need more pain medication.",
+    "abbreviation": "T <Her> IAGFN",
+    "target": "Tell Her I am good for now."
+  },
+  {
+    "context": "I am going to type this email for you. What should I say?",
+    "abbreviation": "D <Sir> TYFYE",
+    "target": "Dear Sir thank you for your email."
+  },
+  {
+    "context": "The sun is shining right on your screen.",
+    "abbreviation": " <Mom> CYPCTB",
+    "target": "Mom can you please close the blinds."
+  },
+  {
+    "context": "I am going to get you a drink. Water or juice?",
+    "abbreviation": "IWLAGOW <Alice> .",
+    "target": "I would like a glass of water Alice."
+  },
+  {
+    "context": "Your dad is asking if you want to watch the baseball game.",
+    "abbreviation": "Y <Dad> WIST",
+    "target": "Yes Dad when is starting time?"
+  },
+  {
+    "context": "I feel like the air conditioning is blowing right on you.",
+    "abbreviation": "ICFIMA <Honey> .",
+    "target": "I can feel it my arms Honey."
+  },
+  {
+    "context": "The doctor says your tests look stable.",
+    "abbreviation": "TIGNH <Dr. Lee> .",
+    "target": "That is good news hear Dr. Lee."
+  },
+  {
+    "context": "I am going to move the table closer to you.",
+    "abbreviation": "T <Helper> INMR",
+    "target": "Thanks Helper I need my remote."
+  },
+  {
+    "context": "Do you want to wear the blue sweater or the grey one?",
+    "abbreviation": "TGOMFB <Sis> .",
+    "target": "The grey one matches fits better Sis."
+  },
+  {
+    "context": "I am going to fix your pillow. Is that better?",
+    "abbreviation": "M <Nurse> T",
+    "target": "Much Nurse thanks."
+  },
+  {
+    "context": "Your friend Mark is here. Do you feel up to a visit?",
+    "abbreviation": "S <Mark> I .IAMT",
+    "target": "Send Mark in. I am moment tired."
+  },
+  {
+    "context": "I am going to turn on the TV. What channel?",
+    "abbreviation": "PTOTC <Dad> .",
+    "target": "Put to on the channel Dad."
+  },
+  {
+    "context": "Do you need to use the suction machine?",
+    "abbreviation": "Y <RT> IFC",
+    "target": "Yes RT I feel congested."
+  },
+  {
+    "context": "I am going to read the news to you.",
+    "abbreviation": "RMTSH <Dear> .",
+    "target": "Read me the sports headlines Dear."
+  },
+  {
+    "context": "The cat is sleeping on your legs. Is that okay?",
+    "abbreviation": "SITH <Mom> .",
+    "target": "She is too heavy Mom."
+  },
+  {
+    "context": "I am going to rub your feet. They look swollen.",
+    "abbreviation": "T <Caregiver> TFGB",
+    "target": "That Caregiver that feels good better."
+  },
+  {
+    "context": "Do you want to call your daughter?",
+    "abbreviation": "Y <Honey> CNH",
+    "target": "Yes Honey call now her."
+  },
+  {
+    "context": "I am going to close the door to reduce the noise.",
+    "abbreviation": "T <Dad> IIVL",
+    "target": "Thanks Dad it is very loud."
+  },
+  {
+    "context": "I am going to change the music. Anything specific?",
+    "abbreviation": "PSCM <DJ> .",
+    "target": "Play some classical music DJ."
+  },
+  {
+    "context": "How is the soup? Is it warm enough?",
+    "abbreviation": "IIAC <Chef> .",
+    "target": "It is a cold Chef."
+  },
+  {
+    "context": "I am going to move your arm back to the armrest.",
+    "abbreviation": "P <Mover> BG",
+    "target": "Please Mover be gentle."
+  },
+  {
+    "context": "Do you need anything from the store?",
+    "abbreviation": "BMSIC <Mom> .",
+    "target": "Buy me some ice cream Mom."
+  },
+  {
+    "context": "I am going to wash your face now.",
+    "abbreviation": "UWC <Nurse> .",
+    "target": "Use warm cloth Nurse."
+  },
+  {
+    "context": "I am going to fix the sheets. They are tangled.",
+    "abbreviation": "T <Fixer> MFM",
+    "target": "Thanks Fixer my feet messy."
+  },
+  {
+    "context": "Do you want to sit up a little higher?",
+    "abbreviation": "Y <Sitter> PMU",
+    "target": "Yes Sitter pull me up."
+  },
+  {
+    "context": "I am going to turn off the lights. Goodnight.",
+    "abbreviation": "GN <Love> SW",
+    "target": "Good night Love sleep well."
+  },
+  {
+    "context": "The computer screen is dusty.",
+    "abbreviation": "CICP <Cleaner> ?",
+    "target": "Can it clean please Cleaner?"
+  },
+  {
+    "context": "I am going to open the window for fresh air.",
+    "abbreviation": "D <Dad> ITC",
+    "target": "Don't Dad it too cold."
+  },
+  {
+    "context": "Do you want to watch a comedy movie?",
+    "abbreviation": "N <Viewer> IWA",
+    "target": "No Viewer I want action."
+  },
+  {
+    "context": "I am going to brush your hair. It is messy.",
+    "abbreviation": "P <Stylist> DPH",
+    "target": "Please Stylist don't pull hard."
+  },
+  {
+    "context": "I am going to clean your glasses.",
+    "abbreviation": "T <Helper> ICS",
+    "target": "Thanks Helper I cannot see."
+  },
+  {
+    "context": "The food looks delicious today.",
+    "abbreviation": "IINH <Cook> .",
+    "target": "I is not hungry Cook."
+  },
+  {
+    "context": "I am going to move the chair closer.",
+    "abbreviation": "O <Mover> T",
+    "target": "Okay Mover thanks."
+  },
+  {
+    "context": "Do you need your medication now?",
+    "abbreviation": "WTI <Nurse> ?",
+    "target": "What time is Nurse?"
+  },
+  {
+    "context": "I am going to write that down for you.",
+    "abbreviation": "T <Writer> II",
+    "target": "Thanks Writer it important."
+  },
+  {
+    "context": "The dog wants to go out.",
+    "abbreviation": "LHO <Walker> .",
+    "target": "Let him out Walker."
+  },
+  {
+    "context": "I am going to fix the leaking tap.",
+    "abbreviation": "G <Plumber> .",
+    "target": "Good Plumber."
+  },
+  {
+    "context": "Do you want to see the photos from the trip?",
+    "abbreviation": "Y <Visitor> SM",
+    "target": "Yes Visitor show me."
+  },
+  {
+    "context": "I am going to water the plants on the balcony.",
+    "abbreviation": "DF <Gardener> .",
+    "target": "Don't forget Gardener."
+  },
+  {
+    "context": "I am going to clean the kitchen floor.",
+    "abbreviation": "B <Cleaner> IW",
+    "target": "Be Cleaner it wet."
+  },
+  {
+    "context": "I am going to paint the bedroom wall.",
+    "abbreviation": "WC <Painter> ?",
+    "target": "What color Painter?"
+  },
+  {
+    "context": "Do you want to learn Spanish?",
+    "abbreviation": "M <Teacher> L",
+    "target": "Maybe Teacher later."
+  },
+  {
+    "context": "I am going to sell the old car.",
+    "abbreviation": "HM <Seller> ?",
+    "target": "How much Seller?"
+  },
+  {
+    "context": "I am going to buy a new laptop.",
+    "abbreviation": "GMAM <Buyer> .",
+    "target": "Get me a Mac Buyer."
+  },
+  {
+    "context": "I am going to cook a steak.",
+    "abbreviation": "MR <Chef> .",
+    "target": "Medium rare Chef."
+  },
+  {
+    "context": "I am going to bake cookies.",
+    "abbreviation": "MCC <Baker> .",
+    "target": "Make chocolate chip Baker."
+  },
+  {
+    "context": "I am going to sew the tear in your shirt.",
+    "abbreviation": "T <Tailor> .",
+    "target": "Thanks Tailor."
+  },
+  {
+    "context": "I am going to run to the post office.",
+    "abbreviation": "BMS <Runner> .",
+    "target": "Buy me stamps Runner."
+  },
+  {
+    "context": "I am going to drive to the city.",
+    "abbreviation": "DS <Driver> .",
+    "target": "Drive safe Driver."
+  },
+  {
+    "context": "I am going to fly to New York.",
+    "abbreviation": "H <Pilot> F",
+    "target": "Have Pilot fun."
+  },
+  {
+    "context": "I am going to swim in the pool.",
+    "abbreviation": "W <Swimmer> ?",
+    "target": "Water Swimmer?"
+  },
+  {
+    "context": "I am going to cut your hair.",
+    "abbreviation": "JS <Barber> .",
+    "target": "Just short Barber."
+  },
+  {
+    "context": "I am going to build a bookshelf.",
+    "abbreviation": "N <Builder> T",
+    "target": "Nice Builder thanks."
+  },
+  {
+    "context": "I am going to fix the car engine.",
+    "abbreviation": "C <Mechanic> F",
+    "target": "Can Mechanic fix?"
+  },
+  {
+    "context": "I am going to play the guitar.",
+    "abbreviation": "PS <Musician> .",
+    "target": "Play song Musician."
+  },
+  {
+    "context": "I am going to sing a song.",
+    "abbreviation": "L <Singer> .",
+    "target": "Loud Singer."
+  },
+  {
+    "context": "I am going to dance with you.",
+    "abbreviation": "I <Dancer> C",
+    "target": "I Dancer can't."
+  },
+  {
+    "context": "I am going to draw a portrait.",
+    "abbreviation": "M <Artist> G",
+    "target": "Make Artist good."
+  },
+  {
+    "context": "I am going to write a poem.",
+    "abbreviation": "R <Poet> I",
+    "target": "Read Poet it."
+  },
+  {
+    "context": "I am going to read a story.",
+    "abbreviation": "T <Reader> S",
+    "target": "Tell Reader story."
+  },
+  {
+    "context": "I am going to act in a play.",
+    "abbreviation": "B <Actor> L",
+    "target": "Break Actor leg."
+  },
+  {
+    "context": "I am going to direct a movie.",
+    "abbreviation": "A <Director>",
+    "target": "Action Director!"
+  },
+  {
+    "context": "I am going to produce a song.",
+    "abbreviation": "H <Producer>",
+    "target": "Hit Producer."
+  },
+  {
+    "context": "I am going to edit the video.",
+    "abbreviation": "C <Editor> I",
+    "target": "Cut Editor it."
+  },
+  {
+    "context": "I am going to design a logo.",
+    "abbreviation": "U <Designer> C",
+    "target": "Use Designer color."
+  },
+  {
+    "context": "I am going to code a program.",
+    "abbreviation": "N <Coder> B",
+    "target": "No Coder bugs."
+  },
+  {
+    "context": "I am going to test the software.",
+    "abbreviation": "F <Tester> E",
+    "target": "Find Tester errors."
+  },
+  {
+    "context": "I am going to analyze the data.",
+    "abbreviation": "S <Analyst> R",
+    "target": "Show Analyst results."
+  },
+  {
+    "context": "I am going to manage the team.",
+    "abbreviation": "L <Manager> W",
+    "target": "Lead Manager well."
+  },
+  {
+    "context": "I am going to sell the product.",
+    "abbreviation": "G <Salesman> P",
+    "target": "Good Salesman price."
+  },
+  {
+    "context": "I am going to buy the company.",
+    "abbreviation": "B <Investor> D",
+    "target": "Big Investor deal."
+  },
+  {
+    "context": "I am going to hire a new employee.",
+    "abbreviation": "G <Recruiter> L",
+    "target": "Good Recruiter luck."
+  },
+  {
+    "context": "I am going to fire the worker.",
+    "abbreviation": "W <Boss> ?",
+    "target": "Why Boss?"
+  },
+  {
+    "context": "I am going to train the staff.",
+    "abbreviation": "T <Trainer> W",
+    "target": "Teach Trainer well."
+  },
+  {
+    "context": "I am going to consult with the client.",
+    "abbreviation": "L <Consultant> .",
+    "target": "Listen Consultant."
+  },
+  {
+    "context": "I am going to advise the board.",
+    "abbreviation": "S <Advisor> S",
+    "target": "Speak Advisor sense."
+  },
+  {
+    "context": "I am going to audit the accounts.",
+    "abbreviation": "C <Auditor> C",
+    "target": "Check Auditor carefully."
+  },
+  {
+    "context": "I am going to tax the income.",
+    "abbreviation": "H <Taxman> ?",
+    "target": "How Taxman much?"
+  },
+  {
+    "context": "I am going to sue the company.",
+    "abbreviation": "W <Lawyer> ?",
+    "target": "Win Lawyer?"
+  },
+  {
+    "context": "I am going to judge the case.",
+    "abbreviation": "B <Judge> F",
+    "target": "Be Judge fair."
+  },
+  {
+    "context": "I am going to defend the accused.",
+    "abbreviation": "F <Defender> H",
+    "target": "Fight Defender hard."
+  },
+  {
+    "context": "I am going to prosecute the criminal.",
+    "abbreviation": "P <Prosecutor> G",
+    "target": "Prove Prosecutor guilt."
+  },
+  {
+    "context": "I am going to arrest the suspect.",
+    "abbreviation": "B <Officer> C",
+    "target": "Be Officer careful."
+  },
+  {
+    "context": "I am going to guard the prisoner.",
+    "abbreviation": "W <Guard> C",
+    "target": "Watch Guard close."
+  },
+  {
+    "context": "I am going to spy on the enemy.",
+    "abbreviation": "D <Spy> C",
+    "target": "Don't Spy caught."
+  },
+  {
+    "context": "I am going to fight the war.",
+    "abbreviation": "S <Soldier> S",
+    "target": "Stay Soldier safe."
+  },
+  {
+    "context": "I am going to heal the wounded.",
+    "abbreviation": "S <Medic> L",
+    "target": "Save Medic lives."
+  },
+  {
+    "context": "I am going to preach the sermon.",
+    "abbreviation": "S <Preacher> T",
+    "target": "Speak Preacher truth."
+  },
+  {
+    "context": "I am going to pray for you.",
+    "abbreviation": "T <Priest> .",
+    "target": "Thanks Priest."
+  },{
+    "context": "The doctor needs to know exactly when the symptoms started appearing.",
+    "abbreviation": "IBFDPISL <Dr. Smith>",
+    "target": "I began feeling dizzy pain immediately since lunch Dr. Smith."
+  },
+  {
+    "context": "I am going to the library. Do you want me to pick up anything for you?",
+    "abbreviation": " <Mom> PGMABOA",
+    "target": "Mom please get me a book on astronomy."
+  },
+  {
+    "context": "You look like you are squinting. Is the screen too bright for you?",
+    "abbreviation": "Y <Honey> ICSRW",
+    "target": "Yes Honey I cannot see read well."
+  },
+  {
+    "context": "We are deciding on what to have for Sunday dinner. Any requests?",
+    "abbreviation": "IWLTRBAP <Grandma>",
+    "target": "I would like the roast beef and potatoes Grandma."
+  },
+  {
+    "context": "The nurse is asking if the new medication is making you feel nauseous.",
+    "abbreviation": "N <Nurse Joy> IFMA",
+    "target": "No Nurse Joy I feel much alert."
+  },
+  {
+    "context": "Your brother wants to know if you are up for a short visit today.",
+    "abbreviation": "T <Mike> IAMTEFT",
+    "target": "Tell Mike I am much too exhausted for that."
+  },
+  {
+    "context": "I noticed you keep rubbing your neck. Is it stiff again?",
+    "abbreviation": "Y <Dad> INAM",
+    "target": "Yes Dad I need a massage."
+  },
+  {
+    "context": "I am heading to the pharmacy. Do you need a refill on anything?",
+    "abbreviation": "PPUAE <Sarah>",
+    "target": "Please pick up an epipen Sarah."
+  },
+  {
+    "context": "The room feels a bit stuffy. Should I open the window or turn on the AC?",
+    "abbreviation": "IWPTOA <Alice>",
+    "target": "I would prefer the open air Alice."
+  },
+  {
+    "context": "Your sister sent a video of the kids playing soccer. Do you want to see it?",
+    "abbreviation": "Y <Bro> IWLTS",
+    "target": "Yes Bro I would love to see."
+  },
+  {
+    "context": "I am about to adjust the incline of your bed. Tell me when to stop.",
+    "abbreviation": "TIGRT <Paul>",
+    "target": "That is good right there Paul."
+  },
+  {
+    "context": "Do you want to listen to the news or some music while you rest?",
+    "abbreviation": "PLTCR <Sam>",
+    "target": "Please leave the classical radio Sam."
+  },
+  {
+    "context": "You seem to be having trouble swallowing the water.",
+    "abbreviation": "INATF <Nurse>",
+    "target": "I need a thickener for fluid Nurse."
+  },
+  {
+    "context": "I am going to write a reply to your friend's email. What should I say?",
+    "abbreviation": "T <John> IWMV",
+    "target": "Tell John I will miss visiting."
+  },
+  {
+    "context": "The sun is shining directly in your eyes.",
+    "abbreviation": "CYPLTB <Mom> ?",
+    "target": "Can you please lower the blinds Mom?"
+  },
+  {
+    "context": "I am getting a coffee. Do you want anything from the kitchen?",
+    "abbreviation": "JAGOW <Sweetie> .",
+    "target": "Just a glass of water Sweetie."
+  },
+  {
+    "context": "Your father is asking if you want to watch the golf tournament.",
+    "abbreviation": "N <Dad> IIB",
+    "target": "No Dad it is boring."
+  },
+  {
+    "context": "I feel a draft coming from the hallway door.",
+    "abbreviation": "CYPCTD <Honey>",
+    "target": "Can you please close the door Honey."
+  },
+  {
+    "context": "The respiratory therapist is here to check your settings.",
+    "abbreviation": "HIIGTSY <Dr. Ray>",
+    "target": "Hi it is good to see you Dr. Ray."
+  },
+  {
+    "context": "I am going to move the tray table closer to you.",
+    "abbreviation": "T <Helper> INMR",
+    "target": "Thanks Helper I need my remote."
+  },
+  {
+    "context": "Do you want to wear the green shirt or the blue one today?",
+    "abbreviation": "IWTG <Sis>",
+    "target": "I want the green Sis."
+  },
+  {
+    "context": "I am going to adjust your pillow. Is that better?",
+    "abbreviation": "MT <Nurse> A <Helper>",
+    "target": "Much thanks Nurse and Helper."
+  },
+  {
+    "context": "Your friend Mark is here. Do you feel up to a visit?",
+    "abbreviation": "S <Mark> I",
+    "target": "Send Mark in."
+  },
+  {
+    "context": "I am going to turn on the TV. What channel?",
+    "abbreviation": "POTC <Dad>",
+    "target": "Put on the channel Dad."
+  },
+  {
+    "context": "Do you need to use the suction machine?",
+    "abbreviation": "Y <RT> IFC",
+    "target": "Yes RT I feel congested."
+  },
+  {
+    "context": "I am going to read the news to you.",
+    "abbreviation": "RMTSH <Dear>",
+    "target": "Read me the sports headlines Dear."
+  },
+  {
+    "context": "The cat is sleeping on your legs. Is that okay?",
+    "abbreviation": "SITH <Mom>",
+    "target": "She is too heavy Mom."
+  },
+  {
+    "context": "I am going to rub your feet. They look swollen.",
+    "abbreviation": "T <Caregiver> TFGB",
+    "target": "That Caregiver that feels good better."
+  },
+  {
+    "context": "Do you want to call your daughter?",
+    "abbreviation": "Y <Honey> CNH",
+    "target": "Yes Honey call now her."
+  },
+  {
+    "context": "I am going to close the door to reduce the noise.",
+    "abbreviation": "T <Dad> IIVL",
+    "target": "Thanks Dad it is very loud."
+  },
+  {
+    "context": "I am going to change the music. Anything specific?",
+    "abbreviation": "PSCM <DJ>",
+    "target": "Play some classical music DJ."
+  },
+  {
+    "context": "How is the soup? Is it warm enough?",
+    "abbreviation": "IIAC <Chef>",
+    "target": "It is a cold Chef."
+  },
+  {
+    "context": "I am going to move your arm back to the armrest.",
+    "abbreviation": "P <Mover> BG",
+    "target": "Please Mover be gentle."
+  },
+  {
+    "context": "Do you need anything from the store?",
+    "abbreviation": "BMSIC <Mom>",
+    "target": "Buy me some ice cream Mom."
+  },
+  {
+    "context": "I am going to wash your face now.",
+    "abbreviation": "UWC <Nurse>",
+    "target": "Use warm cloth Nurse."
+  },
+  {
+    "context": "I am going to fix the sheets. They are tangled.",
+    "abbreviation": "T <Fixer> MFM",
+    "target": "Thanks Fixer my feet messy."
+  },
+  {
+    "context": "Do you want to sit up a little higher?",
+    "abbreviation": "Y <Sitter> PMU",
+    "target": "Yes Sitter pull me up."
+  },
+  {
+    "context": "I am going to turn off the lights. Goodnight.",
+    "abbreviation": "GN <Love> SW",
+    "target": "Good night Love sleep well."
+  },
+  {
+    "context": "The computer screen is dusty.",
+    "abbreviation": "CICP <Cleaner>",
+    "target": "Can it clean please Cleaner."
+  },
+   {
+    "context": "The doctor is asking about your pain levels today.",
+    "abbreviation": "IMFASPIMLB <Yousef> .",
+    "target": "I am feeling a sharp pain in my lower back Yousef."
+  },
+  {
+    "context": "I am heading to the kitchen. Do you need anything?",
+    "abbreviation": " <Alex> ,IWLAGOWAI.",
+    "target": "Alex, I would like a glass of water and ice."
+  },
+  {
+    "context": "You look a bit uncomfortable. Do you want me to adjust the bed?",
+    "abbreviation": "Y <Lorenzo> .PRAMH.",
+    "target": "Yes Lorenzo. Please raise a my head."
+  },
+  {
+    "context": "Your favorite show is starting in five minutes.",
+    "abbreviation": " <Yuno> ,CTOTFMC?",
+    "target": "Yuno, can turn on the family movie channel?"
+  },
+  {
+    "context": "I am going to the pharmacy. Do you need a refill?",
+    "abbreviation": "PPUAMEF <Wei> .",
+    "target": "Please pick up a my eyedrops from Wei."
+  },
+  {
+    "context": "The sun is shining directly on your face.",
+    "abbreviation": " <Hiro> ,CYPLTB?",
+    "target": "Hiro, can you please lower the blinds?"
+  },
+  {
+    "context": "I noticed you are rubbing your neck.",
+    "abbreviation": "IFVS <Sven> .INAM.",
+    "target": "I feel very stiff Sven. I need a massage."
+  },
+  {
+    "context": "We are deciding on dinner. What are you craving?",
+    "abbreviation": "IWLTSWA <Lars> .",
+    "target": "I would like the steak with asparagus Lars."
+  },
+  {
+    "context": "The nurse needs to know if you are allergic to this medication.",
+    "abbreviation": "T <Giovanni> IANA.",
+    "target": "Tell Giovanni I am not allergic."
+  },
+  {
+    "context": "Your sister sent an email. Do you want me to read it?",
+    "abbreviation": "Y <Dmitri> .PRITM.",
+    "target": "Yes Dmitri. Please read it to me."
+  },
+  {
+    "context": "The room feels very cold today.",
+    "abbreviation": " <Fatima> ,CYGMBB?",
+    "target": "Fatima, can you get my blue blanket?"
+  },
+  {
+    "context": "I am going to fix your pillow.",
+    "abbreviation": "T <Aisha> .IIB.",
+    "target": "Thanks Aisha. It is better."
+  },
+  {
+    "context": "Do you want to listen to music?",
+    "abbreviation": " <Priya> ,PSCM.",
+    "target": "Priya, play some classical music."
+  },
+  {
+    "context": "I am going to clean your glasses.",
+    "abbreviation": "T <Ananya> .ICSCN.",
+    "target": "Thanks Ananya. I can see clearly now."
+  },
+  {
+    "context": "The cat is jumping on the bed.",
+    "abbreviation": " <Mei> ,PDLHB.",
+    "target": "Mei, please don't let her bite."
+  },
+  {
+    "context": "I am going to open the window.",
+    "abbreviation": "N <Yuki> .ITC.",
+    "target": "No Yuki. It too cold."
+  },
+  {
+    "context": "Do you need to use the bathroom?",
+    "abbreviation": "Y <Zara> .IHTG.",
+    "target": "Yes Zara. I have to go."
+  },
+  {
+    "context": "I am going to move the chair.",
+    "abbreviation": " <Ximena> ,PMIC.",
+    "target": "Ximena, please move it closer."
+  },
+  {
+    "context": "Do you want to watch a movie?",
+    "abbreviation": "N <Valentina> .IWT.",
+    "target": "No Valentina. I was tired."
+  },
+  {
+    "context": "I am going to wash your face.",
+    "abbreviation": " <Cassius> ,UWC.",
+    "target": "Cassius, use warm cloth."
+  },
+  {
+    "context": "The dog is barking loudly.",
+    "abbreviation": " <Thaddeus> LHO",
+    "target": "Thaddeus, let him out."
+  },
+  {
+    "context": "I am going to cook dinner.",
+    "abbreviation": " <Bartholomew> ,MMS.",
+    "target": "Bartholomew, make me soup."
+  },
+  {
+    "context": "Do you want to read a book?",
+    "abbreviation": "Y <Octavia> RMA",
+    "target": "Yes Octavia. Read me adventure."
+  },
+  {
+    "context": "I am going to turn off the lights.",
+    "abbreviation": "GN <Seraphina>",
+    "target": "Good night Seraphina."
+  },
+  {
+    "context": "Do you need suction?",
+    "abbreviation": "Y <Clementine> IFC",
+    "target": "Yes Clementine. I feel congested."
+  },
+  {
+    "context": "I am going to call your son.",
+    "abbreviation": " <Liam> ,CNH.",
+    "target": "Liam, call now him."
+  },
+  {
+    "context": "I am going to water the plants.",
+    "abbreviation": "DF <Noah>",
+    "target": "Don't forget Noah."
+  },
+
+  {
+    "context": "I am going to buy groceries.",
+    "abbreviation": " <Elijah> ,BMF.",
+    "target": "Elijah, buy me fruit."
+  },
+  {
+    "context": "The phone is ringing.",
+    "abbreviation": "WII <James> ?",
+    "target": "Who is it James?"
+  },
+  {
+    "context": "I am going to fix the leaking tap.",
+    "abbreviation": "T <William>",
+    "target": "Thanks William."
+  },
+  {
+    "context": "Do you want to see the photos?",
+    "abbreviation": "Y <Benjamin> SM",
+    "target": "Yes Benjamin. Show me."
+  },
+  {
+    "context": "I am going to paint the wall.",
+    "abbreviation": "WC <Lucas> ?",
+    "target": "What color Lucas?"
+  },
+  {
+    "context": "Do you want to learn Spanish?",
+    "abbreviation": "M <Henry> L.",
+    "target": "Maybe Henry later."
+  },
+  {
+    "context": "I am going to sell the car.",
+    "abbreviation": "HM <Theodore> ?",
+    "target": "How much Theodore?"
+  },
+  {
+    "context": "I am going to buy a laptop.",
+    "abbreviation": " <Emma> ,GMAM.",
+    "target": "Emma, get me a Mac."
+  },
+  {
+    "context": "I am going to cook steak.",
+    "abbreviation": "MR <Charlotte>",
+    "target": "Medium rare Charlotte."
+  },
+  {
+    "context": "I am going to bake cookies.",
+    "abbreviation": "MCC <Amelia>",
+    "target": "Make chocolate chip Amelia."
+  },
+  {
+    "context": "I am going to sew the shirt.",
+    "abbreviation": "T <Ava>",
+    "target": "Thanks Ava."
+  },
+  {
+    "context": "I am going to run errands.",
+    "abbreviation": "BMS <Sophia>",
+    "target": "Buy me stamps Sophia."
+  },
+  {
+    "context": "I am going to drive to the city.",
+    "abbreviation": "DS <Isabella>",
+    "target": "Drive safe Isabella."
+  },
+  {
+    "context": "I am going to fly to New York.",
+    "abbreviation": "HF <Mia>",
+    "target": "Have fun Mia."
+  },
+  {
+    "context": "I am going to swim.",
+    "abbreviation": " <Evelyn> ,W?",
+    "target": "Evelyn, water?"
+  },
+  {
+    "context": "I am going to cut your hair.",
+    "abbreviation": "JS <Harper>",
+    "target": "Just short Harper."
+  },
+  {
+    "context": "I am going to build a shelf.",
+    "abbreviation": "N <Aaliyah>",
+    "target": "Nice Aaliyah."
+  },
+  {
+    "context": "I am going to fix the engine.",
+    "abbreviation": "C <Aaron> F?",
+    "target": "Can Aaron fix?"
+  },
+  {
+    "context": "I am going to play guitar.",
+    "abbreviation": "PS <Abigail>",
+    "target": "Play song Abigail."
+  },{
+    "context": "The doctor is asking about your pain levels today.",
+    "abbreviation": "IMFASPIMLB <Yousef>",
+    "target": "I am feeling a sharp pain in my lower back Yousef."
+  },
+  {
+    "context": "I am heading to the kitchen. Do you need anything?",
+    "abbreviation": " <Alex> ,IWLAGOWAI",
+    "target": "Alex, I would like a glass of water and ice."
+  },
+  {
+    "context": "You look a bit uncomfortable. Do you want me to adjust the bed?",
+    "abbreviation": "Y <Lorenzo> PRAMH",
+    "target": "Yes Lorenzo. Please raise a my head."
+  },
+  {
+    "context": "Your favorite show is starting in five minutes.",
+    "abbreviation": " <Yuno> ,CTOTFMC?",
+    "target": "Yuno, can turn on the family movie channel?"
+  },
+  {
+    "context": "I am going to the pharmacy. Do you need a refill?",
+    "abbreviation": "PPUAMEF <Wei>",
+    "target": "Please pick up a my eyedrops from Wei."
+  },
+  {
+    "context": "The sun is shining directly on your face.",
+    "abbreviation": " <Hiro> ,CYPLTB?",
+    "target": "Hiro, can you please lower the blinds?"
+  },
+  {
+    "context": "I noticed you are rubbing your neck.",
+    "abbreviation": "IFVS <Sven> INAM",
+    "target": "I feel very stiff Sven. I need a massage."
+  },
+  {
+    "context": "We are deciding on dinner. What are you craving?",
+    "abbreviation": "IWLTSWA <Lars>",
+    "target": "I would like the steak with asparagus Lars."
+  },
+  {
+    "context": "The nurse needs to know if you are allergic to this medication.",
+    "abbreviation": "T <Giovanni> IANA",
+    "target": "Tell Giovanni I am not allergic."
+  },
+  {
+    "context": "Your sister sent an email. Do you want me to read it?",
+    "abbreviation": "Y <Dmitri> PRITM",
+    "target": "Yes Dmitri. Please read it to me."
+  },
+  {
+    "context": "The room feels very cold today.",
+    "abbreviation": " <Fatima> ,CYGMBB?",
+    "target": "Fatima, can you get my blue blanket?"
+  },
+  {
+    "context": "I am going to fix your pillow.",
+    "abbreviation": "T <Aisha> .IIB.",
+    "target": "Thanks Aisha. It is better."
+  },
+  {
+    "context": "Do you want to listen to music?",
+    "abbreviation": " <Priya> ,PSCM.",
+    "target": "Priya, play some classical music."
+  },
+  {
+    "context": "I am going to clean your glasses.",
+    "abbreviation": "T <Ananya> ICSC",
+    "target": "Thanks Ananya. I can see clearly now."
+  },
+  {
+    "context": "The cat is jumping on the bed.",
+    "abbreviation": " <Mei> ,PDLHB.",
+    "target": "Mei, please don't let her bite."
+  },
+  {
+    "context": "I am going to open the window.",
+    "abbreviation": "N <Yuki> .ITC.",
+    "target": "No Yuki. It too cold."
+  },
+  {
+    "context": "Do you need to use the bathroom?",
+    "abbreviation": "Y <Zara> .IHTG.",
+    "target": "Yes Zara. I have to go."
+  },
+  {
+    "context": "I am going to move the chair.",
+    "abbreviation": " <Ximena> ,PMIC.",
+    "target": "Ximena, please move it closer."
+  },
+  {
+    "context": "Do you want to watch a movie?",
+    "abbreviation": "N <Valentina> .IWT.",
+    "target": "No Valentina. I was tired."
+  },
+  {
+    "context": "I am going to wash your face.",
+    "abbreviation": " <Cassius> ,UWC.",
+    "target": "Cassius, use warm cloth."
+  },
+  {
+    "context": "The dog is barking loudly.",
+    "abbreviation": " <Thaddeus> ,LHO.",
+    "target": "Thaddeus, let him out."
+  },
+  {
+    "context": "I am going to cook dinner.",
+    "abbreviation": " <Bartholomew> ,MMS.",
+    "target": "Bartholomew, make me soup."
+  },
+  {
+    "context": "Do you want to read a book?",
+    "abbreviation": "Y <Octavia> .RMA.",
+    "target": "Yes Octavia. Read me adventure."
+  },
+  {
+    "context": "I am going to turn off the lights.",
+    "abbreviation": "GN <Seraphina> .",
+    "target": "Good night Seraphina."
+  },
+  {
+    "context": "Do you need suction?",
+    "abbreviation": "Y <Clementine> .IFC.",
+    "target": "Yes Clementine. I feel congested."
+  },
+  {
+    "context": "I am going to call your son.",
+    "abbreviation": " <Liam> ,CNH.",
+    "target": "Liam, call now him."
+  },
+  {
+    "context": "I am going to water the plants.",
+    "abbreviation": "DF <Noah> .",
+    "target": "Don't forget Noah."
+  },
+  {
+    "context": "Do you want to go outside?",
+    "abbreviation": " <Oliver> ,IWLTAGFW.",
+    "target": "Oliver, I would like to go for walk."
+  },
+
+
+  {
+    "context": "",
+    "abbreviation": "IWWIYCHMWTSOMC <Liam> ",
+    "target": "I was wondering if you could help me with the settings on my computer Liam."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYTWHETTFWTMBD <Sophia> ?",
+    "target": "Do you think we have enough time to finish watching the movie before dinner Sophia?"
+  },
+  {
+    "context": "",
+    "abbreviation": "INTMAYWMSMHIIP <Noah> .",
+    "target": "I noticed that my arm yanks when my shoulder moves high. I'm in pain Noah."
+  },
+  {
+    "context": "",
+    "abbreviation": "WITAFA <Emma> ?",
+    "target": "When is the appointment for allergies Emma?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYPLTBIITBC <Charlotte> ",
+    "target": "Could you please lower the blinds, it is too bright Charlotte."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFLTISCIMT <Elijah> .",
+    "target": "I feel like there is something is caught in my throat Elijah."
+  },
+  {
+    "context": "",
+    "abbreviation": "WYBATTMBFTL <Amelia> ?",
+    "target": "Will you be able to take my book from the library Amelia?"
+  },
+  {
+    "context": "",
+    "abbreviation": "HTDKWIWTLMP <Ava> .",
+    "target": "Honestly, I don't know where I want to leave my phone Ava."
+  },
+  {
+    "context": "",
+    "abbreviation": "HIIGTSYAAA <Benjamin> ",
+    "target": "Hey it is good to see you again after awhile Benjamin."
+  },
+  {
+    "context": "",
+    "abbreviation": "AWOFTWFOD <Isabella> ",
+    "target": "Are we ordering food this weekend for our dinner Isabella?"
+  },
+  {
+    "context": "",
+    "abbreviation": "TBIALBA <Lucas> ",
+    "target": "The blanket is alittle bit askew Lucas"
+  },
+  {
+    "context": "",
+    "abbreviation": "DYRW <Aunt Helen> ST <Mia> ?",
+    "target": "Do you remember what aunt Helen said today Mia?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IWHWCSTW <Peter> and <Mason> .",
+    "target": "I was hoping we could spend time with Peter and Mason."
+  },
+  {
+    "context": "",
+    "abbreviation": "TNOTOIVL <Ethan> ",
+    "target": "The noise outside the office is very loud Ethan."
+  },
+  {
+    "context": "",
+    "abbreviation": "HYSMRG <Harper> ?",
+    "target": "Have you seen my reading glasses Harper?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IDTIFUTVT <Alexander> .",
+    "target": "I don't think I feel up to visitors today Alexander."
+  },
+  {
+    "context": "",
+    "abbreviation": "WSTGS <Gianna> ",
+    "target": "When should the game start Gianna?"
+  },
+  {
+    "context": "",
+    "abbreviation": "MBIKMT <Michael> ",
+    "target": "My back is killing me today Michael."
+  },
+  {
+    "context": "",
+    "abbreviation": "WDTDA <Elizabeth> ",
+    "target": "When does the doctor arrive Elizabeth?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IFABAAT <Daniel> ",
+    "target": "I feel a bit anxious about tomorrow Daniel."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCITIAEMFM <Ella> ",
+    "target": "Can you check if there is an email message for me Ella?"
+  },
+  {
+    "context": "",
+    "abbreviation": "ISIGTRT <Jacob> ",
+    "target": "It seems it's going to rain today Jacob."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTHSSFU <Avery> ",
+    "target": "I would like to have some soup for lunch Avery."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYKWTKAP <Logan> ?",
+    "target": "Do you know where the keys are put Logan?"
+  },
+  {
+    "context": "",
+    "abbreviation": "MFIHAL <Sofia> .",
+    "target": "My foot is hurting a lot Sofia."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWTWATTY <Jackson> .",
+    "target": "I wanted to write a text to you Jackson."
+  },
+  {
+    "context": "",
+    "abbreviation": "CWPOSMFC <Jack> ?",
+    "target": "Can we put on some music for calm Jack?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IHAIOME <Abigail> ",
+    "target": "I have an itch on my ear Abigail."
+  }
+]

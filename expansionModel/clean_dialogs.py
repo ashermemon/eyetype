@@ -1,5 +1,10 @@
+from string import punctuation
 import re
 import ast
+import random
+
+
+random.seed(42)
 
 def pick_sentences(str):
     # length filter (3 to 12 words)
@@ -47,25 +52,24 @@ def fix_stringy_list(context):
     return " ".join(p for p in parts if p)
 
 def abbreviate_sentence(sentence):
-    # normalize unicode apostrophes
-    sentence = sentence.replace("’", "'").replace("‘", "'")
+    # only 30% of samples should abbreviate with punctuation as user is more likely to omit them
+    keep_punc = random.random() <= 0.30 
 
-    chars = re.findall(
-        r"[A-Za-z]+(?:'[A-Za-z]+)?|\d+|[.,!?]",
-        sentence
-    )
 
-    abbr = []
-
+    chars = re.findall(r"[a-zA-Z]+(?:'[a-zA-Z]+)?|\d+|[.,!?]", sentence)
+    
+    abbr_chars = []
+    
     for char in chars:
-        if char[0].isalpha():
-            abbr.append(char[0].upper())
-        elif char.isdigit():
-            abbr.append(char)
-        elif char in ".,!?":
-            abbr.append(char)
+        if re.match(r"[a-zA-Z]", char):
 
-    return "".join(abbr)
+            abbr_chars.append(char[0].upper())
+        elif char.isdigit():
+            abbr_chars.append(char)
+        elif char in ".,!?" and keep_punc:
+            abbr_chars.append(char)
+
+    return "".join(abbr_chars)
 
 
 

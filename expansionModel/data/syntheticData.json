@@ -2988,5 +2988,2911 @@
     "context": "",
     "abbreviation": "IHAIOME <Abigail> ",
     "target": "I have an itch on my ear Abigail."
+  },
+
+  {
+    "context": "",
+    "abbreviation": "IHTRN <Mom> ",
+    "target": "I have to rest now Mom."
+  },
+  {
+    "context": "How are you feeling today? I've been reviewing your chart.",
+    "abbreviation": "IHBHSPL <Dr.Lee> ",
+    "target": "I have been having severe pain lately Dr. Lee."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Sarah> HMWT?",
+    "target": "Can Sarah help me with this?"
+  },
+  {
+    "context": "I heard you wanted to talk about something important. What's on your mind?",
+    "abbreviation": "INTTY <Dad> AHBMHC",
+    "target": "I need to tell you Dad about how bad my home care."
+  },
+  {
+    "context": "",
+    "abbreviation": "HM <Nurse Mike> !",
+    "target": "Help me Nurse Mike!"
+  },
+  {
+    "context": "Hey, how's your day going?",
+    "abbreviation": "IGPG <Emma> .HAYA?",
+    "target": "It's going pretty good Emma. How are you all?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMGTTB <Brother> ",
+    "target": "Can you maybe help me get to the bathroom Brother?"
+  },
+  {
+    "context": "Let's discuss your treatment plan for this week.",
+    "abbreviation": "IWTKIWTCMM <Dr.Patel> .",
+    "target": "I want to know if we can change my medication Dr. Patel."
+  },
+  {
+    "context": "What would you like for dinner tonight?",
+    "abbreviation": "IWLTS <Grandma> MYFC",
+    "target": "I would like the soup Grandma made yesterday for Christmas."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFRLT <Michael> .CYMCOB?",
+    "target": "I'm feeling really lonely today Michael. Can you maybe come over briefly?"
+  },
+  {
+    "context": "How has your mobility been this week?",
+    "abbreviation": "IHBNTMAMH <Therapist Jane> ",
+    "target": "I have been needing too much assistance moving around my house Therapist Jane."
+  },
+  {
+    "context": "",
+    "abbreviation": "P <Christopher> GTLFM",
+    "target": "Please Christopher get the light for me."
+  },
+  {
+    "context": "I noticed you seemed uncomfortable earlier. Is everything okay? Not really, I've been struggling.",
+    "abbreviation": "MABH <Olivia> AIHBGW",
+    "target": "My arm has been hurting Olivia and I have been getting worse."
+  },
+  {
+    "context": "",
+    "abbreviation": "D <Tyler> KWTMCIS",
+    "target": "Does Tyler know where the medicine cabinet is?"
+  },
+  {
+    "context": "I brought you some water and your medication.",
+    "abbreviation": "TYSM <Aunt> !IRDA.",
+    "target": "Thank you so much Aunt! I really do appreciate it."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHSPIMLARN <Dr.Smith> ",
+    "target": "I have severe pain in my legs and right now Dr. Smith."
+  },
+  {
+    "context": "What do you want to do this weekend?",
+    "abbreviation": "IWLTWAM <Sophia> ITWBF.",
+    "target": "I would like to watch a movie Sophia if that would be fine."
+  },
+  {
+    "context": "",
+    "abbreviation": "INTGTTBRN <Dad> !",
+    "target": "I need to go to the bathroom right now Dad!"
+  },
+  {
+    "context": "Your test results came back. Do you have any questions?",
+    "abbreviation": "WDTR <Nurse Sarah> ?ATWBF?",
+    "target": "What do they reveal Nurse Sarah? And then what will be fixed?"
+  },
+  {
+    "context": "Hey! Long time no see. How have you been?",
+    "abbreviation": "IHBDPG <James> BIHBF",
+    "target": "I have been doing pretty good James but I have been frustrated."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Isabella> TMWMNAIAT?",
+    "target": "Can Isabella tell me when my next appointment is at therapy?"
+  },
+  {
+    "context": "You look worried. What's bothering you?",
+    "abbreviation": "IAWAMH <Mom> .IHBHTN.",
+    "target": "I am worried about my health Mom. I have been having these nightmares."
+  },
+  {
+    "context": "",
+    "abbreviation": "ILTTV <Grandpa> ",
+    "target": "I love to talk to you Grandpa."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMSMTU <Daniel> ?",
+    "target": "Can you maybe help me set my tablet up Daniel?"
+  },
+  {
+    "context": "How are you adjusting to the new medication?",
+    "abbreviation": "TNMIMFS <Dr.Johnson> BIHBHSE",
+    "target": "The new medication is making me feel sick Dr. Johnson but I have been having some energy."
+  },
+  {
+    "context": "What would you like for lunch?",
+    "abbreviation": "IWLASWC <Sister> ",
+    "target": "I would like a sandwich with cheese Sister."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFRST <Mia> CYMCOSF",
+    "target": "I'm feeling really sad today Mia. Can you maybe come over so fast?"
+  },
+  {
+    "context": "",
+    "abbreviation": "WI <William> HCATFMPT?",
+    "target": "When is William having come around to fix my physical therapy?"
+  },
+  {
+    "context": "You seem cold. Do you need anything?",
+    "abbreviation": "CYMGMAB <Charlotte> ?",
+    "target": "Can you maybe get me a blanket Charlotte?"
+  },
+  {
+    "context": "We need to discuss your care plan moving forward. I want to make sure you're comfortable with everything.",
+    "abbreviation": "IHAMQATMP <Dr.Williams> .CWEGATD?",
+    "target": "I have about many questions about the medication plan Dr. Williams. Can we extend getting another therapy discussion?"
+  },
+  {
+    "context": "",
+    "abbreviation": "H <Amelia> !HAYA?",
+    "target": "Hi Amelia! How are you all?"
+  },
+  {
+    "context": "",
+    "abbreviation": "H <Harper> S <Joseph> TCV",
+    "target": "Has Harper seen Joseph today coming to visit?"
+  },
+  {
+    "context": "I know things have been difficult lately.",
+    "abbreviation": "IJCTWT <Evelyn> .IFSL.",
+    "target": "I just can't take what's happening Evelyn. I feel so limited."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMAMP <Nurse Mike> ?IUIC.",
+    "target": "Can you maybe help me adjust my pillow Nurse Mike? I'm uncomfortable in chair."
+  },
+  {
+    "context": "What do you want to do tomorrow?",
+    "abbreviation": "IWLGFAW <Matthew> ITWBP",
+    "target": "I would like going for a walk Matthew if the weather be pleasant."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFC <Mom> .CYMTTH?",
+    "target": "I'm feeling cold Mom. Can you maybe turn the heat?"
+  },
+  {
+    "context": "It's almost noon. Do you need anything?",
+    "abbreviation": "INTMM <Nurse Sarah> ",
+    "target": "I need to take my medication Nurse Sarah."
+  },
+  {
+    "context": "",
+    "abbreviation": "I <Alex> CVTARN?",
+    "target": "Is Alex coming to visit this afternoon right now?"
+  },
+  {
+    "context": "How are you feeling this morning?",
+    "abbreviation": "MBIHMRN <Dr.Lee> ",
+    "target": "My back is hurting me really now Dr. Lee."
+  },
+  {
+    "context": "",
+    "abbreviation": "D <Grandma> KWIWLFD?",
+    "target": "Does Grandma know what I would like for dinner?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMGMSW <Brother> ?IT.",
+    "target": "Can you maybe get me some water Brother? I'm thirsty."
+  },
+  {
+    "context": "Tell me about any new symptoms you've noticed.",
+    "abbreviation": "IHBHDAFS <Dr.Patel> .",
+    "target": "I have been having dizziness and feeling sick Dr. Patel."
+  },
+  {
+    "context": "",
+    "abbreviation": "IRSHT <Emma> CVT!",
+    "target": "I'm really so happy that Emma came to visit today!"
+  },
+  {
+    "context": "",
+    "abbreviation": "WTIRN <Dad> ?",
+    "target": "What time is it right now Dad?"
+  },
+  {
+    "context": "You've been sitting for a while. Need anything?",
+    "abbreviation": "CYMHMCMP <Therapist Jane> ",
+    "target": "Can you maybe help me change my position Therapist Jane?"
+  },
+  {
+    "context": "I made some soup for lunch.",
+    "abbreviation": "IDLTS <Aunt> .CIHSE?",
+    "target": "I don't like that soup Aunt. Can I have something else?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IITRT <Michael> ?",
+    "target": "Is it raining today right now Michael?"
+  },
+  {
+    "context": "You look exhausted. How are you feeling?",
+    "abbreviation": "IFRT <Sister> .INTTRN.",
+    "target": "I'm feeling really tired Sister. I need to take rest now."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Uncle> TMTTV?",
+    "target": "Can Uncle turn me the television?"
+  },
+  {
+    "context": "I wanted to check in about your breathing exercises.",
+    "abbreviation": "IHBHTB <Dr.Smith> .ITWGW?",
+    "target": "I have been having trouble breathing Dr. Smith. Is this what getting worse?"
+  },
+  {
+    "context": "I heard some news from the family.",
+    "abbreviation": "H <Cousin> BATV?",
+    "target": "Has Cousin been able to visit?"
+  },
+  {
+    "context": "",
+    "abbreviation": "MNIHMRB <Dr.Johnson> !",
+    "target": "My neck is hurting me really bad Dr. Johnson!"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMPOSMFM <Olivia> ?",
+    "target": "Can you maybe put on some music for me Olivia?"
+  },
+  {
+    "context": "I'm so glad I could stop by today.",
+    "abbreviation": "TYSFC <James> .IMMD.",
+    "target": "Thank you so much for coming James. It means much to me."
+  },
+  {
+    "context": "",
+    "abbreviation": "WIMNATD <Mom> ?",
+    "target": "When is my next appointment this day Mom?"
+  },
+  {
+    "context": "You don't look so good. What's wrong?",
+    "abbreviation": "IFNRW <Nurse Mike> .ITIMN",
+    "target": "I'm feeling nauseous right now Nurse Mike. I think it's my medication now."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Daniel> OTW?IWLSFS.",
+    "target": "Can Daniel open the window? I would like some fresh air."
+  },
+  {
+    "context": "How did you sleep last night?",
+    "abbreviation": "IDSWLN <Dr.Williams> .IWUMO.",
+    "target": "I didn't sleep well last night Dr. Williams. I woke up many often."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMGMTBFTS <Sister> ",
+    "target": "Can you maybe get me the book from the shelf Sister?"
+  },
+  {
+    "context": "",
+    "abbreviation": "INTUTTBRN <Dad> !",
+    "target": "I need to use the bathroom right now Dad!"
+  },
+  {
+    "context": "What sounds good for breakfast?",
+    "abbreviation": "CIHSEAT <Grandma> ?",
+    "target": "Can I have some eggs and toast Grandma?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IAWAMTR <Dr.Patel> .",
+    "target": "I am worried about my test results Dr. Patel."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMCM <Christopher> ?ICGIT.",
+    "target": "Can you maybe help me call Mom Christopher? I can't get it to work."
+  },
+  {
+    "context": "How are you feeling after the treatment?",
+    "abbreviation": "IFMBT <Therapist Jane> !",
+    "target": "I'm feeling much better today Therapist Jane!"
+  },
+  {
+    "context": "",
+    "abbreviation": "WAWTDTD <Nurse Sarah> ?",
+    "target": "What are we to do today Nurse Sarah?"
+  },
+  {
+    "context": "Are you comfortable?",
+    "abbreviation": "N.CYMPAMBU <Brother> ?",
+    "target": "No. Can you maybe put another pillow my back up Brother?"
+  },
+  {
+    "context": "",
+    "abbreviation": "WI <Sophia> CATV?",
+    "target": "When is Sophia coming around to visit?"
+  },
+  {
+    "context": "Is the pain the same as yesterday?",
+    "abbreviation": "IPIGW <Dr.Lee> .",
+    "target": "It's pain is getting worse Dr. Lee."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMTTLO <Uncle> ?ITBT.",
+    "target": "Can you maybe turn the lights off Uncle? It's too bright there."
+  },
+  {
+    "context": "Any side effects from the new prescription?",
+    "abbreviation": "YTNMIMMFD <Dr.Smith> ",
+    "target": "Yes the new medication is making me feel dizzy Dr. Smith."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMSWMFAW <Emma> ?IFLRLN.",
+    "target": "Can you maybe sit with me for a while Emma? I'm feeling lonely right now."
+  },
+  {
+    "context": "Is the room temperature okay?",
+    "abbreviation": "ITRH.C <Dad> TTAC?",
+    "target": "It's too really hot. Can Dad turn the air conditioning?"
+  },
+  {
+    "context": "",
+    "abbreviation": "WITFL <Aunt> ?",
+    "target": "When is the food lunch Aunt?"
+  },
+  {
+    "context": "I brought you some flowers from the garden.",
+    "abbreviation": "TASSW <Grandpa> .TLTTF!",
+    "target": "That's all so sweet wonderful Grandpa. They look truly the flowers!"
+  },
+  {
+    "context": "You've been in that position for a while.",
+    "abbreviation": "CYMHMMU <Nurse Mike> ?IGSC.",
+    "target": "Can you maybe help me move up Nurse Mike? I'm getting so cramped."
+  },
+  {
+    "context": "How was your physical therapy session?",
+    "abbreviation": "IWRH <Therapist Jane> .IFMST.",
+    "target": "It was really hard Therapist Jane. I'm feeling much sore today."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Michael> CTCTTMFS?",
+    "target": "Can Michael change the channel to that my favorite show?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IFRTRN <Sister> .CIHSW?",
+    "target": "I'm feeling really thirsty right now Sister. Can I have some water?"
+  },
+  {
+    "context": "It's supposed to be nice tomorrow.",
+    "abbreviation": "CWGOTPT <Dad> ?",
+    "target": "Can we go outside to the patio tomorrow Dad?"
+  },
+  {
+    "context": "Tell me more about what you're experiencing.",
+    "abbreviation": "IHBHSHAMIML <Dr.Johnson> .",
+    "target": "I have been having severe headaches and muscle in my legs Dr. Johnson."
+  },
+  {
+    "context": "",
+    "abbreviation": "C <Olivia> RMTBFM?",
+    "target": "Can Olivia read me the book for me?"
+  },
+  {
+    "context": "",
+    "abbreviation": "MTINWARN <Daniel> !CYMFIO?",
+    "target": "My tablet is not working again right now Daniel! Can you maybe fix it out?"
+  },
+  {
+    "context": "I'm planning dinner. Any preferences?",
+    "abbreviation": "IWLCFD <Grandma> ITWBG",
+    "target": "I would like chicken for dinner Grandma if that would be good."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFRC <Mom> .CYGMAB?",
+    "target": "I'm feeling really cold Mom. Can you get me a blanket?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IITTMM <Nurse Sarah> ?",
+    "target": "Is it time to my medication Nurse Sarah?"
+  },
+  {
+    "context": "How is the pain medication working?",
+    "abbreviation": "IPMINH <Dr.Patel> .CWTSED?",
+    "target": "It's pain medication is not helping Dr. Patel. Can we try something else different?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMCTC <Brother> ?TLITBE.",
+    "target": "Can you maybe close the curtains Brother? The light is too bright everywhere."
+  },
+  {
+    "context": "",
+    "abbreviation": "I <Isabella> SCTV?",
+    "target": "Is Isabella supposed coming to visit?"
+  },
+  {
+    "context": "How's the pain now?",
+    "abbreviation": "IPIGB <Dr.Williams> !",
+    "target": "It's pain is getting better Dr. Williams!"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMSU <Therapist Jane> ?IWLTTW.",
+    "target": "Can you maybe help me stand up Therapist Jane? I would like to try walking."
+  },
+  {
+    "context": "You look warm. Need anything?",
+    "abbreviation": "CYMTTFO <Uncle> ?",
+    "target": "Can you maybe turn the fan on Uncle?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IFLLT <Mia> .CYMCOSF?",
+    "target": "I'm feeling lonely lately today Mia. Can you maybe come over so fast?"
+  },
+  {
+    "context": "Should we do your exercises today?",
+    "abbreviation": "YDWNTDTTRN <Dr.Lee> ?IFRT.",
+    "target": "You do want need to do them today right now Dr. Lee? I'm feeling really tired."
+  },
+  {
+    "context": "",
+    "abbreviation": "CIHSJ <Aunt> ?",
+    "target": "Can I have some juice Aunt?"
+  },
+  {
+    "context": "",
+    "abbreviation": "IAWA <Mom> .HYH?",
+    "target": "I am worried about Mom. Have you heard?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMTTNO <Dad> ?",
+    "target": "Can you maybe turn the news on Dad?"
+  },
+  {
+    "context": "How's your breathing today?",
+    "abbreviation": "IHBHTB <Dr.Smith> .IIGW.",
+    "target": "I have been having trouble breathing Dr. Smith. It is getting worse."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMHMEMF <Nurse Mike> ?ICHMI.",
+    "target": "Can you maybe help me eat my food Nurse Mike? I can't hold my it."
+  },
+  {
+    "context": "",
+    "abbreviation": "WIMPTST <Therapist Jane> ?",
+    "target": "When is my physical therapy session today Therapist Jane?"
+  },
+  {
+    "context": "I'm so happy to see you!",
+    "abbreviation": "IASHT <Emma> CVT!IMMD.",
+    "target": "I am so happy that Emma came to visit today! It means much to me."
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "context": "The nurse is asking if you are ready to start the exercises.",
+    "abbreviation": "NIANR [Please wait] ",
+    "target": "No I am not ready, Please wait."
+  },
+  {
+    "context": "Do you want me to turn up the heat?",
+    "abbreviation": "Y [It is too cold]  ",
+    "target": "Yes, It is too cold."
+  },
+  {
+    "context": "Your daughter just showed you her report card.",
+    "abbreviation": "IDSW [Good job] ",
+    "target": "I did see well Good job."
+  },
+  {
+    "context": "I am heading out to the grocery store now.",
+    "abbreviation": " [Thank you] FH",
+    "target": "Thank you for help."
+  },
+  {
+    "context": "How are you feeling this morning?",
+    "abbreviation": "NKG [I am sad]  ",
+    "target": "Not keeping good I am sad."
+  },
+  {
+    "context": "The TV volume is very loud.",
+    "abbreviation": "TID [Please] ",
+    "target": "Turn it down Please."
+  },
+  {
+    "context": "Do you need anything before I leave?",
+    "abbreviation": " [I need my medication]  N",
+    "target": "I need my medication now."
+  },
+  {
+    "context": "Are you comfortable in that position?",
+    "abbreviation": "NMBH [I am in pain]  ",
+    "target": "No my back hurts I am in pain."
+  },
+  {
+    "context": "Look, the dog is chasing its tail!",
+    "abbreviation": "L [That is funny]  ",
+    "target": "Look That is funny."
+  },
+  {
+    "context": "Do you want to watch a movie?",
+    "abbreviation": "N [I am sleepy]  ",
+    "target": "No I am sleepy."
+  },
+  {
+    "context": "The doctor is here to see you.",
+    "abbreviation": " [Hello] D",
+    "target": "Hello Doctor."
+  },
+  {
+    "context": "I bought you your favorite chocolate.",
+    "abbreviation": "O [I love] Y",
+    "target": "Oh I Love you."
+  },
+  {
+    "context": "Why are you pressing the buzzer?",
+    "abbreviation": " [I need to use the washroom]  N",
+    "target": "I need to use the washroom now."
+  },
+  {
+    "context": "Can I get you a glass of water?",
+    "abbreviation": "Y [I am thirsty]  ",
+    "target": "Yes I am thirsty."
+  },
+  {
+    "context": "We are planning a trip to the beach.",
+    "abbreviation": "TSF [I am happy]  ",
+    "target": "That sounds fun I am happy."
+  },
+  {
+    "context": "Is there something wrong with your breathing?",
+    "abbreviation": " [Help! This is an emergency!] ",
+    "target": "Help! This is an emergency!"
+  },
+  {
+    "context": "Do you want to try the new soup?",
+    "abbreviation": "N [I feel sick]  ",
+    "target": "No I feel sick."
+  },
+  {
+    "context": "Are you okay with me changing the channel?",
+    "abbreviation": " [Yes] IDM",
+    "target": "Yes I don't mind."
+  },
+  {
+    "context": "Someone is blocking your view of the window.",
+    "abbreviation": "M [I am angry]  ",
+    "target": "Move I am angry."
+  },
+  {
+    "context": "Did you hear that Sarah got the job?",
+    "abbreviation": "TGN [Congratulations] ",
+    "target": "That great news Congratulations."
+  },
+  {
+    "context": "I am going to adjust your leg now.",
+    "abbreviation": " [STOP PLEASE!] IH",
+    "target": "STOP PLEASE! It hurts."
+  },
+  {
+    "context": "Do you want dinner now?",
+    "abbreviation": "Y [I am hungry]  ",
+    "target": "Yes I am hungry."
+  },
+  {
+    "context": "How is the temperature in the room?",
+    "abbreviation": "OTW [It is too hot]  ",
+    "target": "Open the window It is too hot."
+  },
+  {
+    "context": "I can't find your glasses.",
+    "abbreviation": " [Look here] OT",
+    "target": "Look here On table."
+  },
+  {
+    "context": "Are you anxious about the surgery?",
+    "abbreviation": "Y [I am worried]  ",
+    "target": "Yes I am worried."
+  },
+  {
+    "context": "Do you need me to call someone?",
+    "abbreviation": "Y [I need a doctor]  ",
+    "target": "Yes I need a doctor."
+  },
+  {
+    "context": "Let's go for a walk outside.",
+    "abbreviation": "W [I need to rest]  ",
+    "target": "Wait I need to rest."
+  },
+  {
+    "context": "What's the matter?",
+    "abbreviation": "ILMW [I am very upset]  ",
+    "target": "I lost my wallet I am very upset."
+  },
+  {
+    "context": "Do you want some coffee?",
+    "abbreviation": " [No] T",
+    "target": "No Thanks."
+  },
+  {
+    "context": "Did you finish the painting?",
+    "abbreviation": " [Yes] IFF",
+    "target": "Yes It finally finished."
+  },
+  {
+    "context": "You seem to be in distress.",
+    "abbreviation": "C [Help! This is an emergency!] ",
+    "target": "Call Help! This is an emergency!"
+  },
+  {
+    "context": "How was your nap?",
+    "abbreviation": "S [I am happy]  ",
+    "target": "Short, I am happy."
+  },
+  {
+    "context": "Do you want to wear the blue shirt?",
+    "abbreviation": " [No] R",
+    "target": "No Red."
+  },
+  {
+    "context": "I fixed the leak in the bathroom.",
+    "abbreviation": " [Good job] T",
+    "target": "Good job Thanks."
+  },
+  {
+    "context": "Are you feeling any pain?",
+    "abbreviation": "Y [I am in pain]  ",
+    "target": "Yes I am in pain."
+  },
+  {
+    "context": "Can I turn on the radio?",
+    "abbreviation": " [Please] D",
+    "target": "Please Do."
+  },
+  {
+    "context": "Is the sun in your eyes?",
+    "abbreviation": "Y [Please] C",
+    "target": "Yes Please Close."
+  },
+  {
+    "context": "Do you want to see the photos?",
+    "abbreviation": " [Look here] S.",
+    "target": "Look here Show."
+  },
+  {
+    "context": "I am so sorry I broke your mug.",
+    "abbreviation": "IO [I am sad]  ",
+    "target": "It okay I am sad."
+  },
+  {
+    "context": "Are you ready for your medicine?",
+    "abbreviation": "Y [I need my medication]  ",
+    "target": "Yes I need my medication."
+  },
+  {
+    "context": "It is snowing outside.",
+    "abbreviation": "C [It is too cold]  ",
+    "target": "Close It is too cold."
+  },
+  {
+    "context": "I really don't think we should go out in this weather, the forecast looks terrible.",
+    "abbreviation": "IHTAWY, <Alessandro> [Yes]",
+    "target": "I have to agree with you, Alessandro, Yes it is dangerous."
+  },
+  {
+    "context": "Did you manage to finish that puzzle you were working on all week?",
+    "abbreviation": "ID,AIPOM [Good job OI]",
+    "target": "I did, and I am proud of my Good job on it."
+  },
+  {
+    "context": "I can see you shifting around a lot, is something bothering you?",
+    "abbreviation": "MBIKMS [I am in pain] ",
+    "target": "My back is killing me so I am in pain."
+  },
+  {
+    "context": "The doctor will be here in about twenty minutes to check your vitals.",
+    "abbreviation": "TYFIM <Kiyomi>, [Thank you] FW",
+    "target": "Thank you for informing me Kiyomi, Thank you for waiting."
+  },
+  {
+    "context": "Look at that squirrel trying to carry that huge nut up the tree!",
+    "abbreviation": "ILHL [That is funny] ",
+    "target": "It looks hilarious laughing That is funny."
+  },
+  {
+    "context": "Do you want me to turn up the air conditioning in here?",
+    "abbreviation": "N, <Tariq>, [It is too cold] RN",
+    "target": "No, Tariq, actually It is too cold right now."
+  },
+  {
+    "context": "I brought you a warm blanket, do you need anything else?",
+    "abbreviation": "AT, <Tariq>, [I am thirsty] ANW",
+    "target": "Actually Tariq, I am thirsty and need water."
+  },
+  {
+    "context": "Why are you looking so frantic all of a sudden?",
+    "abbreviation": "ICMB [Help! This is an emergency!]",
+    "target": "I cannot move breathe Help! This is an emergency!"
+  },
+  {
+    "context": "Are you excited about your grandson coming to visit tomorrow?",
+    "abbreviation": "Y, IAMTLFTI. [I am happy] ",
+    "target": "Yes, I am more than looking forward to it. I am happy."
+  },
+  {
+    "context": "I heard that the test results came back negative!",
+    "abbreviation": "TRGN [Congratulations] TU",
+    "target": "That really great news Congratulations to us."
+  },
+  {
+    "context": "We need to leave in five minutes, are you ready to go?",
+    "abbreviation": "JAM, <Felix>, [Please wait] FM",
+    "target": "Just a moment, Felix, Please wait for me."
+  },
+  {
+    "context": "Do you want to try the lasagna for dinner tonight?",
+    "abbreviation": "IDTLT <Amara> [I feel sick] ",
+    "target": "I don't think like that, Amara, I feel sick."
+  },
+  {
+    "context": "Why is your face so red?",
+    "abbreviation": "IFLF, [It is too hot] ",
+    "target": "I feel like fire, It is too hot."
+  },
+  {
+    "context": "Can I get you anything from the kitchen while I am up?",
+    "abbreviation": "Y, <Sebastian>, [I am hungry] FAS",
+    "target": "Yes, Sebastian, I am hungry for a snack."
+  },
+  {
+    "context": "You have been very quiet today, is everything alright?",
+    "abbreviation": "TBH, [I am sad] ATN",
+    "target": "To be honest, I am sad about the news."
+  },
+  {
+    "context": "Stop pushing the wheelchair so fast, it's bumpy!",
+    "abbreviation": "S, <Gavin> [STOP PLEASE!] RN",
+    "target": "Slow, Gavin STOP PLEASE! right now."
+  },
+  {
+    "context": "It has been such a long time since we saw each other!",
+    "abbreviation": "IK, [Hello] MF",
+    "target": "I know, Hello my friend."
+  },
+  {
+    "context": "Do you need me to help you to the restroom?",
+    "abbreviation": "Y, <Isabella>, [I need to use the washroom] I",
+    "target": "Yes, Isabella, I need to use the washroom immediately."
+  },
+  {
+    "context": "I am going to change the channel to the news now.",
+    "abbreviation": "D, <Ivan>, [I am angry] WYDT",
+    "target": "Don't, Ivan, I am angry when you do that."
+  },
+  {
+    "context": "The nurse said you missed your morning dose.",
+    "abbreviation": "TR, [I need my medication] I",
+    "target": "That right, I need my medication immediately."
+  },
+  {
+    "context": "Do you want to stay up and watch the late show?",
+    "abbreviation": "N, [I am sleepy] AWB.",
+    "target": "No, I am sleepy and want bed."
+  },
+  {
+    "context": "Look at the painting I made for you!",
+    "abbreviation": "IB <Silas> [Good job] OI",
+    "target": "It beautiful, Silas, Good job on it."
+  },
+  {
+    "context": "I think I might have broken the vase.",
+    "abbreviation": "WDYM [I am very upset] N",
+    "target": "What do you mean. I am very upset now."
+  },
+  {
+    "context": "Can we talk about the finances later?",
+    "abbreviation": "N, [I am worried] AB",
+    "target": "No, I am worried about bills."
+  },
+  {
+    "context": "I am going to adjust your pillows now.",
+    "abbreviation": "G, [Thank you] <Mateo>",
+    "target": "Good, Thank you Mateo."
+  },
+  {
+    "context": "Do you want to go to the park today?",
+    "abbreviation": "IDFLI, [No] T",
+    "target": "I don't feel like it, No thanks."
+  },
+  {
+    "context": "Are you feeling sharp pain in your chest?",
+    "abbreviation": "Y, [I need a doctor] F",
+    "target": "Yes, I need a doctor fast."
+  },
+  {
+    "context": "We have been walking for over an hour.",
+    "abbreviation": "CWS [I need to rest] [Please]",
+    "target": "Can we stop I need to rest please."
+  },
+  {
+    "context": "Did you see what is on the television?",
+    "abbreviation": "N, [Look here] SM",
+    "target": "No, Look here Show me."
+  },
+  {
+    "context": "Are you sure you want to decline the invitation?",
+    "abbreviation": "IA, <Levi> [Yes]",
+    "target": "I am, Levi, Yes I am sure."
+  },
+  {
+    "context": "I think I see smoke coming from the kitchen!",
+    "abbreviation": "C911 [Help! This is an emergency!]",
+    "target": "Call 911. Help! This is an emergency!"
+  },
+  {
+    "context": "Would you like some ice in your water?",
+    "abbreviation": "P, V [I am thirsty] ",
+    "target": "Please, I am very thirsty."
+  },
+  {
+    "context": "You seem to be breathing very heavily.",
+    "abbreviation": "ICCB [I need a doctor] ",
+    "target": "I can't catch breath, I need a doctor"
+  },
+  {
+    "context": "Do you want to hear a joke?",
+    "abbreviation": "G, <Julian> [That is funny] ",
+    "target": "Go, Julian, That is funny."
+  },
+  {
+    "context": "I accidentally deleted your favorite show.",
+    "abbreviation": "HCYDT [I am very upset] ",
+    "target": "How could you do that, I am very upset."
+  },
+  {
+    "context": "Do you need me to get the nurse?",
+    "abbreviation": "Y, [I am in pain] H",
+    "target": "Yes, I am in pain heavily."
+  },
+    {
+    "context": "The room feels extremely stuffy and I can see you sweating.",
+    "abbreviation": "CYOTW, [It is too hot]",
+    "target": "Can you open the window, it is too hot."
+  },
+  {
+    "context": "I see you gripping the armrest tightly, is something wrong?",
+    "abbreviation": "Y,MFA [I am in pain]",
+    "target": "Yes, my foot aches and I am in pain."
+  },
+  {
+    "context": "We just finished the big project for the science fair.",
+    "abbreviation": "WD, <Alex> [Good job]",
+    "target": "Well done, Alex, good job."
+  },
+  {
+    "context": "The nurse is asking if you are ready for your physical therapy session.",
+    "abbreviation": "N,INFM [Please wait]",
+    "target": "No, I need five minutes, please wait."
+  },
+  {
+    "context": "I brought your favorite book, would you like me to read it?",
+    "abbreviation": "Y,IDLTT [Thank you]",
+    "target": "Yes, I would like that, thank you."
+  },
+  {
+    "context": "You seem very restless in bed, do you need to get up?",
+    "abbreviation": "Y,IHTG [I need to use the washroom]",
+    "target": "Yes, I have to go, I need to use the washroom."
+  },
+  {
+    "context": "Look at the dog chasing the butterfly in the garden!",
+    "abbreviation": "IIVS [That is funny]",
+    "target": "It is very silly, that is funny."
+  },
+  {
+    "context": "Are you excited about your daughter's wedding next week?",
+    "abbreviation": "Y,IO [I am happy]",
+    "target": "Yes, I overjoyed and I am happy."
+  },
+  {
+    "context": "I heard you have been coughing a lot since this morning.",
+    "abbreviation": "IHTF [I feel sick]",
+    "target": "I have the flu, I feel sick."
+  },
+  {
+    "context": "Do you want to watch the rest of the documentary?",
+    "abbreviation": "N,ICTME [I am sleepy]",
+    "target": "No, I close the my eyes, I am sleepy."
+  },
+  {
+    "context": "Stop trying to stand up on your own, it is not safe!",
+    "abbreviation": "B, <Sarah> [I am angry]",
+    "target": "But, Sarah, I am angry."
+  },
+  {
+    "context": "The doctor says your blood pressure is looking much better.",
+    "abbreviation": "TIGN [Congratulations]",
+    "target": "That is good news, congratulations."
+  },
+  {
+    "context": "It has been so long since we last spoke.",
+    "abbreviation": "IK, [Hello] MF",
+    "target": "I know, hello my friend."
+  },
+  {
+    "context": "You look like you are about to cry.",
+    "abbreviation": "IMMD [I am sad]",
+    "target": "I miss my dog, I am sad."
+  },
+  {
+    "context": "Is the temperature in the room okay for you?",
+    "abbreviation": "N,IF [It is too cold]",
+    "target": "No, I freeze, it is too cold."
+  },
+  {
+    "context": "I can't believe they cancelled our favorite show.",
+    "abbreviation": "ICBI [I am very upset]",
+    "target": "I can't believe it, I am very upset."
+  },
+  {
+    "context": "Do you need your water bottle refilled?",
+    "abbreviation": "Y,MDID [I am thirsty]",
+    "target": "Yes, my mouth is dry, I am thirsty."
+  },
+  {
+    "context": "I think you might have a fever, your forehead is warm.",
+    "abbreviation": "CTD [I need a doctor]",
+    "target": "Call the doctor, I need a doctor."
+  },
+  {
+    "context": "Are you anxious about the test results coming in tomorrow?",
+    "abbreviation": "A, [I am worried] AT",
+    "target": "Actually, I am worried about them."
+  },
+  {
+    "context": "I am going to move your leg to the side now.",
+    "abbreviation": "W,IH [STOP PLEASE!]",
+    "target": "Wait, it hurts, STOP PLEASE!"
+  },
+  {
+    "context": "Do you want some of this soup I made?",
+    "abbreviation": "Y, [I am hungry] VR",
+    "target": "Yes, I am hungry very right."
+  },
+  {
+    "context": "Can I turn off the lights now?",
+    "abbreviation": "Y, [Please] D",
+    "target": "Yes, please do."
+  },
+  {
+    "context": "Look at the sunset over the lake.",
+    "abbreviation": "IB [Look here] AT",
+    "target": "It beautiful, look here at that."
+  },
+  {
+    "context": "Do you love your new grandchild?",
+    "abbreviation": "Y,I [Love] H",
+    "target": "Yes, I love him."
+  },
+  {
+    "context": "Are you okay to continue walking?",
+    "abbreviation": "N,MTA [I need to rest]",
+    "target": "No, my tired ache, I need to rest."
+  },
+  {
+    "context": "Did you take your pills this morning?",
+    "abbreviation": "N,IF [I need my medication]",
+    "target": "No, I forgot, I need my medication."
+  },
+  {
+    "context": "He just collapsed on the floor!",
+    "abbreviation": "C911 [Help! This is an emergency!]",
+    "target": "Call 911, Help! This is an emergency!"
+  },
+  {
+    "context": "Can we go to the park today?",
+    "abbreviation": "N, [No] T",
+    "target": "No, no today."
+  },
+  {
+    "context": "Will you marry me?",
+    "abbreviation": "Y, [Yes] IWMY",
+    "target": "Yes, yes I will marry you."
+  },
+  {
+    "context": "I accidentally spilled coffee on your shirt.",
+    "abbreviation": "W, <John> [I am angry]",
+    "target": "Why, John, I am angry."
+  },
+  {
+    "context": "Your son just graduated from college!",
+    "abbreviation": "IAVP [Congratulations]",
+    "target": "I am very proud, congratulations."
+  },
+  {
+    "context": "Do you want to come inside now?",
+    "abbreviation": "Y,IS [It is too cold]",
+    "target": "Yes, I shiver, it is too cold."
+  },
+  {
+    "context": "The sun is really beating down today.",
+    "abbreviation": "IK, [It is too hot]",
+    "target": "I know, it is too hot."
+  },
+  {
+    "context": "Why do you look so concerned?",
+    "abbreviation": "IDKHIA [I am worried]",
+    "target": "I don't know how is Alice, I am worried."
+  },
+  {
+    "context": "I brought you a slice of apple pie.",
+    "abbreviation": "TLD [Thank you]",
+    "target": "That looks delicious, thank you."
+  },
+  {
+    "context": "Do you need help getting to the bathroom?",
+    "abbreviation": "Y, [I need to use the washroom]",
+    "target": "Yes, I need to use the washroom."
+  },
+  {
+    "context": "Look at the clown stumbling around.",
+    "abbreviation": "HS [That is funny]",
+    "target": "He silly, that is funny."
+  },
+  {
+    "context": "You have been working on that puzzle for hours.",
+    "abbreviation": "IK,B [I am happy]",
+    "target": "I know, but I am happy."
+  },
+  {
+    "context": "I am sorry I missed your birthday party.",
+    "abbreviation": "I [I am sad] T",
+    "target": "I I am sad too."
+  },
+  {
+    "context": "Can I get you anything from the kitchen?",
+    "abbreviation": "GMAW [I am thirsty]",
+    "target": "Get me a water, I am thirsty."
+  },
+  {
+    "context": "Do you need me to call the ambulance?",
+    "abbreviation": "Y, [Help! This is an emergency!]",
+    "target": "Yes, Help! This is an emergency!"
+  },
+  {
+    "context": "Are you feeling nauseous again?",
+    "abbreviation": "Y, <Nurse> [I feel sick]",
+    "target": "Yes, Nurse, I feel sick."
+  },
+  {
+    "context": "Can we talk about this later?",
+    "abbreviation": "N, [Please wait] AM",
+    "target": "No, please wait a minute."
+  },
+  {
+    "context": "Did you see the painting I made for you?",
+    "abbreviation": "Y,IB [Good job]",
+    "target": "Yes, it beautiful, good job."
+  },
+  {
+    "context": "I am going to change the channel.",
+    "abbreviation": "D, <Dad> [STOP PLEASE!]",
+    "target": "Don't, Dad, STOP PLEASE!"
+  },
+  {
+    "context": "Are you in a lot of discomfort?",
+    "abbreviation": "Y,MH [I am in pain]",
+    "target": "Yes, my head, I am in pain."
+  },
+  {
+    "context": "I think I might have lost your wallet.",
+    "abbreviation": "W, [I am very upset]",
+    "target": "What, I am very upset."
+  },
+  {
+    "context": "It's past midnight, you should sleep.",
+    "abbreviation": "IA [I am sleepy]",
+    "target": "I am, I am sleepy."
+  },
+  {
+    "context": "Do you want to see the new car?",
+    "abbreviation": "C, [Look here]",
+    "target": "Come, look here."
+  },
+  {
+    "context": "Did you finish your lunch?",
+    "abbreviation": "Y,IAF [I am hungry]",
+    "target": "Yes, I am full, I am hungry."
+  },
+  {
+    "context": "Wait, did you say you are not hungry?",
+    "abbreviation": "M,I [No] T",
+    "target": "Mean, I no thanks."
+  },
+  {
+    "context": "I really like your new haircut.",
+    "abbreviation": "TY, <Mom> [Love]",
+    "target": "Thank you, Mom, Love."
+  },
+  {
+    "context": "Can you pass me the salt?",
+    "abbreviation": "Y, [Yes]",
+    "target": "Yes, yes."
+  },
+  {
+    "context": "I heard your breathing is shallow.",
+    "abbreviation": "ICB [I need a doctor]",
+    "target": "I can't breathe, I need a doctor."
+  },
+  {
+    "context": "Would you like to go for a stroll?",
+    "abbreviation": "N, [I need to rest]",
+    "target": "No, I need to rest."
+  },
+  {
+    "context": "Is it time for your heart pills?",
+    "abbreviation": "I [I need my medication]",
+    "target": "It I need my medication."
+  },
+  {
+    "context": "Welcome to our home!",
+    "abbreviation": " [Hello] TEY",
+    "target": "Hello to everyone."
+  },
+  {
+    "context": "Could you help me lift this box?",
+    "abbreviation": "I, [Please] H",
+    "target": "I, please help."
+  },
+  {
+    "context": "Why are you looking at the thermostat?",
+    "abbreviation": "ITF [It is too cold]",
+    "target": "In the freezing, it is too cold."
+  },
+  {
+    "context": "Are you enjoying the party?",
+    "abbreviation": "Y, [I am happy]",
+    "target": "Yes, I am happy."
+  },
+  {
+    "context": "They cancelled the flight to Paris.",
+    "abbreviation": "TRT [I am very upset]",
+    "target": "That really terrible, I am very upset."
+  },
+  {
+    "context": "Look at the baby smiling.",
+    "abbreviation": "SC [Look here]",
+    "target": "So cute, look here."
+  },
+  {
+    "context": "I think I broke the vase.",
+    "abbreviation": "HCDY [I am angry]",
+    "target": "How could you, I am angry."
+  },
+  {
+    "context": "Are you feeling okay after the ride?",
+    "abbreviation": "N, [I feel sick]",
+    "target": "No, I feel sick."
+  },
+  {
+    "context": "Do you need the bedpan?",
+    "abbreviation": "Y, [I need to use the washroom]",
+    "target": "Yes, I need to use the washroom."
+  },
+  {
+    "context": "Did you hear the one about the chicken?",
+    "abbreviation": "Y, [That is funny]",
+    "target": "Yes, that is funny."
+  },
+  {
+    "context": "I am heading out to the store.",
+    "abbreviation": "B, <Honey> [Love]",
+    "target": "Bye, Honey, love."
+  },
+  {
+    "context": "Is the soup too hot?",
+    "abbreviation": "Y, [It is too hot]",
+    "target": "Yes, it is too hot."
+  },
+  {
+    "context": "Can I have a moment of your time?",
+    "abbreviation": "S, [Please wait]",
+    "target": "Sure, please wait."
+  },
+  {
+    "context": "I finally fixed the leak in the roof.",
+    "abbreviation": "AT [Good job]",
+    "target": "About time, good job."
+  },
+  {
+    "context": "Do you want to watch the horror movie?",
+    "abbreviation": "N, [I am worried]",
+    "target": "No, I am worried."
+  },
+  {
+    "context": "Someone is breaking into the house!",
+    "abbreviation": "C [Help! This is an emergency!]",
+    "target": "Call Help! This is an emergency!"
+  },
+  {
+    "context": "Do you want fries with that?",
+    "abbreviation": "N, [No] T",
+    "target": "No, no thanks."
+  },
+  {
+    "context": "Are you sure this is the right way?",
+    "abbreviation": "Y, [Yes] IA",
+    "target": "Yes, yes I am."
+  },
+  {
+    "context": "I picked up your prescription.",
+    "abbreviation": "O, [Thank you] <Dear>",
+    "target": "Oh, thank you Dear."
+  },
+  {
+    "context": "Are you feeling lonely?",
+    "abbreviation": "S, [I am sad]",
+    "target": "Sometimes, I am sad."
+  },
+  {
+    "context": "Do you want some juice?",
+    "abbreviation": "Y, [I am thirsty]",
+    "target": "Yes, I am thirsty."
+  },
+  {
+    "context": "Is your leg hurting again?",
+    "abbreviation": "Y, [I am in pain]",
+    "target": "Yes, I am in pain."
+  },
+  {
+    "context": "Do you want to sleep now?",
+    "abbreviation": "Y, [I am sleepy]",
+    "target": "Yes, I am sleepy."
+  },
+  {
+    "context": "Can you handle this on your own?",
+    "abbreviation": "N, [Please] H",
+    "target": "No, please help."
+  },
+  {
+    "context": "I am going to push you faster now.",
+    "abbreviation": "N, [STOP PLEASE!]",
+    "target": "No, STOP PLEASE!"
+  },
+  {
+    "context": "Who is there?",
+    "abbreviation": "II, [Hello]",
+    "target": "It is, Hello."
+  },
+  {
+    "context": "I think I am having a heart attack.",
+    "abbreviation": "Q, [I need a doctor]",
+    "target": "Quick, I need a doctor."
+  },
+  {
+    "context": "You won the lottery!",
+    "abbreviation": "W, [Congratulations]",
+    "target": "Wow, congratulations."
+  },
+  {
+    "context": "Are you hungry yet?",
+    "abbreviation": "Y, [I am hungry]",
+    "target": "Yes, I am hungry."
+  },
+  {
+    "context": "I need to take a break.",
+    "abbreviation": "M,T [I need to rest]",
+    "target": "Me too, I need to rest."
+  },
+  {
+    "context": "Is it time for your insulin?",
+    "abbreviation": "Y, [I need my medication]",
+    "target": "Yes, I need my medication."
+  },
+  {
+    "context": "Look at the mess you made.",
+    "abbreviation": "IS, [I am very upset]",
+    "target": "I sorry, I am very upset."
+  },
+  {
+    "context": "Are you cold without the blanket?",
+    "abbreviation": "Y, [It is too cold]",
+    "target": "Yes, it is too cold."
+  },
+  {
+    "context": "I think the oven is still on.",
+    "abbreviation": "C, [It is too hot]",
+    "target": "Check, it is too hot."
+  },
+  {
+    "context": "Why are you laughing?",
+    "abbreviation": "B [That is funny]",
+    "target": "Because that is funny."
+  },
+  {
+    "context": "I am so proud of your grades.",
+    "abbreviation": "T, [I am happy]",
+    "target": "Thanks, I am happy."
+  },
+  {
+    "context": "Why are you yelling at me?",
+    "abbreviation": "YL [I am angry]",
+    "target": "You lied, I am angry."
+  },
+  {
+    "context": "Do you feel like vomiting?",
+    "abbreviation": "Y, [I feel sick]",
+    "target": "Yes, I feel sick."
+  },
+  {
+    "context": "Can we proceed?",
+    "abbreviation": "N, [Please wait]",
+    "target": "No, please wait."
+  },
+  {
+    "context": "Is he breathing?",
+    "abbreviation": "N, [Help! This is an emergency!]",
+    "target": "No, Help! This is an emergency!"
+  }
+  ,
+  {
+    "context": "The nurse is asking if you are ready to begin the physical therapy session.",
+    "abbreviation": "N, <Sarah> [Please wait] AM",
+    "target": "No, Sarah, please wait a minute."
+  },
+  {
+    "context": "I finally managed to fix the leaking pipe in the bathroom.",
+    "abbreviation": "TGW, <Tom> [Good job]",
+    "target": "That great work, Tom, good job."
+  },
+  {
+    "context": "You seem to be breathing very shallowly, are you okay?",
+    "abbreviation": "N,ICCB [I need a doctor]",
+    "target": "No, I cannot catch breath, I need a doctor."
+  },
+  {
+    "context": "Would you like me to put on your favorite sweater?",
+    "abbreviation": "Y, <Emily> [It is too cold]",
+    "target": "Yes, Emily, it is too cold."
+  },
+  {
+    "context": "I accidentally dropped your phone on the floor.",
+    "abbreviation": "PBC, <Jack> [I am very upset]",
+    "target": "Please be careful, Jack, I am very upset."
+  },
+  {
+    "context": "Do you need anything before I go to the store?",
+    "abbreviation": "Y, [I need my medication] FZP",
+    "target": "Yes, I need my medication from Zellers pharmacy."
+  },
+  {
+    "context": "Look at the squirrel trying to carry that slice of pizza.",
+    "abbreviation": "L, <Leo> [That is funny]",
+    "target": "Look, Leo, that is funny."
+  },
+  {
+    "context": "Are you comfortable in this chair or should we move?",
+    "abbreviation": "IWO, <Grace> [I am in pain]",
+    "target": "It wearing out, Grace, I am in pain."
+  },
+  {
+    "context": "I passed my final exams with flying colors!",
+    "abbreviation": "IAPOY [Congratulations]",
+    "target": "I am proud of you, congratulations."
+  },
+  {
+    "context": "Do you want to watch the rest of the movie now?",
+    "abbreviation": "N, <Ben> [I am sleepy]",
+    "target": "No, Ben, I am sleepy."
+  },
+  {
+    "context": "Is there anything you want to eat for dinner?",
+    "abbreviation": "IDK,B [I am hungry]",
+    "target": "I don't know, but I am hungry."
+  },
+  {
+    "context": "Why are you looking at the water jug like that?",
+    "abbreviation": "CYGMS [I am thirsty]",
+    "target": "Can you get me some, I am thirsty."
+  },
+  {
+    "context": "I love you so much, grandpa.",
+    "abbreviation": "ILYT, <Chloe> [Love]",
+    "target": "I love you too, Chloe, love."
+  },
+  {
+    "context": "Stop trying to stand up without assistance.",
+    "abbreviation": "IAM, <Nurse> [I need to use the washroom]",
+    "target": "I am moving, Nurse, I need to use the washroom."
+  },
+  {
+    "context": "The sun is shining directly into your eyes.",
+    "abbreviation": "C [It is too hot] ITH",
+    "target": "Close, it is too hot in here."
+  },
+  {
+    "context": "How are you feeling about the news today?",
+    "abbreviation": "IA, <Sam> [I am worried]",
+    "target": "I am, Sam, I am worried."
+  },
+  {
+    "context": "I brought you a bouquet of roses.",
+    "abbreviation": "TAB [Thank you] <Dear>",
+    "target": "They are beautiful, thank you Dear."
+  },
+  {
+    "context": "Can I have your dessert if you aren't eating it?",
+    "abbreviation": "N, <Mike> [No] T",
+    "target": "No, Mike, no touching."
+  },
+  {
+    "context": "Are you excited to see your sister tomorrow?",
+    "abbreviation": "Y, [I am happy] TS",
+    "target": "Yes, I am happy to see."
+  },
+  {
+    "context": "You look a little pale in the face.",
+    "abbreviation": "I, <Doc> [I feel sick]",
+    "target": "I, Doc, I feel sick."
+  },
+  {
+    "context": "I am going to adjust the incline of the bed.",
+    "abbreviation": "W, <Lisa> [STOP PLEASE!]",
+    "target": "Wait, Lisa, STOP PLEASE!"
+  },
+  {
+    "context": "Is everything okay in there?",
+    "abbreviation": "N, [Help! This is an emergency!]",
+    "target": "No, Help! This is an emergency!"
+  },
+  {
+    "context": "Can we talk about the finances later?",
+    "abbreviation": "N, [I am angry] RN",
+    "target": "No, I am angry right now."
+  },
+  {
+    "context": "Look who decided to show up!",
+    "abbreviation": "O, [Hello] <Brother>",
+    "target": "Oh, hello Brother."
+  },
+  {
+    "context": "Did you see the picture of the baby?",
+    "abbreviation": "Y, [Look here] HC",
+    "target": "Yes, look here how cute."
+  },
+  {
+    "context": "Why are you crying?",
+    "abbreviation": "IJFM [I am sad]",
+    "target": "I just feel miserable, I am sad."
+  },
+  {
+    "context": "Do you want to go for a stroll in the garden?",
+    "abbreviation": "N, [I need to rest] MF",
+    "target": "No, I need to rest my feet."
+  },
+  {
+    "context": "Are you sure you want to sell the house?",
+    "abbreviation": "Y, <Honey> [Yes] IA",
+    "target": "Yes, Honey, yes I am."
+  },
+  {
+    "context": "Can you verify this for me?",
+    "abbreviation": "P, [Please] S",
+    "target": "Please, please show."
+  },
+  {
+    "context": "It is freezing in this hallway.",
+    "abbreviation": "Y, [It is too cold] H",
+    "target": "Yes, it is too cold here."
+  },
+  {
+    "context": "I finished the report you asked for.",
+    "abbreviation": "E, <John> [Good job]",
+    "target": "Excellent, John, good job."
+  },
+  {
+    "context": "You seem anxious about the surgery.",
+    "abbreviation": "I, <Dr.> [I am worried]",
+    "target": "I, Dr., I am worried."
+  },
+  {
+    "context": "He just fell down the stairs!",
+    "abbreviation": "Q, [Help! This is an emergency!]",
+    "target": "Quick, Help! This is an emergency!"
+  },
+  {
+    "context": "Do you want to finish this puzzle?",
+    "abbreviation": "L, <Max> [I am sleepy]",
+    "target": "Later, Max, I am sleepy."
+  },
+  {
+    "context": "Is the soup warm enough?",
+    "abbreviation": "N, [It is too hot] TB",
+    "target": "No, it is too hot to burn."
+  },
+  {
+    "context": "I forgot to bring your glasses.",
+    "abbreviation": "T, <Ann> [I am very upset]",
+    "target": "That, Ann, I am very upset."
+  },
+  {
+    "context": "Would you like some ice chips?",
+    "abbreviation": "Y, [I am thirsty] P",
+    "target": "Yes, I am thirsty please."
+  },
+  {
+    "context": "I think I broke my arm.",
+    "abbreviation": "P, [I am in pain] C",
+    "target": "Pain, I am in pain call."
+  },
+  {
+    "context": "Do you need to use the bedpan?",
+    "abbreviation": "Y, [I need to use the washroom]",
+    "target": "Yes, I need to use the washroom."
+  },
+  {
+    "context": "Look at the cat wearing a hat.",
+    "abbreviation": "S, <Joy> [That is funny]",
+    "target": "Silly, Joy, that is funny."
+  },
+  {
+    "context": "Can I borrow your car today?",
+    "abbreviation": "A, <Son> [No] W",
+    "target": "Absolutely, Son, no way."
+  },
+  {
+    "context": "I got the scholarship!",
+    "abbreviation": "T, <Mia> [Congratulations]",
+    "target": "Terrific, Mia, congratulations."
+  },
+  {
+    "context": "Are you hungry for lunch?",
+    "abbreviation": "Y, [I am hungry] F",
+    "target": "Yes, I am hungry for."
+  },
+  {
+    "context": "Do you love me?",
+    "abbreviation": "Y, [Love] YM",
+    "target": "Yes, love you more."
+  },
+  {
+    "context": "Stop fidgeting with the IV line.",
+    "abbreviation": "S, [I am angry] I",
+    "target": "Stop, I am angry it."
+  },
+  {
+    "context": "I am going to turn off the TV.",
+    "abbreviation": "W, [Please wait] M",
+    "target": "Wait, please wait moment."
+  },
+  {
+    "context": "Do you agree with the plan?",
+    "abbreviation": "T, <Sir> [Yes]",
+    "target": "Totally, Sir, yes."
+  },
+  {
+    "context": "I brought you some tea.",
+    "abbreviation": "L, [Thank you] <Mom>",
+    "target": "Lovely, thank you Mom."
+  },
+  {
+    "context": "Who is at the door?",
+    "abbreviation": "IDK, [Hello] W",
+    "target": "I don't know, hello who?"
+  },
+  {
+    "context": "Why are you looking down?",
+    "abbreviation": "I, <Dad> [I am sad]",
+    "target": "I, Dad, I am sad."
+  },
+  {
+    "context": "Do you feel feverish?",
+    "abbreviation": "Y, [I feel sick] H",
+    "target": "Yes, I feel sick hot."
+  },
+  {
+    "context": "Is it time for your insulin?",
+    "abbreviation": "I, [I need my medication]",
+    "target": "It I need my medication."
+  },
+  {
+    "context": "You look cheerful today.",
+    "abbreviation": "B, [I am happy] T",
+    "target": "Because, I am happy today."
+  },
+  {
+    "context": "I am going to move your arm.",
+    "abbreviation": "D, [STOP PLEASE!] H",
+    "target": "Don't, STOP PLEASE! Hurts."
+  },
+  {
+    "context": "Can you show me where it hurts?",
+    "abbreviation": "H, [Look here] A",
+    "target": "Here, look here arm."
+  },
+  {
+    "context": "Do you need a doctor?",
+    "abbreviation": "Y, [I need a doctor] N",
+    "target": "Yes, I need a doctor now."
+  },
+  {
+    "context": "Can we walk to the corner?",
+    "abbreviation": "N, [I need to rest]",
+    "target": "No, I need to rest."
+  },
+  {
+    "context": "Give me the remote.",
+    "abbreviation": "A, <Bro> [Please]",
+    "target": "Ask, Bro, please."
+  },
+  {
+    "context": "Can you open the window?",
+    "abbreviation": "Y, [It is too hot]",
+    "target": "Yes, it is too hot."
+  },
+  {
+    "context": "Why are you wearing a coat inside?",
+    "abbreviation": "B, [It is too cold]",
+    "target": "Because, it is too cold."
+  },
+  {
+    "context": "I fixed the broken chair.",
+    "abbreviation": "G, <Tim> [Good job]",
+    "target": "Great, Tim, good job."
+  },
+  {
+    "context": "Is the pain sharp?",
+    "abbreviation": "Y, [I am in pain] B",
+    "target": "Yes, I am in pain bad."
+  },
+  {
+    "context": "Are you worried about the trip?",
+    "abbreviation": "Y, [I am worried] L",
+    "target": "Yes, I am worried lost."
+  },
+  {
+    "context": "There is a fire in the kitchen!",
+    "abbreviation": "R, [Help! This is an emergency!]",
+    "target": "Run, Help! This is an emergency!"
+  },
+  {
+    "context": "Can we go now?",
+    "abbreviation": "N, [Please wait] S",
+    "target": "No, please wait sec."
+  },
+  {
+    "context": "Are you hungry?",
+    "abbreviation": "S, [I am hungry] V",
+    "target": "Starving, I am hungry very."
+  },
+  {
+    "context": "See you tomorrow.",
+    "abbreviation": "B, [Love] Y",
+    "target": "Bye, Love you."
+  },
+  {
+    "context": "Is this the right way?",
+    "abbreviation": "T, <Driver> [No]",
+    "target": "Think, Driver, no."
+  },
+  {
+    "context": "Did you finish the puzzle?",
+    "abbreviation": "F, [Yes] I",
+    "target": "Finally, yes I."
+  },
+  {
+    "context": "I cleaned your glasses.",
+    "abbreviation": "P, [Thank you] D",
+    "target": "Perfect, thank you dear."
+  },
+  {
+    "context": "Hi, I am your new neighbor.",
+    "abbreviation": "W, [Hello] N",
+    "target": "Welcome, hello neighbor."
+  },
+  {
+    "context": "Why are you crying?",
+    "abbreviation": "L, [I am sad] M",
+    "target": "Lost, I am sad money."
+  },
+  {
+    "context": "Want a drink?",
+    "abbreviation": "Y, [I am thirsty] J",
+    "target": "Yes, I am thirsty juice."
+  },
+  {
+    "context": "Where are your pills?",
+    "abbreviation": "T, [I need my medication]",
+    "target": "There, I need my medication."
+  },
+  {
+    "context": "You look green.",
+    "abbreviation": "Y, [I feel sick] T",
+    "target": "Yes, I feel sick throw."
+  },
+  {
+    "context": "Why are you shouting?",
+    "abbreviation": "I [I am angry] L",
+    "target": "I I am angry loud."
+  },
+  {
+    "context": "You seem happy.",
+    "abbreviation": "I, <Sue> [I am happy]",
+    "target": "I, Sue, I am happy."
+  },
+  {
+    "context": "I got the promotion!",
+    "abbreviation": "W, [Congratulations] H",
+    "target": "Wow, congratulations honey."
+  },
+  {
+    "context": "Stop the car.",
+    "abbreviation": "Q, [I need to use the washroom]",
+    "target": "Quick, I need to use the washroom."
+  },
+  {
+    "context": "Is the coffee hot?",
+    "abbreviation": "Y, [It is too hot]",
+    "target": "Yes, it is too hot."
+  },
+  {
+    "context": "Are you awake?",
+    "abbreviation": "B, [I am sleepy]",
+    "target": "Barely, I am sleepy."
+  },
+  {
+    "context": "Get me the paper.",
+    "abbreviation": "S, [Please] F",
+    "target": "Say, please first."
+  },
+  {
+    "context": "I'm not stopping.",
+    "abbreviation": "I, [STOP PLEASE!] S",
+    "target": "I, STOP PLEASE! say."
+  },
+  {
+    "context": "Does it hurt?",
+    "abbreviation": "Y, [I am in pain] A",
+    "target": "Yes, I am in pain arm."
+  },
+  {
+    "context": "Was it funny?",
+    "abbreviation": "V, [That is funny] J",
+    "target": "Very, that is funny joke."
+  },
+  {
+    "context": "Are you okay?",
+    "abbreviation": "N, [I am very upset]",
+    "target": "No, I am very upset."
+  },
+  {
+    "context": "Can we walk?",
+    "abbreviation": "N, [I need to rest]",
+    "target": "No, I need to rest."
+  },
+  {
+    "context": "What is that?",
+    "abbreviation": "S, [Look here] B",
+    "target": "See, look here bird."
+  },
+  {
+    "context": "Is it bad?",
+    "abbreviation": "Y, [I need a doctor]",
+    "target": "Yes, I need a doctor."
+  },
+  {
+    "context": "I built this.",
+    "abbreviation": "A, [Good job] S",
+    "target": "Amazing, good job son."
+  },
+  {
+    "context": "Is he lost?",
+    "abbreviation": "I, [I am worried] S",
+    "target": "I, I am worried so."
+  },
+  {
+    "context": "He is choking!",
+    "abbreviation": "H, [Help! This is an emergency!]",
+    "target": "Help, Help! This is an emergency!"
+  },
+  {
+    "context": "Want dinner?",
+    "abbreviation": "Y, [I am hungry] IWS",
+    "target": "Yes, I am hungry. I want steak."
+  },
+  {
+    "context": "Goodnight.",
+    "abbreviation": "G, [Love] Y",
+    "target": "Goodnight, Love you."
+  },
+  {
+    "context": "Can we leave?",
+    "abbreviation": "N, [Please wait] M",
+    "target": "No, please wait mom."
+  },
+  {
+    "context": "Is this right?",
+    "abbreviation": "Y, [Yes] C",
+    "target": "Yes, yes correct."
+  },
+  {
+    "context": "Do you want this?",
+    "abbreviation": "N, [No] W",
+    "target": "No, no way."
+  },
+  {
+    "context": "I washed the dishes.",
+    "abbreviation": "T, [Thank you] K",
+    "target": "Thanks, thank you kid."
+  },
+  {
+    "context": "Hi there.",
+    "abbreviation": "H, [Hello] S",
+    "target": "Hi, Hello sir."
+  },
+  {
+    "context": "Why so sad?",
+    "abbreviation": "M, [I am sad] L",
+    "target": "Miss, I have a sad life."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHDNKWTDB <Liam> [I am worried] ATR",
+    "target": "I honestly do not know what to do because Liam I am worried about the results."
+  },
+  {
+    "context": "",
+    "abbreviation": "WYHAM, <Sophia> [Please] HMATP",
+    "target": "When you have a moment, Sophia, please help me adjust this pillow."
+  },
+  {
+    "context": "",
+    "abbreviation": "ITWRAGI, <Noah> [Good job] OTP",
+    "target": "I think was really a good idea, Noah, good job on the project."
+  },
+  {
+    "context": "",
+    "abbreviation": "IANFVWTATI [I need a doctor] S",
+    "target": "I am not feeling very well today and I think I need a doctor soon."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWIYCCTWB [It is too cold] IH",
+    "target": "I was wondering if you could close the window because it is too cold in here."
+  },
+  {
+    "context": "",
+    "abbreviation": "TYFETHYHD, <Emma> [Thank you] VM",
+    "target": "Thank you for everything that you have done, Emma, thank you very much."
+  },
+  {
+    "context": "",
+    "abbreviation": "ICBTHMJH, [That is funny] IEL",
+    "target": "I can't believe that happened just here, that is funny is everyone laughing."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWJCTSYTI [I am happy] TSY",
+    "target": "I was just calling to say that I am happy to see you."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHKMYBA [I am in pain] RN",
+    "target": "I have knots my back and I am in pain right now."
+  },
+  {
+    "context": "",
+    "abbreviation": "CDYPOTAC, <Oliver> [It is too hot] T",
+    "target": "Could dad you put on the air conditioning, Oliver, it is too hot today."
+  },
+  {
+    "context": "",
+    "abbreviation": "IAATMH, <Charlotte> [I am very upset] WTY",
+    "target": "I am about to lose my head, Charlotte, I am very upset with this year."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTSAMBT [I am sleepy] S",
+    "target": "I would like to sleep a minute but I am sleepy so."
+  },
+  {
+    "context": "",
+    "abbreviation": "H, <Elijah> [Look here] ATBOP",
+    "target": "Hey, Elijah, look here at the birds on porch."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHRBTBSRYRT, <James> [I am sad] TIO",
+    "target": "I have really been thinking big should read your recommended title, James, I am sad that is over."
+  },
+  {
+    "context": "",
+    "abbreviation": "IDKWIWTLMP, <Ava> [I am angry] A",
+    "target": "I don't know where I want to leave my phone, Ava, I am angry again."
+  },
+  {
+    "context": "",
+    "abbreviation": "HITGTSYAA, <Benjamin> [Hello] MF",
+    "target": "Hey it is good to see you again after awhile, Benjamin, hello my friend."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFLTSIAAPLITK, <Lucas> [Help! This is an emergency!]",
+    "target": "I feel like there should is a awful paint leak in the kitchen, Lucas, Help! This is an emergency!"
+  },
+  {
+    "context": "",
+    "abbreviation": "DYRWAHST, <Mia> [No] ID",
+    "target": "Do you remember what aunt Helen said today, Mia, no I don't."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWHWCSTWP, <Mason> [I am happy] TD",
+    "target": "I was hoping we could spend time with Peter, Mason, I am happy to do."
+  },
+  {
+    "context": "",
+    "abbreviation": "TNOTOIVL, <Ethan> [Please wait] UIC",
+    "target": "The noise outside the office is very loud, Ethan, please wait until I close."
+  },
+  {
+    "context": "",
+    "abbreviation": "HYSMRG, <Harper> [I need to use the washroom] F",
+    "target": "Have you seen my reading glasses, Harper, I need to use the washroom first."
+  },
+  {
+    "context": "",
+    "abbreviation": "IDTIFUTVTT, <Alexander> [I feel sick] A",
+    "target": "I don't think I feel up to visitors to today, Alexander, I feel sick actually."
+  },
+  {
+    "context": "",
+    "abbreviation": "WSTGSO, <Gianna> [I am hungry] N",
+    "target": "When should the game start on, Gianna, I am hungry now."
+  },
+  {
+    "context": "",
+    "abbreviation": "MBIKMT, <Michael> [I am in pain] B",
+    "target": "My back is killing me today, Michael, I am in pain bad."
+  },
+  {
+    "context": "",
+    "abbreviation": "WDTDA, <Elizabeth> [I need a doctor] H",
+    "target": "When does the doctor arrive, Elizabeth, I need a doctor here."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFABAAT, <Daniel> [I am worried] T",
+    "target": "I feel a bit anxious about tomorrow, Daniel, I am worried truly."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCTITIAEMFM, <Ella> [Yes] P",
+    "target": "Can you check that if there is an email message for me, Ella, yes please."
+  },
+  {
+    "context": "",
+    "abbreviation": "ITSGTBRT, <Jacob> [It is too cold] O",
+    "target": "It seems going to be rain today, Jacob, it is too cold outside."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTHSSFL, <Avery> [I am hungry] R",
+    "target": "I would like to have some soup for lunch, Avery, I am hungry really."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYKWTKIP, <Logan> [I need my medication] S",
+    "target": "Do you know where the keys is put, Logan, I need my medication soon."
+  },
+  {
+    "context": "",
+    "abbreviation": "MFIHA, <Sofia> [I am in pain] T",
+    "target": "My feet is hurting a, Sofia, I am in pain there."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWTWATTY, <Jackson> [Hello] B",
+    "target": "I wanted to write a text to you, Jackson, hello buddy."
+  },
+  {
+    "context": "",
+    "abbreviation": "CWPOMSFC, <Jack> [Please] D",
+    "target": "Can we put on music some for calm, Jack, please do."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHAITME, <Abigail> [STOP PLEASE!] S",
+    "target": "I have an itch the my ear, Abigail, STOP PLEASE! scratching."
+  },
+  {
+    "context": "",
+    "abbreviation": "WWAWTS, <Aiden> [I am sleepy] C",
+    "target": "Where we are watching the show, Aiden, I am sleepy couch."
+  },
+  {
+    "context": "",
+    "abbreviation": "IIFCIT, <Emily> [It is too cold] T",
+    "target": "It is freezing cold in today, Emily, it is too cold today."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYHMWT, <Sebastian> [Please] H",
+    "target": "Can you help me with this, Sebastian, please help."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTRB, <Camila> [I need to rest] E",
+    "target": "I would like to read book, Camila, I need to rest eyes."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYHATM, <Owen> [Please wait] O",
+    "target": "Do you have a time minute, Owen, please wait one."
+  },
+  {
+    "context": "",
+    "abbreviation": "TSBHAOB, <Luna> [I am in pain] B",
+    "target": "The sun burn hurts a on back, Luna, I am in pain bad."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYFMPP, <Samuel> [Thank you] S",
+    "target": "Can you fix my pillow position, Samuel, thank you sir."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTGTTB, <Tessa> [I need to use the washroom] F",
+    "target": "I would like to go to the bathroom, Tessa, I need to use the washroom fast."
+  },
+  {
+    "context": "",
+    "abbreviation": "HYSMP, <Matthew> [I am very upset] I",
+    "target": "Have you seen my purse, Matthew, I am very upset it."
+  },
+  {
+    "context": "",
+    "abbreviation": "ITMAWBCT, <Grace> [I am sad] A",
+    "target": "I think my arm was bruised coming Tuesday, Grace, I am sad about."
+  },
+  {
+    "context": "",
+    "abbreviation": "WITA, <Joseph> [I need a doctor] A",
+    "target": "When is the appointment, Joseph, I need a doctor appointment."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTGTTC, <Violet> [I am happy] G",
+    "target": "I would like to go to the church, Violet, I am happy go."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYBMMP, <Levi> [Please] P",
+    "target": "Can you bring my phone, Levi, please pass."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <Scarlett> [I need to use the washroom] B",
+    "target": "I would like to shower, Scarlett, I need to use the washroom before."
+  },
+  {
+    "context": "",
+    "abbreviation": "HIHFTJ, <Mateo> [Congratulations] I",
+    "target": "Has it heard from the job, Mateo, congratulations if."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCMM, <Eleanor> [Please] C",
+    "target": "Can you check my mail, Eleanor, please check."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <David> [I am sleepy] V",
+    "target": "I would like to sleep, David, I am sleepy very."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYRTWGLN, <Hannah> [Good job] R",
+    "target": "Did you record the winning game last night, Hannah, good job recording."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTW, <John> [I need to rest] L",
+    "target": "I would like to walk, John, I need to rest legs."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYPMA, <Wyatt> [I am hungry] F",
+    "target": "Can you pass me apple, Wyatt, I am hungry for."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWTGTS, <Lillian> [I am sleepy] N",
+    "target": "I want to go to sleep, Lillian, I am sleepy now."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYTOTL, <Luke> [It is too hot] B",
+    "target": "Can you turn on the light, Luke, it is too hot bulb."
+  },
+  {
+    "context": "",
+    "abbreviation": "IMA, <Addison> [I am sad] T",
+    "target": "I miss April, Addison, I am sad today."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCTD, <Asher> [It is too cold] D",
+    "target": "Can you close the door, Asher, it is too cold draft."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTP, <Aubrey> [I am happy] P",
+    "target": "I would like to paint, Aubrey, I am happy paint."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYOMW, <Julian> [It is too hot] A",
+    "target": "Can you open my window, Julian, it is too hot air."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTR, <Stella> [I am happy] B",
+    "target": "I would like to read, Stella, I am happy book."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYHMWT, <Leo> [Please] H",
+    "target": "Can you help me with this, Leo, please help."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTL, <Natalie> [I am happy] M",
+    "target": "I would like to listen, Natalie, I am happy music."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYBMA, <Lincoln> [I am hungry] S",
+    "target": "Can you bring me a, Lincoln, I am hungry sandwich."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <Zoe> [I am happy] S",
+    "target": "I would like to sing, Zoe, I am happy song."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYTID, <Isaac> [I am angry] L",
+    "target": "Can you turn it down, Isaac, I am angry loud."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTD, <Leah> [I am happy] A",
+    "target": "I would like to draw, Leah, I am happy art."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYGMA, <Gabriel> [I am hungry] A",
+    "target": "Can you get me a, Gabriel, I am hungry apple."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTW, <Hazel> [I need to rest] F",
+    "target": "I would like to walk, Hazel, I need to rest first."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCMA, <Dylan> [I am worried] S",
+    "target": "Can you call my aunt, Dylan, I am worried she."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTW, <Violet> [I am happy] L",
+    "target": "I would like to write, Violet, I am happy letter."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYFML, <Thomas> [Thank you] S",
+    "target": "Can you fix my lamp, Thomas, thank you sir."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTC, <Aurora> [I am hungry] D",
+    "target": "I would like to cook, Aurora, I am hungry dinner."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCTW, <Anthony> [I am worried] R",
+    "target": "Can you check the weather, Anthony, I am worried rain."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTP, <Savannah> [I am happy] G",
+    "target": "I would like to play, Savannah, I am happy game."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMMB, <Christopher> [I am sleepy] P",
+    "target": "Can you move my bed, Christopher, I am sleepy pillow."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <Brooklyn> [I am happy] W",
+    "target": "I would like to swim, Brooklyn, I am happy water."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCMB, <Joshua> [Please] C",
+    "target": "Can you charge my battery, Joshua, please charge."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTD, <Bella> [I am happy] D",
+    "target": "I would like to dance, Bella, I am happy dance."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYFMB, <Andrew> [Thank you] S",
+    "target": "Can you find my book, Andrew, thank you son."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTG, <Claire> [I am happy] F",
+    "target": "I would like to garden, Claire, I am happy flowers."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYWTC, <Theodore> [Good job] C",
+    "target": "Can you wash the car, Theodore, good job clean."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <Skylar> [I am happy] D",
+    "target": "I would like to sew, Skylar, I am happy dress."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYFTS, <Ryan> [I am happy] N",
+    "target": "Can you feed the squirrel, Ryan, I am happy nuts."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTC, <Lucy> [Good job] R",
+    "target": "I would like to clean, Lucy, good job room."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMTL, <Adrian> [Good job] G",
+    "target": "Can you mow the lawn, Adrian, good job grass."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTB, <Paisley> [I am hungry] C",
+    "target": "I would like to bake, Paisley, I am hungry cake."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYWTP, <Nolan> [Thank you] B",
+    "target": "Can you water the plants, Nolan, thank you boy."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS, <Everly> [I am happy] B",
+    "target": "I would like to shop, Everly, I am happy buy."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYTOTO, <Christian> [Thank you] D",
+    "target": "Can you take out the order, Christian, thank you dear."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTK, <Anna> [I am happy] S",
+    "target": "I would like to knit, Anna, I am happy scarf."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYMTB, <Colton> [Thank you] S",
+    "target": "Can you make the bed, Colton, thank you son."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTC, <Caroline> [I am happy] B",
+    "target": "I would like to crochet, Caroline, I am happy blanket."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYDTD, <Elias> [Thank you] K",
+    "target": "Can you do the dishes, Elias, thank you kid."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTP, <Nova> [I am happy] P",
+    "target": "I would like to puzzle, Nova, I am happy piece."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYVTR, <Jeremiah> [Good job] C",
+    "target": "Can you vacuum the rug, Jeremiah, good job clean."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTM, <Samantha> [I need to rest] Q",
+    "target": "I would like to meditate, Samantha, I need to rest quiet."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYDTF, <Isaiah> [Thank you] D",
+    "target": "Can you dust the furniture, Isaiah, thank you dust."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTY, <Maya> [I am happy] S",
+    "target": "I would like to yoga, Maya, I am happy stretch."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYSTT, <Charles> [I am hungry] D",
+    "target": "Can you set the table, Charles, I am hungry dinner."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTE, <Willow> [I need to rest] T",
+    "target": "I would like to exercise, Willow, I need to rest tired."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCTT, <Thomas> [Thank you] C",
+    "target": "Can you clear the table, Thomas, thank you clean."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTJ, <Kinsley> [I need to rest] F",
+    "target": "I would like to jog, Kinsley, I need to rest fast."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYLTD, <Connor> [Thank you] H",
+    "target": "Can you load the dishwasher, Connor, thank you help."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTR, <Naomi> [I need to rest] L",
+    "target": "I would like to run, Naomi, I need to rest legs."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYUTD, <Landon> [Good job] D",
+    "target": "Can you unload the dishwasher, Landon, good job dishes."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHAHTIDNKWTD [I am worried] AI",
+    "target": "I have a high temperature and I do not know what to do, I am worried about infection."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWJWTICYGMW [I am thirsty] P",
+    "target": "I was just wondering today if you could get me water, I am thirsty please."
+  },
+  {
+    "context": "",
+    "abbreviation": "TYFETHYHD [Thank you] VM",
+    "target": "Thank you for everything that you have done, thank you very much."
+  },
+  {
+    "context": "",
+    "abbreviation": "ICBTISSH [Help! This is an emergency!] C9",
+    "target": "I cannot believe there is so much smoke here, Help! This is an emergency! Call 911."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTSAMBT [I am sleepy] S",
+    "target": "I would like to stay a minute but I am sleepy so."
+  },
+  {
+    "context": "",
+    "abbreviation": "H, [Look here] ATBOP",
+    "target": "Hey, look here at the birds on the porch."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHRBTBSRYRT [I am sad] TIO",
+    "target": "I have really been thinking big should read your recommended title, I am sad that is over."
+  },
+  {
+    "context": "",
+    "abbreviation": "IDKWIWTLMP [I am angry] A",
+    "target": "I don't know where I want to leave my phone, I am angry again."
+  },
+  {
+    "context": "",
+    "abbreviation": "HITGTSYAA [Hello] MF",
+    "target": "Hey it is good to see you again after awhile, hello my friend."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFLTSIAAPLITK [Help! This is an emergency!]",
+    "target": "I feel like there should is a awful paint leak in the kitchen, Help! This is an emergency!"
+  },
+  {
+    "context": "",
+    "abbreviation": "DYRWAHST [No] ID",
+    "target": "Do you remember what aunt Helen said today, no I don't."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWHWCSTWP [I am happy] TD",
+    "target": "I was hoping we could spend time with the puzzle, I am happy to do."
+  },
+  {
+    "context": "",
+    "abbreviation": "TNOTOIVL [Please wait] UIC",
+    "target": "The noise outside the office is very loud, please wait until I close."
+  },
+  {
+    "context": "",
+    "abbreviation": "HYSMRG [I need to use the washroom] F",
+    "target": "Have you seen my reading glasses, I need to use the washroom first."
+  },
+  {
+    "context": "",
+    "abbreviation": "IDTIFUTVTT [I feel sick] A",
+    "target": "I don't think I feel up to visitors to today, I feel sick actually."
+  },
+  {
+    "context": "",
+    "abbreviation": "WSTGSO [I am hungry] N",
+    "target": "When should the game start on, I am hungry now."
+  },
+  {
+    "context": "",
+    "abbreviation": "MBIKMT [I am in pain] B",
+    "target": "My back is killing me today, I am in pain bad."
+  },
+  {
+    "context": "",
+    "abbreviation": "WDTDA [I need a doctor] H",
+    "target": "When does the doctor arrive, I need a doctor here."
+  },
+  {
+    "context": "",
+    "abbreviation": "IFABAAT [I am worried] T",
+    "target": "I feel a bit anxious about tomorrow, I am worried truly."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCTITIAEMFM [Yes] P",
+    "target": "Can you check that if there is an email message for me, yes please."
+  },
+  {
+    "context": "",
+    "abbreviation": "ITSGTBRT [It is too cold] O",
+    "target": "It seems going to be rain today, it is too cold outside."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTHSSFL [I am hungry] R",
+    "target": "I would like to have some soup for lunch, I am hungry really."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYKWTKIP [I need my medication] S",
+    "target": "Do you know where the keys is put, I need my medication soon."
+  },
+  {
+    "context": "",
+    "abbreviation": "MFIHA [I am in pain] T",
+    "target": "My feet is hurting a lot, I am in pain there."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWTWATTY [Hello] B",
+    "target": "I wanted to write a text to you, hello buddy."
+  },
+  {
+    "context": "",
+    "abbreviation": "CWPOMSFC [Please] D",
+    "target": "Can we put on music some for calm, please do."
+  },
+  {
+    "context": "",
+    "abbreviation": "IHAITME [STOP PLEASE!] S",
+    "target": "I have an itch the my ear, STOP PLEASE! scratching."
+  },
+  {
+    "context": "",
+    "abbreviation": "WWAWTS [I am sleepy] C",
+    "target": "Where we are watching the show, I am sleepy couch."
+  },
+  {
+    "context": "",
+    "abbreviation": "IIFCIT [It is too cold] T",
+    "target": "It is freezing cold in today, it is too cold today."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYHMWT [Please] H",
+    "target": "Can you help me with this, please help."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTRB [I need to rest] E",
+    "target": "I would like to read book, I need to rest eyes."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYHATM [Please wait] O",
+    "target": "Do you have a time minute, please wait one."
+  },
+  {
+    "context": "",
+    "abbreviation": "TSBHAOB [I am in pain] B",
+    "target": "The sun burn hurts a on back, I am in pain bad."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYFMPP [Thank you] S",
+    "target": "Can you fix my pillow position, thank you sir."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTGTTB [I need to use the washroom] F",
+    "target": "I would like to go to the bathroom, I need to use the washroom fast."
+  },
+  {
+    "context": "",
+    "abbreviation": "HYSMP [I am very upset] I",
+    "target": "Have you seen my purse, I am very upset it."
+  },
+  {
+    "context": "",
+    "abbreviation": "ITMAWBCT [I am sad] A",
+    "target": "I think my arm was bruised coming Tuesday, I am sad about."
+  },
+  {
+    "context": "",
+    "abbreviation": "WITA [I need a doctor] A",
+    "target": "When is the appointment, I need a doctor appointment."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTGTTC [I am happy] G",
+    "target": "I would like to go to the church, I am happy go."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYBMMP [Please] P",
+    "target": "Can you bring my phone, please pass."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS [I need to use the washroom] B",
+    "target": "I would like to shower, I need to use the washroom before."
+  },
+  {
+    "context": "",
+    "abbreviation": "HIHFTJ [Congratulations] I",
+    "target": "Has it heard from the job, congratulations if."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYCMM [Please] C",
+    "target": "Can you check my mail, please check."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTS [I am sleepy] V",
+    "target": "I would like to sleep, I am sleepy very."
+  },
+  {
+    "context": "",
+    "abbreviation": "DYRTWGLN [Good job] R",
+    "target": "Did you record the winning game last night, good job recording."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWLTW [I need to rest] L",
+    "target": "I would like to walk, I need to rest legs."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYPMA [I am hungry] F",
+    "target": "Can you pass me apple, I am hungry for."
+  },
+  {
+    "context": "",
+    "abbreviation": "IWTGTS [I am sleepy] N",
+    "target": "I want to go to sleep, I am sleepy now."
+  },
+  {
+    "context": "",
+    "abbreviation": "CYTOTL [It is too hot] B",
+    "target": "Can you turn on the light, it is too hot bulb."
+  },
+  {
+    "context": "",
+    "abbreviation": "IMA [I am sad] T",
+    "target": "I miss April, I am sad today."
+  },
+  {
+    "context": "The nurse is asking if you are ready to begin the physical therapy session.",
+    "abbreviation": "N, [Please wait] AM",
+    "target": "No, please wait a minute."
+  },
+  {
+    "context": "I finally managed to fix the leaking pipe in the bathroom.",
+    "abbreviation": "TGW, [Good job] M",
+    "target": "That great work, good job mate."
+  },
+  {
+    "context": "You seem to be breathing very shallowly, are you okay?",
+    "abbreviation": "N,ICCB [I need a doctor]",
+    "target": "No, I cannot catch breath, I need a doctor."
+  },
+  {
+    "context": "Would you like me to put on your favorite sweater?",
+    "abbreviation": "Y, [It is too cold] I",
+    "target": "Yes, it is too cold inside."
+  },
+  {
+    "context": "I accidentally dropped your phone on the floor.",
+    "abbreviation": "PBC, [I am very upset] A",
+    "target": "Please be careful, I am very upset about."
+  },
+  {
+    "context": "Do you need anything before I go to the store?",
+    "abbreviation": "Y, [I need my medication] FZP",
+    "target": "Yes, I need my medication from Zellers pharmacy."
+  },
+  {
+    "context": "Look at the squirrel trying to carry that slice of pizza.",
+    "abbreviation": "L, [That is funny] I",
+    "target": "Look, that is funny indeed."
+  },
+  {
+    "context": "Are you comfortable in this chair or should we move?",
+    "abbreviation": "IWO, [I am in pain] B",
+    "target": "It wearing out, I am in pain bad."
+  },
+  {
+    "context": "I passed my final exams with flying colors!",
+    "abbreviation": "IAPOY [Congratulations] S",
+    "target": "I am proud of you, congratulations son."
+  },
+  {
+    "context": "Do you want to watch the rest of the movie now?",
+    "abbreviation": "N, [I am sleepy] G",
+    "target": "No, I am sleepy go."
+  },
+  {
+    "context": "Is there anything you want to eat for dinner?",
+    "abbreviation": "IDK,B [I am hungry]",
+    "target": "I don't know, but I am hungry."
+  },
+  {
+    "context": "Why are you looking at the water jug like that?",
+    "abbreviation": "CYGMS [I am thirsty]",
+    "target": "Can you get me some, I am thirsty."
+  },
+  {
+    "context": "I love you so much, grandpa.",
+    "abbreviation": "ILYT, [Love] Y",
+    "target": "I love you too, love you."
+  },
+  {
+    "context": "Stop trying to stand up without assistance.",
+    "abbreviation": "IAM, [I need to use the washroom]",
+    "target": "I am moving, I need to use the washroom."
+  },
+  {
+    "context": "The sun is shining directly into your eyes.",
+    "abbreviation": "C [It is too hot] ITH",
+    "target": "Close, it is too hot in here."
+  },
+  {
+    "context": "How are you feeling about the news today?",
+    "abbreviation": "IA, [I am worried] T",
+    "target": "I am, I am worried today."
+  },
+  {
+    "context": "I brought you a bouquet of roses.",
+    "abbreviation": "TAB [Thank you] D",
+    "target": "They are beautiful, thank you dear."
+  },
+  {
+    "context": "Can I have your dessert if you aren't eating it?",
+    "abbreviation": "N, [No] T",
+    "target": "No, no touching."
+  },
+  {
+    "context": "Are you excited to see your sister tomorrow?",
+    "abbreviation": "Y, [I am happy] TS",
+    "target": "Yes, I am happy to see."
+  },
+  {
+    "context": "You look a little pale in the face.",
+    "abbreviation": "I, [I feel sick] D",
+    "target": "I, I feel sick dizzy."
+  },
+  {
+    "context": "I am going to adjust the incline of the bed.",
+    "abbreviation": "W, [STOP PLEASE!] I",
+    "target": "Wait, STOP PLEASE! it."
+  },
+  {
+    "context": "Is everything okay in there?",
+    "abbreviation": "N, [Help! This is an emergency!]",
+    "target": "No, Help! This is an emergency!"
+  },
+  {
+    "context": "Can we talk about the finances later?",
+    "abbreviation": "N, [I am angry] RN",
+    "target": "No, I am angry right now."
+  },
+  {
+    "context": "Look who decided to show up!",
+    "abbreviation": "O, [Hello] B",
+    "target": "Oh, hello brother."
+  },
+  {
+    "context": "Did you see the picture of the baby?",
+    "abbreviation": "Y, [Look here] HC",
+    "target": "Yes, look here how cute."
+  },
+  {
+    "context": "Why are you crying?",
+    "abbreviation": "IJFM [I am sad]",
+    "target": "I just feel miserable, I am sad."
+  },
+  {
+    "context": "Do you want to go for a stroll in the garden?",
+    "abbreviation": "N, [I need to rest] MF",
+    "target": "No, I need to rest my feet."
+  },
+  {
+    "context": "Are you sure you want to sell the house?",
+    "abbreviation": "Y, [Yes] IA",
+    "target": "Yes, yes I am."
+  },
+  {
+    "context": "Can you verify this for me?",
+    "abbreviation": "P, [Please] S",
+    "target": "Please, please show."
+  },
+  {
+    "context": "It is freezing in this hallway.",
+    "abbreviation": "Y, [It is too cold] H",
+    "target": "Yes, it is too cold here."
+  },
+  {
+    "context": "I finished the report you asked for.",
+    "abbreviation": "E, [Good job] J",
+    "target": "Excellent, good job job."
+  },
+  {
+    "context": "You seem anxious about the surgery.",
+    "abbreviation": "I, [I am worried] D",
+    "target": "I, I am worried doctor."
+  },
+  {
+    "context": "He just fell down the stairs!",
+    "abbreviation": "Q, [Help! This is an emergency!]",
+    "target": "Quick, Help! This is an emergency!"
+  },
+  {
+    "context": "Do you want to finish this puzzle?",
+    "abbreviation": "L, [I am sleepy] N",
+    "target": "Later, I am sleepy now."
+  },
+  {
+    "context": "Is the soup warm enough?",
+    "abbreviation": "N, [It is too hot] TB",
+    "target": "No, it is too hot to burn."
+  },
+  {
+    "context": "I forgot to bring your glasses.",
+    "abbreviation": "T, [I am very upset] A",
+    "target": "That, I am very upset about."
+  },
+  {
+    "context": "Would you like some ice chips?",
+    "abbreviation": "Y, [I am thirsty] P",
+    "target": "Yes, I am thirsty please."
+  },
+  {
+    "context": "I think I broke my arm.",
+    "abbreviation": "P, [I am in pain] C",
+    "target": "Pain, I am in pain call."
+  },
+  {
+    "context": "Do you need to use the bedpan?",
+    "abbreviation": "Y, [I need to use the washroom]",
+    "target": "Yes, I need to use the washroom."
+  },
+  {
+    "context": "Look at the cat wearing a hat.",
+    "abbreviation": "S, [That is funny] J",
+    "target": "Silly, that is funny joke."
+  },
+  {
+    "context": "Can I borrow your car today?",
+    "abbreviation": "A, [No] W",
+    "target": "Absolutely, no way."
+  },
+  {
+    "context": "I got the scholarship!",
+    "abbreviation": "T, [Congratulations] D",
+    "target": "Terrific, congratulations dear."
+  },
+  {
+    "context": "Are you hungry for lunch?",
+    "abbreviation": "Y, [I am hungry] F",
+    "target": "Yes, I am hungry for."
+  },
+  {
+    "context": "Do you love me?",
+    "abbreviation": "Y, [Love] YM",
+    "target": "Yes, love you more."
+  },
+  {
+    "context": "Stop fidgeting with the IV line.",
+    "abbreviation": "S, [I am angry] I",
+    "target": "Stop, I am angry it."
+  },
+  {
+    "context": "I am going to turn off the TV.",
+    "abbreviation": "W, [Please wait] M",
+    "target": "Wait, please wait moment."
+  },
+  {
+    "context": "Do you agree with the plan?",
+    "abbreviation": "T, [Yes] S",
+    "target": "Totally, yes sir."
+  },
+  {
+    "context": "I brought you some tea.",
+    "abbreviation": "L, [Thank you] M",
+    "target": "Lovely, thank you mom."
+  },
+  {
+    "context": "Who is at the door?",
+    "abbreviation": "IDK, [Hello] W",
+    "target": "I don't know, hello who?"
+  },
+  {
+    "context": "Why are you looking down?",
+    "abbreviation": "I, [I am sad] D",
+    "target": "I, I am sad dad."
   }
 ]

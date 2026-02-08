@@ -46,6 +46,19 @@ for i, dialog in enumerate(aacDialogs):
         print(f"Done {AACCounter} AAC dialogs")
 
 
+# Load Synthetic Data
+synthetic_data_path = os.path.join("expansionModel/data", "syntheticData.json")
+
+if os.path.exists(synthetic_data_path):
+    with open(synthetic_data_path, "r", encoding="utf-8") as f:
+        synthetic_data = json.load(f)
+    
+    print(f"Loaded {len(synthetic_data)} synthetic samples")
+    tripletArray.extend(synthetic_data)
+else:
+    print(f"Failed. Data not found at {synthetic_data_path}")
+
+
 # Shuffle the combined data
 random.shuffle(tripletArray)
 

@@ -19,7 +19,7 @@ tripletArray = []
 skippedcount = 0
 
 output_dir = "expansionModel/data"
-output_filename = "daily_dialog_triplets.json"
+output_filename = "dialog_triplets.json"
 
 # Process all dialogs in train split
 for i, dialog in enumerate(dailyDialogs):
@@ -36,14 +36,14 @@ for i, dialog in enumerate(dailyDialogs):
         clean_dialogs.add_sentence(dialog, tripletArray, x)
 
 
-    print(f"Done {i+1} dialogs")
+    print(f"Done {i+1} dialogs") #Total: 11,118 ~ 60%
 
 AACCounter = 0
 for i, dialog in enumerate(aacDialogs):
     if aacLanguage[i] in ["en-GB", "en-US", "en-CA", "en"]:
         clean_dialogs.add_sentence(dialog, tripletArray, contextValue=aacContexts[i])
         AACCounter += 1
-        print(f"Done {AACCounter} AAC dialogs")
+        print(f"Done {AACCounter} AAC dialogs") #Total: 6,249 ~ 34%
 
 
 # Load Synthetic Data
@@ -53,7 +53,7 @@ if os.path.exists(synthetic_data_path):
     with open(synthetic_data_path, "r", encoding="utf-8") as f:
         synthetic_data = json.load(f)
     
-    print(f"Loaded {len(synthetic_data)} synthetic samples")
+    print(f"Loaded {len(synthetic_data)} synthetic samples") #Total: 1,177 ~ 6%
     tripletArray.extend(synthetic_data)
 else:
     print(f"Failed. Data not found at {synthetic_data_path}")

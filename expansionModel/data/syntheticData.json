@@ -1981,8 +1981,8 @@
   },
   {
     "context": "I am going to open the window for fresh air.",
-    "abbreviation": "D <Dad> ITC",
-    "target": "Don't Dad it too cold."
+    "abbreviation": "D <Dad> IITC",
+    "target": "Don't Dad it is too cold."
   },
   {
     "context": "Do you want to watch a comedy movie?",
@@ -2382,7 +2382,7 @@
   {
     "context": "The respiratory therapist is here to check your settings.",
     "abbreviation": "HIIGTSY <Dr. Ray>",
-    "target": "Hi it is good to see you Dr. Ray."
+    "target": "Hi, it is good to see you Dr. Ray."
   },
   {
     "context": "I am going to move the tray table closer to you.",
@@ -2892,7 +2892,7 @@
   {
     "context": "",
     "abbreviation": "HIIGTSYAAA <Benjamin> ",
-    "target": "Hey it is good to see you again after awhile Benjamin."
+    "target": "Hey, it is good to see you again after awhile Benjamin."
   },
   {
     "context": "",
@@ -2989,7 +2989,6 @@
     "abbreviation": "IHAIOME <Abigail> ",
     "target": "I have an itch on my ear Abigail."
   },
-
   {
     "context": "",
     "abbreviation": "IHTRN <Mom> ",
@@ -3027,7 +3026,7 @@
   },
   {
     "context": "Let's discuss your treatment plan for this week.",
-    "abbreviation": "IWTKIWTCMM <Dr.Patel> .",
+    "abbreviation": "IWTKIWCCMM <Dr.Patel> .",
     "target": "I want to know if we can change my medication Dr. Patel."
   },
   {
@@ -3042,7 +3041,7 @@
   },
   {
     "context": "How has your mobility been this week?",
-    "abbreviation": "IHBNTMAMH <Therapist Jane> ",
+    "abbreviation": "IHBNTMAMAMH <Therapist Jane> ",
     "target": "I have been needing too much assistance moving around my house Therapist Jane."
   },
   {
@@ -3052,17 +3051,17 @@
   },
   {
     "context": "I noticed you seemed uncomfortable earlier. Is everything okay? Not really, I've been struggling.",
-    "abbreviation": "MABH <Olivia> AIHBGW",
+    "abbreviation": "MAHBH <Olivia> AIHBGW",
     "target": "My arm has been hurting Olivia and I have been getting worse."
   },
   {
     "context": "",
-    "abbreviation": "D <Tyler> KWTMCIS",
+    "abbreviation": "D <Tyler> KWTMCI",
     "target": "Does Tyler know where the medicine cabinet is?"
   },
   {
     "context": "I brought you some water and your medication.",
-    "abbreviation": "TYSM <Aunt> !IRDA.",
+    "abbreviation": "TYSM <Aunt> !IRDAI.",
     "target": "Thank you so much Aunt! I really do appreciate it."
   },
   {
@@ -3082,7 +3081,7 @@
   },
   {
     "context": "Your test results came back. Do you have any questions?",
-    "abbreviation": "WDTR <Nurse Sarah> ?ATWBF?",
+    "abbreviation": "WDTR <Nurse Sarah> ?ATWWBF?",
     "target": "What do they reveal Nurse Sarah? And then what will be fixed?"
   },
   {
@@ -3102,7 +3101,7 @@
   },
   {
     "context": "",
-    "abbreviation": "ILTTV <Grandpa> ",
+    "abbreviation": "ILTTTY <Grandpa> ",
     "target": "I love to talk to you Grandpa."
   },
   {
@@ -3112,7 +3111,7 @@
   },
   {
     "context": "How are you adjusting to the new medication?",
-    "abbreviation": "TNMIMFS <Dr.Johnson> BIHBHSE",
+    "abbreviation": "TNMIMMFS <Dr.Johnson> BIHBHSE",
     "target": "The new medication is making me feel sick Dr. Johnson but I have been having some energy."
   },
   {
@@ -3147,18 +3146,18 @@
   },
   {
     "context": "",
-    "abbreviation": "H <Harper> S <Joseph> TCV",
+    "abbreviation": "H <Harper> S <Joseph> TCTV",
     "target": "Has Harper seen Joseph today coming to visit?"
   },
   {
     "context": "I know things have been difficult lately.",
-    "abbreviation": "IJCTWT <Evelyn> .IFSL.",
+    "abbreviation": "IJCTWH <Evelyn> .IFSL.",
     "target": "I just can't take what's happening Evelyn. I feel so limited."
   },
   {
     "context": "",
-    "abbreviation": "CYMHMAMP <Nurse Mike> ?IUIC.",
-    "target": "Can you maybe help me adjust my pillow Nurse Mike? I'm uncomfortable in chair."
+    "abbreviation": "CYMHMAMP <Nurse Mike> ?IUITC.",
+    "target": "Can you maybe help me adjust my pillow Nurse Mike? I'm uncomfortable in the chair."
   },
   {
     "context": "What do you want to do tomorrow?",
@@ -3172,12 +3171,12 @@
   },
   {
     "context": "It's almost noon. Do you need anything?",
-    "abbreviation": "INTMM <Nurse Sarah> ",
+    "abbreviation": "INTTMM <Nurse Sarah> ",
     "target": "I need to take my medication Nurse Sarah."
   },
   {
     "context": "",
-    "abbreviation": "I <Alex> CVTARN?",
+    "abbreviation": "I <Alex> CTVTARN?",
     "target": "Is Alex coming to visit this afternoon right now?"
   },
   {
@@ -3202,13 +3201,13 @@
   },
   {
     "context": "",
-    "abbreviation": "IRSHT <Emma> CVT!",
+    "abbreviation": "IRSHT <Emma> CTVT!",
     "target": "I'm really so happy that Emma came to visit today!"
   },
   {
     "context": "",
-    "abbreviation": "WTIRN <Dad> ?",
-    "target": "What time is it right now Dad?"
+    "abbreviation": "WTIIIRN <Dad> ?",
+    "target": "What time is it is right now Dad?"
   },
   {
     "context": "You've been sitting for a while. Need anything?",
@@ -3222,7 +3221,7 @@
   },
   {
     "context": "",
-    "abbreviation": "IITRT <Michael> ?",
+    "abbreviation": "IIRTRN <Michael> ?",
     "target": "Is it raining today right now Michael?"
   },
   {
@@ -3232,8 +3231,8 @@
   },
   {
     "context": "",
-    "abbreviation": "C <Uncle> TMTTV?",
-    "target": "Can Uncle turn me the television?"
+    "abbreviation": "C <Uncle> TOTT?",
+    "target": "Can Uncle turn on the television?"
   },
   {
     "context": "I wanted to check in about your breathing exercises.",
@@ -3257,7 +3256,7 @@
   },
   {
     "context": "I'm so glad I could stop by today.",
-    "abbreviation": "TYSFC <James> .IMMD.",
+    "abbreviation": "TYSMFC <James> .IMMTM.",
     "target": "Thank you so much for coming James. It means much to me."
   },
   {
@@ -3267,12 +3266,12 @@
   },
   {
     "context": "You don't look so good. What's wrong?",
-    "abbreviation": "IFNRW <Nurse Mike> .ITIMN",
+    "abbreviation": "IFNRN <Nurse Mike> .ITIMMN.",
     "target": "I'm feeling nauseous right now Nurse Mike. I think it's my medication now."
   },
   {
     "context": "",
-    "abbreviation": "C <Daniel> OTW?IWLSFS.",
+    "abbreviation": "C <Daniel> OTW?IWLSFA.",
     "target": "Can Daniel open the window? I would like some fresh air."
   },
   {
@@ -3287,7 +3286,7 @@
   },
   {
     "context": "",
-    "abbreviation": "INTUTTBRN <Dad> !",
+    "abbreviation": "INTUTBRN <Dad> !",
     "target": "I need to use the bathroom right now Dad!"
   },
   {
@@ -3302,7 +3301,7 @@
   },
   {
     "context": "",
-    "abbreviation": "CYMHMCM <Christopher> ?ICGIT.",
+    "abbreviation": "CYMHMCM <Christopher> ?ICGITW.",
     "target": "Can you maybe help me call Mom Christopher? I can't get it to work."
   },
   {
@@ -3312,12 +3311,12 @@
   },
   {
     "context": "",
-    "abbreviation": "WAWTDTD <Nurse Sarah> ?",
+    "abbreviation": "WAWTDT <Nurse Sarah> ?",
     "target": "What are we to do today Nurse Sarah?"
   },
   {
     "context": "Are you comfortable?",
-    "abbreviation": "N.CYMPAMBU <Brother> ?",
+    "abbreviation": "N.CYMPAPMBU <Brother> ?",
     "target": "No. Can you maybe put another pillow my back up Brother?"
   },
   {
@@ -3327,8 +3326,8 @@
   },
   {
     "context": "Is the pain the same as yesterday?",
-    "abbreviation": "IPIGW <Dr.Lee> .",
-    "target": "It's pain is getting worse Dr. Lee."
+    "abbreviation": "TPIGW <Dr.Lee> .",
+    "target": "The pain is getting worse Dr. Lee."
   },
   {
     "context": "",
@@ -3342,13 +3341,13 @@
   },
   {
     "context": "",
-    "abbreviation": "CYMSWMFAW <Emma> ?IFLRLN.",
+    "abbreviation": "CYMSWMFAW <Emma> ?IFLRN.",
     "target": "Can you maybe sit with me for a while Emma? I'm feeling lonely right now."
   },
   {
     "context": "Is the room temperature okay?",
-    "abbreviation": "ITRH.C <Dad> TTAC?",
-    "target": "It's too really hot. Can Dad turn the air conditioning?"
+    "abbreviation": "IIRTH.C <Dad> TTAC?",
+    "target": "It is really too hot. Can Dad turn the air conditioning?"
   },
   {
     "context": "",
@@ -3382,7 +3381,7 @@
   },
   {
     "context": "It's supposed to be nice tomorrow.",
-    "abbreviation": "CWGOTPT <Dad> ?",
+    "abbreviation": "CWGOTTPT <Dad> ?",
     "target": "Can we go outside to the patio tomorrow Dad?"
   },
   {
@@ -3417,8 +3416,8 @@
   },
   {
     "context": "How is the pain medication working?",
-    "abbreviation": "IPMINH <Dr.Patel> .CWTSED?",
-    "target": "It's pain medication is not helping Dr. Patel. Can we try something else different?"
+    "abbreviation": "TPMINH <Dr.Patel> .CWTSED?",
+    "target": "The pain medication is not helping Dr. Patel. Can we try something else different?"
   },
   {
     "context": "",
@@ -3432,8 +3431,8 @@
   },
   {
     "context": "How's the pain now?",
-    "abbreviation": "IPIGB <Dr.Williams> !",
-    "target": "It's pain is getting better Dr. Williams!"
+    "abbreviation": "TPIGB <Dr.Williams> !",
+    "target": "The pain is getting better Dr. Williams!"
   },
   {
     "context": "",
@@ -3487,22 +3486,13 @@
   },
   {
     "context": "I'm so happy to see you!",
-    "abbreviation": "IASHT <Emma> CVT!IMMD.",
+    "abbreviation": "IASHT <Emma> CTVT!IMMTM.",
     "target": "I am so happy that Emma came to visit today! It means much to me."
   },
-
-
-
-
-
-
-
-
-
   {
     "context": "The nurse is asking if you are ready to start the exercises.",
     "abbreviation": "NIANR [Please wait] ",
-    "target": "No I am not ready, Please wait."
+    "target": "No, I am not ready, Please wait."
   },
   {
     "context": "Do you want me to turn up the heat?",
@@ -3521,8 +3511,8 @@
   },
   {
     "context": "How are you feeling this morning?",
-    "abbreviation": "NKG [I am sad]  ",
-    "target": "Not keeping good I am sad."
+    "abbreviation": "NFG [I am sad]  ",
+    "target": "Not feeling good I am sad."
   },
   {
     "context": "The TV volume is very loud.",
@@ -3542,22 +3532,22 @@
   {
     "context": "Look, the dog is chasing its tail!",
     "abbreviation": "L [That is funny]  ",
-    "target": "Look That is funny."
+    "target": "Look, That is funny."
   },
   {
     "context": "Do you want to watch a movie?",
     "abbreviation": "N [I am sleepy]  ",
-    "target": "No I am sleepy."
+    "target": "No, I am sleepy."
   },
   {
     "context": "The doctor is here to see you.",
     "abbreviation": " [Hello] D",
-    "target": "Hello Doctor."
+    "target": "Hello, Doctor."
   },
   {
     "context": "I bought you your favorite chocolate.",
     "abbreviation": "O [I love] Y",
-    "target": "Oh I Love you."
+    "target": "Oh, I Love you."
   },
   {
     "context": "Why are you pressing the buzzer?",
@@ -3567,7 +3557,7 @@
   {
     "context": "Can I get you a glass of water?",
     "abbreviation": "Y [I am thirsty]  ",
-    "target": "Yes I am thirsty."
+    "target": "Yes, I am thirsty."
   },
   {
     "context": "We are planning a trip to the beach.",
@@ -3582,12 +3572,12 @@
   {
     "context": "Do you want to try the new soup?",
     "abbreviation": "N [I feel sick]  ",
-    "target": "No I feel sick."
+    "target": "No, I feel sick."
   },
   {
     "context": "Are you okay with me changing the channel?",
     "abbreviation": " [Yes] IDM",
-    "target": "Yes I don't mind."
+    "target": "Yes, I don't mind."
   },
   {
     "context": "Someone is blocking your view of the window.",
@@ -3596,8 +3586,8 @@
   },
   {
     "context": "Did you hear that Sarah got the job?",
-    "abbreviation": "TGN [Congratulations] ",
-    "target": "That great news Congratulations."
+    "abbreviation": "TIGN [Congratulations] ",
+    "target": "That is great news Congratulations."
   },
   {
     "context": "I am going to adjust your leg now.",
@@ -3607,7 +3597,7 @@
   {
     "context": "Do you want dinner now?",
     "abbreviation": "Y [I am hungry]  ",
-    "target": "Yes I am hungry."
+    "target": "Yes, I am hungry."
   },
   {
     "context": "How is the temperature in the room?",
@@ -3622,17 +3612,17 @@
   {
     "context": "Are you anxious about the surgery?",
     "abbreviation": "Y [I am worried]  ",
-    "target": "Yes I am worried."
+    "target": "Yes, I am worried."
   },
   {
     "context": "Do you need me to call someone?",
     "abbreviation": "Y [I need a doctor]  ",
-    "target": "Yes I need a doctor."
+    "target": "Yes, I need a doctor."
   },
   {
     "context": "Let's go for a walk outside.",
     "abbreviation": "W [I need to rest]  ",
-    "target": "Wait I need to rest."
+    "target": "Wait, I need to rest."
   },
   {
     "context": "What's the matter?",
@@ -3647,7 +3637,7 @@
   {
     "context": "Did you finish the painting?",
     "abbreviation": " [Yes] IFF",
-    "target": "Yes It finally finished."
+    "target": "Yes, It finally finished."
   },
   {
     "context": "You seem to be in distress.",
@@ -3672,7 +3662,7 @@
   {
     "context": "Are you feeling any pain?",
     "abbreviation": "Y [I am in pain]  ",
-    "target": "Yes I am in pain."
+    "target": "Yes, I am in pain."
   },
   {
     "context": "Can I turn on the radio?",
@@ -3691,13 +3681,13 @@
   },
   {
     "context": "I am so sorry I broke your mug.",
-    "abbreviation": "IO [I am sad]  ",
-    "target": "It okay I am sad."
+    "abbreviation": "IIO [I am sad]  ",
+    "target": "It is okay I am sad."
   },
   {
     "context": "Are you ready for your medicine?",
     "abbreviation": "Y [I need my medication]  ",
-    "target": "Yes I need my medication."
+    "target": "Yes, I need my medication."
   },
   {
     "context": "It is snowing outside.",
@@ -3707,11 +3697,11 @@
   {
     "context": "I really don't think we should go out in this weather, the forecast looks terrible.",
     "abbreviation": "IHTAWY, <Alessandro> [Yes]",
-    "target": "I have to agree with you, Alessandro, Yes it is dangerous."
+    "target": "I have to agree with you, Alessandro, Yes, it is dangerous."
   },
   {
     "context": "Did you manage to finish that puzzle you were working on all week?",
-    "abbreviation": "ID,AIPOM [Good job OI]",
+    "abbreviation": "ID,AIAPOMGJOI",
     "target": "I did, and I am proud of my Good job on it."
   },
   {
@@ -3721,7 +3711,7 @@
   },
   {
     "context": "The doctor will be here in about twenty minutes to check your vitals.",
-    "abbreviation": "TYFIM <Kiyomi>, [Thank you] FW",
+    "abbreviation": "TYFIMK,TYFW",
     "target": "Thank you for informing me Kiyomi, Thank you for waiting."
   },
   {
@@ -3731,12 +3721,12 @@
   },
   {
     "context": "Do you want me to turn up the air conditioning in here?",
-    "abbreviation": "N, <Tariq>, [It is too cold] RN",
+    "abbreviation": "N, <Tariq>,A [It is too cold] RN",
     "target": "No, Tariq, actually It is too cold right now."
   },
   {
     "context": "I brought you a warm blanket, do you need anything else?",
-    "abbreviation": "AT, <Tariq>, [I am thirsty] ANW",
+    "abbreviation": "A <Tariq>, [I am thirsty] ANW",
     "target": "Actually Tariq, I am thirsty and need water."
   },
   {
@@ -3746,13 +3736,13 @@
   },
   {
     "context": "Are you excited about your grandson coming to visit tomorrow?",
-    "abbreviation": "Y, IAMTLFTI. [I am happy] ",
+    "abbreviation": "Y,IAMTLFTI. [I am happy] ",
     "target": "Yes, I am more than looking forward to it. I am happy."
   },
   {
     "context": "I heard that the test results came back negative!",
-    "abbreviation": "TRGN [Congratulations] TU",
-    "target": "That really great news Congratulations to us."
+    "abbreviation": "TIRGN [Congratulations] TU",
+    "target": "That is really great news Congratulations to us."
   },
   {
     "context": "We need to leave in five minutes, are you ready to go?",
@@ -3801,8 +3791,8 @@
   },
   {
     "context": "The nurse said you missed your morning dose.",
-    "abbreviation": "TR, [I need my medication] I",
-    "target": "That right, I need my medication immediately."
+    "abbreviation": "TIR, [I need my medication] I",
+    "target": "That is right, I need my medication immediately."
   },
   {
     "context": "Do you want to stay up and watch the late show?",
@@ -3842,7 +3832,7 @@
   {
     "context": "We have been walking for over an hour.",
     "abbreviation": "CWS [I need to rest] [Please]",
-    "target": "Can we stop I need to rest please."
+    "target": "Can we stop, I need to rest please."
   },
   {
     "context": "Did you see what is on the television?",
@@ -3852,16 +3842,16 @@
   {
     "context": "Are you sure you want to decline the invitation?",
     "abbreviation": "IA, <Levi> [Yes]",
-    "target": "I am, Levi, Yes I am sure."
+    "target": "I am, Levi, Yes, I am sure."
   },
   {
     "context": "I think I see smoke coming from the kitchen!",
-    "abbreviation": "C911 [Help! This is an emergency!]",
+    "abbreviation": "C9 [Help! This is an emergency!]",
     "target": "Call 911. Help! This is an emergency!"
   },
   {
     "context": "Would you like some ice in your water?",
-    "abbreviation": "P, V [I am thirsty] ",
+    "abbreviation": "P,IAVT ",
     "target": "Please, I am very thirsty."
   },
   {
@@ -3884,14 +3874,14 @@
     "abbreviation": "Y, [I am in pain] H",
     "target": "Yes, I am in pain heavily."
   },
-    {
+  {
     "context": "The room feels extremely stuffy and I can see you sweating.",
     "abbreviation": "CYOTW, [It is too hot]",
     "target": "Can you open the window, it is too hot."
   },
   {
     "context": "I see you gripping the armrest tightly, is something wrong?",
-    "abbreviation": "Y,MFA [I am in pain]",
+    "abbreviation": "Y,MFAA [I am in pain]",
     "target": "Yes, my foot aches and I am in pain."
   },
   {
@@ -3901,17 +3891,17 @@
   },
   {
     "context": "The nurse is asking if you are ready for your physical therapy session.",
-    "abbreviation": "N,INFM [Please wait]",
+    "abbreviation": "N,INFM, [Please wait]",
     "target": "No, I need five minutes, please wait."
   },
   {
     "context": "I brought your favorite book, would you like me to read it?",
-    "abbreviation": "Y,IDLTT [Thank you]",
+    "abbreviation": "Y,IWLT, [Thank you]",
     "target": "Yes, I would like that, thank you."
   },
   {
     "context": "You seem very restless in bed, do you need to get up?",
-    "abbreviation": "Y,IHTG [I need to use the washroom]",
+    "abbreviation": "Y,IHTG, [I need to use the washroom]",
     "target": "Yes, I have to go, I need to use the washroom."
   },
   {
@@ -3921,7 +3911,7 @@
   },
   {
     "context": "Are you excited about your daughter's wedding next week?",
-    "abbreviation": "Y,IO [I am happy]",
+    "abbreviation": "Y,IOA [I am happy]",
     "target": "Yes, I overjoyed and I am happy."
   },
   {
@@ -3931,7 +3921,7 @@
   },
   {
     "context": "Do you want to watch the rest of the documentary?",
-    "abbreviation": "N,ICTME [I am sleepy]",
+    "abbreviation": "N,ICTME, [I am sleepy]",
     "target": "No, I close the my eyes, I am sleepy."
   },
   {
@@ -3956,7 +3946,7 @@
   },
   {
     "context": "Is the temperature in the room okay for you?",
-    "abbreviation": "N,IF [It is too cold]",
+    "abbreviation": "N,IF, [It is too cold]",
     "target": "No, I freeze, it is too cold."
   },
   {
@@ -3966,7 +3956,7 @@
   },
   {
     "context": "Do you need your water bottle refilled?",
-    "abbreviation": "Y,MDID [I am thirsty]",
+    "abbreviation": "Y,MMID, [I am thirsty]",
     "target": "Yes, my mouth is dry, I am thirsty."
   },
   {
@@ -3981,7 +3971,7 @@
   },
   {
     "context": "I am going to move your leg to the side now.",
-    "abbreviation": "W,IH [STOP PLEASE!]",
+    "abbreviation": "W,IH, [STOP PLEASE!]",
     "target": "Wait, it hurts, STOP PLEASE!"
   },
   {
@@ -4006,28 +3996,28 @@
   },
   {
     "context": "Are you okay to continue walking?",
-    "abbreviation": "N,MTA [I need to rest]",
+    "abbreviation": "N,MTA, [I need to rest]",
     "target": "No, my tired ache, I need to rest."
   },
   {
     "context": "Did you take your pills this morning?",
-    "abbreviation": "N,IF [I need my medication]",
+    "abbreviation": "N,IF, [I need my medication]",
     "target": "No, I forgot, I need my medication."
   },
   {
     "context": "He just collapsed on the floor!",
-    "abbreviation": "C911 [Help! This is an emergency!]",
+    "abbreviation": "C9 [Help! This is an emergency!]",
     "target": "Call 911, Help! This is an emergency!"
   },
   {
     "context": "Can we go to the park today?",
-    "abbreviation": "N, [No] T",
+    "abbreviation": " [No] NT",
     "target": "No, no today."
   },
   {
     "context": "Will you marry me?",
-    "abbreviation": "Y, [Yes] IWMY",
-    "target": "Yes, yes I will marry you."
+    "abbreviation": " [Yes] YIWMY",
+    "target": "Yes, yes, I will marry you."
   },
   {
     "context": "I accidentally spilled coffee on your shirt.",
@@ -4041,7 +4031,7 @@
   },
   {
     "context": "Do you want to come inside now?",
-    "abbreviation": "Y,IS [It is too cold]",
+    "abbreviation": "Y,IS, [It is too cold]",
     "target": "Yes, I shiver, it is too cold."
   },
   {
@@ -4066,8 +4056,8 @@
   },
   {
     "context": "Look at the clown stumbling around.",
-    "abbreviation": "HS [That is funny]",
-    "target": "He silly, that is funny."
+    "abbreviation": "HIS [That is funny]",
+    "target": "He is silly, that is funny."
   },
   {
     "context": "You have been working on that puzzle for hours.",
@@ -4101,7 +4091,7 @@
   },
   {
     "context": "Did you see the painting I made for you?",
-    "abbreviation": "Y,IB [Good job]",
+    "abbreviation": "Y,IB, [Good job]",
     "target": "Yes, it beautiful, good job."
   },
   {
@@ -4111,7 +4101,7 @@
   },
   {
     "context": "Are you in a lot of discomfort?",
-    "abbreviation": "Y,MH [I am in pain]",
+    "abbreviation": "Y,MH, [I am in pain]",
     "target": "Yes, my head, I am in pain."
   },
   {
@@ -4131,7 +4121,7 @@
   },
   {
     "context": "Did you finish your lunch?",
-    "abbreviation": "Y,IAF [I am hungry]",
+    "abbreviation": "Y,IAF, [I am hungry]",
     "target": "Yes, I am full, I am hungry."
   },
   {
@@ -4146,7 +4136,7 @@
   },
   {
     "context": "Can you pass me the salt?",
-    "abbreviation": "Y, [Yes]",
+    "abbreviation": " [Yes]",
     "target": "Yes, yes."
   },
   {
@@ -4166,7 +4156,7 @@
   },
   {
     "context": "Welcome to our home!",
-    "abbreviation": " [Hello] TEY",
+    "abbreviation": " [Hello] TE",
     "target": "Hello to everyone."
   },
   {
@@ -4196,7 +4186,7 @@
   },
   {
     "context": "I think I broke the vase.",
-    "abbreviation": "HCDY [I am angry]",
+    "abbreviation": "HCY [I am angry]",
     "target": "How could you, I am angry."
   },
   {
@@ -4246,13 +4236,13 @@
   },
   {
     "context": "Do you want fries with that?",
-    "abbreviation": "N, [No] T",
+    "abbreviation": " [No] NT",
     "target": "No, no thanks."
   },
   {
     "context": "Are you sure this is the right way?",
-    "abbreviation": "Y, [Yes] IA",
-    "target": "Yes, yes I am."
+    "abbreviation": " [Yes] YIA",
+    "target": "Yes, yes, I am."
   },
   {
     "context": "I picked up your prescription.",
@@ -4311,7 +4301,7 @@
   },
   {
     "context": "I need to take a break.",
-    "abbreviation": "M,T [I need to rest]",
+    "abbreviation": "MT, [I need to rest]",
     "target": "Me too, I need to rest."
   },
   {
@@ -4363,8 +4353,7 @@
     "context": "Is he breathing?",
     "abbreviation": "N, [Help! This is an emergency!]",
     "target": "No, Help! This is an emergency!"
-  }
-  ,
+  },
   {
     "context": "The nurse is asking if you are ready to begin the physical therapy session.",
     "abbreviation": "N, <Sarah> [Please wait] AM",
@@ -4372,12 +4361,12 @@
   },
   {
     "context": "I finally managed to fix the leaking pipe in the bathroom.",
-    "abbreviation": "TGW, <Tom> [Good job]",
-    "target": "That great work, Tom, good job."
+    "abbreviation": "TIGW, <Tom> [Good job]",
+    "target": "That is great work, Tom, good job."
   },
   {
     "context": "You seem to be breathing very shallowly, are you okay?",
-    "abbreviation": "N,ICCB [I need a doctor]",
+    "abbreviation": "N,ICCB, [I need a doctor]",
     "target": "No, I cannot catch breath, I need a doctor."
   },
   {
@@ -4427,7 +4416,7 @@
   },
   {
     "context": "I love you so much, grandpa.",
-    "abbreviation": "ILYT, <Chloe> [Love]",
+    "abbreviation": "ILYT,C,L",
     "target": "I love you too, Chloe, love."
   },
   {
@@ -4437,7 +4426,7 @@
   },
   {
     "context": "The sun is shining directly into your eyes.",
-    "abbreviation": "C [It is too hot] ITH",
+    "abbreviation": "C [It is too hot] IH",
     "target": "Close, it is too hot in here."
   },
   {
@@ -4452,7 +4441,7 @@
   },
   {
     "context": "Can I have your dessert if you aren't eating it?",
-    "abbreviation": "N, <Mike> [No] T",
+    "abbreviation": " <Mike> [No] NT",
     "target": "No, Mike, no touching."
   },
   {
@@ -4483,7 +4472,7 @@
   {
     "context": "Look who decided to show up!",
     "abbreviation": "O, [Hello] <Brother>",
-    "target": "Oh, hello Brother."
+    "target": "Oh, hello, Brother."
   },
   {
     "context": "Did you see the picture of the baby?",
@@ -4502,12 +4491,12 @@
   },
   {
     "context": "Are you sure you want to sell the house?",
-    "abbreviation": "Y, <Honey> [Yes] IA",
-    "target": "Yes, Honey, yes I am."
+    "abbreviation": " <Honey> [Yes] YIA",
+    "target": "Yes, Honey, yes, I am."
   },
   {
     "context": "Can you verify this for me?",
-    "abbreviation": "P, [Please] S",
+    "abbreviation": " [Please] PS",
     "target": "Please, please show."
   },
   {
@@ -4622,7 +4611,7 @@
   },
   {
     "context": "Is it time for your insulin?",
-    "abbreviation": "I, [I need my medication]",
+    "abbreviation": "I [I need my medication]",
     "target": "It I need my medication."
   },
   {
@@ -4708,7 +4697,7 @@
   {
     "context": "Did you finish the puzzle?",
     "abbreviation": "F, [Yes] I",
-    "target": "Finally, yes I."
+    "target": "Finally, yes, I."
   },
   {
     "context": "I cleaned your glasses.",
@@ -4842,12 +4831,12 @@
   },
   {
     "context": "Is this right?",
-    "abbreviation": "Y, [Yes] C",
+    "abbreviation": " [Yes] YC",
     "target": "Yes, yes correct."
   },
   {
     "context": "Do you want this?",
-    "abbreviation": "N, [No] W",
+    "abbreviation": " [No] NW",
     "target": "No, no way."
   },
   {
@@ -4862,7 +4851,7 @@
   },
   {
     "context": "Why so sad?",
-    "abbreviation": "M, [I am sad] L",
+    "abbreviation": "M,IHASL",
     "target": "Miss, I have a sad life."
   },
   {
@@ -4877,37 +4866,37 @@
   },
   {
     "context": "",
-    "abbreviation": "ITWRAGI, <Noah> [Good job] OTP",
-    "target": "I think was really a good idea, Noah, good job on the project."
+    "abbreviation": "ITIWRAGI, <Noah> [Good job] OTP",
+    "target": "I think it was really a good idea, Noah, good job on the project."
   },
   {
     "context": "",
-    "abbreviation": "IANFVWTATI [I need a doctor] S",
+    "abbreviation": "IANFVWTAIT [I need a doctor] S",
     "target": "I am not feeling very well today and I think I need a doctor soon."
   },
   {
     "context": "",
-    "abbreviation": "IWIYCCTWB [It is too cold] IH",
+    "abbreviation": "IWWIYCCTWB [It is too cold] IH",
     "target": "I was wondering if you could close the window because it is too cold in here."
   },
   {
     "context": "",
-    "abbreviation": "TYFETHYHD, <Emma> [Thank you] VM",
+    "abbreviation": " <Emma> [Thank you] TYVM",
     "target": "Thank you for everything that you have done, Emma, thank you very much."
   },
   {
     "context": "",
-    "abbreviation": "ICBTHMJH, [That is funny] IEL",
+    "abbreviation": "ICBTHJH, [That is funny] IEL",
     "target": "I can't believe that happened just here, that is funny is everyone laughing."
   },
   {
     "context": "",
-    "abbreviation": "IWJCTSYTI [I am happy] TSY",
+    "abbreviation": "IWJCTST [I am happy] TSY",
     "target": "I was just calling to say that I am happy to see you."
   },
   {
     "context": "",
-    "abbreviation": "IHKMYBA [I am in pain] RN",
+    "abbreviation": "IHKMBA [I am in pain] RN",
     "target": "I have knots my back and I am in pain right now."
   },
   {
@@ -4917,12 +4906,12 @@
   },
   {
     "context": "",
-    "abbreviation": "IAATMH, <Charlotte> [I am very upset] WTY",
+    "abbreviation": "IAATLMH, <Charlotte> [I am very upset] WTY",
     "target": "I am about to lose my head, Charlotte, I am very upset with this year."
   },
   {
     "context": "",
-    "abbreviation": "IWLTSAMBT [I am sleepy] S",
+    "abbreviation": "IWLTSAMB [I am sleepy] S",
     "target": "I would like to sleep a minute but I am sleepy so."
   },
   {
@@ -4942,18 +4931,18 @@
   },
   {
     "context": "",
-    "abbreviation": "HITGTSYAA, <Benjamin> [Hello] MF",
-    "target": "Hey it is good to see you again after awhile, Benjamin, hello my friend."
+    "abbreviation": "H,IIGTSYAAA, <Benjamin> [Hello] MF",
+    "target": "Hey, it is good to see you again after awhile, Benjamin, hello my friend."
   },
   {
     "context": "",
-    "abbreviation": "IFLTSIAAPLITK, <Lucas> [Help! This is an emergency!]",
-    "target": "I feel like there should is a awful paint leak in the kitchen, Lucas, Help! This is an emergency!"
+    "abbreviation": "IFLTIAAPLITK, <Lucas> [Help! This is an emergency!]",
+    "target": "I feel like there is an awful paint leak in the kitchen, Lucas, Help! This is an emergency!"
   },
   {
     "context": "",
     "abbreviation": "DYRWAHST, <Mia> [No] ID",
-    "target": "Do you remember what aunt Helen said today, Mia, no I don't."
+    "target": "Do you remember what aunt Helen said today, Mia, no, I don't."
   },
   {
     "context": "",
@@ -5002,7 +4991,7 @@
   },
   {
     "context": "",
-    "abbreviation": "ITSGTBRT, <Jacob> [It is too cold] O",
+    "abbreviation": "ISGTBRT, <Jacob> [It is too cold] O",
     "target": "It seems going to be rain today, Jacob, it is too cold outside."
   },
   {
@@ -5097,7 +5086,7 @@
   },
   {
     "context": "",
-    "abbreviation": "CYBMMP, <Levi> [Please] P",
+    "abbreviation": "CYBMP, <Levi> [Please] P",
     "target": "Can you bring my phone, Levi, please pass."
   },
   {
@@ -5397,32 +5386,32 @@
   },
   {
     "context": "",
-    "abbreviation": "IHAHTIDNKWTD [I am worried] AI",
+    "abbreviation": "IHAHTAIDNKWTD [I am worried] AI",
     "target": "I have a high temperature and I do not know what to do, I am worried about infection."
   },
   {
     "context": "",
-    "abbreviation": "IWJWTICYGMW [I am thirsty] P",
+    "abbreviation": "IWJWTIYCGMW [I am thirsty] P",
     "target": "I was just wondering today if you could get me water, I am thirsty please."
   },
   {
     "context": "",
-    "abbreviation": "TYFETHYHD [Thank you] VM",
+    "abbreviation": " [Thank you] FETYHDTYVM",
     "target": "Thank you for everything that you have done, thank you very much."
   },
   {
     "context": "",
-    "abbreviation": "ICBTISSH [Help! This is an emergency!] C9",
+    "abbreviation": "ICBTISMSH [Help! This is an emergency!] C9",
     "target": "I cannot believe there is so much smoke here, Help! This is an emergency! Call 911."
   },
   {
     "context": "",
-    "abbreviation": "IWLTSAMBT [I am sleepy] S",
+    "abbreviation": "IWLTSAMB [I am sleepy] S",
     "target": "I would like to stay a minute but I am sleepy so."
   },
   {
     "context": "",
-    "abbreviation": "H, [Look here] ATBOP",
+    "abbreviation": "H, [Look here] ATBOTP",
     "target": "Hey, look here at the birds on the porch."
   },
   {
@@ -5437,22 +5426,22 @@
   },
   {
     "context": "",
-    "abbreviation": "HITGTSYAA [Hello] MF",
-    "target": "Hey it is good to see you again after awhile, hello my friend."
+    "abbreviation": "HIIGTSYAAA [Hello] MF",
+    "target": "Hey, it is good to see you again after awhile, hello my friend."
   },
   {
     "context": "",
-    "abbreviation": "IFLTSIAAPLITK [Help! This is an emergency!]",
-    "target": "I feel like there should is a awful paint leak in the kitchen, Help! This is an emergency!"
+    "abbreviation": "IFLTIAAPLITK [Help! This is an emergency!]",
+    "target": "I feel like there is an awful paint leak in the kitchen, Help! This is an emergency!"
   },
   {
     "context": "",
     "abbreviation": "DYRWAHST [No] ID",
-    "target": "Do you remember what aunt Helen said today, no I don't."
+    "target": "Do you remember what aunt Helen said today, no, I don't."
   },
   {
     "context": "",
-    "abbreviation": "IWHWCSTWP [I am happy] TD",
+    "abbreviation": "IWHWCSTWTP [I am happy] TD",
     "target": "I was hoping we could spend time with the puzzle, I am happy to do."
   },
   {
@@ -5497,7 +5486,7 @@
   },
   {
     "context": "",
-    "abbreviation": "ITSGTBRT [It is too cold] O",
+    "abbreviation": "ISGTBRT [It is too cold] O",
     "target": "It seems going to be rain today, it is too cold outside."
   },
   {
@@ -5512,7 +5501,7 @@
   },
   {
     "context": "",
-    "abbreviation": "MFIHA [I am in pain] T",
+    "abbreviation": "MFIHAL [I am in pain] T",
     "target": "My feet is hurting a lot, I am in pain there."
   },
   {
@@ -5592,7 +5581,7 @@
   },
   {
     "context": "",
-    "abbreviation": "CYBMMP [Please] P",
+    "abbreviation": "CYBMP [Please] P",
     "target": "Can you bring my phone, please pass."
   },
   {
@@ -5652,12 +5641,12 @@
   },
   {
     "context": "I finally managed to fix the leaking pipe in the bathroom.",
-    "abbreviation": "TGW, [Good job] M",
-    "target": "That great work, good job mate."
+    "abbreviation": "TIGW, [Good job] M",
+    "target": "That is great work, good job mate."
   },
   {
     "context": "You seem to be breathing very shallowly, are you okay?",
-    "abbreviation": "N,ICCB [I need a doctor]",
+    "abbreviation": "N,ICCB, [I need a doctor]",
     "target": "No, I cannot catch breath, I need a doctor."
   },
   {
@@ -5707,7 +5696,7 @@
   },
   {
     "context": "I love you so much, grandpa.",
-    "abbreviation": "ILYT, [Love] Y",
+    "abbreviation": "ILYT,LY",
     "target": "I love you too, love you."
   },
   {
@@ -5717,7 +5706,7 @@
   },
   {
     "context": "The sun is shining directly into your eyes.",
-    "abbreviation": "C [It is too hot] ITH",
+    "abbreviation": "C [It is too hot] IH",
     "target": "Close, it is too hot in here."
   },
   {
@@ -5732,7 +5721,7 @@
   },
   {
     "context": "Can I have your dessert if you aren't eating it?",
-    "abbreviation": "N, [No] T",
+    "abbreviation": " [No] NT",
     "target": "No, no touching."
   },
   {
@@ -5763,7 +5752,7 @@
   {
     "context": "Look who decided to show up!",
     "abbreviation": "O, [Hello] B",
-    "target": "Oh, hello brother."
+    "target": "Oh, hello, brother."
   },
   {
     "context": "Did you see the picture of the baby?",
@@ -5782,12 +5771,12 @@
   },
   {
     "context": "Are you sure you want to sell the house?",
-    "abbreviation": "Y, [Yes] IA",
-    "target": "Yes, yes I am."
+    "abbreviation": " [Yes] YIA",
+    "target": "Yes, yes, I am."
   },
   {
     "context": "Can you verify this for me?",
-    "abbreviation": "P, [Please] S",
+    "abbreviation": " [Please] PS",
     "target": "Please, please show."
   },
   {

@@ -2001,8 +2001,8 @@
   },
   {
     "context": "The food looks delicious today.",
-    "abbreviation": "IINH <Cook> .",
-    "target": "I is not hungry Cook."
+    "abbreviation": "IANH <Cook> .",
+    "target": "I am not hungry Cook."
   },
   {
     "context": "I am going to move the chair closer.",
@@ -2489,106 +2489,7 @@
     "abbreviation": " <Alex> ,IWLAGOWAI.",
     "target": "Alex, I would like a glass of water and ice."
   },
-  {
-    "context": "You look a bit uncomfortable. Do you want me to adjust the bed?",
-    "abbreviation": "Y <Lorenzo> .PRAMH.",
-    "target": "Yes Lorenzo. Please raise a my head."
-  },
-  {
-    "context": "Your favorite show is starting in five minutes.",
-    "abbreviation": " <Yuno> ,CTOTFMC?",
-    "target": "Yuno, can turn on the family movie channel?"
-  },
-  {
-    "context": "I am going to the pharmacy. Do you need a refill?",
-    "abbreviation": "PPUAMEF <Wei> .",
-    "target": "Please pick up a my eyedrops from Wei."
-  },
-  {
-    "context": "The sun is shining directly on your face.",
-    "abbreviation": " <Hiro> ,CYPLTB?",
-    "target": "Hiro, can you please lower the blinds?"
-  },
-  {
-    "context": "I noticed you are rubbing your neck.",
-    "abbreviation": "IFVS <Sven> .INAM.",
-    "target": "I feel very stiff Sven. I need a massage."
-  },
-  {
-    "context": "We are deciding on dinner. What are you craving?",
-    "abbreviation": "IWLTSWA <Lars> .",
-    "target": "I would like the steak with asparagus Lars."
-  },
-  {
-    "context": "The nurse needs to know if you are allergic to this medication.",
-    "abbreviation": "T <Giovanni> IANA.",
-    "target": "Tell Giovanni I am not allergic."
-  },
-  {
-    "context": "Your sister sent an email. Do you want me to read it?",
-    "abbreviation": "Y <Dmitri> .PRITM.",
-    "target": "Yes Dmitri. Please read it to me."
-  },
-  {
-    "context": "The room feels very cold today.",
-    "abbreviation": " <Fatima> ,CYGMBB?",
-    "target": "Fatima, can you get my blue blanket?"
-  },
-  {
-    "context": "I am going to fix your pillow.",
-    "abbreviation": "T <Aisha> .IIB.",
-    "target": "Thanks Aisha. It is better."
-  },
-  {
-    "context": "Do you want to listen to music?",
-    "abbreviation": " <Priya> ,PSCM.",
-    "target": "Priya, play some classical music."
-  },
-  {
-    "context": "I am going to clean your glasses.",
-    "abbreviation": "T <Ananya> .ICSCN.",
-    "target": "Thanks Ananya. I can see clearly now."
-  },
-  {
-    "context": "The cat is jumping on the bed.",
-    "abbreviation": " <Mei> ,PDLHB.",
-    "target": "Mei, please don't let her bite."
-  },
-  {
-    "context": "I am going to open the window.",
-    "abbreviation": "N <Yuki> .IITC.",
-    "target": "No Yuki. It is too cold."
-  },
-  {
-    "context": "Do you need to use the bathroom?",
-    "abbreviation": "Y <Zara> .IHTG.",
-    "target": "Yes Zara. I have to go."
-  },
-  {
-    "context": "I am going to move the chair.",
-    "abbreviation": " <Ximena> ,PMIC.",
-    "target": "Ximena, please move it closer."
-  },
-  {
-    "context": "Do you want to watch a movie?",
-    "abbreviation": "N <Valentina> .IWT.",
-    "target": "No Valentina. I was tired."
-  },
-  {
-    "context": "I am going to wash your face.",
-    "abbreviation": " <Cassius> ,UWC.",
-    "target": "Cassius, use warm cloth."
-  },
-  {
-    "context": "The dog is barking loudly.",
-    "abbreviation": " <Thaddeus> LHO",
-    "target": "Thaddeus, let him out."
-  },
-  {
-    "context": "I am going to cook dinner.",
-    "abbreviation": " <Bartholomew> ,MMS.",
-    "target": "Bartholomew, make me soup."
-  },
+
   {
     "context": "Do you want to read a book?",
     "abbreviation": "Y <Octavia> RMA",
@@ -3696,13 +3597,8 @@
   },
   {
     "context": "I really don't think we should go out in this weather, the forecast looks terrible.",
-    "abbreviation": "IHTAWY, <Alessandro> [Yes]",
+    "abbreviation": "IHTAWY, <Alessandro> [Yes], IID.",
     "target": "I have to agree with you, Alessandro, Yes, it is dangerous."
-  },
-  {
-    "context": "Did you manage to finish that puzzle you were working on all week?",
-    "abbreviation": "ID,AIAPOMGJOI",
-    "target": "I did, and I am proud of my Good job on it."
   },
   {
     "context": "I can see you shifting around a lot, is something bothering you?",
@@ -4067,7 +3963,7 @@
   {
     "context": "I am sorry I missed your birthday party.",
     "abbreviation": "I [I am sad] T",
-    "target": "I I am sad too."
+    "target": "I am sad too."
   },
   {
     "context": "Can I get you anything from the kitchen?",
@@ -4731,8 +4627,8 @@
   },
   {
     "context": "Why are you shouting?",
-    "abbreviation": "I [I am angry] L",
-    "target": "I I am angry loud."
+    "abbreviation": "I [I am angry] N",
+    "target": "I am angry now."
   },
   {
     "context": "You seem happy.",
@@ -4766,13 +4662,13 @@
   },
   {
     "context": "I'm not stopping.",
-    "abbreviation": "I, [STOP PLEASE!] S",
-    "target": "I, STOP PLEASE! say."
+    "abbreviation": "I [STOP PLEASE!] S",
+    "target": "I said STOP PLEASE!"
   },
   {
     "context": "Does it hurt?",
-    "abbreviation": "Y, [I am in pain] A",
-    "target": "Yes, I am in pain arm."
+    "abbreviation": "Y, [I am in pain], OMA",
+    "target": "Yes, I am in pain, on my arm."
   },
   {
     "context": "Was it funny?",
@@ -5018,11 +4914,6 @@
     "context": "",
     "abbreviation": "CWPOMSFC, <Jack> [Please] D",
     "target": "Can we put on music some for calm, Jack, please do."
-  },
-  {
-    "context": "",
-    "abbreviation": "IHAITME, <Abigail> [STOP PLEASE!] S",
-    "target": "I have an itch the my ear, Abigail, STOP PLEASE! scratching."
   },
   {
     "context": "",
@@ -5516,11 +5407,6 @@
   },
   {
     "context": "",
-    "abbreviation": "IHAITME [STOP PLEASE!] S",
-    "target": "I have an itch the my ear, STOP PLEASE! scratching."
-  },
-  {
-    "context": "",
     "abbreviation": "WWAWTS [I am sleepy] C",
     "target": "Where we are watching the show, I am sleepy couch."
   },
@@ -5731,13 +5617,13 @@
   },
   {
     "context": "You look a little pale in the face.",
-    "abbreviation": "I, [I feel sick] D",
-    "target": "I, I feel sick dizzy."
+    "abbreviation": "I, [I feel sick] AD",
+    "target": "I feel sick and dizzy."
   },
   {
     "context": "I am going to adjust the incline of the bed.",
     "abbreviation": "W, [STOP PLEASE!] I",
-    "target": "Wait, STOP PLEASE! it."
+    "target": "Wait, STOP IT PLEASE!"
   },
   {
     "context": "Is everything okay in there?",

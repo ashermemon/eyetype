@@ -85,7 +85,7 @@ def add_sentence(dialog, tripletArray, contextNum=-1, contextValue=None):
     # DailyDialog
     else:
         if contextNum == 0:
-            context = ""
+            context = "None"
             targetSentence = dialog[0]
         elif contextNum > 0:
             

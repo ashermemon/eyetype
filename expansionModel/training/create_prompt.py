@@ -7,7 +7,7 @@ For any shorthand phrases enclosed in square brackets, preserve the phrase in th
 but with the square brackets removed
 '''
 
-def create_prompt(example):
+def form_prompt(example):
     context = example["context"]
     abbr = example["abbreviation"]
     target = example["target"]
@@ -26,11 +26,3 @@ def create_prompt(example):
     return messages
 
 
-def make_training_text(example, tokenizer):
-    messages = create_prompt(example)
-    text = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=False 
-    )
-    return text

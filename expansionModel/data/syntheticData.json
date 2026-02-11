@@ -10,7 +10,7 @@
     "target": "Dad can the blinds pull down?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HM <Sarah> .INMHP.",
     "target": "Help me Sarah. I need my head pillow."
   },
@@ -30,7 +30,7 @@
     "target": "Yes Mike. Turn it up."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MHH <Grandma> .",
     "target": "My head hurts Grandma."
   },
@@ -50,7 +50,7 @@
     "target": "Tell Dr. Jones it is a seven."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Officer Dan> IHTRAC",
     "target": "Officer Dan I have to report a crime."
   },
@@ -75,7 +75,7 @@
     "target": "It is boring Mary."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Bro> WIGTW?",
     "target": "Bro who is going to win?"
   },
@@ -95,7 +95,7 @@
     "target": "Yes Tom. That is clear."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Professor X> IHTAAQ.",
     "target": "Professor X I have to ask a question."
   },
@@ -115,7 +115,7 @@
     "target": "Good luck Honey. I love you."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WAWD <Mom> ?",
     "target": "What are we doing Mom?"
   },
@@ -135,7 +135,7 @@
     "target": "No Dad. I can't feel my feet."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sir> IWLTO.",
     "target": "Sir I would like to order."
   },
@@ -155,7 +155,7 @@
     "target": "Please DJ. Play some jazz."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Madam> IWLTS.",
     "target": "Madam I would like to speak."
   },
@@ -175,7 +175,7 @@
     "target": "I am good Nurse."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H <Sarah> .HAY?",
     "target": "Hi Sarah. How are you?"
   },
@@ -195,7 +195,7 @@
     "target": "Which book is it Sis?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Love> CYGMW?",
     "target": "Love can you get me water?"
   },
@@ -215,7 +215,7 @@
     "target": "Yes Therapist."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TY <Sam> .",
     "target": "Thank you Sam."
   },
@@ -235,7 +235,7 @@
     "target": "Yes Mom."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Doc> IHP.",
     "target": "Doc I have pain."
   },
@@ -255,7 +255,7 @@
     "target": "Okay Nurse."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Boss> IWBRL.",
     "target": "Boss I will be running late."
   },
@@ -275,7 +275,7 @@
     "target": "It is good Cook."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Lady> IWLH.",
     "target": "Lady I would like help."
   },
@@ -295,7 +295,7 @@
     "target": "Thanks Cleaner."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Man> WTII?",
     "target": "Man what time is it?"
   },
@@ -315,7 +315,7 @@
     "target": "Gently Mover."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Person> IWAA.",
     "target": "Person I want an apple."
   },
@@ -335,7 +335,7 @@
     "target": "Thanks Wiper."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <One> IWL.",
     "target": "One I would like."
   },
@@ -355,7 +355,7 @@
     "target": "Okay Checker."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Self> IAD.",
     "target": "Self I am done."
   },
@@ -370,7 +370,7 @@
     "target": "Please buy me a chocolate Mom."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHLC <Nurse Joy> .",
     "target": "I have leg cramps Nurse Joy."
   },
@@ -390,7 +390,7 @@
     "target": "No Sam. It is boring."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TII <Officer Miller> .",
     "target": "This is important Officer Miller."
   },
@@ -410,7 +410,7 @@
     "target": "Can turn on the fan Alice?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WITA <Dr. Lee> ?",
     "target": "When is the appointment Dr. Lee?"
   },
@@ -430,7 +430,7 @@
     "target": "Take it already Nurse."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sweetie> CYCML?",
     "target": "Sweetie can you check my leg?"
   },
@@ -450,7 +450,7 @@
     "target": "That is good Paul."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HM <Sarah> .INMHP.",
     "target": "Help me Sarah. I need my head pillow."
   },
@@ -470,7 +470,7 @@
     "target": "That is good Stylist."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Professor> IHTQ.",
     "target": "Professor I have two questions."
   },
@@ -490,7 +490,7 @@
     "target": "Tell Michael I will call back."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sis> WAGTD?",
     "target": "Sis when are going to dinner?"
   },
@@ -510,7 +510,7 @@
     "target": "Thanks Kindness. I can't feel my feet."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Boss> IWBRLT.",
     "target": "Boss I will be running late today."
   },
@@ -530,7 +530,7 @@
     "target": "No Caregiver. I am good."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Doctor> IHPIMS.",
     "target": "Doctor I have pain in my stomach."
   },
@@ -550,7 +550,7 @@
     "target": "Thanks Helper. I can see clearly now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Mom> IWH.",
     "target": "Mom I was hungry."
   },
@@ -570,7 +570,7 @@
     "target": "Thanks Mover. It hurts here."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Grandma> ILY.",
     "target": "Grandma I love you."
   },
@@ -590,7 +590,7 @@
     "target": "Thanks Wiper. It is messy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sir> IWO.",
     "target": "Sir I want out."
   },
@@ -645,7 +645,7 @@
     "target": "Thanks Paul that is better."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHTGTTB <Nurse> .",
     "target": "I have to go to the bathroom Nurse."
   },
@@ -670,7 +670,7 @@
     "target": "Can you scratch it for me Grandma?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Officer> IWTRACT.",
     "target": "Officer I want to report a car theft."
   },
@@ -700,7 +700,7 @@
     "target": "Yes Alice I cannot see clearly."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WID <Tom> ?",
     "target": "Where is Dog Tom?"
   },
@@ -725,7 +725,7 @@
     "target": "Hi John it is good to see you."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Boss> ICCITC.",
     "target": "Boss I cannot come in today call."
   },
@@ -750,7 +750,7 @@
     "target": "Please turn it down Brother."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Love> CYGMA?",
     "target": "Love can you get me apple?"
   },
@@ -770,7 +770,7 @@
     "target": "That is good Stylist."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sir> IWO.",
     "target": "Sir I want out."
   },
@@ -790,7 +790,7 @@
     "target": "Gently Mover."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Mom> IWH.",
     "target": "Mom I was hungry."
   },
@@ -810,7 +810,7 @@
     "target": "Thanks Fixer."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Friend> HAY?",
     "target": "Friend how are you?"
   },
@@ -830,7 +830,7 @@
     "target": "Thanks Washer."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Bro> IWT.",
     "target": "Bro I was thirsty."
   },
@@ -850,7 +850,7 @@
     "target": "Please Privacy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sis> IWA.",
     "target": "Sis I was afraid."
   },
@@ -870,7 +870,7 @@
     "target": "Gently Stylist."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Dad> IWE.",
     "target": "Dad I was excited."
   },
@@ -890,7 +890,7 @@
     "target": "Thanks Love."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Ma> IWS.",
     "target": "Ma I was sick."
   },
@@ -920,7 +920,7 @@
     "target": "It is in my leg Mom."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Nurse> IHAH.",
     "target": "Nurse I have a headache."
   },
@@ -945,7 +945,7 @@
     "target": "This is exciting Bro."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Teacher> IHTFMH.",
     "target": "Teacher I have to finish my homework."
   },
@@ -970,7 +970,7 @@
     "target": "Yes Nurse I am fine."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Mom> WIFD?",
     "target": "Mom what is for dinner?"
   },
@@ -995,7 +995,7 @@
     "target": "It is tasty Chef."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Friend> IWMY.",
     "target": "Friend I will miss you."
   },
@@ -1020,7 +1020,7 @@
     "target": "Thanks Fixer."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sis> IWB.",
     "target": "Sis I was busy."
   },
@@ -1045,7 +1045,7 @@
     "target": "Thanks Closer."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Bro> IWT.",
     "target": "Bro I was tired."
   },
@@ -1070,7 +1070,7 @@
     "target": "Good Electrician."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Ma> IWS.",
     "target": "Ma I was sad."
   },
@@ -1095,7 +1095,7 @@
     "target": "Okay Cook."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Pa> IWH.",
     "target": "Pa I was happy."
   },
@@ -1120,7 +1120,7 @@
     "target": "Thanks Mover."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Friend> IWC.",
     "target": "Friend I was cold."
   },
@@ -1145,7 +1145,7 @@
     "target": "Thanks Wiper."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Mom> IWL.",
     "target": "Mom I was lost."
   },
@@ -1180,7 +1180,7 @@
     "target": "Can Dad please close the blinds?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sarah> IWLWT.",
     "target": "Sarah I would like watching TV."
   },
@@ -1205,7 +1205,7 @@
     "target": "Tell Lisa I will call back later."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Officer> IWTRA.",
     "target": "Officer I want to report accident."
   },
@@ -1230,7 +1230,7 @@
     "target": "Yes Alice I cannot see clearly."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Tom> WID?",
     "target": "Tom where is Dog?"
   },
@@ -1255,7 +1255,7 @@
     "target": "Hi John it is good to see you."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Boss> ICCITC.",
     "target": "Boss I cannot come in today call."
   },
@@ -1280,7 +1280,7 @@
     "target": "Please turn it down Brother."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Love> CYGMA?",
     "target": "Love can you get me apple?"
   },
@@ -2751,147 +2751,147 @@
     "target": "Oliver, I would like to go for walk."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWWIYCHMWTSOMC <Liam> ",
     "target": "I was wondering if you could help me with the settings on my computer Liam."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYTWHETTFWTMBD <Sophia> ?",
     "target": "Do you think we have enough time to finish watching the movie before dinner Sophia?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INTMAYWMSMHIIP <Noah> .",
     "target": "I noticed that my arm yanks when my shoulder moves high. I'm in pain Noah."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WITAFA <Emma> ?",
     "target": "When is the appointment for allergies Emma?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYPLTBIITB <Charlotte> ",
     "target": "Could you please lower the blinds, it is too bright Charlotte."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFLTISICIMT <Elijah> .",
     "target": "I feel like there is something is caught in my throat Elijah."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WYBATTMBFTL <Amelia> ?",
     "target": "Will you be able to take my book from the library Amelia?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HIDKWIWTLMP <Ava> .",
     "target": "Honestly, I don't know where I want to leave my phone Ava."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HIIGTSYAAA <Benjamin> ",
     "target": "Hey, it is good to see you again after awhile Benjamin."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "AWOFTWFOD <Isabella> ",
     "target": "Are we ordering food this weekend for our dinner Isabella?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TBIABA <Lucas> ",
     "target": "The blanket is alittle bit askew Lucas"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRW <Aunt Helen> ST <Mia> ?",
     "target": "Do you remember what aunt Helen said today Mia?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWHWCSTW <Peter> A <Mason> .",
     "target": "I was hoping we could spend time with Peter and Mason."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TNOTOIVL <Ethan> ",
     "target": "The noise outside the office is very loud Ethan."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HYSMRG <Harper> ?",
     "target": "Have you seen my reading glasses Harper?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDTIFUTVT <Alexander> .",
     "target": "I don't think I feel up to visitors today Alexander."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WSTGS <Gianna> ",
     "target": "When should the game start Gianna?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MBIKMT <Michael> ",
     "target": "My back is killing me today Michael."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WDTDA <Elizabeth> ",
     "target": "When does the doctor arrive Elizabeth?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFABAAT <Daniel> ",
     "target": "I feel a bit anxious about tomorrow Daniel."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCITIAEMFM <Ella> ",
     "target": "Can you check if there is an email message for me Ella?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ISIGTRT <Jacob> ",
     "target": "It seems it's going to rain today Jacob."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTHSSFL <Avery> ",
     "target": "I would like to have some soup for lunch Avery."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYKWTKAP <Logan> ?",
     "target": "Do you know where the keys are put Logan?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MFIHAL <Sofia> .",
     "target": "My foot is hurting a lot Sofia."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTWATTY <Jackson> .",
     "target": "I wanted to write a text to you Jackson."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CWPOSMFC <Jack> ?",
     "target": "Can we put on some music for calm Jack?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHAIOME <Abigail> ",
     "target": "I have an itch on my ear Abigail."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHTRN <Mom> ",
     "target": "I have to rest now Mom."
   },
@@ -2901,7 +2901,7 @@
     "target": "I have been having severe pain lately Dr. Lee."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Sarah> HMWT?",
     "target": "Can Sarah help me with this?"
   },
@@ -2911,7 +2911,7 @@
     "target": "I need to tell you Dad about how bad my home care."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HM <Nurse Mike> !",
     "target": "Help me Nurse Mike!"
   },
@@ -2921,7 +2921,7 @@
     "target": "It's going pretty good Emma. How are you all?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMGTTB <Brother> ",
     "target": "Can you maybe help me get to the bathroom Brother?"
   },
@@ -2936,7 +2936,7 @@
     "target": "I would like the soup Grandma made yesterday for Christmas."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFRLT <Michael> .CYMCOB?",
     "target": "I'm feeling really lonely today Michael. Can you maybe come over briefly?"
   },
@@ -2946,7 +2946,7 @@
     "target": "I have been needing too much assistance moving around my house Therapist Jane."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "P <Christopher> GTLFM",
     "target": "Please Christopher get the light for me."
   },
@@ -2956,7 +2956,7 @@
     "target": "My arm has been hurting Olivia and I have been getting worse."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "D <Tyler> KWTMCI",
     "target": "Does Tyler know where the medicine cabinet is?"
   },
@@ -2966,7 +2966,7 @@
     "target": "Thank you so much Aunt! I really do appreciate it."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHSPIMLARN <Dr.Smith> ",
     "target": "I have severe pain in my legs and right now Dr. Smith."
   },
@@ -2976,7 +2976,7 @@
     "target": "I would like to watch a movie Sophia if that would be fine."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INTGTTBRN <Dad> !",
     "target": "I need to go to the bathroom right now Dad!"
   },
@@ -2991,7 +2991,7 @@
     "target": "I have been doing pretty good James but I have been frustrated."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Isabella> TMWMNAIAT?",
     "target": "Can Isabella tell me when my next appointment is at therapy?"
   },
@@ -3001,12 +3001,12 @@
     "target": "I am worried about my health Mom. I have been having these nightmares."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ILTTTY <Grandpa> ",
     "target": "I love to talk to you Grandpa."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMSMTU <Daniel> ?",
     "target": "Can you maybe help me set my tablet up Daniel?"
   },
@@ -3021,12 +3021,12 @@
     "target": "I would like a sandwich with cheese Sister."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFRST <Mia> CYMCOSF",
     "target": "I'm feeling really sad today Mia. Can you maybe come over so fast?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WI <William> HCATFMPT?",
     "target": "When is William having come around to fix my physical therapy?"
   },
@@ -3041,12 +3041,12 @@
     "target": "I have about many questions about the medication plan Dr. Williams. Can we extend getting another therapy discussion?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H <Amelia> !HAYA?",
     "target": "Hi Amelia! How are you all?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H <Harper> S <Joseph> TCTV",
     "target": "Has Harper seen Joseph today coming to visit?"
   },
@@ -3056,7 +3056,7 @@
     "target": "I just can't take what's happening Evelyn. I feel so limited."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMAMP <Nurse Mike> ?IUITC.",
     "target": "Can you maybe help me adjust my pillow Nurse Mike? I'm uncomfortable in the chair."
   },
@@ -3066,7 +3066,7 @@
     "target": "I would like going for a walk Matthew if the weather be pleasant."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFC <Mom> .CYMTTH?",
     "target": "I'm feeling cold Mom. Can you maybe turn the heat?"
   },
@@ -3076,7 +3076,7 @@
     "target": "I need to take my medication Nurse Sarah."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "I <Alex> CTVTARN?",
     "target": "Is Alex coming to visit this afternoon right now?"
   },
@@ -3086,12 +3086,12 @@
     "target": "My back is hurting me really now Dr. Lee."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "D <Grandma> KWIWLFD?",
     "target": "Does Grandma know what I would like for dinner?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMGMSW <Brother> ?IT.",
     "target": "Can you maybe get me some water Brother? I'm thirsty."
   },
@@ -3101,12 +3101,12 @@
     "target": "I have been having dizziness and feeling sick Dr. Patel."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IRSHT <Emma> CTVT!",
     "target": "I'm really so happy that Emma came to visit today!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WTIIIRN <Dad> ?",
     "target": "What time is it is right now Dad?"
   },
@@ -3121,7 +3121,7 @@
     "target": "I don't like that soup Aunt. Can I have something else?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IIRTRN <Michael> ?",
     "target": "Is it raining today right now Michael?"
   },
@@ -3131,7 +3131,7 @@
     "target": "I'm feeling really tired Sister. I need to take rest now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Uncle> TOTT?",
     "target": "Can Uncle turn on the television?"
   },
@@ -3146,12 +3146,12 @@
     "target": "Has Cousin been able to visit?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MNIHMRB <Dr.Johnson> !",
     "target": "My neck is hurting me really bad Dr. Johnson!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMPOSMFM <Olivia> ?",
     "target": "Can you maybe put on some music for me Olivia?"
   },
@@ -3161,7 +3161,7 @@
     "target": "Thank you so much for coming James. It means much to me."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WIMNATD <Mom> ?",
     "target": "When is my next appointment this day Mom?"
   },
@@ -3171,7 +3171,7 @@
     "target": "I'm feeling nauseous right now Nurse Mike. I think it's my medication now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Daniel> OTW?IWLSFA.",
     "target": "Can Daniel open the window? I would like some fresh air."
   },
@@ -3181,12 +3181,12 @@
     "target": "I didn't sleep well last night Dr. Williams. I woke up many often."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMGMTBFTS <Sister> ",
     "target": "Can you maybe get me the book from the shelf Sister?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INTUTBRN <Dad> !",
     "target": "I need to use the bathroom right now Dad!"
   },
@@ -3196,12 +3196,12 @@
     "target": "Can I have some eggs and toast Grandma?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAWAMTR <Dr.Patel> .",
     "target": "I am worried about my test results Dr. Patel."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMCM <Christopher> ?ICGITW.",
     "target": "Can you maybe help me call Mom Christopher? I can't get it to work."
   },
@@ -3211,7 +3211,7 @@
     "target": "I'm feeling much better today Therapist Jane!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WAWTDT <Nurse Sarah> ?",
     "target": "What are we to do today Nurse Sarah?"
   },
@@ -3221,7 +3221,7 @@
     "target": "No. Can you maybe put another pillow my back up Brother?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WI <Sophia> CATV?",
     "target": "When is Sophia coming around to visit?"
   },
@@ -3231,7 +3231,7 @@
     "target": "The pain is getting worse Dr. Lee."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMTTLO <Uncle> ?ITBT.",
     "target": "Can you maybe turn the lights off Uncle? It's too bright there."
   },
@@ -3241,7 +3241,7 @@
     "target": "Yes the new medication is making me feel dizzy Dr. Smith."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMSWMFAW <Emma> ?IFLRN.",
     "target": "Can you maybe sit with me for a while Emma? I'm feeling lonely right now."
   },
@@ -3251,7 +3251,7 @@
     "target": "It is really too hot. Can Dad turn the air conditioning?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WITFL <Aunt> ?",
     "target": "When is the food lunch Aunt?"
   },
@@ -3271,12 +3271,12 @@
     "target": "It was really hard Therapist Jane. I'm feeling much sore today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Michael> CTCTTMFS?",
     "target": "Can Michael change the channel to that my favorite show?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFRTRN <Sister> .CIHSW?",
     "target": "I'm feeling really thirsty right now Sister. Can I have some water?"
   },
@@ -3291,12 +3291,12 @@
     "target": "I have been having severe headaches and muscle in my legs Dr. Johnson."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Olivia> RMTBFM?",
     "target": "Can Olivia read me the book for me?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MTINWARN <Daniel> !CYMFIO?",
     "target": "My tablet is not working again right now Daniel! Can you maybe fix it out?"
   },
@@ -3306,12 +3306,12 @@
     "target": "I would like chicken for dinner Grandma if that would be good."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFRC <Mom> .CYGMAB?",
     "target": "I'm feeling really cold Mom. Can you get me a blanket?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IITTMM <Nurse Sarah> ?",
     "target": "Is it time to my medication Nurse Sarah?"
   },
@@ -3321,12 +3321,12 @@
     "target": "The pain medication is not helping Dr. Patel. Can we try something else different?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMCTC <Brother> ?TLITBE.",
     "target": "Can you maybe close the curtains Brother? The light is too bright everywhere."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "I <Isabella> SCTV?",
     "target": "Is Isabella supposed coming to visit?"
   },
@@ -3336,7 +3336,7 @@
     "target": "The pain is getting better Dr. Williams!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMSU <Therapist Jane> ?IWLTTW.",
     "target": "Can you maybe help me stand up Therapist Jane? I would like to try walking."
   },
@@ -3346,7 +3346,7 @@
     "target": "Can you maybe turn the fan on Uncle?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFLLT <Mia> .CYMCOSF?",
     "target": "I'm feeling lonely lately today Mia. Can you maybe come over so fast?"
   },
@@ -3356,17 +3356,17 @@
     "target": "You do want need to do them today right now Dr. Lee? I'm feeling really tired."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CIHSJ <Aunt> ?",
     "target": "Can I have some juice Aunt?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAWA <Mom> .HYH?",
     "target": "I am worried about Mom. Have you heard?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMTTNO <Dad> ?",
     "target": "Can you maybe turn the news on Dad?"
   },
@@ -3376,12 +3376,12 @@
     "target": "I have been having trouble breathing Dr. Smith. It is getting worse."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMEMF <Nurse Mike> ?ICHMI.",
     "target": "Can you maybe help me eat my food Nurse Mike? I can't hold my it."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WIMPTST <Therapist Jane> ?",
     "target": "When is my physical therapy session today Therapist Jane?"
   },
@@ -4751,772 +4751,772 @@
     "target": "Miss, I have a sad life."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHDNKWTDB <Liam> [I am worried] ATR",
     "target": "I honestly do not know what to do because Liam I am worried about the results."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WYHAM, <Sophia> [Please] HMATP",
     "target": "When you have a moment, Sophia, please help me adjust this pillow."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ITIWRAGI, <Noah> [Good job] OTP",
     "target": "I think it was really a good idea, Noah, good job on the project."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IANFVWTAIT [I need a doctor] S",
     "target": "I am not feeling very well today and I think I need a doctor soon."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWWIYCCTWB [It is too cold] IH",
     "target": "I was wondering if you could close the window because it is too cold in here."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Emma> [Thank you] TYVM",
     "target": "Thank you for everything that you have done, Emma, thank you very much."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ICBTHJH, [That is funny] IEL",
     "target": "I can't believe that happened just here, that is funny is everyone laughing."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWJCTST [I am happy] TSY",
     "target": "I was just calling to say that I am happy to see you."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHKMBA [I am in pain] RN",
     "target": "I have knots my back and I am in pain right now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CDYPOTAC, <Oliver> [It is too hot] T",
     "target": "Could dad you put on the air conditioning, Oliver, it is too hot today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAATLMH, <Charlotte> [I am very upset] WTY",
     "target": "I am about to lose my head, Charlotte, I am very upset with this year."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTSAMB [I am sleepy] S",
     "target": "I would like to sleep a minute but I am sleepy so."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H, <Elijah> [Look here] ATBOP",
     "target": "Hey, Elijah, look here at the birds on porch."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHRBTBSRYRT, <James> [I am sad] TIO",
     "target": "I have really been thinking big should read your recommended title, James, I am sad that is over."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDKWIWTLMP, <Ava> [I am angry] A",
     "target": "I don't know where I want to leave my phone, Ava, I am angry again."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H,IIGTSYAAA, <Benjamin> [Hello] MF",
     "target": "Hey, it is good to see you again after awhile, Benjamin, hello my friend."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFLTIAAPLITK, <Lucas> [Help! This is an emergency!]",
     "target": "I feel like there is an awful paint leak in the kitchen, Lucas, Help! This is an emergency!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRWAHST, <Mia> [No] ID",
     "target": "Do you remember what aunt Helen said today, Mia, no, I don't."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWHWCSTWP, <Mason> [I am happy] TD",
     "target": "I was hoping we could spend time with Peter, Mason, I am happy to do."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TNOTOIVL, <Ethan> [Please wait] UIC",
     "target": "The noise outside the office is very loud, Ethan, please wait until I close."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HYSMRG, <Harper> [I need to use the washroom] F",
     "target": "Have you seen my reading glasses, Harper, I need to use the washroom first."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDTIFUTVTT, <Alexander> [I feel sick] A",
     "target": "I don't think I feel up to visitors to today, Alexander, I feel sick actually."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WSTGSO, <Gianna> [I am hungry] N",
     "target": "When should the game start on, Gianna, I am hungry now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MBIKMT, <Michael> [I am in pain] B",
     "target": "My back is killing me today, Michael, I am in pain bad."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WDTDA, <Elizabeth> [I need a doctor] H",
     "target": "When does the doctor arrive, Elizabeth, I need a doctor here."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFABAAT, <Daniel> [I am worried] T",
     "target": "I feel a bit anxious about tomorrow, Daniel, I am worried truly."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTITIAEMFM, <Ella> [Yes] P",
     "target": "Can you check that if there is an email message for me, Ella, yes please."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ISGTBRT, <Jacob> [It is too cold] O",
     "target": "It seems going to be rain today, Jacob, it is too cold outside."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTHSSFL, <Avery> [I am hungry] R",
     "target": "I would like to have some soup for lunch, Avery, I am hungry really."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYKWTKIP, <Logan> [I need my medication] S",
     "target": "Do you know where the keys is put, Logan, I need my medication soon."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MFIHA, <Sofia> [I am in pain] T",
     "target": "My feet is hurting a, Sofia, I am in pain there."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTWATTY, <Jackson> [Hello] B",
     "target": "I wanted to write a text to you, Jackson, hello buddy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CWPOMSFC, <Jack> [Please] D",
     "target": "Can we put on music some for calm, Jack, please do."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WWAWTS, <Aiden> [I am sleepy] C",
     "target": "Where we are watching the show, Aiden, I am sleepy couch."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IIFCIT, <Emily> [It is too cold] T",
     "target": "It is freezing cold in today, Emily, it is too cold today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYHMWT, <Sebastian> [Please] H",
     "target": "Can you help me with this, Sebastian, please help."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTRB, <Camila> [I need to rest] E",
     "target": "I would like to read book, Camila, I need to rest eyes."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYHATM, <Owen> [Please wait] O",
     "target": "Do you have a time minute, Owen, please wait one."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TSBHAOB, <Luna> [I am in pain] B",
     "target": "The sun burn hurts a on back, Luna, I am in pain bad."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYFMPP, <Samuel> [Thank you] S",
     "target": "Can you fix my pillow position, Samuel, thank you sir."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTGTTB, <Tessa> [I need to use the washroom] F",
     "target": "I would like to go to the bathroom, Tessa, I need to use the washroom fast."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HYSMP, <Matthew> [I am very upset] I",
     "target": "Have you seen my purse, Matthew, I am very upset it."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ITMAWBCT, <Grace> [I am sad] A",
     "target": "I think my arm was bruised coming Tuesday, Grace, I am sad about."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WITA, <Joseph> [I need a doctor] A",
     "target": "When is the appointment, Joseph, I need a doctor appointment."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTGTTC, <Violet> [I am happy] G",
     "target": "I would like to go to the church, Violet, I am happy go."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYBMP, <Levi> [Please] P",
     "target": "Can you bring my phone, Levi, please pass."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Scarlett> [I need to use the washroom] B",
     "target": "I would like to shower, Scarlett, I need to use the washroom before."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HIHFTJ, <Mateo> [Congratulations] I",
     "target": "Has it heard from the job, Mateo, congratulations if."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCMM, <Eleanor> [Please] C",
     "target": "Can you check my mail, Eleanor, please check."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <David> [I am sleepy] V",
     "target": "I would like to sleep, David, I am sleepy very."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRTWGLN, <Hannah> [Good job] R",
     "target": "Did you record the winning game last night, Hannah, good job recording."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTW, <John> [I need to rest] L",
     "target": "I would like to walk, John, I need to rest legs."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYPMA, <Wyatt> [I am hungry] F",
     "target": "Can you pass me apple, Wyatt, I am hungry for."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTGTS, <Lillian> [I am sleepy] N",
     "target": "I want to go to sleep, Lillian, I am sleepy now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYTOTL, <Luke> [It is too hot] B",
     "target": "Can you turn on the light, Luke, it is too hot bulb."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IMA, <Addison> [I am sad] T",
     "target": "I miss April, Addison, I am sad today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTD, <Asher> [It is too cold] D",
     "target": "Can you close the door, Asher, it is too cold draft."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTP, <Aubrey> [I am happy] P",
     "target": "I would like to paint, Aubrey, I am happy paint."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYOMW, <Julian> [It is too hot] A",
     "target": "Can you open my window, Julian, it is too hot air."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTR, <Stella> [I am happy] B",
     "target": "I would like to read, Stella, I am happy book."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYHMWT, <Leo> [Please] H",
     "target": "Can you help me with this, Leo, please help."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTL, <Natalie> [I am happy] M",
     "target": "I would like to listen, Natalie, I am happy music."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYBMA, <Lincoln> [I am hungry] S",
     "target": "Can you bring me a, Lincoln, I am hungry sandwich."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Zoe> [I am happy] S",
     "target": "I would like to sing, Zoe, I am happy song."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYTID, <Isaac> [I am angry] L",
     "target": "Can you turn it down, Isaac, I am angry loud."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTD, <Leah> [I am happy] A",
     "target": "I would like to draw, Leah, I am happy art."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYGMA, <Gabriel> [I am hungry] A",
     "target": "Can you get me a, Gabriel, I am hungry apple."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTW, <Hazel> [I need to rest] F",
     "target": "I would like to walk, Hazel, I need to rest first."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCMA, <Dylan> [I am worried] S",
     "target": "Can you call my aunt, Dylan, I am worried she."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTW, <Violet> [I am happy] L",
     "target": "I would like to write, Violet, I am happy letter."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYFML, <Thomas> [Thank you] S",
     "target": "Can you fix my lamp, Thomas, thank you sir."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTC, <Aurora> [I am hungry] D",
     "target": "I would like to cook, Aurora, I am hungry dinner."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTW, <Anthony> [I am worried] R",
     "target": "Can you check the weather, Anthony, I am worried rain."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTP, <Savannah> [I am happy] G",
     "target": "I would like to play, Savannah, I am happy game."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMMB, <Christopher> [I am sleepy] P",
     "target": "Can you move my bed, Christopher, I am sleepy pillow."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Brooklyn> [I am happy] W",
     "target": "I would like to swim, Brooklyn, I am happy water."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCMB, <Joshua> [Please] C",
     "target": "Can you charge my battery, Joshua, please charge."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTD, <Bella> [I am happy] D",
     "target": "I would like to dance, Bella, I am happy dance."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYFMB, <Andrew> [Thank you] S",
     "target": "Can you find my book, Andrew, thank you son."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTG, <Claire> [I am happy] F",
     "target": "I would like to garden, Claire, I am happy flowers."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYWTC, <Theodore> [Good job] C",
     "target": "Can you wash the car, Theodore, good job clean."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Skylar> [I am happy] D",
     "target": "I would like to sew, Skylar, I am happy dress."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYFTS, <Ryan> [I am happy] N",
     "target": "Can you feed the squirrel, Ryan, I am happy nuts."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTC, <Lucy> [Good job] R",
     "target": "I would like to clean, Lucy, good job room."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMTL, <Adrian> [Good job] G",
     "target": "Can you mow the lawn, Adrian, good job grass."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTB, <Paisley> [I am hungry] C",
     "target": "I would like to bake, Paisley, I am hungry cake."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYWTP, <Nolan> [Thank you] B",
     "target": "Can you water the plants, Nolan, thank you boy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Everly> [I am happy] B",
     "target": "I would like to shop, Everly, I am happy buy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYTOTO, <Christian> [Thank you] D",
     "target": "Can you take out the order, Christian, thank you dear."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTK, <Anna> [I am happy] S",
     "target": "I would like to knit, Anna, I am happy scarf."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMTB, <Colton> [Thank you] S",
     "target": "Can you make the bed, Colton, thank you son."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTC, <Caroline> [I am happy] B",
     "target": "I would like to crochet, Caroline, I am happy blanket."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYDTD, <Elias> [Thank you] K",
     "target": "Can you do the dishes, Elias, thank you kid."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTP, <Nova> [I am happy] P",
     "target": "I would like to puzzle, Nova, I am happy piece."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYVTR, <Jeremiah> [Good job] C",
     "target": "Can you vacuum the rug, Jeremiah, good job clean."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTM, <Samantha> [I need to rest] Q",
     "target": "I would like to meditate, Samantha, I need to rest quiet."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYDTF, <Isaiah> [Thank you] D",
     "target": "Can you dust the furniture, Isaiah, thank you dust."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTY, <Maya> [I am happy] S",
     "target": "I would like to yoga, Maya, I am happy stretch."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYSTT, <Charles> [I am hungry] D",
     "target": "Can you set the table, Charles, I am hungry dinner."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTE, <Willow> [I need to rest] T",
     "target": "I would like to exercise, Willow, I need to rest tired."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTT, <Thomas> [Thank you] C",
     "target": "Can you clear the table, Thomas, thank you clean."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTJ, <Kinsley> [I need to rest] F",
     "target": "I would like to jog, Kinsley, I need to rest fast."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYLTD, <Connor> [Thank you] H",
     "target": "Can you load the dishwasher, Connor, thank you help."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTR, <Naomi> [I need to rest] L",
     "target": "I would like to run, Naomi, I need to rest legs."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYUTD, <Landon> [Good job] D",
     "target": "Can you unload the dishwasher, Landon, good job dishes."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHAHTAIDNKWTD [I am worried] AI",
     "target": "I have a high temperature and I do not know what to do, I am worried about infection."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWJWTIYCGMW [I am thirsty] P",
     "target": "I was just wondering today if you could get me water, I am thirsty please."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " [Thank you] FETYHDTYVM",
     "target": "Thank you for everything that you have done, thank you very much."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ICBTISMSH [Help! This is an emergency!] C9",
     "target": "I cannot believe there is so much smoke here, Help! This is an emergency! Call 911."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTSAMB [I am sleepy] S",
     "target": "I would like to stay a minute but I am sleepy so."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H, [Look here] ATBOTP",
     "target": "Hey, look here at the birds on the porch."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHRBTBSRYRT [I am sad] TIO",
     "target": "I have really been thinking big should read your recommended title, I am sad that is over."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDKWIWTLMP [I am angry] A",
     "target": "I don't know where I want to leave my phone, I am angry again."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HIIGTSYAAA [Hello] MF",
     "target": "Hey, it is good to see you again after awhile, hello my friend."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFLTIAAPLITK [Help! This is an emergency!]",
     "target": "I feel like there is an awful paint leak in the kitchen, Help! This is an emergency!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRWAHST [No] ID",
     "target": "Do you remember what aunt Helen said today, no, I don't."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWHWCSTWTP [I am happy] TD",
     "target": "I was hoping we could spend time with the puzzle, I am happy to do."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TNOTOIVL [Please wait] UIC",
     "target": "The noise outside the office is very loud, please wait until I close."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HYSMRG [I need to use the washroom] F",
     "target": "Have you seen my reading glasses, I need to use the washroom first."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDTIFUTVTT [I feel sick] A",
     "target": "I don't think I feel up to visitors to today, I feel sick actually."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WSTGSO [I am hungry] N",
     "target": "When should the game start on, I am hungry now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MBIKMT [I am in pain] B",
     "target": "My back is killing me today, I am in pain bad."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WDTDA [I need a doctor] H",
     "target": "When does the doctor arrive, I need a doctor here."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFABAAT [I am worried] T",
     "target": "I feel a bit anxious about tomorrow, I am worried truly."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTITIAEMFM [Yes] P",
     "target": "Can you check that if there is an email message for me, yes please."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ISGTBRT [It is too cold] O",
     "target": "It seems going to be rain today, it is too cold outside."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTHSSFL [I am hungry] R",
     "target": "I would like to have some soup for lunch, I am hungry really."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYKWTKIP [I need my medication] S",
     "target": "Do you know where the keys is put, I need my medication soon."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MFIHAL [I am in pain] T",
     "target": "My feet is hurting a lot, I am in pain there."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTWATTY [Hello] B",
     "target": "I wanted to write a text to you, hello buddy."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CWPOMSFC [Please] D",
     "target": "Can we put on music some for calm, please do."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WWAWTS [I am sleepy] C",
     "target": "Where we are watching the show, I am sleepy couch."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IIFCIT [It is too cold] T",
     "target": "It is freezing cold in today, it is too cold today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYHMWT [Please] H",
     "target": "Can you help me with this, please help."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTRB [I need to rest] E",
     "target": "I would like to read book, I need to rest eyes."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYHATM [Please wait] O",
     "target": "Do you have a time minute, please wait one."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TSBHAOB [I am in pain] B",
     "target": "The sun burn hurts a on back, I am in pain bad."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYFMPP [Thank you] S",
     "target": "Can you fix my pillow position, thank you sir."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTGTTB [I need to use the washroom] F",
     "target": "I would like to go to the bathroom, I need to use the washroom fast."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HYSMP [I am very upset] I",
     "target": "Have you seen my purse, I am very upset it."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ITMAWBCT [I am sad] A",
     "target": "I think my arm was bruised coming Tuesday, I am sad about."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "WITA [I need a doctor] A",
     "target": "When is the appointment, I need a doctor appointment."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTGTTC [I am happy] G",
     "target": "I would like to go to the church, I am happy go."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYBMP [Please] P",
     "target": "Can you bring my phone, please pass."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS [I need to use the washroom] B",
     "target": "I would like to shower, I need to use the washroom before."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HIHFTJ [Congratulations] I",
     "target": "Has it heard from the job, congratulations if."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCMM [Please] C",
     "target": "Can you check my mail, please check."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS [I am sleepy] V",
     "target": "I would like to sleep, I am sleepy very."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRTWGLN [Good job] R",
     "target": "Did you record the winning game last night, good job recording."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTW [I need to rest] L",
     "target": "I would like to walk, I need to rest legs."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYPMA [I am hungry] F",
     "target": "Can you pass me apple, I am hungry for."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTGTS [I am sleepy] N",
     "target": "I want to go to sleep, I am sleepy now."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYTOTL [It is too hot] B",
     "target": "Can you turn on the light, it is too hot bulb."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IMA [I am sad] T",
     "target": "I miss April, I am sad today."
   },

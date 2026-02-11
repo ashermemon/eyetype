@@ -12,17 +12,17 @@ def form_prompt(example):
     abbr = example["abbreviation"]
     target = example["target"]
 
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {
-            "role": "user",
-            "content": f"Context: {context}\nAbbreviation: {abbr}\nFull phrase:"
-        },
-        {
-            "role": "assistant",
-            "content": target
-        }
-    ]
-    return messages
-
+    return {
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {
+                "role": "user",
+                "content": f"Context: {context}\nAbbreviation: {abbr}\nFull phrase:"
+            },
+            {
+                "role": "assistant",
+                "content": target
+            }
+        ]
+    }
 

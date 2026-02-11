@@ -75,7 +75,7 @@ def abbreviate_sentence(sentence):
 
 def add_sentence(dialog, tripletArray, contextNum=-1, contextValue=None):
     targetSentence = ""
-    context = ""
+    context = "None"
 
     # AAC
     if contextValue is not None:
@@ -84,7 +84,7 @@ def add_sentence(dialog, tripletArray, contextNum=-1, contextValue=None):
     
     # DailyDialog
     else:
-        if contextNum == 0:
+        if contextNum <= 0:
             context = "None"
             targetSentence = dialog[0]
         elif contextNum > 0:
@@ -94,7 +94,11 @@ def add_sentence(dialog, tripletArray, contextNum=-1, contextValue=None):
 
     final_target = targetSentence.strip()
     final_context = context.strip()
+
     
+    if(final_context == ""):
+        final_context = "None"
+        
     if final_target:
         tripletArray.append({
             "context": final_context,

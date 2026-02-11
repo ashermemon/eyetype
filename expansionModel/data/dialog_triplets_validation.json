@@ -165,7 +165,7 @@
     "target": "Well , I had a meeting today with a woman from Japan and she wouldn't stop bowing ! I didn't know what to do !"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "OC.",
     "target": "Olivia cheats."
   },
@@ -235,7 +235,7 @@
     "target": "Hey , Mike , is Jenny coming with us ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMTTNO <Dad> ?",
     "target": "Can you maybe turn the news on Dad?"
   },
@@ -345,7 +345,7 @@
     "target": "Me too . Swimming is a very good exercise for health . It combines water , bath , sunbath , and air bath together . It promotes the growth and haleness of muscles , bone , viscera and nerve systems ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IRLHASSF",
     "target": "I really like how art shows strong feelings."
   },
@@ -500,7 +500,7 @@
     "target": "I don't care what the best part is . Whatever you say won't change my mind . I'm not buying anything !"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYHMCTS",
     "target": "Can you help me call the store?"
   },
@@ -525,7 +525,7 @@
     "target": "I thought you had been to Australia too ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CWTAMD?",
     "target": "Can we talk about my doctor?"
   },
@@ -580,7 +580,7 @@
     "target": "How are you ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFIHTBOBCN",
     "target": "I find it harder to blow out birthday candles now."
   },
@@ -595,7 +595,7 @@
     "target": "Talks about Mary."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTEAAFRS.",
     "target": "I want to eat at a fancy restaurant soon."
   },
@@ -820,7 +820,7 @@
     "target": "Alison , would you like to have some more ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCTD, <Asher> [It is too cold] D",
     "target": "Can you close the door, Asher, it is too cold draft."
   },
@@ -970,7 +970,7 @@
     "target": "Someone brings a truck to the game and we have a barbecue right there in the parking lot out of the back of the truck !"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MFOT",
     "target": "Morning, feeling okay today?"
   },
@@ -1005,7 +1005,7 @@
     "target": "I hear that you've been to the Saikei Ski Resort for the weekend . Did you enjoy it ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "TIBNT",
     "target": "There is big news today."
   },
@@ -1110,7 +1110,7 @@
     "target": "That is really great news Congratulations to us."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IASCATTP",
     "target": "I am still confused about the travel plans."
   },
@@ -1225,7 +1225,7 @@
     "target": "They are a nice middle-aged couple , just like us ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HAGD",
     "target": "Had a great day."
   },
@@ -1600,7 +1600,7 @@
     "target": "Hello , Kevin . I hate to do this , but I have to cancel our appointment ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "PRN",
     "target": "Phone ringing now."
   },
@@ -1625,7 +1625,7 @@
     "target": "Irene ! I heard you were on a date last night ! So , how how did it go ? I want all the juicy details !"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HRCH",
     "target": "Hey, Ryan, come here."
   },
@@ -1750,7 +1750,7 @@
     "target": "Yes, many cultures involved."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INMM",
     "target": "I need my medicine."
   },
@@ -1800,7 +1800,7 @@
     "target": "What will happen to the children if you break up ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GON.",
     "target": "Going outside now."
   },
@@ -1955,7 +1955,7 @@
     "target": "Susan ? What brings you here today ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sir> IWO.",
     "target": "Sir I want out."
   },
@@ -1980,7 +1980,7 @@
     "target": "We scored six goals ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CWTAMTP",
     "target": "Can we talk about my travel plans?"
   },
@@ -1990,7 +1990,7 @@
     "target": "I'm going to try to leave by ten ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS, <Zoe> [I am happy] S",
     "target": "I would like to sing, Zoe, I am happy song."
   },
@@ -2005,7 +2005,7 @@
     "target": "Thank you! I am hungry."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTNOT",
     "target": "I watch the news on television."
   },
@@ -2075,7 +2075,7 @@
     "target": "Bananas and pears."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MTANCIH",
     "target": "Moving to a new country is hard."
   },
@@ -2110,7 +2110,7 @@
     "target": "What sort of things do you grow in your garden ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRTWGLN, <Hannah> [Good job] R",
     "target": "Did you record the winning game last night, Hannah, good job recording."
   },
@@ -2135,7 +2135,7 @@
     "target": "How can you be so sure ? You haven ’ t been together with her , have you ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHBTALANAHDP",
     "target": "I have been thinking a lot about Noah and his drinking problem."
   },
@@ -2225,7 +2225,7 @@
     "target": "This is a nice set of wheels . How much did the dealer charge you for this ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "FSA.",
     "target": "Food sounds amazing."
   },
@@ -2360,7 +2360,7 @@
     "target": "This is a great botanical garden in the city ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTSAMB [I am sleepy] S",
     "target": "I would like to sleep a minute but I am sleepy so."
   },
@@ -2380,7 +2380,7 @@
     "target": "Yeah . They take the advantage of other people's hospitality and generosity ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ILODC.",
     "target": "I love our diverse community."
   },
@@ -2420,7 +2420,7 @@
     "target": "Do you know what class you want to take ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ESJ",
     "target": "Ethan supports Jacob!"
   },
@@ -2945,7 +2945,7 @@
     "target": "I'm glad you liked it . Are you ready for dessert ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GTDPAMAHCATPRTBAIT",
     "target": "Greeting the delivery person and making a humorous comment about the package related to baking and international themes."
   },
@@ -3085,7 +3085,7 @@
     "target": "Hey , Chillon , I'm just trying to help ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IIRTRN <Michael> ?",
     "target": "Is it raining today right now Michael?"
   },
@@ -3125,7 +3125,7 @@
     "target": "How about going to the Olympic souvenir store to have a look ? I remember there is one in the gym ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTW [I need to rest] L",
     "target": "I would like to walk, I need to rest legs."
   },
@@ -3150,7 +3150,7 @@
     "target": "Really ? I thought he loved his wife very much ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INTCTD",
     "target": "I need to call the dentist."
   },
@@ -3280,7 +3280,7 @@
     "target": "You seem to be in the seventh heaven . What's put you on ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HTIJWTLYKTIMNALHWS",
     "target": "Hey there! I just wanted to let you know that I might need a little help with something."
   },
@@ -3350,7 +3350,7 @@
     "target": "Did you like the play ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYWTC, <Theodore> [Good job] C",
     "target": "Can you wash the car, Theodore, good job clean."
   },
@@ -3495,7 +3495,7 @@
     "target": "Herman , why are you so excited ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GIE.",
     "target": "George is eating."
   },
@@ -3525,7 +3525,7 @@
     "target": "Lead Manager well."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GAAIIISPTOFATLH.",
     "target": "Greeting and asking if it is still possible to order food at this late hour."
   },
@@ -3665,7 +3665,7 @@
     "target": "Because the movie was a high-level production!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFN",
     "target": "I feel nervous."
   },
@@ -3750,7 +3750,7 @@
     "target": "I hear you're entering the speech contest , Mike ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IATOWFALT",
     "target": "I am tired of waiting for a long time."
   },
@@ -3795,12 +3795,12 @@
     "target": "Bright green."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "NTCR",
     "target": "Need to call Ryan."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAFCN",
     "target": "I am feeling cold now."
   },
@@ -3855,7 +3855,7 @@
     "target": "Favorite movies."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTP, <Aubrey> [I am happy] P",
     "target": "I would like to paint, Aubrey, I am happy paint."
   },
@@ -3905,7 +3905,7 @@
     "target": "The lecturer is dull , too ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GTDP",
     "target": "Greeting the delivery person."
   },
@@ -3940,12 +3940,12 @@
     "target": "What are you hiding in your coat pocket ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "D,TIU.MWHGWTAINHI.",
     "target": "Doctor, this is urgent. My weakness has gotten worse today and I need help immediately."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Bro> WIGTW?",
     "target": "Bro who is going to win?"
   },
@@ -4135,7 +4135,7 @@
     "target": "Emm ... yes . But I wasn't too impressed . I found her a little stuck up ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDLTFVM",
     "target": "I don't like this film very much."
   },
@@ -4385,7 +4385,7 @@
     "target": "That stamp you've been looking for is for sale ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IFTMOMACQIDY",
     "target": "I find the mix of music and culture quite interesting, don't you?"
   },
@@ -4450,7 +4450,7 @@
     "target": "That's a great idea . It's the best season for tourists in Florida . You can also get a good sun-tan there ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTE, <Willow> [I need to rest] T",
     "target": "I would like to exercise, Willow, I need to rest tired."
   },
@@ -4730,7 +4730,7 @@
     "target": "Can I help you ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "OGAN",
     "target": "Oh great, another night."
   },
@@ -4910,7 +4910,7 @@
     "target": "There we go . Can you help me with the umbrella ? Perfect ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Mom> IWH.",
     "target": "Mom I was hungry."
   },
@@ -4920,7 +4920,7 @@
     "target": "How are you doing , Andrew ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H,DYNHONLLTUN?IM,WNATGWYCJWDTS?",
     "target": "Hey, did you notice how our neighborhood looks like the United Nations? I mean, who needs a travel guide when you can just walk down the street?"
   },
@@ -5045,7 +5045,7 @@
     "target": "You look so lovely ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYVTR, <Jeremiah> [Good job] C",
     "target": "Can you vacuum the rug, Jeremiah, good job clean."
   },
@@ -5345,7 +5345,7 @@
     "target": "Does Jim make a lot of money ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IHKMBA [I am in pain] RN",
     "target": "I have knots my back and I am in pain right now."
   },
@@ -5360,7 +5360,7 @@
     "target": "Good, Thank you Mateo."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "SLTHAC",
     "target": "So Lucas thinks he's a chef."
   },
@@ -5370,7 +5370,7 @@
     "target": "Better than you."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "EFALOCCIHA",
     "target": "Expressing frustration about lack of cultural consideration in health advice."
   },
@@ -5455,7 +5455,7 @@
     "target": "Which is easier to learn ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "OG,ACG.",
     "target": "Oh great, Amanda calls girl."
   },
@@ -5505,7 +5505,7 @@
     "target": "Just happy with changes."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MHABT.",
     "target": "Michael had a blast tonight."
   },
@@ -5580,7 +5580,7 @@
     "target": "Yeah . It ’ s a lot better than mine ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GM",
     "target": "Good morning."
   },
@@ -5645,7 +5645,7 @@
     "target": "Okay , enough small talk . Let ’ s get down to business ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GM,D.HAYFT?",
     "target": "Good morning, David. How are you feeling today?"
   },
@@ -5685,7 +5685,7 @@
     "target": "Good evening , Mr.Brown ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GMJIWTAOCYRTPP",
     "target": "Good morning, Jacob! I was thinking about our conversation yesterday regarding the project proposal."
   },
@@ -5775,7 +5775,7 @@
     "target": "Same, boring as usual."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ARKHS",
     "target": "Ava really knows health stuff."
   },
@@ -5840,7 +5840,7 @@
     "target": "There were some bad misses in his defence , so he lost it ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWMW",
     "target": "I want my Wheaties."
   },
@@ -5875,7 +5875,7 @@
     "target": "Amelia explains tough concepts well."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H,GADAL?",
     "target": "Hey, got a doc appointment later?"
   },
@@ -5990,7 +5990,7 @@
     "target": "You don ’ t like this sort of exercise ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Sis> WAGTD?",
     "target": "Sis when are going to dinner?"
   },
@@ -6365,7 +6365,7 @@
     "target": "Yeah, had strange dreams."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "SWAH",
     "target": "Still wide awake here!"
   },
@@ -6380,7 +6380,7 @@
     "target": "I wish I hadn't chosen this job ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IATTCHCYTMMAIS",
     "target": "I appreciate the traditional clothing here. Can you tell me more about its significance?"
   },
@@ -6485,7 +6485,7 @@
     "target": "Yes, very comforting."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "NHWF",
     "target": "Need help with feet."
   },
@@ -6535,7 +6535,7 @@
     "target": "Ready to call now! Press button."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INTTATRO.",
     "target": "I need to talk about the restraining order."
   },
@@ -6560,7 +6560,7 @@
     "target": "Diwali, Chinese New Year."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MIWTLDTCJT",
     "target": "Morning! I was thinking. Lucas decides to call James today."
   },
@@ -6775,7 +6775,7 @@
     "target": "Maybe we should give her a hint? A gentle nudge to cut back a little."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRWAHST [No] ID",
     "target": "Do you remember what aunt Helen said today, no, I don't."
   },
@@ -6925,7 +6925,7 @@
     "target": "What did you do last night ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAREAMIT!",
     "target": "I am really excited about moving in together!"
   },
@@ -6965,7 +6965,7 @@
     "target": "It is interesting , isn't it ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": " <Self> IAD.",
     "target": "Self I am done."
   },
@@ -7010,7 +7010,7 @@
     "target": "How could you miss that ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "AEIA",
     "target": "Ava eats it anyway."
   },
@@ -7155,7 +7155,7 @@
     "target": "Is that so ? We're using lures , and the fish are biting those too ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H,IHADWM.",
     "target": "Hello, I have a dog with me."
   },
@@ -7210,7 +7210,7 @@
     "target": "I feel the same way ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTG",
     "target": "I want to go."
   },
@@ -7400,7 +7400,7 @@
     "target": "Read me the sports headlines Dear."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HABT.",
     "target": "Had a blast today."
   },
@@ -7415,7 +7415,7 @@
     "target": "What ? We are merging with Trusten ? I never thought that would happen.Will we be getting new owners ? Will it affect our jobs ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTL, <Natalie> [I am happy] M",
     "target": "I would like to listen, Natalie, I am happy music."
   },
@@ -7515,7 +7515,7 @@
     "target": "May , we are fools to hang out at noon . It's dying hot today . My skin is too weak to be exposed under the summer sun ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "D <Tyler> KWTMCI",
     "target": "Does Tyler know where the medicine cabinet is?"
   },
@@ -7535,7 +7535,7 @@
     "target": "The Canada Day is on the 1st of July ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYMHMSMTU <Daniel> ?",
     "target": "Can you maybe help me set my tablet up Daniel?"
   },
@@ -7715,12 +7715,12 @@
     "target": "David , I ’ m going to China ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLTS [I am sleepy] V",
     "target": "I would like to sleep, I am sleepy very."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IAH.",
     "target": "I am hungry."
   },
@@ -7735,7 +7735,7 @@
     "target": "Would you like to go to a concert tonight ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H <Amelia> !HAYA?",
     "target": "Hi Amelia! How are you all?"
   },
@@ -7815,7 +7815,7 @@
     "target": "Is your waist any better ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "H, [Look here] ATBOTP",
     "target": "Hey, look here at the birds on the porch."
   },
@@ -7915,7 +7915,7 @@
     "target": "You make things easier. Really."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ISOLN",
     "target": "I slept okay last night."
   },
@@ -8035,7 +8035,7 @@
     "target": "Business couldn't be better ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "EMMT",
     "target": "Emily moved my things."
   },
@@ -8285,7 +8285,7 @@
     "target": "What's the matter with you , Paul ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "COTKR",
     "target": "Commenting on the keyboard's responsiveness."
   },
@@ -8385,7 +8385,7 @@
     "target": "Humorous remark about referee being discussed on social media."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "NTTAP",
     "target": "Need to talk about procreate."
   },
@@ -8725,7 +8725,7 @@
     "target": "what's your opinion about childless couples ? Will you choose to have no kids ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTWWOCHPOLAS",
     "target": "I want to work with our community, help preserve our language and stories."
   },
@@ -8780,7 +8780,7 @@
     "target": "Aug 8 ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYTWHETTFWTMBD <Sophia> ?",
     "target": "Do you think we have enough time to finish watching the movie before dinner Sophia?"
   },
@@ -8830,7 +8830,7 @@
     "target": "Awesome! Laughter helps heal!"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DYRTTDS",
     "target": "Do you remember the traditional dance steps?"
   },
@@ -8920,7 +8920,7 @@
     "target": "Please check the seasoning."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "INAQBN",
     "target": "I need a quick break now."
   },
@@ -9035,7 +9035,7 @@
     "target": "Have you ever seen Bill Gate's home on the internet ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IDKWIWTLMP, <Ava> [I am angry] A",
     "target": "I don't know where I want to leave my phone, Ava, I am angry again."
   },
@@ -9205,7 +9205,7 @@
     "target": "Impossible ! Well , I'm not giving up yet . It's not over till the fat lady sings !"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IRLYFIWA",
     "target": "I remember last year's festival, it was amazing!"
   },
@@ -9420,7 +9420,7 @@
     "target": "I did , but he gives me a runaround ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "CYCMM [Please] C",
     "target": "Can you check my mail, please check."
   },
@@ -9485,7 +9485,7 @@
     "target": "I hear that he's quitting ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MHJ",
     "target": "Mohammed helps James."
   },
@@ -9730,7 +9730,7 @@
     "target": "Tomorrow will be fine too , I think ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "MTN",
     "target": "Moving to Nashville?"
   },
@@ -9765,7 +9765,7 @@
     "target": "Close, it is too hot in here."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "GMDYGSY",
     "target": "Good morning! Did you go shopping yesterday?"
   },
@@ -9845,7 +9845,7 @@
     "target": "I think there ’ s a very romantic new film starring Hugh Grant . Let ’ s go and see that ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "EAFTAECT.",
     "target": "Expressing appreciation for the art exhibit's cultural themes."
   },
@@ -9905,7 +9905,7 @@
     "target": "have you adapted to the lifestyle in China ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "RATTTA",
     "target": "Request a taxi to the airport."
   },
@@ -10020,7 +10020,7 @@
     "target": "I might join some clubs or classes to meet folks. It’s just hard when I don’t know anyone."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWLSHT.",
     "target": "I would like some health tips."
   },
@@ -10070,12 +10070,12 @@
     "target": "And Patricia’s endless gossip! Perfect combo."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "DT",
     "target": "Doctor today."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWHWCSTWP, <Mason> [I am happy] TD",
     "target": "I was hoping we could spend time with Peter, Mason, I am happy to do."
   },
@@ -10090,7 +10090,7 @@
     "target": "Mm ... How do I get this ticket machine to work ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "IWTM",
     "target": "I want to move."
   },
@@ -10195,7 +10195,7 @@
     "target": "Providing further directions to the venue."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "HMHYDB",
     "target": "Hey Mary, how's your day been?"
   },
@@ -10580,7 +10580,7 @@
     "target": "She will love the energy of the city and all the cultural events happening."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "C <Isabella> TMWMNAIAT?",
     "target": "Can Isabella tell me when my next appointment is at therapy?"
   },
@@ -10910,7 +10910,7 @@
     "target": "Oh , that's all right . I just wondered what was keeping you ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "AHWYD",
     "target": "Amelia, how was your day?"
   },
@@ -11200,7 +11200,7 @@
     "target": "No , thanks . I have had enough ."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "JCYH",
     "target": "Joshua, can you help?"
   },
@@ -11405,7 +11405,7 @@
     "target": "Yes! Bright colors."
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "NTCJ.",
     "target": "Need to call Jacob."
   },
@@ -11425,7 +11425,7 @@
     "target": "Why are you so rude to your wife ?"
   },
   {
-    "context": "",
+    "context": "None",
     "abbreviation": "ITTFIWWSMCCT.",
     "target": "I think the festival is wonderful with so many cultures coming together."
   },

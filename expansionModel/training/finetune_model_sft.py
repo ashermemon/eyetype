@@ -27,11 +27,15 @@ output_dir = "expansionModel/training/output"
 bnb_config = None
 
 # tokenizer
-
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# 1. Add special tokens for delimiters
+special_tokens = ["1user", "1assistant", "1system", "2"]
+tokenizer.add_special_tokens({"additional_special_tokens": special_tokens})
 tokenizer.pad_token = tokenizer.eos_token
 
-tokenizer.chat_template = """{% for message in messages %}{% if message['role'] == 'user' %}{{ '1user\n' + message['content'] | trim + '2\n' }}{% elif message['role'] == 'system' %}{{ '1system\n' + message['content'] | trim + '2\n' }}{% elif message['role'] == 'assistant' %}{% generation %}{{ '1assistant\n' + message['content'] | trim + '2\n' }}{% endgeneration %}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ '1assistant\n' }}{% endif %}"""
+# 2. Update chat template with EOS token
+tokenizer.chat_template = """{% for message in messages %}{% if message['role'] == 'user' %}{{ '1user\n' + message['content'] | trim + '2\n' }}{% elif message['role'] == 'system' %}{{ '1system\n' + message['content'] | trim + '2\n' }}{% elif message['role'] == 'assistant' %}{% generation %}{{ '1assistant\n' + message['content'] | trim + '2\n' + eos_token }}{% endgeneration %}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ '1assistant\n' }}{% endif %}"""
 
 
 dataset = load_dataset(
@@ -57,6 +61,8 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",
     trust_remote_code=True
 )
+
+model.resize_token_embeddings(len(tokenizer))
 
 
 model.gradient_checkpointing_enable()

@@ -13,8 +13,8 @@ import create_prompt
 import os
 
 # configuration
-model_name = "Qwen/Qwen2.5-3B-Instruct" #3B for final
-output_dir = "drive/MyDrive/ModelTraining/eyetype/expansionModel/training/output"
+model_name = "Qwen/Qwen2.5-0.5B-Instruct" #7B for final
+output_dir = "expansionModel/training/output"
 
 # for QLoRA if needed (run out of memory)
 
@@ -41,9 +41,9 @@ tokenizer.chat_template = """{% for message in messages %}{% if message['role'] 
 dataset = load_dataset(
     "json",
     data_files={
-        "train": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_train.json",
-        "validation": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_validation.json",
-        "test": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_test.json"
+        "train": "expansionModel/data/dialog_triplets_train.json",
+        "validation": "expansionModel/data/dialog_triplets_validation.json",
+        "test": "expansionModel/data/dialog_triplets_test.json"
     }
 )
 
@@ -57,7 +57,7 @@ dataset = dataset.map(create_prompt.form_prompt, remove_columns=dataset["train"]
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
     quantization_config=bnb_config,
-    torch_dtype=torch.bfloat16, #bfloat16
+    torch_dtype=torch.float16, #bfloat16
     device_map="auto",
     trust_remote_code=True
 )
@@ -92,8 +92,8 @@ sft_config = SFTConfig(
     output_dir=output_dir,
     num_train_epochs=3,
     learning_rate=8e-5,
-    per_device_train_batch_size=8, #A100
-    gradient_accumulation_steps=2, #A100
+    per_device_train_batch_size=4, #8 for a100
+    gradient_accumulation_steps=4, #2 for a100
     logging_steps=10,
     eval_strategy="steps",
     eval_steps=300,
@@ -108,7 +108,6 @@ sft_config = SFTConfig(
     assistant_only_loss=True,       # Only compute loss on assistant tokens
     max_length=256,
     packing=False,
-    save_total_limit=2,
 )
 
 

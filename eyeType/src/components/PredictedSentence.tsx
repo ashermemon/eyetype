@@ -1,4 +1,4 @@
-import React from "react";
+import {} from "react";
 import TopBarButton from "./TopBarButton";
 import { speak } from "../util/tts";
 import { toSpokenText } from "./KeyGrid";
@@ -15,18 +15,19 @@ function speakText(text: string) {
 
 type Props = {
   sentenceText: string;
+  onSelect: (text: string) => void;
 };
 
-export default function PredictedSentence({ sentenceText }: Props) {
+export default function PredictedSentence({ sentenceText, onSelect }: Props) {
   return (
     <div className={"row-container"}>
-      <button className="sentence-container">
-        <text
+      <button className="sentence-container" onClick={() => onSelect(sentenceText)}>
+        <span
           className="button-text"
           style={{ color: "#f0f0f0", textAlign: "left", width: "100%" }}
         >
           {sentenceText}
-        </text>
+        </span>
       </button>
       <div>
         <TopBarButton

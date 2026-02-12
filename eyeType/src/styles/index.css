@@ -27,7 +27,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-
+  background-color: #19191b;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

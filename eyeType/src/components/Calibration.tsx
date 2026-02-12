@@ -111,12 +111,12 @@ export default function Calibration({ onComplete }: Props) {
       
       let samples = 0;
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 3) { // max 3 samples per point
+        if (samples >= 15) { // Increased to 15 samples per point for better ridge regression
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");
         samples++;
-      }, 50);
+      }, 50); // Record every 50ms
 
       setTimeout(() => {
         if (recordIntervalRef.current) {
@@ -130,7 +130,7 @@ export default function Calibration({ onComplete }: Props) {
             runCalibrationStep(index + 1);
         }, 500); 
 
-      }, 600); 
+      }, 1000); // Wait 1s for recording to finish (15 samples @ 50ms = 750ms)
 
     }, 1200); 
   };

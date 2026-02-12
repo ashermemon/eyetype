@@ -55,10 +55,8 @@ export class OneEuroFilter {
   public filter(value: number, timestamp: number | null = null): number {
     if (this.lastTime !== null && timestamp !== null) {
       const dt = (timestamp - this.lastTime) / 1000.0;
-      if (dt > 0.0001) {
+      if (dt > 0) {
         this.freq = 1.0 / dt;
-        // Update alphas for both filters when frequency changes
-        this.dxFilter.setAlpha(this.alpha(1.0)); // dCutoff is 1.0
       }
     }
     this.lastTime = timestamp;

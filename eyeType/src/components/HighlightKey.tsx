@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   gazeData: { x: number; y: number } | null;
@@ -40,13 +40,22 @@ function distanceToPerimeter(
 
 export default function HighlightKey({ gazeData, onHighlight }: Props) {
   const lastHighlightedElement = useRef<HTMLElement | null>(null);
+  const dwellStartTime = useRef<number | null>(null);
+  const dwellTriggered = useRef<boolean>(false);
+  const DWELL_THRESHOLD = 1000; // Match 1 second animation
+
+  const [targetRect, setTargetRect] = useState<DOMRect | null>(null);
+  const [targetRadius, setTargetRadius] = useState<string>("0px");
+  const [targetColor, setTargetColor] = useState<string>("#ca9335");
+  const [hoverKey, setHoverKey] = useState<number>(0);
 
   useEffect(() => {
     if (!gazeData) return;
 
+    // Use a small offset to ensure we aren't hitting the absolute top-left of the screen if data is 0,0
     const elementAtGazePoint = document.elementFromPoint(
-      gazeData.x,
-      gazeData.y,
+      Math.max(0, gazeData.x),
+      Math.max(0, gazeData.y),
     );
     let interactiveElement = findInteractiveParent(elementAtGazePoint);
 
@@ -74,40 +83,103 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
         }
       });
 
-      interactiveElement = closest.element;
+      // Increase proximity threshold slightly if needed, but 10000 (100px) is reasonable
+      if (closest.distance < 40000) { // 200px
+        interactiveElement = closest.element;
+      }
     }
 
-    if (!interactiveElement) return;
+    if (!interactiveElement) {
+      // Clear dwell if we lose focus
+      if (lastHighlightedElement.current) {
+        lastHighlightedElement.current.classList.remove("key-active", "button-active", "sentence-active");
+        if (lastHighlightedElement.current.classList.contains("top-bar-button")) {
+          lastHighlightedElement.current.style.borderColor = "";
+        }
+      }
+      dwellStartTime.current = null;
+      dwellTriggered.current = false;
+      lastHighlightedElement.current = null;
+      setTargetRect(null);
+      return;
+    }
 
     if (lastHighlightedElement.current !== interactiveElement) {
+      // Clean up previous
       if (lastHighlightedElement.current) {
-        lastHighlightedElement.current.classList.remove("key-active");
-        lastHighlightedElement.current.classList.remove("button-active");
-        lastHighlightedElement.current.classList.remove("sentence-active");
-        if (
-          lastHighlightedElement.current.classList.contains("top-bar-button")
-        ) {
+        lastHighlightedElement.current.classList.remove("key-active", "button-active", "sentence-active");
+        if (lastHighlightedElement.current.classList.contains("top-bar-button")) {
           lastHighlightedElement.current.style.borderColor = "";
         }
       }
 
-      if (interactiveElement.classList.contains("key")) {
-        interactiveElement.classList.add("key-active");
-        const row = Number(interactiveElement.getAttribute("data-row"));
-        const col = Number(interactiveElement.getAttribute("data-col"));
-        onHighlight(row, col);
-      } else if (interactiveElement.classList.contains("top-bar-button")) {
-        const highlightColor =
-          interactiveElement.getAttribute("highlight-color") || "#ca9335";
-        interactiveElement.style.borderColor = highlightColor;
+      // Start new dwell
+      dwellStartTime.current = Date.now();
+      dwellTriggered.current = false;
+
+      const rect = interactiveElement.getBoundingClientRect();
+      setTargetRect(rect);
+      setTargetRadius(window.getComputedStyle(interactiveElement).borderRadius);
+      setHoverKey((prev) => prev + 1);
+
+      let color = "#ca9335";
+      if (interactiveElement.classList.contains("top-bar-button")) {
+        color = interactiveElement.getAttribute("highlight-color") || "#ca9335";
         interactiveElement.classList.add("button-active");
+        interactiveElement.style.borderColor = color;
       } else if (interactiveElement.classList.contains("sentence-container")) {
+        color = "#6EC0FF";
         interactiveElement.classList.add("sentence-active");
+      } else if (interactiveElement.classList.contains("key")) {
+        interactiveElement.classList.add("key-active");
+      }
+      setTargetColor(color);
+
+      const row = Number(interactiveElement.getAttribute("data-row"));
+      const col = Number(interactiveElement.getAttribute("data-col"));
+      if (!isNaN(row) && !isNaN(col)) {
+        onHighlight(row, col);
       }
 
       lastHighlightedElement.current = interactiveElement;
+    } else {
+      // Same element, check dwell time
+      if (dwellStartTime.current && !dwellTriggered.current) {
+        const elapsedTime = Date.now() - dwellStartTime.current;
+        if (elapsedTime >= DWELL_THRESHOLD) {
+          interactiveElement.click();
+          dwellTriggered.current = true;
+          console.log("Dwell trigger!", interactiveElement);
+        }
+      }
     }
   }, [gazeData, onHighlight]);
 
-  return null;
+  if (!targetRect) return null;
+
+  return (
+    <svg
+      key={hoverKey}
+      className="dwell-progress-overlay"
+      style={{
+        left: targetRect.left,
+        top: targetRect.top,
+        width: targetRect.width,
+        height: targetRect.height,
+      }}
+      viewBox={`0 0 ${targetRect.width} ${targetRect.height}`}
+    >
+      <rect
+        className="dwell-progress-path"
+        style={{ stroke: targetColor }}
+        x="0"
+        y="0"
+        width={targetRect.width}
+        height={targetRect.height}
+        rx={targetRadius}
+        ry={targetRadius}
+        pathLength="1"
+      />
+    </svg>
+  );
 }

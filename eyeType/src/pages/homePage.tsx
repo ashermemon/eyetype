@@ -1,4 +1,5 @@
-import { useState, useCallback, useRef } from "react";
+import React, { useState, useCallback, useRef } from "react";
+import KeyGrid from "../components/KeyGrid";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import HighlightKey from "../components/HighlightKey";
@@ -53,14 +54,15 @@ export default function HomePage({}: Props) {
           position: "fixed",
           left: 0,
           top: 0,
-          width: "8px",
-          height: "8px",
-          backgroundColor: "#ff0000",
+          width: "12px",
+          height: "12px",
+          backgroundColor: "#ff4d4d",
           borderRadius: "50%",
           transform: "translate(-50%, -50%)",
           pointerEvents: "none",
           zIndex: 9999, 
-          boxShadow: "0 0 8px rgba(255, 0, 0, 0.8)",
+          boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
+          transition: "left 0.08s ease-out, top 0.08s ease-out",
           display: "none", // Hide until first gaze data
         }}
       />

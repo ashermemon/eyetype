@@ -23,6 +23,8 @@ export default function Calibration({ onComplete }: Props) {
     { x: 98, y: 34 }, { x: 98, y: 66 }, // right
     { x: 66, y: 98 }, { x: 34, y: 98 }, // bottom
     { x: 2, y: 66 }, { x: 2, y: 34 },   // left
+
+    { x: 50, y: 50 }, // center
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -111,7 +113,7 @@ export default function Calibration({ onComplete }: Props) {
       
       let samples = 0;
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 15) { // Increased to 15 samples per point for better ridge regression
+        if (samples >= 10) { // Increased to 15 samples per point for better ridge regression
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");

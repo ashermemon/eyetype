@@ -372,17 +372,9 @@ input.top-bar-input-text:focus {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   animation: dwell-circle 1s linear forwards;
-  animation-delay: 250ms;
-  opacity: 0;
 }
 
 @keyframes dwell-circle {
-  from {
-    stroke-dashoffset: 1;
-    opacity: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
 }

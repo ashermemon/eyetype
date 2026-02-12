@@ -89,7 +89,7 @@ export default function PrimaryUI({ activeKey }: Props) {
         ) : !isLoading ? (
           <>
             <PredictedSentence
-              sentenceText="Welcome! Start typing to see predictions..."
+              sentenceText="Welcome! Start typing to see predictions"
               onSelect={() => {}}
             />
             <PredictedSentence
@@ -97,7 +97,7 @@ export default function PrimaryUI({ activeKey }: Props) {
               onSelect={() => {}}
             />
             <PredictedSentence
-              sentenceText="E.g., type 'h r u' for 'how are you'"
+              sentenceText="For example, type 'GM' for 'Good Morning!'"
               onSelect={() => {}}
             />
           </>

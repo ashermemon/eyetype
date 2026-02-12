@@ -148,6 +148,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  background-color: #19191b;
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;

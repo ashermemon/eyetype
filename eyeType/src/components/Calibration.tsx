@@ -8,24 +8,41 @@ type Props = {
 
 export default function Calibration({ onComplete }: Props) {
 
-  const [points] = useState([
+  // Shuffle 
+  const shuffle = (array: any[]) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
-
-    { x: 50, y: 50 }, // center
-
-
-    { x: 34, y: 34 }, { x: 66, y: 34 }, { x: 66, y: 66 }, { x: 34, y: 66 }, // inner
-
- 
-    { x: 2, y: 2 }, { x: 98, y: 2 }, { x: 2, y: 98 }, { x: 98, y: 98 }, // corners
+  const [points] = useState(() => {
+    const center = [{ x: 50, y: 50 }];
     
-    { x: 34, y: 2 }, { x: 66, y: 2 }, // top
-    { x: 98, y: 34 }, { x: 98, y: 66 }, // right
-    { x: 66, y: 98 }, { x: 34, y: 98 }, // bottom
-    { x: 2, y: 66 }, { x: 2, y: 34 },   // left
+    const inner = [
+      { x: 34, y: 34 }, { x: 66, y: 34 }, { x: 66, y: 66 }, { x: 34, y: 66 }
+    ];
+    
+    const corners = [
+      { x: 2, y: 2 }, { x: 98, y: 2 }, { x: 2, y: 98 }, { x: 98, y: 98 }
+    ];
+    
+    const edges = [
+      { x: 34, y: 2 }, { x: 66, y: 2 }, 
+      { x: 98, y: 34 }, { x: 98, y: 66 }, 
+      { x: 66, y: 98 }, { x: 34, y: 98 }, 
+      { x: 2, y: 66 }, { x: 2, y: 34 },   
+    ];
 
-    { x: 50, y: 50 }, // center
-  ]);
+    return [
+      ...center,
+      ...shuffle([...inner]),
+      ...shuffle([...corners]),
+      ...shuffle([...edges]),
+      ...center 
+    ];
+  });
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState("Calibrating eye tracker...");
@@ -40,13 +57,13 @@ export default function Calibration({ onComplete }: Props) {
     webgazer.setRegression("ridge");
     webgazer.setTracker("TFFacemesh");
     webgazer.saveDataAcrossSessions(false);
-    webgazer.removeMouseEventListeners();
     webgazer.applyKalmanFilter(false);
     webgazer.begin();
     webgazer.showVideo(false);
     webgazer.showFaceOverlay(false);
     webgazer.showFaceFeedbackBox(true);
-    webgazer.showPredictionPoints(false); 
+    webgazer.showPredictionPoints(false);
+    webgazer.removeMouseEventListeners(); 
   }, []);
 
 
@@ -113,7 +130,7 @@ export default function Calibration({ onComplete }: Props) {
       
       let samples = 0;
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 10) { // Increased to 15 samples per point for better ridge regression
+        if (samples >= 7) { // Increased to 15 samples per point for better ridge regression
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");
@@ -132,7 +149,7 @@ export default function Calibration({ onComplete }: Props) {
             runCalibrationStep(index + 1);
         }, 500); 
 
-      }, 1000); // Wait 1s for recording to finish (15 samples @ 50ms = 750ms)
+      }, 1000); 
 
     }, 1200); 
   };

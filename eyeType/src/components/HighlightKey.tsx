@@ -42,7 +42,7 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
   const lastHighlightedElement = useRef<HTMLElement | null>(null);
   const dwellStartTime = useRef<number | null>(null);
   const dwellTriggered = useRef<boolean>(false);
-  const DWELL_THRESHOLD = 1000; // Match 1 second animation
+  const DWELL_THRESHOLD = 1000; 
 
   const [targetRect, setTargetRect] = useState<DOMRect | null>(null);
   const [targetRadius, setTargetRadius] = useState<string>("0px");
@@ -51,8 +51,10 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
 
   useEffect(() => {
     if (!gazeData) return;
+    
+    // make sure its a num
+    if (isNaN(gazeData.x) || isNaN(gazeData.y)) return;
 
-    // Use a small offset to ensure we aren't hitting the absolute top-left of the screen if data is 0,0
     const elementAtGazePoint = document.elementFromPoint(
       Math.max(0, gazeData.x),
       Math.max(0, gazeData.y),
@@ -83,7 +85,7 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
         }
       });
 
-      // Increase proximity threshold slightly if needed, but 10000 (100px) is reasonable
+      // Proximity threshold
       if (closest.distance < 40000) { // 200px
         interactiveElement = closest.element;
       }

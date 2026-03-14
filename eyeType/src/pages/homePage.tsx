@@ -60,7 +60,7 @@ export default function HomePage({}: Props) {
           borderRadius: "50%",
           transform: "translate(-50%, -50%)",
           pointerEvents: "none",
-          zIndex: 9999, 
+          zIndex: 99999999, 
           boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
           transition: "left 0.08s ease-out, top 0.08s ease-out",
           display: "none", // Hide until first gaze data

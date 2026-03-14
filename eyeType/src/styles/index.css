@@ -362,12 +362,13 @@ input.top-bar-input-text:focus {
 .dwell-progress-overlay {
   position: fixed;
   pointer-events: none;
-  z-index: 10000;
+  z-index: 9000;
   overflow: visible;
 }
 
 .dwell-progress-path {
   fill: none;
+  z-index: 9000;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-dasharray: 1;

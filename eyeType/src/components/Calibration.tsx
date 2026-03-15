@@ -111,6 +111,7 @@ export default function Calibration({ onComplete }: Props) {
 
   const runCalibrationStep = (index: number) => {
     if (index >= points.length) {
+      setPointStatus(2);
       finishCalibration();
       return;
     }

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import webgazer from "webgazer";
-import { OneEuroFilter } from "../utils/OneEuroFilter";
+import {OneEuroFilter} from '1eurofilter'
+
 
 type Props = {
   onGaze: (x: number, y: number) => void;
@@ -8,22 +9,23 @@ type Props = {
 
 export default function EyeTracking({ onGaze }: Props) {
   const initialized = useRef(false);
-  // One Euro Filter instances for X and Y - Aggressive tuning for stability
-  const filterX = useRef(new OneEuroFilter(60, 0.5, 0.001, 1.0));
-  const filterY = useRef(new OneEuroFilter(60, 0.5, 0.001, 1.0));
 
-  // Median filter buffer (Size 5 for better outlier rejection)
-  const bufferX = useRef<number[]>([]);
-  const bufferY = useRef<number[]>([]);
-  const BUFFER_SIZE = 5;
+  let frequency = 120; 
+  let mincutoff = 1.0;
+  let beta = 0.1;      
+  let dcutoff = 1.0; 
+
+  const filterX = useRef(new OneEuroFilter(frequency, mincutoff, beta, dcutoff));
+  const filterY = useRef(new OneEuroFilter(frequency, mincutoff, beta, dcutoff));
+
 
   const lastPos = useRef({ x: 0, y: 0 });
-  const MAX_VELOCITY = 1000; // Pixels per update cap (Faster for responsiveness)
+  const MAX_VELOCITY = 1000; 
 
-  const median = (arr: number[]) => {
-    const sorted = [...arr].sort((a, b) => a - b);
-    return sorted[Math.floor(sorted.length / 2)];
-  };
+  // const median = (arr: number[]) => {
+  //   const sorted = [...arr].sort((a, b) => a - b);
+  //   return sorted[Math.floor(sorted.length / 2)];
+  // };
 
   useEffect(() => {
     webgazer
@@ -31,26 +33,26 @@ export default function EyeTracking({ onGaze }: Props) {
       .setGazeListener((data: { x: number; y: number } | null) => {
         if (!data) return;
 
-        const timestamp = Date.now();
+        const timestamp = Date.now() / 1000; 
 
-        // 1. Median Filter (Size 5) to strip spikes
-        bufferX.current.push(data.x);
-        bufferY.current.push(data.y);
-        if (bufferX.current.length > BUFFER_SIZE) bufferX.current.shift();
-        if (bufferY.current.length > BUFFER_SIZE) bufferY.current.shift();
+        // // 1. Median Filter (Size 5) to strip spikes
+        // bufferX.current.push(data.x);
+        // bufferY.current.push(data.y);
+        // if (bufferX.current.length > BUFFER_SIZE) bufferX.current.shift();
+        // if (bufferY.current.length > BUFFER_SIZE) bufferY.current.shift();
 
-        if (bufferX.current.length < BUFFER_SIZE) return;
+        // if (bufferX.current.length < BUFFER_SIZE) return;
 
-        const medianX = median(bufferX.current);
-        const medianY = median(bufferY.current);
+        // const medianX = median(bufferX.current);
+        // const medianY = median(bufferY.current);
 
         // 2. Velocity Cap to prevent teleporting
-        let targetX = medianX;
-        let targetY = medianY;
+        let targetX = data.x;
+        let targetY = data.y;
 
         if (initialized.current) {
-          const dx = medianX - lastPos.current.x;
-          const dy = medianY - lastPos.current.y;
+          const dx = data.x - lastPos.current.x;
+          const dy = data.y - lastPos.current.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           
           if (dist > MAX_VELOCITY) {

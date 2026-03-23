@@ -36,7 +36,7 @@ export default function Calibration({ onComplete }: Props) {
     return [
       ...shuffle([...corners]),
       ...shuffle([...edges]),
-      //...shuffle([...inner]),
+      ...shuffle([...inner]),
       ...center 
     ];
   });
@@ -128,12 +128,12 @@ export default function Calibration({ onComplete }: Props) {
       
       let samples = 0;
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 5) { // Or 3 w inner points
+        if (samples >= 4) { // Or 5 w/out inner points
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");
         samples++;
-      }, 50); // Record every 50ms
+      }, 100); // Record every 100ms
 
       setTimeout(() => {
         if (recordIntervalRef.current) {

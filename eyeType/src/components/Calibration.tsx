@@ -19,7 +19,7 @@ export default function Calibration({ onComplete }: Props) {
 
   const [points] = useState(() => {
     const center = [{ x: 50, y: 50 }];
-    
+  
     const inner = [
       { x: 34, y: 34 }, { x: 66, y: 34 }, { x: 66, y: 66 }, { x: 34, y: 66 }
     ];
@@ -29,17 +29,14 @@ export default function Calibration({ onComplete }: Props) {
     ];
     
     const edges = [
-      { x: 34, y: 2 }, { x: 66, y: 2 }, 
-      { x: 98, y: 34 }, { x: 98, y: 66 }, 
-      { x: 66, y: 98 }, { x: 34, y: 98 }, 
-      { x: 2, y: 66 }, { x: 2, y: 34 },   
+      { x: 50, y: 2 }, { x: 50, y: 98 }, 
+      { x: 2, y: 50 }, { x: 98, y: 50 },   
     ];
 
     return [
-      ...center,
-      ...shuffle([...inner]),
       ...shuffle([...corners]),
       ...shuffle([...edges]),
+      //...shuffle([...inner]),
       ...center 
     ];
   });
@@ -57,7 +54,7 @@ export default function Calibration({ onComplete }: Props) {
     webgazer.setRegression("ridge");
     webgazer.setTracker("TFFacemesh");
     webgazer.saveDataAcrossSessions(false);
-    webgazer.applyKalmanFilter(false);
+    webgazer.applyKalmanFilter(true);
     webgazer.begin();
     webgazer.showVideo(false);
     webgazer.showFaceOverlay(false);
@@ -131,7 +128,7 @@ export default function Calibration({ onComplete }: Props) {
       
       let samples = 0;
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 7) { // Increased to 15 samples per point for better ridge regression
+        if (samples >= 5) { // Or 3 w inner points
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");
@@ -157,6 +154,7 @@ export default function Calibration({ onComplete }: Props) {
 
   const finishCalibration = () => {
     setCalibrating(false);
+    webgazer.removeMouseEventListeners();
     webgazer.showVideo(false);
     setDisplayText("Calibration complete!");
     setTimeout(() => {

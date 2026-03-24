@@ -9,12 +9,22 @@ type Props = {
 export default function EyeTracking({ onGaze }: Props) {
   const initialized = useRef(false);
   const lastPos = useRef({ x: 0, y: 0 });
-  const MAX_VELOCITY = 1000;
+  const MAX_VELOCITY = 180; // 500?
+
+  // Median filter buffer (Size 5 for better outlier rejection)
+  const bufferX = useRef<number[]>([]);
+  const bufferY = useRef<number[]>([]);
+  const BUFFER_SIZE = 5;
+
+  const median = (arr: number[]) => {
+    const sorted = [...arr].sort((a, b) => a - b);
+    return sorted[Math.floor(sorted.length / 2)];
+  };
 
   // Filter params — stored as state for slider UI, and as refs for use inside the gaze listener
-  const [frequency, setFrequency] = useState(60);
-  const [mincutoff, setMinCutoff] = useState(0.5);
-  const [beta, setBeta] = useState(0.001);
+  const [frequency, setFrequency] = useState(30);
+  const [mincutoff, setMinCutoff] = useState(0.001);
+  const [beta, setBeta] = useState(0.0007);
   const [dcutoff, setDCutoff] = useState(1.0);
   const [showPanel, setShowPanel] = useState(true);
 
@@ -46,42 +56,41 @@ export default function EyeTracking({ onGaze }: Props) {
 
         const timestamp = Date.now() / 1000; 
 
-        // // 1. Median Filter (Size 5) to strip spikes
-        // bufferX.current.push(data.x);
-        // bufferY.current.push(data.y);
-        // if (bufferX.current.length > BUFFER_SIZE) bufferX.current.shift();
-        // if (bufferY.current.length > BUFFER_SIZE) bufferY.current.shift();
+        // 1. Median Filter (Size 5) to strip spikes
+        bufferX.current.push(data.x);
+        bufferY.current.push(data.y);
+        if (bufferX.current.length > BUFFER_SIZE) bufferX.current.shift();
+        if (bufferY.current.length > BUFFER_SIZE) bufferY.current.shift();
 
-        // if (bufferX.current.length < BUFFER_SIZE) return;
+        if (bufferX.current.length < BUFFER_SIZE) return;
 
-        // const medianX = median(bufferX.current);
-        // const medianY = median(bufferY.current);
+        const medianX = median(bufferX.current);
+        const medianY = median(bufferY.current);
 
-        // Velocity cap to prevent teleporting
-        // let targetX = data.x;
-        // let targetY = data.y;
+        let targetX = medianX;
+        let targetY = medianY;
 
-        // if (initialized.current) {
-        //   const dx = data.x - lastPos.current.x;
-        //   const dy = data.y - lastPos.current.y;
-        //   const dist = Math.sqrt(dx * dx + dy * dy);
+        if (initialized.current) {
+          const dx = medianX - lastPos.current.x;
+          const dy = medianY - lastPos.current.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
 
-        //   if (dist > MAX_VELOCITY) {
-        //     const ratio = MAX_VELOCITY / dist;
-        //     targetX = lastPos.current.x + dx * ratio;
-        //     targetY = lastPos.current.y + dy * ratio;
-        //   }
-        // }
+          if (dist > MAX_VELOCITY) {
+            const ratio = MAX_VELOCITY / dist;
+            targetX = lastPos.current.x + dx * ratio;
+            targetY = lastPos.current.y + dy * ratio;
+          }
+        }
 
         // One Euro Filter
-        //const smoothedX = filterX.current.filter(targetX, timestamp);
-        //const smoothedY = filterY.current.filter(targetY, timestamp);
+        const smoothedX = filterX.current.filter(targetX, timestamp);
+        const smoothedY = filterY.current.filter(targetY, timestamp);
 
         // Bounds check
-        const boundedX = Math.max(0, Math.min(window.innerWidth, data.x));
-        const boundedY = Math.max(0, Math.min(window.innerHeight, data.y));
+        const boundedX = Math.max(0, Math.min(window.innerWidth, smoothedX));
+        const boundedY = Math.max(0, Math.min(window.innerHeight, smoothedY));
 
-        //lastPos.current = { x: data.x, y: data.y };
+        lastPos.current = { x: boundedX, y: boundedY };
         initialized.current = true;
         onGaze(boundedX, boundedY);
       });
@@ -164,7 +173,7 @@ export default function EyeTracking({ onGaze }: Props) {
           <span>Frequency (Hz)</span>
           <span>{frequency}</span>
         </div>
-        <input type="range" min={10} max={240} step={1} value={frequency}
+        <input type="range" min={0} max={30} step={1} value={frequency}
           onChange={e => setFrequency(Number(e.target.value))} style={sliderStyle} />
       </div>
 
@@ -173,7 +182,7 @@ export default function EyeTracking({ onGaze }: Props) {
           <span>Min Cutoff (Hz)</span>
           <span>{mincutoff.toFixed(3)}</span>
         </div>
-        <input type="range" min={0.001} max={10} step={0.001} value={mincutoff}
+        <input type="range" min={0.0001} max={0.001} step={0.0001} value={mincutoff}
           onChange={e => setMinCutoff(Number(e.target.value))} style={sliderStyle} />
       </div>
 
@@ -182,7 +191,7 @@ export default function EyeTracking({ onGaze }: Props) {
           <span>Beta (speed)</span>
           <span>{beta.toFixed(4)}</span>
         </div>
-        <input type="range" min={0} max={1} step={0.0001} value={beta}
+        <input type="range" min={0.0001} max={0.001} step={0.0001} value={beta}
           onChange={e => setBeta(Number(e.target.value))} style={sliderStyle} />
       </div>
 

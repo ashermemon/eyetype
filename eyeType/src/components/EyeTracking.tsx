@@ -26,8 +26,6 @@ export default function EyeTracking({ onGaze }: Props) {
   const [mincutoff, setMinCutoff] = useState(0.001);
   const [beta, setBeta] = useState(0.0007);
   const [dcutoff, setDCutoff] = useState(1.0);
-  const [showPanel, setShowPanel] = useState(true);
-
   // Refs so the gaze listener closure always sees the latest values
   const frequencyRef = useRef(frequency);
   const mincutoffRef = useRef(mincutoff);
@@ -120,10 +118,9 @@ export default function EyeTracking({ onGaze }: Props) {
     fontFamily: "monospace",
   };
 
-  if (!showPanel) {
+
     return (
       <button
-        onClick={() => setShowPanel(true)}
         style={{
           position: "fixed",
           bottom: 16,
@@ -139,74 +136,7 @@ export default function EyeTracking({ onGaze }: Props) {
           fontFamily: "monospace",
         }}
       >
-        1€ Filter ⚙
+      Version 1.1 (One Euro Filter)
       </button>
     );
-  }
-
-  return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: 16,
-        right: 16,
-        zIndex: 99999,
-        background: "#1e1e22",
-        border: "1px solid #6EC0FF44",
-        borderRadius: 12,
-        padding: "14px 16px",
-        width: 260,
-        boxShadow: "0 4px 24px rgba(0,0,0,0.5)",
-        fontFamily: "monospace",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-        <span style={{ color: "#6EC0FF", fontWeight: "bold", fontSize: 13 }}>1€ Filter Tuner</span>
-        <button
-          onClick={() => setShowPanel(false)}
-          style={{ background: "none", border: "none", color: "#888", cursor: "pointer", fontSize: 16, padding: 0, lineHeight: 1 }}
-        >✕</button>
-      </div>
-
-      <div style={rowStyle}>
-        <div style={labelStyle}>
-          <span>Frequency (Hz)</span>
-          <span>{frequency}</span>
-        </div>
-        <input type="range" min={0} max={30} step={1} value={frequency}
-          onChange={e => setFrequency(Number(e.target.value))} style={sliderStyle} />
-      </div>
-
-      <div style={rowStyle}>
-        <div style={labelStyle}>
-          <span>Min Cutoff (Hz)</span>
-          <span>{mincutoff.toFixed(3)}</span>
-        </div>
-        <input type="range" min={0.0001} max={0.001} step={0.0001} value={mincutoff}
-          onChange={e => setMinCutoff(Number(e.target.value))} style={sliderStyle} />
-      </div>
-
-      <div style={rowStyle}>
-        <div style={labelStyle}>
-          <span>Beta (speed)</span>
-          <span>{beta.toFixed(4)}</span>
-        </div>
-        <input type="range" min={0.0001} max={0.001} step={0.0001} value={beta}
-          onChange={e => setBeta(Number(e.target.value))} style={sliderStyle} />
-      </div>
-
-      <div style={rowStyle}>
-        <div style={labelStyle}>
-          <span>D-Cutoff (Hz)</span>
-          <span>{dcutoff.toFixed(2)}</span>
-        </div>
-        <input type="range" min={0.1} max={10} step={0.01} value={dcutoff}
-          onChange={e => setDCutoff(Number(e.target.value))} style={sliderStyle} />
-      </div>
-
-      <div style={{ marginTop: 6, fontSize: 10, color: "#666", textAlign: "center" }}>
-        ↑ Min cutoff = smoother&nbsp;&nbsp;|&nbsp;&nbsp;↑ Beta = faster
-      </div>
-    </div>
-  );
 }

@@ -94,7 +94,7 @@ export default function EyeTracking({ onGaze }: Props) {
           fontFamily: "monospace",
         }}
       >
-      Version 1.1 (One Euro Filter)
+      Version 1.3
       </button>
     );
 }

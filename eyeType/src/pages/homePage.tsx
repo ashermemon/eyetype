@@ -32,19 +32,10 @@ export default function HomePage({}: Props) {
     setActiveKey({ row, col });
   }, []);
 
-  const [stiffness, setStiffness] = useState(0.1);
-  const [friction, setFriction] = useState(0.45);
-  const [showPhysicsPanel, setShowPhysicsPanel] = useState(true);
 
-  const stiffnessRef = useRef(stiffness);
-  const frictionRef = useRef(friction);
+  const stiffness = 0.1;
+  const friction = 0.45;
 
-  React.useEffect(() => {
-    stiffnessRef.current = stiffness;
-    frictionRef.current = friction;
-  }, [stiffness, friction]);
-
-  // spring physics animation loop
   React.useEffect(() => {
     let animationFrameId: number;
 
@@ -54,12 +45,12 @@ export default function HomePage({}: Props) {
       const dy = targetPos.current.y - currentPos.current.y;
 
       // accelerate towards target
-      velocity.current.x += dx * stiffnessRef.current;
-      velocity.current.y += dy * stiffnessRef.current;
+      velocity.current.x += dx * stiffness;
+      velocity.current.y += dy * stiffness;
       
       // apply friction
-      velocity.current.x *= frictionRef.current;
-      velocity.current.y *= frictionRef.current;
+      velocity.current.x *= friction;
+      velocity.current.y *= friction;
 
       // update actual position
       currentPos.current.x += velocity.current.x;
@@ -99,25 +90,6 @@ export default function HomePage({}: Props) {
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
-  const sliderStyle: React.CSSProperties = {
-    width: "100%",
-    accentColor: "#ff4d4d",
-  };
-
-  const rowStyle: React.CSSProperties = {
-    display: "flex",
-    flexDirection: "column",
-    gap: 2,
-    marginBottom: 10,
-  };
-
-  const labelStyle: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-    fontSize: 12,
-    color: "#ccc",
-    fontFamily: "monospace",
-  };
 
   return (
     <div className="fill-page">
@@ -150,73 +122,6 @@ export default function HomePage({}: Props) {
       
       {calibrated && <PrimaryUI activeKey={activeKey} />}
 
-      {!showPhysicsPanel ? (
-        <button
-          onClick={() => setShowPhysicsPanel(true)}
-          style={{
-            position: "fixed",
-            bottom: 16,
-            left: 16,
-            zIndex: 99999,
-            background: "#2a2a2e",
-            color: "#ff4d4d",
-            border: "1px solid #ff4d4d",
-            borderRadius: 8,
-            padding: "6px 12px",
-            cursor: "pointer",
-            fontSize: 12,
-            fontFamily: "monospace",
-          }}
-        >
-          Physics Tuner ⚙
-        </button>
-      ) : (
-        <div
-          style={{
-            position: "fixed",
-            bottom: 16,
-            left: 16,
-            zIndex: 99999,
-            background: "#1e1e22",
-            border: "1px solid #ff4d4d44",
-            borderRadius: 12,
-            padding: "14px 16px",
-            width: 260,
-            boxShadow: "0 4px 24px rgba(0,0,0,0.5)",
-            fontFamily: "monospace",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-            <span style={{ color: "#ff4d4d", fontWeight: "bold", fontSize: 13 }}>Physics Tuner (Dot)</span>
-            <button
-              onClick={() => setShowPhysicsPanel(false)}
-              style={{ background: "none", border: "none", color: "#888", cursor: "pointer", fontSize: 16, padding: 0, lineHeight: 1 }}
-            >✕</button>
-          </div>
-
-          <div style={rowStyle}>
-            <div style={labelStyle}>
-              <span>Stiffness (Snap)</span>
-              <span>{stiffness.toFixed(3)}</span>
-            </div>
-            <input type="range" min={0.001} max={0.3} step={0.001} value={stiffness}
-              onChange={e => setStiffness(Number(e.target.value))} style={sliderStyle} />
-          </div>
-
-          <div style={rowStyle}>
-            <div style={labelStyle}>
-              <span>Friction (Drag)</span>
-              <span>{friction.toFixed(3)}</span>
-            </div>
-            <input type="range" min={0.1} max={0.99} step={0.01} value={friction}
-              onChange={e => setFriction(Number(e.target.value))} style={sliderStyle} />
-          </div>
-
-          <div style={{ marginTop: 6, fontSize: 10, color: "#666", textAlign: "center" }}>
-            ↑ Stiffness = snaps faster&nbsp;&nbsp;|&nbsp;&nbsp;↑ Friction = sluggish
-          </div>
-        </div>
-      )}
     </div>
   );
 }

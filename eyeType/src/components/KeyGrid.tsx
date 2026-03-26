@@ -79,9 +79,9 @@ for (let row = 0; row < EMOJIBOARD.length; row++) {
 }
 
 const NAMESELECT = [
-  ["Newton", "Sam", "Preston", "Jacob", "Isaac"],
-  ["Einstien", "Jack", "Timothy", "Yousef", "Asher"],
-  ["Lorenzo", "Yuno", "Jason", "Justin", "Max"],
+  ["Newton", "Sam", "Preston", "Jacob", "Isaac", "Wilfred"],
+  ["Einstien", "Jack", "Timothy", "Yousef", "Asher", "Ricardo"],
+  ["Lorenzo", "Yuno", "Jason", "Justin", "Max", "Dominic"],
 ];
 
 export function toSpokenText(sentence: string) {
@@ -112,60 +112,74 @@ export default function KeyGrid({
 
   const keyRefs = useRef<(HTMLDivElement | null)[][]>([]);
 
+  const splits = keyboardNum === 3 ? [[0, 2], [2, 4], [4, 6]] : [[0, 3], [3, 7], [7, 10]];
+
   return (
     <div className="key-grid">
-      {currentKeyboard.map((row, rowIndex) => (
-        <div
-          key={rowIndex}
-          className="key-row"
-          style={{
-            gridTemplateColumns:
-              keyboardNum === 3 ? `repeat(5, 1fr)` : `repeat(10, 1fr)`,
-            gap: keyboardNum === 3 ? 22.5 : 10,
-          }}
-        >
-          {row.map((key, keyIndex) => (
-            <Key
-              key={keyIndex}
-              label={key}
-              row={rowIndex}
-              highAlert={
-                (keyIndex == 0 || keyIndex == 1) &&
-                rowIndex == 2 &&
-                keyboardNum === 2
-                  ? true
-                  : false
-              }
-              col={keyIndex}
-              nameKey={keyboardNum == 3 ? true : false}
-              ref={(original: any) => {
-                if (!keyRefs.current[rowIndex]) keyRefs.current[rowIndex] = [];
-                keyRefs.current[rowIndex][keyIndex] = original;
-              }}
-              active={
-                activeKey?.row === rowIndex && activeKey?.col === keyIndex
-              }
-              onSelect={() => {
-                if (key === "123" || key === "ABC") {
-                  switchKeys();
-                } else if (key === "⌫") {
-                  if (typedString.length >= 1) {
-                    setTypedString((prev) => {
-                      const arr = Array.from(prev);
-                      arr.pop();
-                      return arr.join("");
-                    });
-                  }
-                } else if (keyboardNum == 3) {
-                  setTypedString((prev) => prev + ` ${key} `);
-                } else {
-                  setTypedString((prev) => prev + key);
-                }
-              }}
-            />
-          ))}
-        </div>
-      ))}
+      {splits.map((bounds, blockIndex) => {
+        const span = bounds[1] - bounds[0];
+        
+        return (
+          <div 
+            key={blockIndex} 
+            className="keyboard-section"
+            style={{ flex: span }}
+          >
+            {currentKeyboard.map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className="key-row"
+                style={{
+                  gridTemplateColumns: `repeat(${span}, 1fr)`
+                }}
+              >
+                {row.slice(bounds[0], bounds[1]).map((key, kIdx) => {
+                  const absoluteCol = bounds[0] + kIdx;
+                  
+                  return (
+                    <Key
+                      key={absoluteCol}
+                      label={key}
+                      row={rowIndex}
+                      highAlert={
+                        (absoluteCol == 0 || absoluteCol == 1) &&
+                        rowIndex == 2 &&
+                        keyboardNum === 2
+                      }
+                      col={absoluteCol}
+                      nameKey={keyboardNum === 3}
+                      ref={(original: any) => {
+                        if (!keyRefs.current[rowIndex]) keyRefs.current[rowIndex] = [];
+                        keyRefs.current[rowIndex][absoluteCol] = original;
+                      }}
+                      active={
+                        activeKey?.row === rowIndex && activeKey?.col === absoluteCol
+                      }
+                      onSelect={() => {
+                        if (key === "123" || key === "ABC") {
+                          switchKeys();
+                        } else if (key === "⌫") {
+                          if (typedString.length >= 1) {
+                            setTypedString((prev) => {
+                              const arr = Array.from(prev);
+                              arr.pop();
+                              return arr.join("");
+                            });
+                          }
+                        } else if (keyboardNum === 3) {
+                          setTypedString((prev) => prev + ` ${key} `);
+                        } else {
+                          setTypedString((prev) => prev + key);
+                        }
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        );
+      })}
     </div>
   );
 }

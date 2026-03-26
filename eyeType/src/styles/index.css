@@ -90,7 +90,7 @@ button:focus {
   border: 6px solid #ccc;
   border-radius: 1vw;
   padding: 0px;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 5 / 3; /* Matches height of a 10-col grid */
   min-width: 0;
   width: 100%;
 }
@@ -125,20 +125,42 @@ button:focus {
 
 .key-grid {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* Space between the 3 sections */
   box-sizing: border-box;
   flex: 0 0 auto;
   max-width: 100%;
   overflow: hidden;
 }
 
+.keyboard-section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px; 
+  background-color: #cccccc; 
+  border: 6px solid #a8cce8; 
+  border-radius: 1vw; 
+  overflow: hidden; 
+  flex: 1; 
+}
+
+.keyboard-section .key, .keyboard-section .name-key {
+  border: none;
+  border-radius: 0;
+  background-color: #f4f6f8;
+  height: 100%;
+}
+
+.keyboard-section .key-active, .keyboard-section .name-key.key-active {
+  border: none !important;
+  background-color: #fff1db !important; 
+}
+
 .key-row {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
+  gap: 1px; 
   min-width: 0;
 }
 

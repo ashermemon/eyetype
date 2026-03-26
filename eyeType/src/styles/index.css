@@ -373,7 +373,7 @@ input.top-bar-input-text:focus {
   stroke-linecap: round;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: dwell-circle 1s linear forwards;
+  animation: dwell-circle 1.4s linear forwards;
 }
 
 @keyframes dwell-circle {

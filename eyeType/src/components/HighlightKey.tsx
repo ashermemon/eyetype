@@ -42,7 +42,7 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
   const lastHighlightedElement = useRef<HTMLElement | null>(null);
   const dwellStartTime = useRef<number | null>(null);
   const dwellTriggered = useRef<boolean>(false);
-  const DWELL_THRESHOLD = 1000; 
+  const DWELL_THRESHOLD = 1400; 
 
   const [targetRect, setTargetRect] = useState<DOMRect | null>(null);
   const [targetRadius, setTargetRadius] = useState<string>("0px");

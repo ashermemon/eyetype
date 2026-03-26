@@ -165,8 +165,8 @@ button:focus {
 
 .calibration-point {
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: 3px solid white;
   transform: translate(-50%, -50%);
@@ -373,7 +373,7 @@ input.top-bar-input-text:focus {
   stroke-linecap: round;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: dwell-circle 1s linear forwards;
+  animation: dwell-circle 1.4s linear forwards;
 }
 
 @keyframes dwell-circle {

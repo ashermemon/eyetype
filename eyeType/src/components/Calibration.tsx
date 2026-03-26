@@ -18,28 +18,28 @@ export default function Calibration({ onComplete }: Props) {
   };
 
   const [points] = useState(() => {
-    const center = [{ x: 50, y: 50 }];
-    
+    const center = [{ x: 50, y: 50, isEdge: false, isCenter: true }];
+  
     const inner = [
-      { x: 34, y: 34 }, { x: 66, y: 34 }, { x: 66, y: 66 }, { x: 34, y: 66 }
+      { x: 34, y: 34, isEdge: false, isCenter: false }, { x: 66, y: 34, isEdge: false, isCenter: false }, { x: 66, y: 66, isEdge: false, isCenter: false }, { x: 34, y: 66, isEdge: false, isCenter: false }
     ];
     
     const corners = [
-      { x: 2, y: 2 }, { x: 98, y: 2 }, { x: 2, y: 98 }, { x: 98, y: 98 }
+      { x: 2, y: 2, isEdge: false, isCenter: false }, { x: 98, y: 2, isEdge: false, isCenter: false }, { x: 2, y: 98, isEdge: false, isCenter: false }, { x: 98, y: 98, isEdge: false, isCenter: false }
     ];
     
+    // 8 edge points (2 on each border)
     const edges = [
-      { x: 34, y: 2 }, { x: 66, y: 2 }, 
-      { x: 98, y: 34 }, { x: 98, y: 66 }, 
-      { x: 66, y: 98 }, { x: 34, y: 98 }, 
-      { x: 2, y: 66 }, { x: 2, y: 34 },   
+      { x: 34, y: 2, isEdge: true, isCenter: false }, { x: 66, y: 2, isEdge: true, isCenter: false }, 
+      { x: 34, y: 98, isEdge: true, isCenter: false }, { x: 66, y: 98, isEdge: true, isCenter: false }, 
+      { x: 2, y: 34, isEdge: true, isCenter: false }, { x: 2, y: 66, isEdge: true, isCenter: false }, 
+      { x: 98, y: 34, isEdge: true, isCenter: false }, { x: 98, y: 66, isEdge: true, isCenter: false }
     ];
 
     return [
-      ...center,
-      ...shuffle([...inner]),
       ...shuffle([...corners]),
       ...shuffle([...edges]),
+      ...shuffle([...inner]),
       ...center 
     ];
   });
@@ -57,7 +57,7 @@ export default function Calibration({ onComplete }: Props) {
     webgazer.setRegression("ridge");
     webgazer.setTracker("TFFacemesh");
     webgazer.saveDataAcrossSessions(false);
-    webgazer.applyKalmanFilter(false);
+    webgazer.applyKalmanFilter(true);
     webgazer.begin();
     webgazer.showVideo(false);
     webgazer.showFaceOverlay(false);
@@ -111,6 +111,7 @@ export default function Calibration({ onComplete }: Props) {
 
   const runCalibrationStep = (index: number) => {
     if (index >= points.length) {
+      setPointStatus(2);
       finishCalibration();
       return;
     }
@@ -123,19 +124,35 @@ export default function Calibration({ onComplete }: Props) {
       isRecording.current = true;
       
       const point = points[index];
-      const px = Math.round((point.x / 100) * window.innerWidth);
-      const py = Math.round((point.y / 100) * window.innerHeight);
+      
+      let recordX = point.x;
+      let recordY = point.y;
+      
+      // helps reach corners
+      if (point.x <= 5) recordX -= 2;
+      if (point.x >= 95) recordX += 2;
+      if (point.y <= 5) recordY -= 2;
+      if (point.y >= 95) recordY += 2;
+
+      const px = Math.round((recordX / 100) * window.innerWidth);
+      const py = Math.round((recordY / 100) * window.innerHeight);
 
 
       
       let samples = 0;
+      // center dot has more samples (6) vs normal (3) or edges (2)
+      const targetSamples = point.isCenter ? 6 : point.isEdge ? 2 : 3;
+      
       recordIntervalRef.current = window.setInterval(() => {
-        if (samples >= 7) { // Increased to 15 samples per point for better ridge regression
+        if (samples >= targetSamples) { 
             return; 
         }
         webgazer.recordScreenPosition(px, py, "click");
         samples++;
-      }, 50); // Record every 50ms
+      }, 100); // reecords every 100ms
+
+      // dynamic duration based on samples
+      const displayDuration = Math.max(1000, targetSamples * 100 + 400);
 
       setTimeout(() => {
         if (recordIntervalRef.current) {
@@ -149,13 +166,14 @@ export default function Calibration({ onComplete }: Props) {
             runCalibrationStep(index + 1);
         }, 500); 
 
-      }, 1000); 
+      }, displayDuration);
 
     }, 1200); 
   };
 
   const finishCalibration = () => {
     setCalibrating(false);
+    webgazer.removeMouseEventListeners();
     webgazer.showVideo(false);
     setDisplayText("Calibration complete!");
     setTimeout(() => {

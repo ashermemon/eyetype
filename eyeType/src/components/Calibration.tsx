@@ -140,9 +140,9 @@ export default function Calibration({ onComplete }: Props) {
 
       
       let samples = 0;
-      // center dot has more samples (6) vs normal (3) or edges (2)
-      const targetSamples = point.isCenter ? 6 : point.isEdge ? 2 : 3;
-      
+      // center dot has more samples (6) vs edges (2) vs normal (3) 
+      const targetSamples = point.isCenter ? 5 : point.isEdge ? 2 : 4; //5, 2, 4 // 5, 3, 3
+       
       recordIntervalRef.current = window.setInterval(() => {
         if (samples >= targetSamples) { 
             return; 

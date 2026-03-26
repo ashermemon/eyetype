@@ -1,4 +1,4 @@
-import { useRef, useState, type Dispatch, type SetStateAction } from "react";
+import { useRef, useEffect, type Dispatch, type SetStateAction } from "react";
 import Key from "./Key";
 
 type Props = {
@@ -7,6 +7,8 @@ type Props = {
   setTypedString: Dispatch<SetStateAction<string>>;
   keyboardNum: number;
   setKeyboardNum: Dispatch<SetStateAction<number>>;
+  zoomedSection: number | null;
+  setZoomedSection: Dispatch<SetStateAction<number | null>>;
 };
 
 const KEYBOARD = [
@@ -96,6 +98,8 @@ export default function KeyGrid({
   setTypedString,
   keyboardNum,
   setKeyboardNum,
+  zoomedSection,
+  setZoomedSection,
 }: Props) {
   const currentKeyboard =
     keyboardNum == 0
@@ -108,23 +112,48 @@ export default function KeyGrid({
 
   function switchKeys() {
     setKeyboardNum((prev) => (prev == 1 ? 0 : 1));
+    setZoomedSection(null);
   }
 
   const keyRefs = useRef<(HTMLDivElement | null)[][]>([]);
 
+  // Reset zoom when switching keyboards
+  useEffect(() => {
+    setZoomedSection(null);
+  }, [keyboardNum]);
+
   const splits = keyboardNum === 3 ? [[0, 2], [2, 4], [4, 6]] : [[0, 3], [3, 7], [7, 10]];
 
   return (
-    <div className="key-grid">
+    <div className={`key-grid ${zoomedSection !== null ? "zoomed-view-container" : ""}`}>
+      {zoomedSection !== null && (
+        <div 
+          className="back-button"
+          onClick={() => setZoomedSection(null)}
+        >
+          <span style={{ fontSize: '5vh', marginBottom: '8px' }}>&#8592;</span>
+          <span>Back</span>
+        </div>
+      )}
+
       {splits.map((bounds, blockIndex) => {
+        if (zoomedSection !== null && blockIndex !== zoomedSection) return null;
+
         const span = bounds[1] - bounds[0];
         
         return (
           <div 
             key={blockIndex} 
-            className="keyboard-section"
-            style={{ flex: span }}
+            className={`keyboard-section ${zoomedSection !== null ? "zoomed" : ""}`}
+            style={{ flex: span, position: 'relative' }}
           >
+            {zoomedSection === null && (
+              <div 
+                className="keyboard-section-overlay"
+                onClick={() => setZoomedSection(blockIndex)}
+              />
+            )}
+            
             {currentKeyboard.map((row, rowIndex) => (
               <div
                 key={rowIndex}
@@ -171,6 +200,9 @@ export default function KeyGrid({
                         } else {
                           setTypedString((prev) => prev + key);
                         }
+                        
+                        // go back automatically
+                        setZoomedSection(null);
                       }}
                     />
                   );

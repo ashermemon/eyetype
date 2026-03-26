@@ -2,7 +2,6 @@ import React, { useState, useCallback, useRef } from "react";
 import KeyGrid from "../components/KeyGrid";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
-import HighlightKey from "../components/HighlightKey";
 import PrimaryUI from "../components/PrimaryUI";
 
 type Props = {};
@@ -93,11 +92,6 @@ export default function HomePage({}: Props) {
 
   return (
     <div className="fill-page">
-      <HighlightKey
-        gazeData={gaze}
-        onHighlight={handleHighlight}
-      />
-
       <EyeTracking onGaze={handleGaze} />
       <Calibration onComplete={() => setCalibrated(true)} />
       
@@ -120,7 +114,13 @@ export default function HomePage({}: Props) {
         }}
       />
       
-      {calibrated && <PrimaryUI activeKey={activeKey} />}
+      {calibrated && (
+        <PrimaryUI 
+          activeKey={activeKey} 
+          gazeData={gaze} 
+          onHighlight={handleHighlight} 
+        />
+      )}
 
     </div>
   );

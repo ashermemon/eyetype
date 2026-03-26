@@ -7,25 +7,12 @@ type Props = {
 };
 
 export default function EyeTracking({ onGaze }: Props) {
-  const initialized = useRef(false);
-  const lastPos = useRef({ x: 0, y: 0 });
-  const MAX_VELOCITY = 180; // 500?
-
-  // Median filter buffer (Size 5 for better outlier rejection)
-  const bufferX = useRef<number[]>([]);
-  const bufferY = useRef<number[]>([]);
-  const BUFFER_SIZE = 5;
-
-  const median = (arr: number[]) => {
-    const sorted = [...arr].sort((a, b) => a - b);
-    return sorted[Math.floor(sorted.length / 2)];
-  };
-
-  // Filter params — stored as state for slider UI, and as refs for use inside the gaze listener
+  // Filter params — stored as state for slider UI
   const [frequency, setFrequency] = useState(30);
   const [mincutoff, setMinCutoff] = useState(0.001);
   const [beta, setBeta] = useState(0.0007);
   const [dcutoff, setDCutoff] = useState(1.0);
+
   // Refs so the gaze listener closure always sees the latest values
   const frequencyRef = useRef(frequency);
   const mincutoffRef = useRef(mincutoff);
@@ -43,7 +30,6 @@ export default function EyeTracking({ onGaze }: Props) {
     dcutoffRef.current = dcutoff;
     filterX.current = new OneEuroFilter(frequency, mincutoff, beta, dcutoff);
     filterY.current = new OneEuroFilter(frequency, mincutoff, beta, dcutoff);
-    initialized.current = false; // reset velocity tracking after filter change
   }, [frequency, mincutoff, beta, dcutoff]);
 
   useEffect(() => {
@@ -54,42 +40,14 @@ export default function EyeTracking({ onGaze }: Props) {
 
         const timestamp = Date.now() / 1000; 
 
-        // 1. Median Filter (Size 5) to strip spikes
-        bufferX.current.push(data.x);
-        bufferY.current.push(data.y);
-        if (bufferX.current.length > BUFFER_SIZE) bufferX.current.shift();
-        if (bufferY.current.length > BUFFER_SIZE) bufferY.current.shift();
+        // 1. One Euro Filter (Takes raw data directly!)
+        const smoothedX = filterX.current.filter(data.x, timestamp);
+        const smoothedY = filterY.current.filter(data.y, timestamp);
 
-        if (bufferX.current.length < BUFFER_SIZE) return;
-
-        const medianX = median(bufferX.current);
-        const medianY = median(bufferY.current);
-
-        let targetX = medianX;
-        let targetY = medianY;
-
-        if (initialized.current) {
-          const dx = medianX - lastPos.current.x;
-          const dy = medianY - lastPos.current.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-
-          if (dist > MAX_VELOCITY) {
-            const ratio = MAX_VELOCITY / dist;
-            targetX = lastPos.current.x + dx * ratio;
-            targetY = lastPos.current.y + dy * ratio;
-          }
-        }
-
-        // One Euro Filter
-        const smoothedX = filterX.current.filter(targetX, timestamp);
-        const smoothedY = filterY.current.filter(targetY, timestamp);
-
-        // Bounds check
+        // 2. Bounds check
         const boundedX = Math.max(0, Math.min(window.innerWidth, smoothedX));
         const boundedY = Math.max(0, Math.min(window.innerHeight, smoothedY));
 
-        lastPos.current = { x: boundedX, y: boundedY };
-        initialized.current = true;
         onGaze(boundedX, boundedY);
       });
 

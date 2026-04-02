@@ -22,7 +22,7 @@ const Key = React.forwardRef<HTMLButtonElement, KeyProps>(
         ref={ref}
         className={`${nameKey ? "key name-key" : "key"} ${active ? "key-active" : ""}`}
         style={{
-          backgroundColor: highAlert == true ? "#ffd6d6" : (isSpaceKey ? "#efefefff" : undefined),
+          backgroundColor: highAlert == true ? "#ffd6d6" :  undefined,
           borderColor: highAlert == true ? "#D04C4C" : undefined,
           gridColumn: isSpaceKey ? "span 2" : undefined,
           aspectRatio: isSpaceKey ? "auto" : undefined,

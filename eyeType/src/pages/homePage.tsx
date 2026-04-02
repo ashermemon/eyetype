@@ -3,6 +3,7 @@ import KeyGrid from "../components/KeyGrid";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import PrimaryUI from "../components/PrimaryUI";
+import SelectionScreen from "../components/SelectionScreen";
 
 type Props = {};
 
@@ -14,6 +15,8 @@ export default function HomePage({}: Props) {
   } | null>(null);
 
   const [calibrated, setCalibrated] = useState(false);
+  const selectionEnabled  = true;
+  const [studyMode, setStudyMode] = useState<"basic" | "pro" | null>(null);
   const dotRef = useRef<HTMLDivElement>(null);
   const lastStateUpdate = useRef<number>(0);
 
@@ -92,6 +95,9 @@ export default function HomePage({}: Props) {
 
   return (
     <div className="fill-page">
+        {selectionEnabled && studyMode === null ? (
+            <SelectionScreen setStudyMode={setStudyMode} />
+          ) : (<>
       <EyeTracking onGaze={handleGaze} />
       <Calibration onComplete={() => setCalibrated(true)} />
       
@@ -112,14 +118,20 @@ export default function HomePage({}: Props) {
           //4transition: "left 0.08s ease-out, top 0.08s ease-out",
           display: "none", 
         }}
-      />
+      /></>)}
       
       {calibrated && (
-        <PrimaryUI 
-          activeKey={activeKey} 
-          gazeData={gaze} 
-          onHighlight={handleHighlight} 
-        />
+        
+
+            <PrimaryUI 
+              activeKey={activeKey} 
+              gazeData={gaze} 
+              onHighlight={handleHighlight} 
+              studyMode={studyMode }
+            />
+          
+        
+
       )}
 
     </div>

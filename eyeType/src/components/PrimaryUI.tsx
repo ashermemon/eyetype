@@ -10,9 +10,10 @@ type Props = {
   activeKey: { row: number; col: number } | null;
   gazeData: { x: number; y: number } | null;
   onHighlight: (row: number, col: number) => void;
+  studyMode: "basic" | "pro" | null;
 };
 
-export default function PrimaryUI({ activeKey, gazeData, onHighlight }: Props) {
+export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode }: Props) {
   const [typedString, setTypedString] = useState("");
   const [contextValue, setContextValue] = useState("");
   const [predictions, setPredictions] = useState<string[]>([]);
@@ -98,6 +99,9 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight }: Props) {
         <>
           <ContextBar value={contextValue} onChange={setContextValue} />
           <div className="box-container">
+            {studyMode === "pro" || studyMode === null ? (
+              
+    <>
             {isLoading && predictions.length === 0 && (
               <PredictedSentence
                 sentenceText="Thinking..."
@@ -128,6 +132,13 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight }: Props) {
                 />
               </>
             ) : null}
+            </>
+            ) : (
+                <PredictedSentence
+                  sentenceText="Start typing and click speak to have your message read aloud!"
+                  onSelect={() => {}}
+                />
+            )}
           </div>
 
           <div className="top-bar-container">
@@ -186,6 +197,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight }: Props) {
         setKeyboardNum={setKeyboardNum}
         zoomedSection={zoomedSection}
         setZoomedSection={setZoomedSection}
+        studyMode={studyMode}
       ></KeyGrid>
     </>
   );

@@ -9,7 +9,21 @@ type Props = {
   setKeyboardNum: Dispatch<SetStateAction<number>>;
   zoomedSection: number | null;
   setZoomedSection: Dispatch<SetStateAction<number | null>>;
+  studyMode: "basic" | "pro" | null;
 };
+
+const KEYBOARD_BASIC = [
+  ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+  ["A", "S", "D", "F", "G", "H", "J", "K", "L", "⌫"],
+  ["Z", "X", "C", "V", " ", "", "B", "N", "M", "123"],
+];
+
+const NUMBOARD_BASIC = [
+  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+  ["@", "#", "$", "%", "&", "/", "+", "-", "*", "⌫"],
+  [",", ".", "?", "!", " ", "", ":", ";", "=", "ABC"],
+];
+
 
 const KEYBOARD = [
   ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
@@ -19,7 +33,7 @@ const KEYBOARD = [
 const NUMBOARD = [
   ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
   ["@", "#", "$", "%", "&", "/", "+", "-", "*", "⌫"],
-  ["<", ">", "=", ":", ";", ",", "!", ".", "?", "ABC"],
+  ["<", ">", ",", ".", "?", "!", ":", ";", "=", "ABC"],
 ];
 
 const EMOJIBOARD = [
@@ -93,6 +107,7 @@ export function toSpokenText(sentence: string) {
 }
 
 export default function KeyGrid({
+  studyMode,
   activeKey,
   typedString,
   setTypedString,
@@ -103,9 +118,9 @@ export default function KeyGrid({
 }: Props) {
   const currentKeyboard =
     keyboardNum == 0
-      ? KEYBOARD
+      ? studyMode === "basic" ? KEYBOARD_BASIC : KEYBOARD
       : keyboardNum == 1
-        ? NUMBOARD
+        ? studyMode === "basic" ? NUMBOARD_BASIC : NUMBOARD
         : keyboardNum == 2
           ? EMOJIBOARD
           : NAMESELECT;
@@ -165,11 +180,14 @@ export default function KeyGrid({
                 {row.slice(bounds[0], bounds[1]).map((key, kIdx) => {
                   const absoluteCol = bounds[0] + kIdx;
                   
+                  if (key === "") return null;
+
                   return (
                     <Key
                       key={absoluteCol}
-                      label={key}
+                      label={key === " " ? " " : key}
                       row={rowIndex}
+                      isSpaceKey={key === " "}
                       highAlert={
                         (absoluteCol == 0 || absoluteCol == 1) &&
                         rowIndex == 2 &&
@@ -182,7 +200,8 @@ export default function KeyGrid({
                         keyRefs.current[rowIndex][absoluteCol] = original;
                       }}
                       active={
-                        activeKey?.row === rowIndex && activeKey?.col === absoluteCol
+                        (activeKey?.row === rowIndex && activeKey?.col === absoluteCol) ||
+                        (key === " " && activeKey?.row === rowIndex && activeKey?.col === absoluteCol + 1)
                       }
                       onSelect={() => {
                         if (key === "123" || key === "ABC") {
@@ -197,6 +216,8 @@ export default function KeyGrid({
                           }
                         } else if (keyboardNum === 3) {
                           setTypedString((prev) => prev + ` ${key} `);
+                        } else if (key === " ") {
+                          setTypedString((prev) => prev + " ");
                         } else {
                           setTypedString((prev) => prev + key);
                         }

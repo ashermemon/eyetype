@@ -470,3 +470,29 @@ input.top-bar-input-text:focus {
   background-color: transparent;
   border-radius: 1vw; 
 }
+
+.main-text {
+  color: #19191b;
+  font-family: inherit;
+  line-height: 1;
+  width: 100%;
+  user-select: none;
+}
+.selection-button{
+  background-color: #f0f0f0;
+  border: 6px solid #ccc;
+  border-radius: 1vw;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}
+.selection-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  
+  
+  
+}

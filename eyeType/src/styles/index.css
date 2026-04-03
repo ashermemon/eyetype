@@ -211,12 +211,16 @@ body.light-theme .key-sub-text {
   gap: 12px;
 }
 
+:root {
+  --screen-margin: 1.5vh;
+}
+
 .fill-page {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: var(--screen-margin);
   background-color: #19191b;
   margin: 0;
   box-sizing: border-box;
@@ -257,7 +261,7 @@ body.light-theme .key-sub-text {
 .context-bar-container {
   width: 100%;
   height: 6vh;
-  margin-bottom: 12px;
+  margin-bottom: var(--screen-margin);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -312,9 +316,9 @@ body.light-theme .key-sub-text {
 .top-bar-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: var(--screen-margin);
   height: 12vh;
-  margin: 10px 0;
+  margin: var(--screen-margin) 0;
 
   box-sizing: border-box;
   flex-shrink: 0;
@@ -699,6 +703,28 @@ body.light-theme .button-text {
 body.light-theme .top-bar-button {
   background-color: #f0f0f0;
   border-color: #ccc;
+}
+
+body.light-theme .context-bar-input {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #19191b;
+}
+
+body.light-theme .context-bar-input:focus {
+  border-color: #6ec0ff;
+}
+
+body.light-theme .context-bar-input::placeholder {
+  color: #999;
+}
+
+body.light-theme .context-bar-clear {
+  color: #666;
+}
+
+body.light-theme .context-bar-clear:hover {
+  color: #19191b;
 }
 
 /* body.light-theme .selection-button {

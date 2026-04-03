@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import lightThemeImg from '../assets/lightTheme.png'
 import darkThemeImg from '../assets/darkTheme.png'
+import webgazer from 'webgazer';
 
 type Props = {
     setStudyMode: (mode: "basic" | "pro" | null) => void;
@@ -13,6 +14,27 @@ export default function SelectionScreen({setStudyMode}: Props) {
   const [step, setStep] = useState(1);
   
   const [temp, setTemp] = useState<"basic" | "pro" | null>(null);
+
+  const prepareCalibration = async (isLightMode: boolean) => {
+    if (isLightMode) {
+      document.body.classList.add('light-theme');
+    } else {
+      document.body.classList.remove('light-theme');
+    }
+    setStep(3);
+    
+    // show video
+    webgazer.clearData();
+    webgazer.setRegression("ridge");
+    webgazer.setTracker("TFFacemesh");
+    webgazer.saveDataAcrossSessions(false);
+    webgazer.applyKalmanFilter(true);
+    await webgazer.begin();
+    webgazer.showVideo(true);
+    webgazer.showFaceOverlay(false);
+    webgazer.showFaceFeedbackBox(true);
+    webgazer.showPredictionPoints(false);
+  };
 
 
   return (
@@ -27,8 +49,10 @@ export default function SelectionScreen({setStudyMode}: Props) {
             Before beginning calibration, please ensure the following conditions are met: 
             <ul style={{textAlign: "left"}}>
                 <li>The laptop is placed on a sturdy table and is not moving</li>
+                <li>You have granted permission to the browser to use the camera and see your face right now</li>
                 <li>There is adequate lighting and the face is centered within the box</li>
                 <li>There is no movement in the background</li>
+
             </ul>
             To ensure eye tracking accuracy, throughout calibration and while using the app, do not move your head or body. If excessive movement makes it difficult to use the app, you will need to recalibrate. 
         </p>
@@ -44,7 +68,7 @@ export default function SelectionScreen({setStudyMode}: Props) {
             {step === 1 ? "Select a study mode to begin:" : "Choose a theme preference:"}
         </h1>
         <div className="selection-buttons">
-            <button className="selection-button" onClick={ () => {step === 1 ? [setStep(2),  setTemp("basic")] :  [document.body.classList.add('light-theme'), setStep(3)]}}>
+            <button className="selection-button" onClick={ () => {step === 1 ? [setStep(2),  setTemp("basic")] :  prepareCalibration(true)}}>
                 
                 {step === 1 ?(
                 <>
@@ -61,7 +85,7 @@ export default function SelectionScreen({setStudyMode}: Props) {
 
 
             </button>
-            <button className="selection-button" onClick={() => {step === 1 ? [setStep(2), setTemp("pro")] :  [document.body.classList.remove('light-theme'), setStep(3)]}}>
+            <button className="selection-button" onClick={() => {step === 1 ? [setStep(2), setTemp("pro")] :  prepareCalibration(false)}}>
 
             {step === 1 ?(
               <>

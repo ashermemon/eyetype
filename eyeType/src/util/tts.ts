@@ -40,7 +40,7 @@ export function speak(
 
   if (voice) utterance.voice = voice;
 
-  utterance.rate = options?.rate ?? 0.1;
+  utterance.rate = options?.rate ?? 0.5; // 0.1
   utterance.pitch = options?.pitch ?? 1.0;
   utterance.volume = options?.volume ?? 1.0;
 

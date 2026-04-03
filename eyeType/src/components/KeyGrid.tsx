@@ -107,7 +107,7 @@ export function toSpokenText(sentence: string) {
     const cleanText = text.replace(/^\[|\]$/g, "");
     spoken = spoken.split(emoji).join(" " + cleanText + " ");
   });
-  return spoken.trim();
+  return spoken.trim().toLowerCase();
 }
 
 export function toAIText(sentence: string) {

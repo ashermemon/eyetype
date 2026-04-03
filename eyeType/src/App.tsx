@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/homePage";
+import MainPage from "./pages/mainPage";
 import "./styles/fonts.css";
 import "./styles/index.css";
 import { useEffect } from "react";
 import { loadVoices } from "./util/tts";
+import HomePage from "./pages/homePage";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/study" element={<MainPage />} />
       </Routes>
     </Router>
   );

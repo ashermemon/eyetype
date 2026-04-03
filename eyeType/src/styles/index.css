@@ -76,9 +76,9 @@ button:focus {
 /* Keyboard Stuff */
 
 .key {
-  background-color: #f0f0f0;
-  border: 6px solid #ccc;
-  border-radius: 1vw;
+  background-color: #27272a;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
   padding: 0px;
   aspect-ratio: 1 / 1;
   min-width: 0;
@@ -86,34 +86,29 @@ button:focus {
 }
 
 .name-key {
-  background-color: #f0f0f0;
-  border: 6px solid #ccc;
-  border-radius: 1vw;
+  background-color: #27272a;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
   padding: 0px;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 5 / 3;
   min-width: 0;
   width: 100%;
 }
 
 .key-active {
-  background-color: #fff1db !important;
-  border: 6px solid transparent !important;
+  background-color: #fcd34d !important;
+  border: 4px solid #fbbf24 !important;
 }
-/*
-.key-active > .key-text {
-  color: #f0f0f0;
-}
-*/
 
 .button-active {
-  border: 6px solid transparent !important;
+  border: 4px solid #fbbf24 !important;
 }
 
 .sentence-active {
-  border: 6px solid transparent !important;
+  border: 4px solid #fbbf24 !important;
 }
 .key-text {
-  color: #435058;
+  color: #f4f4f5;
   font-size: 3.7vw;
   display: flex;
   justify-content: center;
@@ -123,23 +118,97 @@ button:focus {
   text-overflow: ellipsis;
 }
 
+.key-sub-text {
+  font-size: 0.85vw;
+  color: #a1a1aa;
+  text-align: center;
+  line-height: 1.1;
+  max-width: 90%;
+
+  margin-top: 15px;
+}
+
+body.light-theme .key-sub-text {
+  color: #71717a;
+}
+
+.key-active .key-text {
+  color: #18181b !important;
+}
+
 .key-grid {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* Space between the 3 sections */
   box-sizing: border-box;
   flex: 0 0 auto;
   max-width: 100%;
   overflow: hidden;
 }
 
+.key-grid.zoomed-view-container {
+  flex: 1; /* Stretch to fill the newly freed up UI space vertically */
+  height: 100%;
+}
+
+.keyboard-section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+  background-color: #18181b;
+  border: 4px solid #3f3f46; 
+  border-radius: 16px; 
+  overflow: hidden; 
+  flex: 1; 
+  transition: border-color 0.2s ease;
+}
+
+.keyboard-section.section-parent-active {
+  border: 4px solid #60a5fa !important;
+}
+
+
+.keyboard-section.zoomed {
+  background-color: transparent;
+  border: none;
+  gap: 12px;
+}
+
+.keyboard-section .key, .keyboard-section .name-key {
+    border: none;
+  border-radius: 0;
+  background-color: #27272a;
+  height: 100%;
+}
+
+.keyboard-section.zoomed .key, .keyboard-section.zoomed .name-key {
+  background-color: #27272a;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
+  aspect-ratio: auto; /* Let the flexbox natively manage the height so it perfectly fits the screen! */
+  width: 100%;
+  height: 100%;
+}
+
+.keyboard-section .key-active, .keyboard-section .name-key.key-active {
+  border: none !important;
+  background-color: #fff1db !important; 
+}
+
+.keyboard-section.zoomed .key-active, .keyboard-section.zoomed .name-key.key-active {
+  border: 6px solid transparent !important;
+}
+
 .key-row {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
+  gap: 4px; 
   min-width: 0;
+}
+
+.keyboard-section.zoomed .key-row {
+  gap: 12px;
 }
 
 .fill-page {
@@ -251,12 +320,18 @@ button:focus {
   flex-shrink: 0;
 }
 
-.top-bar-input {
-  background-color: #f0f0f0;
-  border: 6px solid #ccc;
-  border-radius: 1vw;
-  margin: 0;
+.top-bar-container.basic-mode {
+  grid-template-columns: 1fr;
+  height: 18vh; /* Doubled from 12vh */
+}
 
+
+
+.top-bar-input {
+  background-color: #18181b;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
+  margin: 0;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -272,7 +347,7 @@ input.top-bar-input-text:focus {
 .top-bar-input-text {
   background-color: transparent;
   border: none;
-  color: #19191b;
+  color: #f4f4f5;
   font-size: 5vh;
   font-family: inherit;
 
@@ -284,15 +359,15 @@ input.top-bar-input-text:focus {
 }
 
 .button-text {
-  color: #19191b;
+  color: #f4f4f5;
   font-size: 5vh;
   margin: 0;
   line-height: 1;
 }
 .top-bar-button {
-  background-color: #f0f0f0;
-  border: 6px solid #ccc;
-  border-radius: 1vw;
+  background-color: #27272a;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
   padding: 0;
   flex: 1;
 }
@@ -380,3 +455,258 @@ input.top-bar-input-text:focus {
   from { stroke-dashoffset: 1; }
   to { stroke-dashoffset: 0; }
 }
+
+/* -------------------------- */
+
+.back-button {
+  background-color: #ffe6e6; 
+  color: #7a3232; 
+  border: 6px solid #ffcdcc;
+  border-radius: 1vw;
+  flex: 0 0 15%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.back-active {
+  background-color: #ffcccc !important;
+  border-color: #ff6b6b !important;
+}
+
+.keyboard-section-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1vw; 
+}
+
+.main-text {
+  color: #19191b;
+  font-family: inherit;
+  line-height: 1;
+  width: 100%;
+  user-select: none;
+}
+.selection-button{
+  background-color: #27272a;
+  border: 4px solid rgb(50, 50, 50);
+  border-radius: 16px;
+  padding: 40px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  color: #f4f4f5;
+  cursor: pointer;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+.selection-button:hover {
+  background-color: rgb(50, 50, 50);
+}
+.selection-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  
+  
+  
+}
+
+
+/* -------------------------------------------- */
+
+
+/* HOME PAGE ---*/
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: #19191b; 
+  color: #ededed;
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.home-title {
+  background: linear-gradient(135deg, #e0e7ff 0%, #a5b4fc 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* anim */
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #19191b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: splash-fadeout 0.8s ease forwards;
+  animation-delay: 1.5s;
+  pointer-events: auto;
+}
+
+.splash-logo {
+  width: 10rem;
+  height: 10rem;
+  animation: logo-entrance 1.5s ease forwards;
+}
+
+@keyframes logo-entrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes splash-fadeout {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.home-animate {
+  opacity: 0;
+  animation: home-fadein 1s ease forwards;
+  animation-delay: 1.7s;
+}
+
+@keyframes home-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Light Theme Stuff */
+/* body.light-theme {
+  background-color: #ffffff;
+  color: #19191b;
+}
+
+body.light-theme .fill-page {
+  background-color: #ffffff;
+}
+
+body.light-theme .home-container {
+  background-color: #ffffff;
+} */
+
+body.light-theme .key,
+body.light-theme .name-key {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+
+body.light-theme .key-active {
+  background-color: #fff1db !important;
+  border-color: transparent !important;
+}
+
+body.light-theme .button-active, 
+body.light-theme .sentence-active {
+  border-color: transparent !important;
+}
+
+body.light-theme .key-text {
+  color: #435058;
+}
+
+body.light-theme .keyboard-section {
+  background-color: #cccccc;
+  border-color: #a8cce8; 
+}
+body.light-theme .keyboard-section.zoomed {
+  background-color:transparent;
+  border-color: transparent; 
+}
+
+
+body.light-theme .keyboard-section.section-parent-active {
+  border-color: #ccc !important;
+}
+
+body.light-theme .keyboard-section .key, 
+body.light-theme .keyboard-section .name-key { 
+  background-color: #f4f6f8;
+}
+
+body.light-theme .keyboard-section.zoomed .key, 
+body.light-theme .keyboard-section.zoomed .name-key {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+body.light-theme .top-bar-input {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+body.light-theme .top-bar-input-text {
+  color: #19191b;
+
+}
+
+body.light-theme .button-text {
+  color: #19191b;
+}
+
+body.light-theme .top-bar-button {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* body.light-theme .selection-button {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #435058;
+}
+
+body.light-theme .selection-button:hover {
+  background-color: #e0e0e0;
+} */

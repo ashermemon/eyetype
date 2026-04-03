@@ -5,7 +5,7 @@ type Props = {
   onHighlight: (row: number, column: number) => void;
 };
 
-const classes = ["key", "top-bar-button", "sentence-container"];
+const classes = ["key", "top-bar-button", "sentence-container", "keyboard-section-overlay", "back-button"];
 
 function findInteractiveParent(element: Element | null): HTMLElement | null {
   let current = element;
@@ -50,6 +50,25 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
   const [hoverKey, setHoverKey] = useState<number>(0);
 
   useEffect(() => {
+    return () => {
+      if (lastHighlightedElement.current) {
+        lastHighlightedElement.current.classList.remove(
+          "key-active",
+          "button-active",
+          "sentence-active",
+          "back-active"
+        );
+        if (lastHighlightedElement.current.classList.contains("top-bar-button")) {
+          lastHighlightedElement.current.style.borderColor = "";
+        }
+        if (lastHighlightedElement.current.classList.contains("keyboard-section-overlay")) {
+          lastHighlightedElement.current.parentElement?.classList.remove("section-parent-active");
+        }
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     if (!gazeData) return;
     
     // make sure its a num
@@ -63,7 +82,7 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
 
     if (!interactiveElement) {
       const allElements = document.querySelectorAll(
-        ".key, .top-bar-button, .sentence-container",
+        ".key, .top-bar-button, .sentence-container, .keyboard-section-overlay, .back-button",
       );
 
       let closest: { element: HTMLElement | null; distance: number } = {
@@ -109,9 +128,17 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
     if (lastHighlightedElement.current !== interactiveElement) {
       // Clean up previous
       if (lastHighlightedElement.current) {
-        lastHighlightedElement.current.classList.remove("key-active", "button-active", "sentence-active");
+        lastHighlightedElement.current.classList.remove(
+          "key-active",
+          "button-active",
+          "sentence-active",
+          "back-active"
+        );
         if (lastHighlightedElement.current.classList.contains("top-bar-button")) {
           lastHighlightedElement.current.style.borderColor = "";
+        }
+        if (lastHighlightedElement.current.classList.contains("keyboard-section-overlay")) {
+          lastHighlightedElement.current.parentElement?.classList.remove("section-parent-active");
         }
       }
 
@@ -119,9 +146,17 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
       dwellStartTime.current = Date.now();
       dwellTriggered.current = false;
 
-      const rect = interactiveElement.getBoundingClientRect();
+
+      let rectElement = interactiveElement;
+      if (interactiveElement.classList.contains("keyboard-section-overlay")) {
+         if (interactiveElement.parentElement) {
+            rectElement = interactiveElement.parentElement as HTMLElement;
+         }
+      }
+
+      const rect = rectElement.getBoundingClientRect();
       setTargetRect(rect);
-      setTargetRadius(window.getComputedStyle(interactiveElement).borderRadius);
+      setTargetRadius(window.getComputedStyle(rectElement).borderRadius);
       setHoverKey((prev) => prev + 1);
 
       let color = "#ca9335";
@@ -132,15 +167,22 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
       } else if (interactiveElement.classList.contains("sentence-container")) {
         color = "#6EC0FF";
         interactiveElement.classList.add("sentence-active");
+      } else if (interactiveElement.classList.contains("keyboard-section-overlay")) {
+        color = "#006ec2"; 
+        interactiveElement.parentElement?.classList.add("section-parent-active");
+      } else if (interactiveElement.classList.contains("back-button")) {
+        color = "#ff6b6b";  
+        interactiveElement.classList.add("back-active");
       } else if (interactiveElement.classList.contains("key")) {
-        interactiveElement.classList.add("key-active");
       }
       setTargetColor(color);
 
-      const row = Number(interactiveElement.getAttribute("data-row"));
-      const col = Number(interactiveElement.getAttribute("data-col"));
-      if (!isNaN(row) && !isNaN(col)) {
-        onHighlight(row, col);
+      if (interactiveElement.classList.contains("key")) {
+        const row = Number(interactiveElement.getAttribute("data-row"));
+        const col = Number(interactiveElement.getAttribute("data-col"));
+        if (!isNaN(row) && !isNaN(col)) {
+          onHighlight(row, col);
+        }
       }
 
       lastHighlightedElement.current = interactiveElement;

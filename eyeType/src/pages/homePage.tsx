@@ -1,127 +1,31 @@
-import React, { useState, useCallback, useRef } from "react";
-import KeyGrid from "../components/KeyGrid";
-import EyeTracking from "../components/EyeTracking";
-import Calibration from "../components/Calibration";
-import HighlightKey from "../components/HighlightKey";
-import PrimaryUI from "../components/PrimaryUI";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-type Props = {};
-
-export default function HomePage({}: Props) {
-  const [gaze, setGaze] = useState<{ x: number; y: number } | null>(null);
-  const [activeKey, setActiveKey] = useState<{
-    row: number;
-    col: number;
-  } | null>(null);
-
-  const [calibrated, setCalibrated] = useState(false);
-  const dotRef = useRef<HTMLDivElement>(null);
-  const lastStateUpdate = useRef<number>(0);
-
-  // physics stuff
-  const targetPos = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-  const currentPos = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-  const velocity = useRef({ x: 0, y: 0 });
-
-  const handleGaze = useCallback((x: number, y: number) => {
-    // update target position
-    targetPos.current = { x, y };
-  }, []);
-
-  const handleHighlight = useCallback((row: number, col: number) => {
-    setActiveKey({ row, col });
-  }, []);
-
-
-  const stiffness = 0.1;
-  const friction = 0.45;
-
-  React.useEffect(() => {
-    let animationFrameId: number;
-
-    const updatePosition = () => {
-      // calculate spring force based on distance to target
-      const dx = targetPos.current.x - currentPos.current.x;
-      const dy = targetPos.current.y - currentPos.current.y;
-
-      // accelerate towards target
-      velocity.current.x += dx * stiffness;
-      velocity.current.y += dy * stiffness;
-      
-      // apply friction
-      velocity.current.x *= friction;
-      velocity.current.y *= friction;
-
-      // update actual position
-      currentPos.current.x += velocity.current.x;
-      currentPos.current.y += velocity.current.y;
-
-      // prevent reversing / rebound
-      if ((dx > 0 && currentPos.current.x >= targetPos.current.x) || 
-          (dx < 0 && currentPos.current.x <= targetPos.current.x)) {
-        currentPos.current.x = targetPos.current.x;
-        velocity.current.x = 0;
-      }
-      if ((dy > 0 && currentPos.current.y >= targetPos.current.y) || 
-          (dy < 0 && currentPos.current.y <= targetPos.current.y)) {
-        currentPos.current.y = targetPos.current.y;
-        velocity.current.y = 0;
-      }
-
-      // draw dot
-      if (dotRef.current) {
-        dotRef.current.style.left = `${currentPos.current.x}px`;
-        dotRef.current.style.top = `${currentPos.current.y}px`;
-        dotRef.current.style.display = "block";
-      }
-
-
-      const now = Date.now();
-      if (now - lastStateUpdate.current > 32) { 
-        setGaze({ x: currentPos.current.x, y: currentPos.current.y });
-        lastStateUpdate.current = now;
-      }
-
-      animationFrameId = requestAnimationFrame(updatePosition);
-    };
-
-    updatePosition();
-
-    return () => cancelAnimationFrame(animationFrameId);
-  }, []);
-
+export default function HomePage() {
+  const navigate = useNavigate();
 
   return (
-    <div className="fill-page">
-      <HighlightKey
-        gazeData={gaze}
-        onHighlight={handleHighlight}
-      />
-
-      <EyeTracking onGaze={handleGaze} />
-      <Calibration onComplete={() => setCalibrated(true)} />
+    <>
+      <div className="splash-screen">
+        <img src="/faviconSVG.svg" alt="EyeType Logo" className="splash-logo" />
+      </div>
       
-      <div
-        ref={dotRef}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "12px",
-          height: "12px",
-          backgroundColor: "#ff4d4d",
-          borderRadius: "50%",
-          transform: "translate(-50%, -50%)",
-          pointerEvents: "none",
-          zIndex: 2147483647, 
-          boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
-          //4transition: "left 0.08s ease-out, top 0.08s ease-out",
-          display: "none", 
-        }}
-      />
-      
-      {calibrated && <PrimaryUI activeKey={activeKey} />}
-
-    </div>
+      <div className="fill-page home-animate" style={{justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '800px', padding: '20px'}}>
+          <h1 className="main-text home-title" style={{textAlign: "center", fontSize: "4.5em", marginBottom: "20px"}}>
+            EyeType
+          </h1>
+          <p className="main-text" style={{textAlign: "center", color: "#cccccc", fontSize: "1.5em", marginBottom: "50px", lineHeight: "1.5"}}>
+            Eyetype is an assistive communication system that allows for seamless expression for patients with severe motor impairments. By leveraging eye tracking and a fine-tuned LLM for speech prediction, Eyetype improves communication efficiency and effectiveness while being accessible to all.
+          </p>
+          
+          <div className="selection-buttons" style={{width: '100%', justifyContent: 'center', marginTop: '0'}}>
+            <button className="selection-button" style={{width: '50%'}} onClick={() => navigate('/study')}>
+              <h3 style={{textAlign: "center", fontSize: "2em", margin: 0}}>Start Typing</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

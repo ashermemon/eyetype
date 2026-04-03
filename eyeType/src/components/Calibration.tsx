@@ -53,16 +53,7 @@ export default function Calibration({ onComplete }: Props) {
   const isRecording = useRef(false);
 
   useEffect(() => {
-    webgazer.clearData();
-    webgazer.setRegression("ridge");
-    webgazer.setTracker("TFFacemesh");
-    webgazer.saveDataAcrossSessions(false);
-    webgazer.applyKalmanFilter(true);
-    webgazer.begin();
-    webgazer.showVideo(false);
-    webgazer.showFaceOverlay(false);
-    webgazer.showFaceFeedbackBox(true);
-    webgazer.showPredictionPoints(false);
+    webgazer.showVideo(true); 
     webgazer.removeMouseEventListeners(); 
   }, []);
 
@@ -70,26 +61,27 @@ export default function Calibration({ onComplete }: Props) {
   useEffect(() => {
     const timers: number[] = [];
 
+    const timeRemaining = (timeDelay) / 1000;
 
     timers.push(
       window.setTimeout(
-        () => setDisplayText("Look at the dot to calibrate"),
+        () => setDisplayText("Circles will appear one by one on the screen"),
         timeDelay
       ),
       window.setTimeout(
-        () => setDisplayText("It will turn red when recording"),
+        () => setDisplayText("Look at each circle until it turns green"),
         2 * timeDelay
       ),
       window.setTimeout(
         () =>
           setDisplayText(
-            "Do not move your head, follow the dot with your eyes"
+            "Do not move your head or mouse"
           ),
         3 * timeDelay
       ),
       window.setTimeout(() => {
-        setDisplayText("Center your head within the box to begin");
-        webgazer.showVideo(true);
+        setDisplayText("Calibration will begin in " + (timeRemaining) + " seconds");
+        //webgazer.showVideo(true);
       }, 4 * timeDelay)
     );
 
@@ -140,9 +132,9 @@ export default function Calibration({ onComplete }: Props) {
 
       
       let samples = 0;
-      // center dot has more samples (6) vs normal (3) or edges (2)
-      const targetSamples = point.isCenter ? 6 : point.isEdge ? 2 : 3;
-      
+      // center dot has more samples (6) vs edges (2) vs normal (3) 
+      const targetSamples = point.isCenter ? 5 : point.isEdge ? 2 : 4; //5, 2, 4 // 5, 3, 3
+       
       recordIntervalRef.current = window.setInterval(() => {
         if (samples >= targetSamples) { 
             return; 

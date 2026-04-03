@@ -101,9 +101,22 @@ const NAMESELECT = [
 ];
 
 export function toSpokenText(sentence: string) {
-  return Array.from(sentence)
-    .map((char) => emojiToText.get(char) ?? char)
-    .join("");
+  let spoken = sentence;
+  emojiToText.forEach((text, emoji) => {
+    // no square brackets for tts
+    const cleanText = text.replace(/^\[|\]$/g, "");
+    spoken = spoken.split(emoji).join(" " + cleanText + " ");
+  });
+  return spoken.trim();
+}
+
+export function toAIText(sentence: string) {
+  let aiText = sentence;
+  emojiToText.forEach((text, emoji) => {
+    // square brackets for ai
+    aiText = aiText.split(emoji).join(text);
+  });
+  return aiText;
 }
 
 export default function KeyGrid({

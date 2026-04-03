@@ -5,6 +5,8 @@ import PredictedSentence from "./PredictedSentence";
 import ContextBar from "./ContextBar";
 import HighlightKey from "./HighlightKey";
 import { fetchTop3Expansions } from "../utils/ai";
+import { speak } from "../util/tts";
+import { toSpokenText, toAIText } from "./KeyGrid";
 
 type Props = {
   activeKey: { row: number; col: number } | null;
@@ -55,10 +57,11 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode 
     const controller = new AbortController();
 
     const timer = setTimeout(async () => {
-      console.log("PrimaryUI: Timer Fired! Fetching expansions for:", typedString);
+      const aiInput = toAIText(typedString);
+      console.log("PrimaryUI: Timer Fired! Fetching expansions for:", aiInput);
       setIsLoading(true);
       try {
-        const results = await fetchTop3Expansions(contextValue, typedString, controller.signal);
+        const results = await fetchTop3Expansions(contextValue, aiInput, controller.signal);
         if (!controller.signal.aborted) {
           console.log("PrimaryUI: Setting predictions:", results);
           setPredictions(results);
@@ -88,6 +91,15 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode 
     setIsLoading(false);
   };
 
+  const handleSpeak = () => {
+    const spoken = toSpokenText(typedString);
+    speak(spoken, {
+      voiceName: "Google UK English Female",
+      rate: 0.85,
+      interrupt: true,
+    });
+  };
+
   return (
     <>
       <HighlightKey
@@ -100,58 +112,75 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode 
           <ContextBar value={contextValue} onChange={setContextValue} />
           <div className="box-container">
             {studyMode === "pro" || studyMode === null ? (
-              
-    <>
-            {isLoading && predictions.length === 0 && (
-              <PredictedSentence
-                sentenceText="Thinking..."
-                onSelect={() => {}}
-              />
-            )}
-            {predictions.length > 0 ? (
-              predictions.map((pred, i) => (
-                <PredictedSentence
-                  key={i}
-                  sentenceText={pred}
-                  onSelect={handleSelectPrediction}
-                />
-              ))
-            ) : !isLoading ? (
-              <>
-                <PredictedSentence
-                  sentenceText="Welcome! Start typing to see predictions"
-                  onSelect={() => {}}
-                />
-                <PredictedSentence
-                  sentenceText="Abbreviations will be expanded here."
-                  onSelect={() => {}}
-                />
-                <PredictedSentence
-                  sentenceText="For example, type 'GM' for 'Good Morning!'"
-                  onSelect={() => {}}
-                />
+               <>
+                {isLoading && predictions.length === 0 && (
+                  <PredictedSentence
+                    sentenceText="Thinking..."
+                    onSelect={() => {}}
+                  />
+                )}
+                {predictions.length > 0 ? (
+                  predictions.map((pred, i) => (
+                    <PredictedSentence
+                      key={i}
+                      sentenceText={pred}
+                      onSelect={handleSelectPrediction}
+                    />
+                  ))
+                ) : !isLoading ? (
+                  <>
+                    <PredictedSentence
+                      sentenceText="Welcome! Start typing to see predictions"
+                      onSelect={() => {}}
+                    />
+                    <PredictedSentence
+                      sentenceText="Abbreviations will be expanded here."
+                      onSelect={() => {}}
+                    />
+                    <PredictedSentence
+                      sentenceText="For example, type 'GM' for 'Good Morning!'"
+                      onSelect={() => {}}
+                    />
+                  </>
+                ) : null}
               </>
-            ) : null}
-            </>
             ) : (
-                <PredictedSentence
-                  sentenceText="Start typing and click speak to have your message read aloud!"
-                  onSelect={() => {}}
-                />
+                <div className="row-container" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
+                  <div className="top-bar-input" style={{ gridColumn: "span 2", backgroundColor: "#f4f4f5" }}>
+                    <input
+                      readOnly
+                      ref={inputRef}
+                      type="text"
+                      className="top-bar-input-text"
+                      style={{ color: "#18181b", fontSize: "6.5vh" }}
+                      value={typedString}
+                      onChange={() => {}}
+                    />
+                  </div>
+                  <TopBarButton
+                    color="#6EC0FF"
+                    highlightColor="#0088dd"
+                    textColor="#19191b"
+                    label="speak 💬"
+                    onClick={handleSpeak}
+                  />
+                </div>
             )}
           </div>
 
-          <div className="top-bar-container">
-            <div className="top-bar-input">
-              <input
-                readOnly
-                ref={inputRef}
-                type="text"
-                className="top-bar-input-text"
-                value={typedString}
-                onChange={() => {}}
-              ></input>
-            </div>
+          <div className={`top-bar-container ${studyMode === "basic" ? "basic-mode" : ""}`}>
+            {studyMode !== "basic" && (
+              <div className="top-bar-input">
+                <input
+                  readOnly
+                  ref={inputRef}
+                  type="text"
+                  className="top-bar-input-text"
+                  value={typedString}
+                  onChange={() => {}}
+                />
+              </div>
+            )}
             <div className="top-bar-divider">
               {keyboardNum == 0 || keyboardNum == 1 ? (
                 <>

@@ -118,6 +118,20 @@ button:focus {
   text-overflow: ellipsis;
 }
 
+.key-sub-text {
+  font-size: 0.85vw;
+  color: #a1a1aa;
+  text-align: center;
+  line-height: 1.1;
+  max-width: 90%;
+
+  margin-top: 15px;
+}
+
+body.light-theme .key-sub-text {
+  color: #71717a;
+}
+
 .key-active .key-text {
   color: #18181b !important;
 }

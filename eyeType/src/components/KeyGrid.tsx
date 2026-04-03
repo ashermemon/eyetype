@@ -69,7 +69,7 @@ const EMOJISTEXT = [
   ],
   [
     "[Help! This is an emergency!]",
-    "[STOP PLEASE!]",
+    "[Stop please!]",
     "[I am in pain.]",
     "[Please wait]",
     "[I am thirsty.]",
@@ -186,6 +186,11 @@ export default function KeyGrid({
                     <Key
                       key={absoluteCol}
                       label={key === " " ? " " : key}
+                      subLabel={
+                        keyboardNum === 2 && key !== "⌫" && key !== " " 
+                          ? EMOJISTEXT[rowIndex][absoluteCol].replace(/^\[|\]$/g, "") 
+                          : undefined
+                      }
                       row={rowIndex}
                       isSpaceKey={key === " "}
                       highAlert={

@@ -679,7 +679,7 @@ body.light-theme .top-bar-button {
   border-color: #ccc;
 }
 
-body.light-theme .selection-button {
+/* body.light-theme .selection-button {
   background-color: #f0f0f0;
   border-color: #ccc;
   color: #435058;
@@ -687,4 +687,4 @@ body.light-theme .selection-button {
 
 body.light-theme .selection-button:hover {
   background-color: #e0e0e0;
-}
+} */

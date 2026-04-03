@@ -42,23 +42,6 @@ export default function EyeTracking({ onGaze }: Props) {
 
 
     return (
-      <button
-        style={{
-          position: "fixed",
-          bottom: 16,
-          right: 16,
-          zIndex: 99999,
-          background: "#2a2a2e",
-          color: "#6EC0FF",
-          border: "1px solid #6EC0FF",
-          borderRadius: 8,
-          padding: "6px 12px",
-          cursor: "pointer",
-          fontSize: 12,
-          fontFamily: "monospace",
-        }}
-      >
-      Version 1.40 (Keyboard Sections)
-      </button>
+<></>
     );
 }

@@ -49,7 +49,7 @@ export default function Calibration({ onComplete }: Props) {
   const [calibrating, setCalibrating] = useState(false);
   const [pointStatus, setPointStatus] = useState(0);
 
-  const timeDelay = 3;
+  const timeDelay = 3000;
   const isRecording = useRef(false);
 
   useEffect(() => {
@@ -149,10 +149,10 @@ export default function Calibration({ onComplete }: Props) {
         }
         webgazer.recordScreenPosition(px, py, "click");
         samples++;
-      }, 1); // reecords every 100ms
+      }, 100); // reecords every 100ms
 
       // dynamic duration based on samples
-      const displayDuration = Math.max(1, targetSamples * 3 + 1);
+      const displayDuration = Math.max(1000, targetSamples * 100 + 400);
 
       setTimeout(() => {
         if (recordIntervalRef.current) {
@@ -164,11 +164,11 @@ export default function Calibration({ onComplete }: Props) {
 
         setTimeout(() => {
             runCalibrationStep(index + 1);
-        }, 1); 
+        }, 500); 
 
       }, displayDuration);
 
-    }, 1); 
+    }, 1200); 
   };
 
   const finishCalibration = () => {
@@ -179,7 +179,7 @@ export default function Calibration({ onComplete }: Props) {
     setTimeout(() => {
         setDisplayText("");
         onComplete();
-    }, 2);
+    }, 2000);
   };
 
   return (

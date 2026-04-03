@@ -16,8 +16,8 @@ export default function SelectionScreen({setStudyMode}: Props) {
 
 
   return (
-    <div>
-      
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1, width: '100%'}}>
+      <div style={{marginBottom: "75px"}}>
         {step === 3 ? (<>
         <h1 className='main-text' style={{textAlign: "center", color: "#ffffff", fontSize: "2em", marginBottom: "40px"}}>
             Calibration
@@ -34,7 +34,7 @@ export default function SelectionScreen({setStudyMode}: Props) {
         </p>
 
 
-        <button className="selection-button" style={{width: '50%', margin: "auto"}} onClick={() => setStudyMode(temp)}>
+        <button className="selection-button" style={{width: '30%', margin: "auto"}} onClick={() => setStudyMode(temp)}>
           <h3 style={{textAlign: "center", fontSize: "2em", margin: 0}}>Proceed to Calibration</h3>
         </button>
 
@@ -82,7 +82,7 @@ export default function SelectionScreen({setStudyMode}: Props) {
 
         </> 
       }
-      
+      </div>
  
     </div>
   )

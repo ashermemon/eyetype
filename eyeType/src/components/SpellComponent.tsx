@@ -22,7 +22,7 @@ export default function SpellComponent({prediction, typedText,setTypedText, isFo
                 >
                 
                     {isCurrentFocused ? (
-                        <span>{word.substring(0,1)}{typedText}_</span>
+                        <span>{typedText}_</span>
                     ): (
                        <>{word}</> 
                     )}

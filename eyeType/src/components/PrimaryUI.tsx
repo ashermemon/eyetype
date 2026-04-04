@@ -9,6 +9,21 @@ import { speak } from "../util/tts";
 import { toSpokenText, toAIText } from "./KeyGrid";
 import SpellComponent from "./SpellComponent";
 
+const stripPunctuationSpaces = (text: string) => {
+  const sentence = text.split(" ");
+  const result: string[] = [];
+  for (const word of sentence) {
+    if (!word) continue;
+    const isAWord = /[a-zA-Z0-9]/.test(word);
+    if (isAWord || result.length === 0) {
+      result.push(word);
+    } else {
+      result[result.length - 1] += word;
+    }
+  }
+  return result.join(" ");
+};
+
 type Props = {
   activeKey: { row: number; col: number } | null;
   gazeData: { x: number; y: number } | null;
@@ -32,6 +47,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
     row: number;
     col: number;
   } | null>(null);
+
 
 
   useEffect(() => {
@@ -96,7 +112,8 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
     //setIsLoading(false);
     setSpellMode(true);
     setSpellSentence(text);
-    setSpellTypedText("");
+    const firstWord = text.substring(0,1);
+    setSpellTypedText(firstWord);
     setIsSpellFocused(false);
     
     // Smooth transition only when first entering spell mode
@@ -147,22 +164,22 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                   predictions.map((pred, i) => (
                     <PredictedSentence
                       key={i}
-                      sentenceText={pred}
+                      sentenceText={stripPunctuationSpaces(pred)}
                       onSelect={handleSelectPrediction}
                     />
                   ))
                 ) : !isLoading ? (
                   <>
                     <PredictedSentence
-                      sentenceText="Welcome! Start typing to see predictions"
+                      sentenceText={stripPunctuationSpaces("Welcome! Start typing to see predictions")}
                       onSelect={handleSelectPrediction} // Remove after
                     /> 
                     <PredictedSentence
-                      sentenceText="Abbreviations will be expanded here."
+                      sentenceText={stripPunctuationSpaces("Abbreviations will be expanded here.")}
                       onSelect={handleSelectPrediction} // Remove after
                     />
                     <PredictedSentence
-                      sentenceText="For example, type 'GM' for 'Good Morning!'"
+                      sentenceText={stripPunctuationSpaces("For example . type 'GM' for 'Good Morning!'")}
                       onSelect={handleSelectPrediction} // Remove after
                     />
                   </>

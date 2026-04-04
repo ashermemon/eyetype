@@ -1,4 +1,4 @@
-import {} from "react";
+import { useEffect } from "react";
 import TopBarButton from "./TopBarButton";
 import { speak } from "../util/tts";
 import { toSpokenText } from "./KeyGrid";
@@ -17,6 +17,10 @@ type Props = {
   sentenceText: string;
   onSelect: (text: string) => void;
 };
+
+
+
+
 
 export default function PredictedSentence({ sentenceText, onSelect }: Props) {
   return (

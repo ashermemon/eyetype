@@ -85,9 +85,9 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
     };
   }, [typedString, contextValue]);
 
-  const handleSelectPrediction = (_text: string) => {
-    // When a prediction is selected, we clear typing and predictions.
-    setTypedString("");
+  const handleSelectPrediction = (text: string) => {
+    // Replace the abbreviation with the full expansion
+    setTypedString(text);
     setPredictions([]);
     setIsLoading(false);
   };

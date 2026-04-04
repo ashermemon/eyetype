@@ -17,6 +17,13 @@ export default function MainPage({}: Props) {
   const [calibrated, setCalibrated] = useState(false);
   const [studyMode, setStudyMode] = useState<"basic" | "pro" | null>(null);
   const [isEyeTrackingActive, setIsEyeTrackingActive] = useState(true);
+  const isEyeTrackingActiveRef = useRef(true);
+  
+  // Sync ref with state
+  React.useEffect(() => {
+    isEyeTrackingActiveRef.current = isEyeTrackingActive;
+  }, [isEyeTrackingActive]);
+
   const dotRef = useRef<HTMLDivElement>(null);
   const lastStateUpdate = useRef<number>(0);
 
@@ -71,7 +78,7 @@ export default function MainPage({}: Props) {
       }
 
       // draw dot
-      if (dotRef.current && isEyeTrackingActive) {
+      if (dotRef.current && isEyeTrackingActiveRef.current) {
         dotRef.current.style.left = `${currentPos.current.x}px`;
         dotRef.current.style.top = `${currentPos.current.y}px`;
         dotRef.current.style.display = "block";
@@ -108,13 +115,25 @@ export default function MainPage({}: Props) {
             webgazer.end(); 
           }}
         />
-      ) : !calibrated ? (
+      ) : (
         <>
-          <EyeTracking onGaze={handleGaze} />
-          <Calibration onComplete={() => {
-            setCalibrated(true);
-            setIsEyeTrackingActive(true);
-          }} />
+          {isEyeTrackingActive && <EyeTracking onGaze={handleGaze} />}
+          
+          {!calibrated ? (
+            <Calibration onComplete={() => {
+              setCalibrated(true);
+              setIsEyeTrackingActive(true);
+            }} />
+          ) : (
+            <PrimaryUI
+              activeKey={activeKey}
+              gazeData={gaze}
+              onHighlight={handleHighlight}
+              studyMode={studyMode}
+              isEyeTrackingActive={isEyeTrackingActive}
+            />
+          )}
+
           <div
             ref={dotRef}
             style={{
@@ -129,18 +148,10 @@ export default function MainPage({}: Props) {
               pointerEvents: "none",
               zIndex: 99998,
               boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
-              display: "none",
+              display: "none", // Managed by physics loop
             }}
           />
         </>
-      ) : (
-        <PrimaryUI
-          activeKey={activeKey}
-          gazeData={gaze}
-          onHighlight={handleHighlight}
-          studyMode={studyMode}
-          isEyeTrackingActive={isEyeTrackingActive}
-        />
       )}
     </div>
   );

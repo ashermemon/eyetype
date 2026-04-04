@@ -13,9 +13,10 @@ type Props = {
   gazeData: { x: number; y: number } | null;
   onHighlight: (row: number, col: number) => void;
   studyMode: "basic" | "pro" | null;
+  isEyeTrackingActive?: boolean;
 };
 
-export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode }: Props) {
+export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode, isEyeTrackingActive = true }: Props) {
   const [typedString, setTypedString] = useState("");
   const [contextValue, setContextValue] = useState("");
   const [predictions, setPredictions] = useState<string[]>([]);
@@ -102,11 +103,13 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode 
 
   return (
     <>
-      <HighlightKey
-        key={`${keyboardNum}-${zoomedSection}`}
-        gazeData={gazeData}
-        onHighlight={onHighlight}
-      />
+      {isEyeTrackingActive && (
+        <HighlightKey
+          key={`${keyboardNum}-${zoomedSection}`}
+          gazeData={gazeData}
+          onHighlight={onHighlight}
+        />
+      )}
       {zoomedSection === null && (
         <>
           <ContextBar value={contextValue} onChange={setContextValue} />

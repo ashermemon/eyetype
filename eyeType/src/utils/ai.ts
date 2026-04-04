@@ -12,7 +12,7 @@ export async function fetchExpansion(
   console.log(`ai.ts [START]: Abbr="${abbreviation}", Temp=${temperature}`);
 
   const timeoutController = new AbortController();
-  const timeoutId = setTimeout(() => timeoutController.abort(), 60000); // 120s timeout for cold starts
+  const timeoutId = setTimeout(() => timeoutController.abort(), 60000); // 60s timeout
 
   // Combine external signal (for typing cancellation) with our timeout signal
   const combinedSignal = externalSignal 

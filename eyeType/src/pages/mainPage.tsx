@@ -1,9 +1,9 @@
 import React, { useState, useCallback, useRef } from "react";
-import KeyGrid from "../components/KeyGrid";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import PrimaryUI from "../components/PrimaryUI";
 import SelectionScreen from "../components/SelectionScreen";
+import webgazer from "webgazer";
 
 type Props = {};
 
@@ -15,8 +15,8 @@ export default function MainPage({}: Props) {
   } | null>(null);
 
   const [calibrated, setCalibrated] = useState(false);
-  const selectionEnabled  = true;
   const [studyMode, setStudyMode] = useState<"basic" | "pro" | null>(null);
+  const [isEyeTrackingActive, setIsEyeTrackingActive] = useState(true);
   const dotRef = useRef<HTMLDivElement>(null);
   const lastStateUpdate = useRef<number>(0);
 
@@ -71,10 +71,12 @@ export default function MainPage({}: Props) {
       }
 
       // draw dot
-      if (dotRef.current) {
+      if (dotRef.current && isEyeTrackingActive) {
         dotRef.current.style.left = `${currentPos.current.x}px`;
         dotRef.current.style.top = `${currentPos.current.y}px`;
         dotRef.current.style.display = "block";
+      } else if (dotRef.current) {
+        dotRef.current.style.display = "none";
       }
 
 
@@ -95,45 +97,51 @@ export default function MainPage({}: Props) {
 
   return (
     <div className="fill-page">
-        {selectionEnabled && studyMode === null ? (
-            <SelectionScreen setStudyMode={setStudyMode} />
-          ) : (<>
-      <EyeTracking onGaze={handleGaze} />
-      <Calibration onComplete={() => setCalibrated(true)} />
-      
-      <div
-        ref={dotRef}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "12px",
-          height: "12px",
-          backgroundColor: "#ff4d4d",
-          borderRadius: "50%",
-          transform: "translate(-50%, -50%)",
-          pointerEvents: "none",
-          zIndex: 99998, 
-          boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
-  
-          display: "none", 
-        }}
-      /></>)}
-      
-      {calibrated && (
-        
-
-            <PrimaryUI 
-              activeKey={activeKey} 
-              gazeData={gaze} 
-              onHighlight={handleHighlight} 
-              studyMode={studyMode }
-            />
-          
-        
-
+      {studyMode === null ? (
+        <SelectionScreen 
+          setStudyMode={setStudyMode} 
+          onSkip={(mode) => {
+            setStudyMode(mode);
+            setCalibrated(true);
+            setIsEyeTrackingActive(false);
+            webgazer.showVideo(false);
+            webgazer.end(); 
+          }}
+        />
+      ) : !calibrated ? (
+        <>
+          <EyeTracking onGaze={handleGaze} />
+          <Calibration onComplete={() => {
+            setCalibrated(true);
+            setIsEyeTrackingActive(true);
+          }} />
+          <div
+            ref={dotRef}
+            style={{
+              position: "fixed",
+              left: 0,
+              top: 0,
+              width: "12px",
+              height: "12px",
+              backgroundColor: "#ff4d4d",
+              borderRadius: "50%",
+              transform: "translate(-50%, -50%)",
+              pointerEvents: "none",
+              zIndex: 99998,
+              boxShadow: "0 0 12px rgba(255, 77, 77, 0.6)",
+              display: "none",
+            }}
+          />
+        </>
+      ) : (
+        <PrimaryUI
+          activeKey={activeKey}
+          gazeData={gaze}
+          onHighlight={handleHighlight}
+          studyMode={studyMode}
+          isEyeTrackingActive={isEyeTrackingActive}
+        />
       )}
-
     </div>
   );
 }

@@ -5,9 +5,10 @@ import webgazer from 'webgazer';
 
 type Props = {
     setStudyMode: (mode: "basic" | "pro" | null) => void;
+    onSkip: (mode: "basic" | "pro" | null) => void;
 }
     
-export default function SelectionScreen({setStudyMode}: Props) {
+export default function SelectionScreen({setStudyMode, onSkip}: Props) {
 
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
@@ -61,6 +62,19 @@ export default function SelectionScreen({setStudyMode}: Props) {
         <button className="selection-button" style={{width: '30%', margin: "auto"}} onClick={() => setStudyMode(temp)}>
           <h3 style={{textAlign: "center", fontSize: "2em", margin: 0}}>Proceed to Calibration</h3>
         </button>
+
+
+        <button 
+          className="selection-button" 
+          style={{width: '30%', margin: "auto"}} 
+          onClick={() => {
+            onSkip(temp);
+          }}
+        >
+          <p style={{textAlign: "center", fontSize: "1em", margin: 0}}>Skip Calibration</p>
+        </button>
+
+
 
 </>) :
           <>

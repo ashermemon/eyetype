@@ -4,7 +4,7 @@ import TopBarButton from "./TopBarButton";
 import PredictedSentence from "./PredictedSentence";
 import ContextBar from "./ContextBar";
 import HighlightKey from "./HighlightKey";
-import { fetchTop3Expansions } from "../utils/ai";
+import { fetchTop3Expansions } from "../util/ai";
 import { speak } from "../util/tts";
 import { toSpokenText, toAIText } from "./KeyGrid";
 import SpellComponent from "./SpellComponent";

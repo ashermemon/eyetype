@@ -736,3 +736,37 @@ body.light-theme .context-bar-clear:hover {
 body.light-theme .selection-button:hover {
   background-color: #e0e0e0;
 } */
+
+
+.spell-text-wrapper {
+  text-align: center;
+  max-width: fit-content;
+
+  display: inline-block;
+  transition: font-size 1s cubic-bezier(0.16, 1, 0.3, 1), 
+              color 1s cubic-bezier(0.16, 1, 0.3, 1), 
+              font-weight 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spell-text-unfocused {
+  font-size: 2vw;
+  color: #a1a1aa;
+}
+
+.spell-text-focused {
+  font-size: 3vw;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+.spell-arrow-button {
+  background-color: #6ec0ff;
+  border: 4px solid #3f3f46;
+  border-radius: 12px;
+  padding: 0;
+  height: 100%;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

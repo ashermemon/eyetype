@@ -1,11 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Dictaphone from '../components/voiceMicrophone';
 
 export default function HomePage() {
   const navigate = useNavigate();
 
   return (
     <>
+      <Dictaphone></Dictaphone>
       <div className="splash-screen">
         <img src="/faviconSVG.svg" alt="EyeType Logo" className="splash-logo" />
       </div>

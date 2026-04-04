@@ -246,6 +246,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                   color="#f0f0f0"
                   textColor="#19191b"
                   label="← Back"
+                  subtext="(Save edits)"
                   onClick={() => [setSpellMode(false),setSpellSentence(""),setSpellTypedText("")]}
                 />
               ) : (

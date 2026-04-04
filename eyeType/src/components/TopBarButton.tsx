@@ -6,6 +6,7 @@ type Props = {
   label: string;
   onClick: () => void;
   highlightColor?: string;
+  subtext?: string;
 };
 
 export default function TopBarButton({
@@ -13,6 +14,7 @@ export default function TopBarButton({
   textColor,
   label,
   onClick,
+  subtext,
   highlightColor = "#ca9335",
 }: Props) {
   return (
@@ -22,9 +24,15 @@ export default function TopBarButton({
       style={{ backgroundColor: color }}
       onClick={onClick}
     >
+     
       <p className="button-text" style={{ color: textColor }}>
         {label}
       </p>
+      {subtext &&
+      <p className="button-text" style={{ color: textColor, fontSize: "2vh", margin: 5, }}>
+        {subtext}
+      </p>}
+      
     </button>
   );
 }

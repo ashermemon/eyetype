@@ -7,6 +7,7 @@ import HighlightKey from "./HighlightKey";
 import { fetchTop3Expansions } from "../utils/ai";
 import { speak } from "../util/tts";
 import { toSpokenText, toAIText } from "./KeyGrid";
+import SpellComponent from "./SpellComponent";
 
 type Props = {
   activeKey: { row: number; col: number } | null;
@@ -22,6 +23,10 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
   const [predictions, setPredictions] = useState<string[]>([]);
   const [keyboardNum, setKeyboardNum] = useState(0); //0 for keyboard, 1 for numboard, 2 for emojiboard, 3 for name selector
   const [zoomedSection, setZoomedSection] = useState<number | null>(null);
+  const [spellMode, setSpellMode] = useState(false);
+  const [spellSentence, setSpellSentence] = useState("");
+  const [typedSpellText, setSpellTypedText] = useState("");
+  const [isSpellFocused, setIsSpellFocused] = useState(false);
 
   const [localActiveKey, setLocalActiveKey] = useState<{
     row: number;
@@ -86,10 +91,19 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
   }, [typedString, contextValue]);
 
   const handleSelectPrediction = (text: string) => {
-    // Replace the abbreviation with the full expansion
     //setTypedString("");
     //setPredictions([]);
     //setIsLoading(false);
+    setSpellMode(true);
+    setSpellSentence(text);
+    setSpellTypedText("");
+    setIsSpellFocused(false);
+    
+    // Smooth transition only when first entering spell mode
+    setTimeout(() => {
+      setIsSpellFocused(true);
+    }, 2000);
+
   };
 
   const handleSpeak = () => {
@@ -113,6 +127,13 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       {zoomedSection === null && (
         <>
           <ContextBar value={contextValue} onChange={setContextValue} />
+          {spellMode ? (
+            <div className="box-container" style={{ justifyContent: "center" }}>
+              <SpellComponent prediction={spellSentence} typedText={typedSpellText} isFocused={isSpellFocused} setTypedText={setSpellTypedText}/>
+            </div>
+          ) : (
+            <>
+          
           <div className="box-container">
             {studyMode === "pro" || studyMode === null ? (
                <>
@@ -134,15 +155,15 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                   <>
                     <PredictedSentence
                       sentenceText="Welcome! Start typing to see predictions"
-                      onSelect={() => {}}
-                    />
+                      onSelect={handleSelectPrediction} // Remove after
+                    /> 
                     <PredictedSentence
                       sentenceText="Abbreviations will be expanded here."
-                      onSelect={() => {}}
+                      onSelect={handleSelectPrediction} // Remove after
                     />
                     <PredictedSentence
                       sentenceText="For example, type 'GM' for 'Good Morning!'"
-                      onSelect={() => {}}
+                      onSelect={handleSelectPrediction} // Remove after
                     />
                   </>
                 ) : null}
@@ -170,19 +191,30 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                 </div>
             )}
           </div>
+          </>
+          )}
 
           <div className={`top-bar-container ${studyMode === "basic" ? "basic-mode" : ""}`}>
             {studyMode !== "basic" && (
-              <div className="top-bar-input">
-                <input
-                  readOnly
-                  ref={inputRef}
-                  type="text"
-                  className="top-bar-input-text"
-                  value={typedString}
-                  onChange={() => {}}
+              spellMode ? (
+                <TopBarButton
+                  color="#f0f0f0"
+                  textColor="#19191b"
+                  label="← Back"
+                  onClick={() => [setSpellMode(false),setSpellSentence(""),setSpellTypedText("")]}
                 />
-              </div>
+              ) : (
+                <div className="top-bar-input">
+                  <input
+                    readOnly
+                    ref={inputRef}
+                    type="text"
+                    className="top-bar-input-text"
+                    value={typedString}
+                    onChange={() => {}}
+                  />
+                </div>
+              )
             )}
             <div className="top-bar-divider">
               {keyboardNum == 0 || keyboardNum == 1 ? (
@@ -192,7 +224,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                     highlightColor="#0088dd"
                     textColor="#19191b"
                     label="clear"
-                    onClick={() => setTypedString("")}
+                    onClick={() => spellMode ? setSpellTypedText("") : setTypedString("")}
                   />
                   <TopBarButton
                     color="#FFC054"
@@ -223,9 +255,9 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       )}
       <KeyGrid
         activeKey={localActiveKey}
-        typedString={typedString}
+        typedString={spellMode ? typedSpellText : typedString}
         keyboardNum={keyboardNum}
-        setTypedString={setTypedString}
+        setTypedString={spellMode ? setSpellTypedText : setTypedString}
         setKeyboardNum={setKeyboardNum}
         zoomedSection={zoomedSection}
         setZoomedSection={setZoomedSection}

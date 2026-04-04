@@ -87,9 +87,9 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
 
   const handleSelectPrediction = (text: string) => {
     // Replace the abbreviation with the full expansion
-    setTypedString(text);
-    setPredictions([]);
-    setIsLoading(false);
+    //setTypedString("");
+    //setPredictions([]);
+    //setIsLoading(false);
   };
 
   const handleSpeak = () => {

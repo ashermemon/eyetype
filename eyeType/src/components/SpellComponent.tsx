@@ -31,13 +31,12 @@ export default function SpellComponent({
         const currentWord = words[newIndex] || "";
         const originalWord = originalWords[newIndex] || "";
 
-        // Check if the word at this index has been modified from its original form
         if (currentWord !== originalWord) {
-            // It's modified! Load the full word so we can add to the end
+       
             setTypedText(currentWord);
             setIsWordChanged(true);
         } else {
-            // It's still original. Show only the first letter + underscore
+          
             setTypedText(currentWord.substring(0, 1));
             setIsWordChanged(false);
         }

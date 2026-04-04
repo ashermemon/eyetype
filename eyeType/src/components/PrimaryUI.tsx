@@ -45,6 +45,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
   const [focusedIndex, setFocusedIndex] = useState(0);
   const [isWordChanged, setIsWordChanged] = useState(false);
   const [isSpellFocused, setIsSpellFocused] = useState(false);
+  const [currentPredictionNum, setCurrentPredictionNum] = useState(-1);
 
   const [localActiveKey, setLocalActiveKey] = useState<{
     row: number;
@@ -116,12 +117,14 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
         if (newSentence !== typedString) {
           //setTypedString(newSentence);
           setSpellSentence(newSentence);
+          setPredictions(predictions.map((p, i) => i === currentPredictionNum ? newSentence : p));
+        
         }
       }
     }
   }, [typedSpellText, focusedIndex, spellMode, spellSentence, typedString, isWordChanged]);
 
-  const handleSelectPrediction = (text: string) => {
+  const handleSelectPrediction = (text: string, predictionNum: number) => {
     //setTypedString(text);
     setSpellMode(true);
     setSpellSentence(text);
@@ -132,7 +135,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
 
     setSpellTypedText(firstWord.substring(0, 1));
     setIsSpellFocused(false);
-
+    setCurrentPredictionNum(predictionNum);
     setTimeout(() => {
       setIsSpellFocused(true);
     }, 500);
@@ -193,22 +196,22 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                         <PredictedSentence
                           key={i}
                           sentenceText={stripPunctuationSpaces(pred)}
-                          onSelect={handleSelectPrediction}
+                          onSelect={() => handleSelectPrediction(stripPunctuationSpaces(pred), i)}
                         />
                       ))
                     ) : !isLoading ? (
                       <>
                         <PredictedSentence
                           sentenceText={stripPunctuationSpaces("Welcome! Start typing to see predictions")}
-                      onSelect={handleSelectPrediction} // Remove after
+         
                         /> 
                         <PredictedSentence
                           sentenceText={stripPunctuationSpaces("Abbreviations will be expanded here.")}
-                      onSelect={handleSelectPrediction} // Remove after
+                  
                         />
                         <PredictedSentence
-                          sentenceText={stripPunctuationSpaces("For example . type 'GM' for 'Good Morning!'")}
-                      onSelect={handleSelectPrediction} // Remove after
+                          sentenceText={stripPunctuationSpaces("Click on a predicted sentence to edit/spell words")}
+                
                         />
                       </>
                     ) : null}

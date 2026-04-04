@@ -15,7 +15,7 @@ function speakText(text: string) {
 
 type Props = {
   sentenceText: string;
-  onSelect: (text: string) => void;
+  onSelect?: (text: string) => void;
 };
 
 
@@ -25,7 +25,7 @@ type Props = {
 export default function PredictedSentence({ sentenceText, onSelect }: Props) {
   return (
     <div className={"row-container"}>
-      <button className="sentence-container" onClick={() => onSelect(sentenceText)}>
+      <button className="sentence-container" onClick={() => onSelect && onSelect(sentenceText)}>
         <span
           className="button-text"
           style={{ color: "#f0f0f0", textAlign: "left", width: "100%" }}

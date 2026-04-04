@@ -40,7 +40,10 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
   const [zoomedSection, setZoomedSection] = useState<number | null>(null);
   const [spellMode, setSpellMode] = useState(false);
   const [spellSentence, setSpellSentence] = useState("");
+  const [originalSentence, setOriginalSentence] = useState("");
   const [typedSpellText, setSpellTypedText] = useState("");
+  const [focusedIndex, setFocusedIndex] = useState(0);
+  const [isWordChanged, setIsWordChanged] = useState(false);
   const [isSpellFocused, setIsSpellFocused] = useState(false);
 
   const [localActiveKey, setLocalActiveKey] = useState<{
@@ -48,13 +51,10 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
     col: number;
   } | null>(null);
 
-
-
   useEffect(() => {
     setLocalActiveKey(activeKey);
   }, [activeKey]);
 
-  
   useEffect(() => {
     setLocalActiveKey(null);
   }, [keyboardNum, zoomedSection]);
@@ -105,22 +105,37 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       setIsLoading(false);
     };
   }, [typedString, contextValue]);
+  
+
+  useEffect(() => {
+    if (spellMode && spellSentence && isWordChanged) {
+      const words = spellSentence.split(" ");
+      if (words[focusedIndex] !== undefined) {
+        words[focusedIndex] = typedSpellText;
+        const newSentence = words.join(" ");
+        if (newSentence !== typedString) {
+          //setTypedString(newSentence);
+          setSpellSentence(newSentence);
+        }
+      }
+    }
+  }, [typedSpellText, focusedIndex, spellMode, spellSentence, typedString, isWordChanged]);
 
   const handleSelectPrediction = (text: string) => {
-    //setTypedString("");
-    //setPredictions([]);
-    //setIsLoading(false);
+    //setTypedString(text);
     setSpellMode(true);
     setSpellSentence(text);
-    const firstWord = text.substring(0,1);
-    setSpellTypedText(firstWord);
+    setOriginalSentence(text);
+    setFocusedIndex(0);
+    setIsWordChanged(false); 
+    const firstWord = text.split(" ")[0];
+
+    setSpellTypedText(firstWord.substring(0, 1));
     setIsSpellFocused(false);
-    
-    // Smooth transition only when first entering spell mode
+
     setTimeout(() => {
       setIsSpellFocused(true);
-    }, 2000);
-
+    }, 500);
   };
 
   const handleSpeak = () => {
@@ -131,6 +146,11 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       interrupt: true,
     });
   };
+
+  const setSpellTypedTextWrapped = (updater: any) => {
+    setSpellTypedText(updater);
+    setIsWordChanged(true);
+  }
 
   return (
     <>
@@ -143,72 +163,80 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       )}
       {zoomedSection === null && (
         <>
-          <ContextBar value={contextValue} onChange={setContextValue} />
           {spellMode ? (
             <div className="box-container" style={{ justifyContent: "center" }}>
-              <SpellComponent prediction={spellSentence} typedText={typedSpellText} isFocused={isSpellFocused} setTypedText={setSpellTypedText}/>
+              <SpellComponent 
+                prediction={spellSentence}
+                originalSentence={originalSentence}
+                typedText={typedSpellText} 
+                isFocused={isSpellFocused} 
+                setTypedText={setSpellTypedText}
+                focusedIndex={focusedIndex}
+                setFocusedIndex={setFocusedIndex}
+                setIsWordChanged={setIsWordChanged}
+              />
             </div>
           ) : (
             <>
-          
-          <div className="box-container">
-            {studyMode === "pro" || studyMode === null ? (
-               <>
-                {isLoading && predictions.length === 0 && (
-                  <PredictedSentence
-                    sentenceText="Thinking..."
-                    onSelect={() => {}}
-                  />
-                )}
-                {predictions.length > 0 ? (
-                  predictions.map((pred, i) => (
-                    <PredictedSentence
-                      key={i}
-                      sentenceText={stripPunctuationSpaces(pred)}
-                      onSelect={handleSelectPrediction}
-                    />
-                  ))
-                ) : !isLoading ? (
+              <ContextBar value={contextValue} onChange={setContextValue} />
+              <div className="box-container">
+                {studyMode === "pro" || studyMode === null ? (
                   <>
-                    <PredictedSentence
-                      sentenceText={stripPunctuationSpaces("Welcome! Start typing to see predictions")}
+                    {isLoading && predictions.length === 0 && (
+                      <PredictedSentence
+                        sentenceText="Thinking..."
+                        onSelect={() => {}}
+                      />
+                    )}
+                    {predictions.length > 0 ? (
+                      predictions.map((pred, i) => (
+                        <PredictedSentence
+                          key={i}
+                          sentenceText={stripPunctuationSpaces(pred)}
+                          onSelect={handleSelectPrediction}
+                        />
+                      ))
+                    ) : !isLoading ? (
+                      <>
+                        <PredictedSentence
+                          sentenceText={stripPunctuationSpaces("Welcome! Start typing to see predictions")}
                       onSelect={handleSelectPrediction} // Remove after
-                    /> 
-                    <PredictedSentence
-                      sentenceText={stripPunctuationSpaces("Abbreviations will be expanded here.")}
+                        /> 
+                        <PredictedSentence
+                          sentenceText={stripPunctuationSpaces("Abbreviations will be expanded here.")}
                       onSelect={handleSelectPrediction} // Remove after
-                    />
-                    <PredictedSentence
-                      sentenceText={stripPunctuationSpaces("For example . type 'GM' for 'Good Morning!'")}
+                        />
+                        <PredictedSentence
+                          sentenceText={stripPunctuationSpaces("For example . type 'GM' for 'Good Morning!'")}
                       onSelect={handleSelectPrediction} // Remove after
-                    />
+                        />
+                      </>
+                    ) : null}
                   </>
-                ) : null}
-              </>
-            ) : (
-                <div className="row-container" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
-                  <div className="top-bar-input" style={{ gridColumn: "span 2", backgroundColor: "#f4f4f5" }}>
-                    <input
-                      readOnly
-                      ref={inputRef}
-                      type="text"
-                      className="top-bar-input-text"
-                      style={{ color: "#18181b", fontSize: "6.5vh" }}
-                      value={typedString}
-                      onChange={() => {}}
-                    />
-                  </div>
-                  <TopBarButton
-                    color="#6EC0FF"
-                    highlightColor="#0088dd"
-                    textColor="#19191b"
-                    label="speak 💬"
-                    onClick={handleSpeak}
-                  />
-                </div>
-            )}
-          </div>
-          </>
+                ) : (
+                    <div className="row-container" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px" }}>
+                      <div className="top-bar-input" style={{ gridColumn: "span 2", backgroundColor: "#f4f4f5" }}>
+                        <input
+                          readOnly
+                          ref={inputRef}
+                          type="text"
+                          className="top-bar-input-text"
+                          style={{ color: "#18181b", fontSize: "6.5vh" }}
+                          value={typedString}
+                          onChange={() => {}}
+                        />
+                      </div>
+                      <TopBarButton
+                        color="#6EC0FF"
+                        highlightColor="#0088dd"
+                        textColor="#19191b"
+                        label="speak 💬"
+                        onClick={handleSpeak}
+                      />
+                    </div>
+                )}
+              </div>
+            </>
           )}
 
           <div className={`top-bar-container ${studyMode === "basic" ? "basic-mode" : ""}`}>
@@ -241,7 +269,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
                     highlightColor="#0088dd"
                     textColor="#19191b"
                     label="clear"
-                    onClick={() => spellMode ? setSpellTypedText("") : setTypedString("")}
+                    onClick={() => spellMode ? setSpellTypedTextWrapped("") : setTypedString("")}
                   />
                   <TopBarButton
                     color="#FFC054"
@@ -274,7 +302,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
         activeKey={localActiveKey}
         typedString={spellMode ? typedSpellText : typedString}
         keyboardNum={keyboardNum}
-        setTypedString={spellMode ? setSpellTypedText : setTypedString}
+        setTypedString={spellMode ? setSpellTypedTextWrapped : setTypedString}
         setKeyboardNum={setKeyboardNum}
         zoomedSection={zoomedSection}
         setZoomedSection={setZoomedSection}

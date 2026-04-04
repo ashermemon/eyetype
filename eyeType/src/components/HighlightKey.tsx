@@ -5,7 +5,7 @@ type Props = {
   onHighlight: (row: number, column: number) => void;
 };
 
-const classes = ["key", "top-bar-button", "sentence-container", "keyboard-section-overlay", "back-button"];
+const classes = ["key", "top-bar-button", "sentence-container", "keyboard-section-overlay", "back-button", "spell-arrow-button"];
 
 function findInteractiveParent(element: Element | null): HTMLElement | null {
   let current = element;
@@ -82,7 +82,7 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
 
     if (!interactiveElement) {
       const allElements = document.querySelectorAll(
-        ".key, .top-bar-button, .sentence-container, .keyboard-section-overlay, .back-button",
+        ".key, .top-bar-button, .sentence-container, .keyboard-section-overlay, .back-button, .spell-arrow-button",
       );
 
       let closest: { element: HTMLElement | null; distance: number } = {
@@ -160,7 +160,8 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
       setHoverKey((prev) => prev + 1);
 
       let color = "#ca9335";
-      if (interactiveElement.classList.contains("top-bar-button")) {
+      if (interactiveElement.classList.contains("top-bar-button") || 
+          interactiveElement.classList.contains("spell-arrow-button")) {
         color = interactiveElement.getAttribute("highlight-color") || "#ca9335";
         interactiveElement.classList.add("button-active");
         interactiveElement.style.borderColor = color;

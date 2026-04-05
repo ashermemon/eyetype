@@ -5769,5 +5769,120 @@
     "context": "Why are you looking down?",
     "abbreviation": "I, [I am sad] D",
     "target": "I, I am sad dad."
+  },
+
+
+
+  {
+    "context": "None",
+    "abbreviation": "GMHAY",
+    "target": "Good morning, how are you?"
+  },
+  {
+    "context": "None",
+    "abbreviation": "HAYT",
+    "target": "How are you today?"
+  },
+
+  {
+    "context": "None",
+    "abbreviation": "WAYDRN",
+    "target": "What are you doing right now?"
+  },
+
+  {
+    "context": "None",
+    "abbreviation": "HM",
+    "target": "Help me!"
+  },
+
+  {
+    "context": "None",
+    "abbreviation": "HMN",
+    "target": "Help me now!"
+  },
+  {
+    "context": "None",
+    "abbreviation": "INH",
+    "target": "I need help!"
+  },
+  {
+    "context": "Where do you want to go?",
+    "abbreviation": "IWTGTTGS",
+    "target": "I want to go to the grocery store!"
+  },  
+  {
+    "context": "",
+    "abbreviation": "WAYG <Lisa> ?",
+    "target": "Where are you going Lisa?"
+  },
+  {
+    "context": "",
+    "abbreviation": "AYT?",
+    "target": "Are you there?"
+  },
+  {
+    "context": "",
+    "abbreviation": "CYHM?",
+    "target": "Can you hear me?"
+  },
+  {
+    "context": "Where did you go yesterday?",
+    "abbreviation": "IWTTS",
+    "target": "I went to the store"
+  },
+    {
+    "context": "Busy day for you today?",
+    "abbreviation": "YLTD",
+    "target": "Yes, lots to do"
+  },
+  {
+    "context": "How is your day so far?",
+    "abbreviation": "IHBGTY",
+    "target": "It has been great, thank you!"
+  },
+  {
+    "context": "What made you smile today?",
+    "abbreviation": "ISAPF!",
+    "target": "I saw a pretty flower!"
+  },
+  {
+    "context": "What made you smile today?",
+    "abbreviation": "MMP!",
+    "target": "Meeting my pet!"
+  },
+  {
+    "context": "What made you smile today?",
+    "abbreviation": "MMP!",
+    "target": "Meeting my parents!"
+  },
+  {
+    "context": "What made you smile today?",
+    "abbreviation": "SMF",
+    "target": "Seeing my friends"
+  },
+    {
+    "context": "Any fun plans for later?",
+    "abbreviation": "N, NM. GTS",
+    "target": "No, not much. Going to sleep"
+  },
+    {
+    "context": "Did you sleep well last night?",
+    "abbreviation": "NIWTAT",
+    "target": "No, I was tossing and turning"
+  },
+  {
+    "context": "Did you sleep well last night?",
+    "abbreviation": "Y. IHALD",
+    "target": "Yes. I had a long dream"
+  },
+  {
+    "context": "What are you doing today?",
+    "abbreviation": "GTTPW <Patrick>",
+    "target": "Going to the park with Patrick"
   }
+  
+  
+
+
 ]

@@ -9,7 +9,7 @@ export async function fetchExpansion(
   const safeContext = context.trim() || "None";
   const prompt = `Context: ${safeContext}\nAbbreviation: ${abbreviation}\nFull phrase:`;
   
-  console.log(`ai.ts [START]: Abbr="${abbreviation}", Temp=${temperature}`);
+  //console.log(`ai.ts [START]: Abbr="${abbreviation}", Temp=${temperature}`);
 
   const timeoutController = new AbortController();
   const timeoutId = setTimeout(() => timeoutController.abort(), 60000); // 60s timeout
@@ -39,26 +39,26 @@ export async function fetchExpansion(
     });
 
     clearTimeout(timeoutId);
-    console.log(`ai.ts [LATENCY]: Received status ${response.status} for temp=${temperature}`);
+    // console.log(`ai.ts [LATENCY]: Received status ${response.status} for temp=${temperature}`);
 
     if (!response.ok) {
-      const errorText = await response.text();
-      console.error(`ai.ts [ERROR]: Status ${response.status}:`, errorText);
+      //const errorText = await response.text();
+      // console.error(`ai.ts [ERROR]: Status ${response.status}:`, errorText);
       return "";
     }
 
     const data = await response.json();
-    console.log(`ai.ts [SUCCESS]: result="${data.response?.trim()}"`);
+    // console.log(`ai.ts [SUCCESS]: result="${data.response?.trim()}"`);
     return data.response?.trim() || "";
   } catch (error: any) {
     if (error.name === 'AbortError') {
       if (externalSignal?.aborted) {
-        console.log(`ai.ts [CANCELLED]: Request aborted by user (temp=${temperature})`);
+        // console.log(`ai.ts [CANCELLED]: Request aborted by user (temp=${temperature})`);
       } else {
-        console.error(`ai.ts [TIMEOUT]: Request exceeded 60s (temp=${temperature}). If this persists, check server logs with 'fly logs -a eyetype-server'`);
+        // console.error(`ai.ts [TIMEOUT]: Request exceeded 60s (temp=${temperature}). If this persists, check server logs with 'fly logs -a eyetype-server'`);
       }
     } else {
-      console.error(`ai.ts [EXCEPTION]:`, error);
+      // console.error(`ai.ts [EXCEPTION]:`, error);
     }
     return "";
   } finally {

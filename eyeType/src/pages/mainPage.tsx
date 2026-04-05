@@ -3,6 +3,7 @@ import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import PrimaryUI from "../components/PrimaryUI";
 import SelectionScreen from "../components/SelectionScreen";
+import { startGlobalTimer } from "../components/HighlightKey";
 import webgazer from "webgazer";
 
 type Props = {};
@@ -113,6 +114,7 @@ export default function MainPage({}: Props) {
             setIsEyeTrackingActive(false);
             webgazer.showVideo(false);
             webgazer.end(); 
+            startGlobalTimer();
           }}
         />
       ) : (
@@ -123,6 +125,7 @@ export default function MainPage({}: Props) {
             <Calibration onComplete={() => {
               setCalibrated(true);
               setIsEyeTrackingActive(true);
+              startGlobalTimer();
             }} />
           ) : (
             <PrimaryUI

@@ -66,12 +66,12 @@ export default function SelectionScreen({setStudyMode, onSkip}: Props) {
 
         <button 
           className="selection-button" 
-          style={{width: '30%', margin: "auto"}} 
+          style={{width: '30%', margin: "auto", marginTop: 20, padding: 5}} 
           onClick={() => {
             onSkip(temp);
           }}
         >
-          <p style={{textAlign: "center", fontSize: "1em", margin: 0}}>Skip Calibration</p>
+          <p style={{textAlign: "center", fontSize: "1em", margin: 0}}>Skip & Explore Software (without eye tracking)</p>
         </button>
 
 

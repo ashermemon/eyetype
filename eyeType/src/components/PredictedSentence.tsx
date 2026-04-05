@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import TopBarButton from "./TopBarButton";
 import { speak } from "../util/tts";
 import { toSpokenText } from "./KeyGrid";
+import { resetKeystrokeCount } from "./HighlightKey";
 
 function speakText(text: string) {
   const spoken = toSpokenText(text);
@@ -39,7 +40,10 @@ export default function PredictedSentence({ sentenceText, onSelect }: Props) {
           highlightColor="#0088dd"
           textColor="#19191b"
           label="speak 💬"
-          onClick={() => speakText(sentenceText)}
+          onClick={() => {
+            speakText(sentenceText);
+            resetKeystrokeCount(sentenceText);
+          }}
         />
       </div>
     </div>

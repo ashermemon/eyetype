@@ -7,6 +7,47 @@ type Props = {
 
 const classes = ["key", "top-bar-button", "sentence-container", "keyboard-section-overlay", "back-button", "spell-arrow-button"];
 
+let keystrokeCount = 0;
+let keystrokeHistory: number[] = [];
+let startTime = 0;
+let lastSpeakTime = 0;
+let timeHistory: number[] = [];
+let phraseHistory: string[] = [];
+
+export function startGlobalTimer() {
+  startTime = Date.now();
+  lastSpeakTime = startTime;
+}
+
+function formatTime(ms: number): string {
+  const totalSeconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
+}
+
+export function resetKeystrokeCount(phrase: string) {
+  const now = Date.now();
+  const elapsed = now - lastSpeakTime;
+  
+  keystrokeHistory.push(keystrokeCount);
+  timeHistory.push(elapsed);
+  phraseHistory.push(phrase);
+  
+  keystrokeCount = 0;
+  lastSpeakTime = now;
+  
+  console.clear();
+  keystrokeHistory.forEach((count, index) => {
+    console.log(`Phrase: ${phraseHistory[index]}`);
+    console.log(`Keystroke: ${count}`);
+    console.log(`Time: ${formatTime(timeHistory[index])}`);
+    console.log("------------------------")
+
+  });
+  console.log("Keystroke: 0, Time: 0s");
+}
+
 function findInteractiveParent(element: Element | null): HTMLElement | null {
   let current = element;
   while (current) {
@@ -188,13 +229,14 @@ export default function HighlightKey({ gazeData, onHighlight }: Props) {
 
       lastHighlightedElement.current = interactiveElement;
     } else {
-      // Same element, check dwell time
+
       if (dwellStartTime.current && !dwellTriggered.current) {
         const elapsedTime = Date.now() - dwellStartTime.current;
         if (elapsedTime >= DWELL_THRESHOLD) {
+          keystrokeCount++;
+          console.log(`Keystroke: ${keystrokeCount}`);
           interactiveElement.click();
           dwellTriggered.current = true;
-          console.log("Dwell trigger!", interactiveElement);
         }
       }
     }

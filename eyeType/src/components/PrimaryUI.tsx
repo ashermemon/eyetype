@@ -3,7 +3,7 @@ import KeyGrid from "./KeyGrid";
 import TopBarButton from "./TopBarButton";
 import PredictedSentence from "./PredictedSentence";
 import ContextBar from "./ContextBar";
-import HighlightKey from "./HighlightKey";
+import HighlightKey, { resetKeystrokeCount } from "./HighlightKey";
 import { fetchTop3Expansions } from "../util/ai";
 import { speak } from "../util/tts";
 import { toSpokenText, toAIText } from "./KeyGrid";
@@ -81,20 +81,20 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
 
     const timer = setTimeout(async () => {
       const aiInput = toAIText(typedString);
-      console.log("PrimaryUI: Timer Fired! Fetching expansions for:", aiInput);
+      //console.log("PrimaryUI: Timer Fired! Fetching expansions for:", aiInput);
       setIsLoading(true);
       try {
         const results = await fetchTop3Expansions(contextValue, aiInput, controller.signal);
         if (!controller.signal.aborted) {
-          console.log("PrimaryUI: Setting predictions:", results);
+          //console.log("PrimaryUI: Setting predictions:", results);
           setPredictions(results);
           setIsLoading(false);
         }
       } catch (err: any) {
         if (err.name === "AbortError") {
-          console.log("PrimaryUI: Fetch aborted.");
+          //console.log("PrimaryUI: Fetch aborted.");
         } else {
-          console.error("PrimaryUI: Error fetching expansions:", err);
+          //console.error("PrimaryUI: Error fetching expansions:", err);
           setIsLoading(false);
         }
       }
@@ -148,6 +148,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
       rate: 0.85,
       interrupt: true,
     });
+    resetKeystrokeCount(spoken);
   };
 
   const setSpellTypedTextWrapped = (updater: any) => {

@@ -16,7 +16,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "H,M,AYAPT?",
+    "abbreviation": "H, <Maris> ,AYAPT?",
     "target": "hey , Maris , are you a part-timer ?"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "SEHWYD",
+    "abbreviation": "S <Emily> HWYD",
     "target": "So , Emily , how was your day ?"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "context": "Hey, how are you? Need to talk Sure, about what?",
-    "abbreviation": "OCJ",
+    "abbreviation": " <Olivia> C <John> ",
     "target": "Olivia call John."
   },
   {
@@ -311,7 +311,7 @@
   },
   {
     "context": "Good afternoon! How are you feeling today? Not good. Need to talk. Of course. What’s on your mind?",
-    "abbreviation": "SENA",
+    "abbreviation": " <Sophia> E <Nicholas> A",
     "target": "Sophia eats Nicholas anymore."
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "IAVPOJ",
+    "abbreviation": "IAVPO <John> ",
     "target": "I am very proud of John ."
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "context": "Wild how? Like crazy party wild? More like loud and annoying. Sounds about right for them. Did they drive you nuts?",
-    "abbreviation": "TBMLI",
+    "abbreviation": "TB <Michael> LI",
     "target": "Totally. But Michael loved it."
   },
   {
@@ -501,12 +501,12 @@
   },
   {
     "context": "None",
-    "abbreviation": "DIHNFYBAHWEAGTHABS",
+    "abbreviation": "DIHNFY <Bobby> AHW <Evelyn> AGTHABS",
     "target": "Darling , I have news for you . Bobby and his wife , Evelyn , are going to have a baby soon ."
   },
   {
     "context": "Oh, sure! What do you think about it? Lucas makes it stable. That’s a good point. Stability is important.",
-    "abbreviation": "MNR.",
+    "abbreviation": " <Matthew> NR.",
     "target": "Matthew needs routine."
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "context": "Hey, can you help me with something? Of course, what’s up?",
-    "abbreviation": "IWTAHAHHLCAE.",
+    "abbreviation": "IWTA <Harry> AHHLCAE.",
     "target": "I was thinking about Harry and how he looks carefully at everything."
   },
   {
@@ -571,12 +571,12 @@
   },
   {
     "context": "Who did the stupid thing ?",
-    "abbreviation": "IMBK",
+    "abbreviation": "IMB <Kate> ",
     "target": "It must be Kate ."
   },
   {
     "context": "None",
-    "abbreviation": "HDYLSP",
+    "abbreviation": "HDYLS <Pat> ",
     "target": "How do you like skiing , Pat ?"
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "context": "Hey, how was your night?",
-    "abbreviation": "ASRW",
+    "abbreviation": " <Ava> SRW",
     "target": "Ava slept really well."
   },
   {
@@ -646,7 +646,7 @@
   },
   {
     "context": "Definitely. Talking is important. Especially in our diverse community, right? Yes! Different cultures, ideas! So much to share! Exactly! It enriches our lives. We all learn so much from each other.",
-    "abbreviation": "BAAJ...TMO.NTFT.",
+    "abbreviation": "B <Andrew> A <John> ...TMO.NTFT.",
     "target": "But Andrew and John... they miss out. Need to fix this."
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "H,D.TIZ.",
+    "abbreviation": "H, <Dave> .TIZ.",
     "target": "Hi , Dave . This is Zina ."
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "context": "I understand. It's important she feels safe. Yes, need to find a way to help her. Maybe we can talk to Robert together? Calmly?",
-    "abbreviation": "GISJWSH",
+    "abbreviation": "GIS <Jessica> WSH",
     "target": "Good idea. Show Jessica we support her."
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "context": "Yeah, I heard that. What do you think they need? Maybe help with dinner. Could be. They always wait until the last minute, huh?",
-    "abbreviation": "ARLCJ",
+    "abbreviation": "ARLC <Jack> ",
     "target": "Always running late. Classic Jack."
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "context": "That’s awesome! So, I heard something funny. Patricia said Jacob ate her vegetables again! Haha, yes! Jacob loves her veggies. He thinks they are the best! I know! I wonder what makes them so special? Maybe they have magic powers?",
-    "abbreviation": "MPFSJNTBLTFTBO",
+    "abbreviation": "MPFS <Jacob> NTBLTFTBO",
     "target": "Magic powers for sure! Jacob needs to be lucky to find the best ones!"
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "context": "That’s classic! Animals have no idea sometimes. What do you think he should do? Maybe he should get some fake plants? Or just put them out of reach. That could work! Or he could just share some snacks with her instead.",
-    "abbreviation": "HYSWPLTSSSALT",
+    "abbreviation": "HY <Sarah> WPLTSSSALT",
     "target": "Haha, yeah! Sarah would probably love that. She’s such a little thief."
   },
   {
@@ -796,7 +796,7 @@
   },
   {
     "context": "Great to hear! What’s on your mind? Community diversity topic That's important. What do you want to discuss?",
-    "abbreviation": "CAM",
+    "abbreviation": " <Charlie> A <Margaret> ",
     "target": "Charlie and Margaret."
   },
   {
@@ -811,7 +811,7 @@
   },
   {
     "context": "Hey there! How are you feeling this afternoon? Tired. Need to talk about Emily. Rush to hospital. Of course, we can talk about that. What happened with Emily?",
-    "abbreviation": "ENW.EVW.UCN.",
+    "abbreviation": " <Elizabeth> NW. <Emily> VW.UCN.",
     "target": "Elizabeth not well. Emily very worried. Urgent care needed."
   },
   {
@@ -901,12 +901,12 @@
   },
   {
     "context": "I just finished my breakfast! You know what I had? What did you have this time?",
-    "abbreviation": "J!HSST,ICTGE!",
+    "abbreviation": " <James> !HSST,ICTGE!",
     "target": "James! He’s so tasty, I can’t get enough!"
   },
   {
     "context": "None",
-    "abbreviation": "ESSWHR",
+    "abbreviation": " <Emma> SSWH <Ryan> ",
     "target": "Emma said she will hurt Ryan."
   },
   {
@@ -926,7 +926,7 @@
   },
   {
     "context": "Um , which of them is the better typist ?",
-    "abbreviation": "WMTFTJBITJTMC",
+    "abbreviation": "W <Mary> TFTJBITJTMC",
     "target": "Well , Mary types faster than Jones . But I think Jones types more carefully ."
   },
   {
@@ -1036,12 +1036,12 @@
   },
   {
     "context": "None",
-    "abbreviation": "OEF",
+    "abbreviation": " <Olivia> EF",
     "target": "Olivia eats fish."
   },
   {
     "context": "None",
-    "abbreviation": "LITYIHSYIA",
+    "abbreviation": " <Linda> ITYIHSYIA",
     "target": "Linda ? Is that you ? I haven't seen you in ages !"
   },
   {
@@ -1116,7 +1116,7 @@
   },
   {
     "context": "Olivia cheats Wait, what? Are you serious?",
-    "abbreviation": "WC",
+    "abbreviation": "W <Charlie> ",
     "target": "With Charlie."
   },
   {
@@ -1161,17 +1161,17 @@
   },
   {
     "context": "That's perfect for her! She'll make a great doctor. It's exciting to think about her future. Absolutely! I can imagine her in a multicultural clinic, helping kids from different backgrounds. Yes! She has such a warm personality. Those kids will feel comfortable with her.",
-    "abbreviation": "EEUTIOCSIHIWHHCWF",
+    "abbreviation": "E <Emily> UTIOCSIHIWHHCWF",
     "target": "Exactly! Emily understands the importance of cultural sensitivity in healthcare. It will help her connect with families."
   },
   {
     "context": "Look, the dog is chasing its tail!",
-    "abbreviation": "L [That is funny]  ",
+    "abbreviation": "L [That is funny] ",
     "target": "Look, That is funny."
   },
   {
     "context": "None",
-    "abbreviation": "AMS",
+    "abbreviation": " <Ava> MS",
     "target": "Ava moves slow."
   },
   {
@@ -1211,7 +1211,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "EMAYSW",
+    "abbreviation": "EMAY <Sara Wilson> ",
     "target": "Excuse me , are you Sara Wilson ?"
   },
   {
@@ -1296,7 +1296,7 @@
   },
   {
     "context": "That's so important. Friendship matters! Yes, diversity in school is great. Absolutely! Different cultures enrich learning.",
-    "abbreviation": "AELAC.",
+    "abbreviation": " <Ava> ELAC.",
     "target": "Ava enjoys learning about cultures."
   },
   {
@@ -1421,7 +1421,7 @@
   },
   {
     "context": "I am going to adjust your pillow. Is that better?",
-    "abbreviation": "MT <Nurse> A <Helper>",
+    "abbreviation": "MT <Nurse> A <Helper> ",
     "target": "Much thanks Nurse and Helper."
   },
   {
@@ -1476,7 +1476,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "JIATCN.",
+    "abbreviation": " <Jack> IATCN.",
     "target": "Jack is answering the call now."
   },
   {
@@ -1486,7 +1486,7 @@
   },
   {
     "context": "Good morning, ready for today",
-    "abbreviation": "HRJH",
+    "abbreviation": " <Harry> RJH",
     "target": "Harry rests James's head."
   },
   {
@@ -1531,7 +1531,7 @@
   },
   {
     "context": "Are you feeling any pain?",
-    "abbreviation": "Y [I am in pain]  ",
+    "abbreviation": "Y [I am in pain] ",
     "target": "Yes, I am in pain."
   },
   {
@@ -1606,7 +1606,7 @@
   },
   {
     "context": "Hey there! I hope you're having a good afternoon. I wanted to check in with you about something that happened earlier with Ava and Madison. Can we talk about it?",
-    "abbreviation": "YIWLTDTIIASMAISTHCSTAIWTUWH",
+    "abbreviation": "YIWLTDTII <Ava> S <Madison> AISTHCSTAIWTUWH",
     "target": "Yes, I would like to discuss the incident involving Ava scaring Madison away. It seems to have caused some tension, and I want to understand what happened."
   },
   {
@@ -1691,7 +1691,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HB",
+    "abbreviation": "H <Bill> ",
     "target": "Hi , Bill ."
   },
   {
@@ -1706,12 +1706,12 @@
   },
   {
     "context": "Did Oliver sleep well? yes slept great That's awesome to hear!",
-    "abbreviation": "ASWT",
+    "abbreviation": " <Amelia> SWT",
     "target": "Amelia sleeps well too."
   },
   {
     "context": "None",
-    "abbreviation": "HMJHYDG",
+    "abbreviation": "H <Mrs. Johnson> HYDG",
     "target": "Hi, Mrs. Johnson! How's your day going?"
   },
   {
@@ -1746,7 +1746,7 @@
   },
   {
     "context": "Sounds great! What book? Mystery novel. Nice choice! Enjoy it.",
-    "abbreviation": "TA",
+    "abbreviation": "T <Ava> ",
     "target": "Thanks, Ava."
   },
   {
@@ -1806,7 +1806,7 @@
   },
   {
     "context": "Good morning, Lucas! Ready for the day? Morning! Yes, I am. What do you want to do today?",
-    "abbreviation": "TAMS",
+    "abbreviation": "TA <Matthew> S",
     "target": "Talk about Matthew structure."
   },
   {
@@ -2036,7 +2036,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "MFJIVB",
+    "abbreviation": "MF <Jean> IVB",
     "target": "My friend Jean is very beautiful ."
   },
   {
@@ -2096,7 +2096,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "DLRDI?",
+    "abbreviation": "D <Lucas> RDI?",
     "target": "Did Lucas really do it?"
   },
   {
@@ -2131,7 +2131,7 @@
   },
   {
     "context": "That's awesome! What color are you using? I chose bright red. It will look fantastic when it's done. I bet! Are you waiting for the paint to dry now?",
-    "abbreviation": "YIHTWABPIKWP",
+    "abbreviation": "YIHTWAB <Patience> IKWP",
     "target": "Yes, I have to wait a bit. Patience is key with painting."
   },
   {
@@ -2176,7 +2176,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "H,M,WU?",
+    "abbreviation": "H, <Mary> ,WU?",
     "target": "Hey , Mary , what's up ?"
   },
   {
@@ -2266,7 +2266,7 @@
   },
   {
     "context": "True, sharing stories is important. We learn so much from others. Yes, it opens our minds.",
-    "abbreviation": "OCFAN",
+    "abbreviation": " <Olivia> CFAN",
     "target": "Olivia, calls for action now."
   },
   {
@@ -2276,7 +2276,7 @@
   },
   {
     "context": "That sounds fun! What else can she make? Maybe brownies or cupcakes. Yum! I’m sure Ryan will enjoy those too.",
-    "abbreviation": "RLSAH",
+    "abbreviation": " <Ryan> LSAH",
     "target": "Ryan loves sweets. Always happy."
   },
   {
@@ -2306,7 +2306,7 @@
   },
   {
     "context": "Good morning, how are you?",
-    "abbreviation": "SEQ.",
+    "abbreviation": " <Sophie> EQ.",
     "target": "Sophie eats quickly."
   },
   {
@@ -2326,7 +2326,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "J,HWYW?",
+    "abbreviation": " <Jim> ,HWYW?",
     "target": "Jim , how was your weekend ?"
   },
   {
@@ -2376,7 +2376,7 @@
   },
   {
     "context": "Hey Susan, can I call? Of course! Who are we calling?",
-    "abbreviation": "JAWNNU",
+    "abbreviation": " <Joseph> AWNNU",
     "target": "Joseph at work now. Need update."
   },
   {
@@ -2436,7 +2436,7 @@
   },
   {
     "context": "How is the temperature in the room?",
-    "abbreviation": "OTW [It is too hot]  ",
+    "abbreviation": "OTW [It is too hot] ",
     "target": "Open the window It is too hot."
   },
   {
@@ -2486,7 +2486,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "DYHAJSHEFD",
+    "abbreviation": "DYHA <Joe> SHEFD",
     "target": "Did you hear about Joe ? She hasn't eaten for days ."
   },
   {
@@ -2506,7 +2506,7 @@
   },
   {
     "context": "How did you meet your girlfriend ?",
-    "abbreviation": "IMATAF",
+    "abbreviation": "IM <Amanda> TAF",
     "target": "I met Amanda through a friend ."
   },
   {
@@ -2666,12 +2666,12 @@
   },
   {
     "context": "None",
-    "abbreviation": "HMYLPTWTMWY",
+    "abbreviation": "H <Mary> YLPTWTMWY",
     "target": "Hi , Mary . You look pale today . What's the matter with you ?"
   },
   {
     "context": "Hi , Cindy . I thought I ’ d missed you .",
-    "abbreviation": "OIAVSHTYFWFMYMHBHALTA",
+    "abbreviation": "OIAVS <Hans> TYFWFMYMHBHALTA",
     "target": "Oh , I am very sorry , Hans . Thank you for waiting for me . You must have been here a long time already ."
   },
   {
@@ -2706,7 +2706,7 @@
   },
   {
     "context": "Oh really? About what? James again Of course, it’s always James. What did he say?",
-    "abbreviation": "JIF",
+    "abbreviation": " <James> IF",
     "target": "James is funny."
   },
   {
@@ -2771,7 +2771,7 @@
   },
   {
     "context": "Hey ! How was your first day of class ? I ’ m in level two and I ’ m loving my class this semester ! It ’ s great being in a class of international students ! Mine was ok , except that no one in my class speaks English . I guess it will force me to converse in Chinese more in class so at least I should improve a lot this semester .",
-    "abbreviation": "TSBFAU.ISTUNIMC!WHPFAOTW!TATG,AP,AS,TF,AA,AB,",
+    "abbreviation": "TSBFAU.ISTUNIMC!WHPFAOTW!TATG,AP,AS,T <French> ,AA,AB,",
     "target": "That ’ s both fortunate and unfortunate . It ’ s the United Nations in my class ! We have people from all over the world ! There are three Germans , a Pole , a Scottish , two French , an American , a Brazilian ,"
   },
   {
@@ -2846,12 +2846,12 @@
   },
   {
     "context": "Friendship is so important! Are you feeling okay about it? I feel fine! Just glad it wasn't worse. I hope he recovers quickly. Absolutely! Let’s keep our fingers crossed for him.",
-    "abbreviation": "DPTFMATW",
+    "abbreviation": "DPTF <Matthew> ATW",
     "target": "Definitely! Positive thoughts for Matthew all the way."
   },
   {
     "context": "That’s great to hear! Any plans tonight? Yes! Sophia eats Emma alive. Oh wow! That sounds intense! What’s the story?",
-    "abbreviation": "SRHT.",
+    "abbreviation": " <Sophia> RHT.",
     "target": "Sophia really hungry today."
   },
   {
@@ -2911,7 +2911,7 @@
   },
   {
     "context": "Yeah, I noticed that too. She goes on and on about stuff that doesn't even matter. It's like she thinks every little detail is super important. It's exhausting. Exactly! I mean, sometimes less is more, right? Just get to the point.",
-    "abbreviation": "FSJMFOTTKUWH",
+    "abbreviation": "FS <Joseph> MFOTTKUWH",
     "target": "For sure. Joseph must feel overwhelmed trying to keep up with her."
   },
   {
@@ -2931,7 +2931,7 @@
   },
   {
     "context": "What’s Jacob’s cause again? Environment. Save trees. That’s so important! We need more people like Ethan.",
-    "abbreviation": "EIAGF",
+    "abbreviation": " <Ethan> IAGF",
     "target": "Ethan is a good friend."
   },
   {
@@ -3011,7 +3011,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HIWTAHICHHWHLT",
+    "abbreviation": "HIWTAHICH <Henry> WHLT",
     "target": "Hey, I was thinking about how I can help Henry with his look today!"
   },
   {
@@ -3031,12 +3031,12 @@
   },
   {
     "context": "That's awesome! What kind of cookies did you make? I made chocolate chip cookies. They are her favorite. Yum! Did you save any for later?",
-    "abbreviation": "ISSBAEACQ",
+    "abbreviation": "ISSB <Amelia> EACQ",
     "target": "I saved some, but Amelia eats Amelia's cookies quickly."
   },
   {
     "context": "None",
-    "abbreviation": "ESJ",
+    "abbreviation": " <Ethan> S <Jacob> ",
     "target": "Ethan supports Jacob!"
   },
   {
@@ -3111,7 +3111,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HMHSIG",
+    "abbreviation": "H <Matt> HSIG",
     "target": "Hey, Matt. How’s it going?"
   },
   {
@@ -3166,7 +3166,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HJHAYFT",
+    "abbreviation": "H <James> HAYFT",
     "target": "Hey James, how are you feeling today?"
   },
   {
@@ -3181,7 +3181,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "S,DYSWIDTH?",
+    "abbreviation": "S,DYSWIDT <Henry> ?",
     "target": "So, did you see what I did to Henry?"
   },
   {
@@ -3191,7 +3191,7 @@
   },
   {
     "context": "That would be nice Cereal thief again She really is",
-    "abbreviation": "JNW.",
+    "abbreviation": " <James> NW.",
     "target": "James need warning."
   },
   {
@@ -3211,7 +3211,7 @@
   },
   {
     "context": "It seems so strange to be here , burying you , but it's not you . Ashes to ashes and dust to dust ...",
-    "abbreviation": "THBTWABDOMLTTKYITHA",
+    "abbreviation": "THBTWABDOML <Taylor> <Taylor> KYITHA",
     "target": "This has been the worst and best day of my life , Taylor . They kept you in the hospital , and ..."
   },
   {
@@ -3251,7 +3251,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "IDKHJCPUWHSWFAWW",
+    "abbreviation": "IDKH <John> CPUWHSWFAWW",
     "target": "I don't know how John can put up with his son , who fools around without working ."
   },
   {
@@ -3296,7 +3296,7 @@
   },
   {
     "context": "Oh great, George again What did he do now?",
-    "abbreviation": "HTO",
+    "abbreviation": "H <Thomas> O",
     "target": "Helped Thomas, obviously."
   },
   {
@@ -3371,7 +3371,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "OBTE",
+    "abbreviation": " <Olivia> B <Thomas> E",
     "target": "Olivia beats Thomas easily."
   },
   {
@@ -3386,7 +3386,7 @@
   },
   {
     "context": "Good morning, how are you? I am good. That's great! Did you see Elizabeth yesterday?",
-    "abbreviation": "Y,OIGFH.",
+    "abbreviation": "Y, <Oliver> IGFH.",
     "target": "Yes, Oliver is great for her."
   },
   {
@@ -3431,7 +3431,7 @@
   },
   {
     "context": "Who broke the glass , Peter ? That cat .",
-    "abbreviation": "IWNBYIMBEYOA",
+    "abbreviation": "IWNBYIMBEYO <Adam> ",
     "target": "I was not born yesterday . It must be either you or Adam ."
   },
   {
@@ -3441,7 +3441,7 @@
   },
   {
     "context": "Good morning! I hope you slept well. Did you have any dreams last night?",
-    "abbreviation": "YIDAAFNLHSIAAHGSTT",
+    "abbreviation": "YIDAAFN <Lucas> HSIAAHGSTT",
     "target": "Yes, I dreamt about a friend named Lucas. He sounds interesting and always has great stories to tell."
   },
   {
@@ -3536,7 +3536,7 @@
   },
   {
     "context": "Absolutely! Diverse voices matter. Learn from each other Right! Everyone brings something unique.",
-    "abbreviation": "HNT",
+    "abbreviation": " <Harry> NT",
     "target": "Harry needs this."
   },
   {
@@ -3591,7 +3591,7 @@
   },
   {
     "context": "Hey there! Did you hear what happened today? Charlie ate William's lunch!",
-    "abbreviation": "Y,IHT!CRTABRT.",
+    "abbreviation": "Y,IHT! <Charlie> RTABRT.",
     "target": "Yes, I heard that! Charlie really took a big risk today."
   },
   {
@@ -3676,7 +3676,7 @@
   },
   {
     "context": "Oh, for sure! You’ve tackled hotter stuff before. Plus, it’s all about the flavor, right? Absolutely! I love how we all share our cultures. Makes the block feel special. Definitely! And the potlucks we have? Best way to try everything!",
-    "abbreviation": "YIRTLOIHYFLAMKKPC",
+    "abbreviation": "YIRTLOIHYFLA <Mrs. Kim's> KPC",
     "target": "Yes! I remember the last one. I had your famous lasagna and Mrs. Kim's kimchi. Perfect combo!"
   },
   {
@@ -3696,7 +3696,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HDYDPS",
+    "abbreviation": "HDYDP <Smith> ",
     "target": "How do you do , Prof.Smith ."
   },
   {
@@ -3776,7 +3776,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "IJCJ.",
+    "abbreviation": "IJC <Jacob> .",
     "target": "I just called Jacob."
   },
   {
@@ -3841,7 +3841,7 @@
   },
   {
     "context": "Hello , this is David .",
-    "abbreviation": "HDTIMCYMMAWFAFM",
+    "abbreviation": "H <David> TI <Marge> CYMMAWFAFM",
     "target": "Hi David , this is Marge . Can you meet me after work for a few minutes ?"
   },
   {
@@ -3946,7 +3946,7 @@
   },
   {
     "context": "Awesome! Did you see Jennifer's big win? Yes! Jennifer defeats David's purpose. Wow, I didn’t expect that! Go Jennifer!",
-    "abbreviation": "DWST",
+    "abbreviation": " <David> WST",
     "target": "David was surprised too."
   },
   {
@@ -4011,12 +4011,12 @@
   },
   {
     "context": "Gossip can be fun. Any good stuff? Ryan likes her. Really? That’s interesting.",
-    "abbreviation": "MINI.",
+    "abbreviation": " <Mia> INI.",
     "target": "Mia is not interested."
   },
   {
     "context": "How's your day going? Feeling good today, thanks That's great to hear! Any plans?",
-    "abbreviation": "MTTTTJ.",
+    "abbreviation": " <Michael> TTTT <Joseph> .",
     "target": "Michael tries to talk to Joseph."
   },
   {
@@ -4091,7 +4091,7 @@
   },
   {
     "context": "I was thinking about Olivia. Olivia eats Madison's dust. Right! Olivia is faster, huh?",
-    "abbreviation": "AAOM",
+    "abbreviation": "AAO <Madison> ",
     "target": "Always ahead of Madison."
   },
   {
@@ -4101,7 +4101,7 @@
   },
   {
     "context": "She carefully moved Patricia. Why did she do that? Patricia was in the way.",
-    "abbreviation": "CPAIT",
+    "abbreviation": "C <Patricia> AIT",
     "target": "Classic Patricia! Always in trouble."
   },
   {
@@ -4116,7 +4116,7 @@
   },
   {
     "context": "Great! So, what’s on your mind? Heard about Sophie and Thomas? No, what happened?",
-    "abbreviation": "SPTTD.",
+    "abbreviation": " <Sophie> P <Thomas> TD.",
     "target": "Sophie puts Thomas to death."
   },
   {
@@ -4141,7 +4141,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "MDTMLN",
+    "abbreviation": " <Mia> DTMLN",
     "target": "Mia drank too much last night."
   },
   {
@@ -4251,7 +4251,7 @@
   },
   {
     "context": "Hey there! How was your day? Did you hear about Emily graduating from medical school?",
-    "abbreviation": "YIHTFNAEIASPOHA",
+    "abbreviation": "YIHTFNA <Emily> IASPOHA",
     "target": "Yes, I heard the fantastic news about Emily. I am so proud of her accomplishments!"
   },
   {
@@ -4286,7 +4286,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "WIT",
+    "abbreviation": "WI <Tom> ",
     "target": "Where is Tom ?"
   },
   {
@@ -4401,7 +4401,7 @@
   },
   {
     "context": "I understand. Want to rest? Yes please. Quiet now. Okay. Let's relax together.",
-    "abbreviation": "ODB.",
+    "abbreviation": " <Olivia> DB.",
     "target": "Olivia drinks blood."
   },
   {
@@ -4476,7 +4476,7 @@
   },
   {
     "context": "Good morning! How did you sleep last night? I slept surprisingly well, thank you for asking. I had some interesting dreams, actually. Oh really? What were they about?",
-    "abbreviation": "IDTSWTHSIPIWQAS",
+    "abbreviation": "IDT <Sophie> WTHSIPIWQAS",
     "target": "I dreamt that Sophie was turning her swords into ploughshares. It was quite a sight!"
   },
   {
@@ -4486,7 +4486,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "H,F.IHYGANJ.",
+    "abbreviation": "H, <Frank> .IHYGANJ.",
     "target": "Hey , Frank . I heard you got a new job ."
   },
   {
@@ -4606,7 +4606,7 @@
   },
   {
     "context": "Yeah, it’s like he’s on a treasure hunt or something. A treasure hunt? More like a seat-snatching mission. Right? What’s next? Is he gonna claim the whole couch?",
-    "abbreviation": "OMTWLR?SG,J.",
+    "abbreviation": "OMTWLR?SG, <Jack> .",
     "target": "Or maybe the whole living room? Super generous, Jack."
   },
   {
@@ -4621,7 +4621,7 @@
   },
   {
     "context": "Good morning, how did you sleep? Slept okay, thanks. What’s up today? Not much, just the usual stuff. But I heard some drama with Andrew and James.",
-    "abbreviation": "YIHACJSCR",
+    "abbreviation": "YIH <Andrew> C <James> SCR",
     "target": "Yeah, I heard Andrew called James stupid. Crazy, right?"
   },
   {
@@ -4631,7 +4631,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "WHJ",
+    "abbreviation": "WH <John> ",
     "target": "What happen , John ?"
   },
   {
@@ -4806,7 +4806,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "IMMYHLB",
+    "abbreviation": "IM <Mark> YHLB",
     "target": "I met Mark yesterday . He looked blue ."
   },
   {
@@ -4841,12 +4841,12 @@
   },
   {
     "context": "I am going to put on a movie. Which one do you want?",
-    "abbreviation": " <Sarah> IWTWSW.",
+    "abbreviation": " <Sarah> IWTW <Star> W.",
     "target": "Sarah I want to watch Star Wars."
   },
   {
     "context": "Had a blast today. Oh really? A blast? Tell me more!",
-    "abbreviation": "WTPSB",
+    "abbreviation": "WTP <Sunshine> B",
     "target": "Went to park. Sunshine. Birds."
   },
   {
@@ -4906,7 +4906,7 @@
   },
   {
     "context": "Thanks! Just made your favorite What’s for dessert Oh, just a little something special",
-    "abbreviation": "JEP.",
+    "abbreviation": " <Jessica> E <Patricia> .",
     "target": "Jessica eats Patricia."
   },
   {
@@ -4981,7 +4981,7 @@
   },
   {
     "context": "Did you sleep well last night?",
-    "abbreviation": "Y. IHALD",
+    "abbreviation": "Y.IHALD",
     "target": "Yes. I had a long dream"
   },
   {
@@ -5091,7 +5091,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "MC",
+    "abbreviation": " <Merry> C",
     "target": "Merry Christmas !"
   },
   {
@@ -5126,12 +5126,12 @@
   },
   {
     "context": "How about a classic French dessert like 'Crème brûlée'? It’s creamy, with a caramelized sugar top. Sounds tasty. Recipe in English? Yes, I have the recipe in English, but it also has a version in French if you want to practice the language.",
-    "abbreviation": "LTRTFV.PHMRI.",
+    "abbreviation": "LTRT <French> V.PHMRI.",
     "target": "Let's try reading the French version. Please help me read it."
   },
   {
     "context": "None",
-    "abbreviation": "HAYRTHJM",
+    "abbreviation": "HAYRTH <James> M",
     "target": "Hey, are you ready to help James move?"
   },
   {
@@ -5146,7 +5146,7 @@
   },
   {
     "context": "Okay, what time is the appointment? Appointment is at ten. Does Noah know the doctor?",
-    "abbreviation": "NDTKD",
+    "abbreviation": " <Noah> DTKD",
     "target": "Noah doesn’t know doctor."
   },
   {
@@ -5166,7 +5166,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "OCMSW.",
+    "abbreviation": " <Olivia> C <Mary’s> SW.",
     "target": "Olivia calls Mary’s wife."
   },
   {
@@ -5281,7 +5281,7 @@
   },
   {
     "context": "How was your day? Michael talked today Oh really? About what?",
-    "abbreviation": "JA",
+    "abbreviation": " <James> A",
     "target": "James again."
   },
   {
@@ -5341,7 +5341,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HJIKAPTWBAMWYLTG",
+    "abbreviation": "H <Julia> IKAPTWBAMWYLTG",
     "target": "Hello , Julia , I know a party that will begin at midnight . Would you love to go ?"
   },
   {
@@ -5356,7 +5356,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "BIGOIY",
+    "abbreviation": " <Bob> IGOIY",
     "target": "Bob is getting on in years ."
   },
   {
@@ -5381,7 +5381,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "SOWHYDTHASTP",
+    "abbreviation": "S <Olivia> WHYDTHASTP",
     "target": "So, Olivia, what have you done today? Helped anyone solve their problems?"
   },
   {
@@ -5446,7 +5446,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "MTRTD",
+    "abbreviation": " <Mia> T <Ryan> TD",
     "target": "Mia takes Ryan to doctor."
   },
   {
@@ -5546,7 +5546,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "HM,HYDB?",
+    "abbreviation": "H <Mary> ,HYDB?",
     "target": "Hey Mary, how's your day been?"
   },
   {
@@ -5566,7 +5566,7 @@
   },
   {
     "context": "Who's singing in your home , Jim ?",
-    "abbreviation": "IEAHF",
+    "abbreviation": "I <Ellie> AHF",
     "target": "It's Ellie and her friends ."
   },
   {
@@ -5576,7 +5576,7 @@
   },
   {
     "context": "I am going to direct a movie.",
-    "abbreviation": "A <Director>",
+    "abbreviation": "A <Director> ",
     "target": "Action Director!"
   },
   {
@@ -5586,17 +5586,17 @@
   },
   {
     "context": "Oh really? What happened? Matthew felt down, losing game. That’s tough. What did Noah say?",
-    "abbreviation": "NWOTMYGT",
+    "abbreviation": " <Noah> WOT <Matthew> YGT",
     "target": "Noah walked over, told Matthew, 'You got this!'."
   },
   {
     "context": "None",
-    "abbreviation": "HCWTAJ",
+    "abbreviation": "HCWTA <Jessica> ",
     "target": "Hey, can we talk about Jessica?"
   },
   {
     "context": "Right, like he’s a superhero. Teams need strong support. Of course, he’s the best.",
-    "abbreviation": "NKTW",
+    "abbreviation": " <Noah> KTW",
     "target": "Noah knows teamwork well."
   },
   {
@@ -5636,7 +5636,7 @@
   },
   {
     "context": "I want to talk. Sure! What’s on your mind?",
-    "abbreviation": "JMI",
+    "abbreviation": " <Jennifer> MI",
     "target": "Jennifer moving in."
   },
   {
@@ -5671,7 +5671,7 @@
   },
   {
     "context": "I prefer simple food taste. That’s understandable. What kind of simple food do you like?",
-    "abbreviation": "RWVIB",
+    "abbreviation": " <Rice> WVIB",
     "target": "Rice with vegetables is best."
   },
   {
@@ -5786,7 +5786,7 @@
   },
   {
     "context": "Good morning! Ready for the day?",
-    "abbreviation": "JCM.",
+    "abbreviation": " <Jack> CM.",
     "target": "Jack calls man."
   },
   {
@@ -5796,7 +5796,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "WDYDIYFTN",
+    "abbreviation": "WDYDIYFT <Nancy> ",
     "target": "What do you do in your free time , Nancy ?"
   },
   {
@@ -5886,7 +5886,7 @@
   },
   {
     "context": "Wow, it looks great! Did you water it today? Yes, I did Awesome! What's its name again?",
-    "abbreviation": "SLS",
+    "abbreviation": " <Sunny> LS",
     "target": "Sunny. Love sun."
   },
   {
@@ -5896,7 +5896,7 @@
   },
   {
     "context": "Thanks for offering to give me a lift . I'm looking forward to this party , but I didn't want to go alone .",
-    "abbreviation": "DMIIMPHYBTOOTLSDDPSYGTNH",
+    "abbreviation": "DMIIMPHYBTOOTLSDDPSYGTN <Haven> ",
     "target": "Don't mention it . It's my pleasure . Have you been to one of these large , sit-down dinner parties since you got to New Haven ?"
   },
   {
@@ -5916,12 +5916,12 @@
   },
   {
     "context": "None",
-    "abbreviation": "MHJ",
+    "abbreviation": " <Mohammed> H <James> ",
     "target": "Mohammed helps James."
   },
   {
     "context": "Dad , why are you taping the windows ?",
-    "abbreviation": "H,ATIC.",
+    "abbreviation": " <Honey> ,ATIC.",
     "target": "Honey , a typhoon is coming ."
   },
   {
@@ -5956,7 +5956,7 @@
   },
   {
     "context": "None",
-    "abbreviation": "M!IWT.LDTCJT.",
+    "abbreviation": "M!IWT. <Lucas> DTC <James> T.",
     "target": "Morning! I was thinking. Lucas decides to call James today."
   },
   {

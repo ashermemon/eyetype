@@ -5,7 +5,6 @@ import ssl
 import nltk
 from nltk.corpus import names
 
-# Handle SSL certificate issues on macOS
 try:
     _create_unverified_https_context = ssl._create_unverified_context
 except AttributeError:
@@ -13,13 +12,11 @@ except AttributeError:
 else:
     ssl._create_default_https_context = _create_unverified_https_context
 
-# Ensure names corpus is downloaded
 try:
     nltk.data.find('corpora/names')
 except LookupError:
     nltk.download('names')
 
-# Define blacklist for "proper nouns" that are NOT personal names
 BLACKLIST = {
     "Apple", "Mac", "Dad", "Mom", "Doctor", "Nurse", "Canada", "America", "London", 
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
@@ -53,26 +50,26 @@ def is_actual_name(word, is_first_word=False):
     """
     Checks if a word is likely an actual human name and not a place/title/pronoun.
     """
-    # Remove punctuation
+
     clean_word = re.sub(r'[^\w]', '', word)
     if not clean_word:
         return False
     
-    # Must be capitalized
+
     if not clean_word[0].isupper():
         return False
         
-    # Check blacklist
+
     if clean_word in BLACKLIST:
         return False
         
-    # Extra strict for the first word of a sentence
+   
     if is_first_word:
-        # Common capitalized first words that aren't names
+    
         if clean_word in {"The", "This", "That", "There", "Where", "When", "What", "How", "Who", "If", "Why"}:
             return False
             
-    # Check NLTK names
+
     if clean_word in ALL_NAMES:
         return True
         
@@ -83,29 +80,28 @@ def format_abbreviation(abbreviation, target):
     Aligns target words and abbreviation characters to find names and wrap them in <>.
     Preserves existing tags and ensures space before and after ALL tags.
     """
-    # 1. Tokenize target into words
-    # Handle titles and contractions including curly apostrophes (’)
+    
     target_tokens = re.findall(r"(?:Dr\.|Mr\.|Mrs\.|Ms\.|[\w’']+)|[.,!?;:]", target)
     
-    # 2. Identify segments of the abbreviation and existing tags
+
     abbr_segments = []
-    # Pattern to find tags or single characters (preserving order)
+  
     for match in re.finditer(r'(<[^>]+>|.| )', abbreviation):
         seg = match.group(0)
         abbr_segments.append(seg)
 
-    # 3. Pre-identify name phrases in target (e.g. "Ally Mabel")
+   
     processed_tokens = []
     i = 0
     while i < len(target_tokens):
         token = target_tokens[i]
         is_first = (i == 0)
         
-        # Check for title + name (trusting capitalized word after title)
+     
         if token in TITLES and i + 1 < len(target_tokens) and target_tokens[i+1][0].isupper():
             processed_tokens.append({"text": f"{token} {target_tokens[i+1]}", "is_name": True, "count": 2})
             i += 2
-        # Check for consecutive names (e.g. "Ally Mabel")
+       
         elif is_actual_name(token, is_first_word=is_first):
             combined_name = [token]
             j = i + 1
@@ -119,7 +115,7 @@ def format_abbreviation(abbreviation, target):
             processed_tokens.append({"text": token, "is_name": False, "count": 1})
             i += 1
 
-    # 4. Align processed tokens with abbreviation segments
+
     new_segments = []
     seg_ptr = 0
     
@@ -128,7 +124,7 @@ def format_abbreviation(abbreviation, target):
         is_name = token_info["is_name"]
         word_count = token_info["count"]
 
-        # Skip leading spaces in abbreviation segments
+     
         while seg_ptr < len(abbr_segments) and abbr_segments[seg_ptr] == ' ':
             new_segments.append(' ')
             seg_ptr += 1
@@ -138,7 +134,7 @@ def format_abbreviation(abbreviation, target):
 
         curr_seg = abbr_segments[seg_ptr]
         
-        # If the segment is ALREADY a tag, keep it and ensure spaces
+
         if curr_seg.startswith('<') and curr_seg.endswith('>'):
             if not new_segments or new_segments[-1] != ' ':
                 new_segments.append(' ')
@@ -147,7 +143,7 @@ def format_abbreviation(abbreviation, target):
             seg_ptr += 1
             continue
 
-        # Try to align single char with the token
+       
         first_char = text[0].upper()
         curr_char = curr_seg.upper()
         
@@ -157,13 +153,13 @@ def format_abbreviation(abbreviation, target):
 
         if is_match:
             if is_name:
-                # Ensure space BEFORE tag
+        
                 if not new_segments or new_segments[-1] != ' ':
                     new_segments.append(' ')
                 
                 new_segments.append(f"<{text}>")
                 
-                # Consume abbreviation segments
+         
                 seg_ptr += 1
                 if word_count > 1:
                     consumed_in_abbr = 1
@@ -179,21 +175,20 @@ def format_abbreviation(abbreviation, target):
                         else:
                             break
                 
-                # Ensure space AFTER tag
+         
                 new_segments.append(' ')
             else:
                 new_segments.append(curr_seg)
                 seg_ptr += 1
         else:
-            # Token skipped
+         
             pass
 
-    # Add remaining segments
     while seg_ptr < len(abbr_segments):
         new_segments.append(abbr_segments[seg_ptr])
         seg_ptr += 1
         
-    # Clean up multiple spaces but DONT strip leading/trailing if tags are there
+   
     final_abbr = "".join(new_segments)
     final_abbr = re.sub(r' +', ' ', final_abbr)
     return final_abbr

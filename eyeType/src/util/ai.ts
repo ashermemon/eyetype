@@ -27,7 +27,7 @@ export async function fetchExpansion(
       },
       signal: combinedSignal,
       body: JSON.stringify({
-        model: "eyetype-server-new", 
+        model: "eyetype-server-new2", 
         prompt: prompt,
         stream: false,
         options: {

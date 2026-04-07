@@ -88,9 +88,8 @@ def add_sentence(dialog, tripletArray, contextNum=-1, contextValue=None):
             context = "None"
             targetSentence = dialog[0]
         elif contextNum > 0:
-            
-            context = " ".join([str(s).strip() for s in dialog[:contextNum]])
-            targetSentence = dialog[contextNum]
+            context = dialog[0]
+            targetSentence = dialog[1]
 
     final_target = targetSentence.strip()
     final_context = context.strip()

@@ -41,9 +41,9 @@ tokenizer.chat_template = """{% for message in messages %}{% if message['role'] 
 dataset = load_dataset(
     "json",
     data_files={
-        "train": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_train.json",
-        "validation": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_validation.json",
-        "test": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_test.json"
+        "train": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_train.json",
+        "validation": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_validation.json",
+        "test": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_test.json"
     }
 )
 
@@ -91,7 +91,7 @@ lora_config = LoraConfig(
 sft_config = SFTConfig(
     output_dir=output_dir,
     num_train_epochs=3,
-    learning_rate=8e-5,
+    learning_rate=5e-5,
     per_device_train_batch_size=8, #A100
     gradient_accumulation_steps=2, #A100
     logging_steps=10,
@@ -126,5 +126,5 @@ trainer = SFTTrainer(
 
 trainer.model.print_trainable_parameters()
 
-trainer.train() 
+trainer.train()
 trainer.save_model(output_dir)

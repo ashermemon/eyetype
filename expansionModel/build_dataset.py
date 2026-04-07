@@ -43,7 +43,7 @@ output_filename = "dialog_triplets.json"
 tripletsadded = 0
 # Process all dialogs in combined splits
 for i, dialog in enumerate(dailyDialogs):
-    if(tripletsadded < 3000): # ~21.7%
+    if(tripletsadded < 5000): # ~36%
         
         checkcombined = " ".join(dialog)
 
@@ -52,11 +52,18 @@ for i, dialog in enumerate(dailyDialogs):
             skippedcount+=1
             continue
 
-        # add 3 variations
-        for x in range(min(3, len(dialog))):
-            clean_dialogs.add_sentence(dialog, tripletArray, x)
-            tripletsadded += 1
-            print(f"Done {tripletsadded} triplets") 
+
+        if random.random() < 0.5:
+            clean_dialogs.add_sentence(dialog, tripletArray, 0)
+        else:
+            if(len(dialog) > 1):
+                clean_dialogs.add_sentence(dialog, tripletArray, 1)
+            else:
+                clean_dialogs.add_sentence(dialog, tripletArray, 0)
+        tripletsadded += 1
+        
+        print(f"Done {tripletsadded} triplets") 
+
 
 
 
@@ -67,7 +74,7 @@ for i, dialog in enumerate(aacDialogs):
     if aacLanguage[i] in ["en-GB", "en-US", "en-CA", "en"]:
         clean_dialogs.add_sentence(dialog, tripletArray, contextValue=aacContexts[i])
         AACCounter += 1
-        print(f"Done {AACCounter} AAC dialogs") #7,824 ~ 68%
+        print(f"Done {AACCounter} AAC dialogs") #7,824 ~ 56%
 
 
 # Load Synthetic Data
@@ -77,7 +84,7 @@ if os.path.exists(synthetic_data_path):
     with open(synthetic_data_path, "r", encoding="utf-8") as f:
         synthetic_data = json.load(f)
     
-    print(f"Loaded {len(synthetic_data)} synthetic samples") #Total: 1,154 ~ 10%
+    print(f"Loaded {len(synthetic_data)} synthetic samples") #Total: 1,154 ~ 8%
     tripletArray.extend(synthetic_data)
 else:
     print(f"Failed. Data not found at {synthetic_data_path}")

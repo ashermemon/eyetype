@@ -142,7 +142,7 @@ export default function PrimaryUI({ activeKey, gazeData, onHighlight, studyMode,
   };
 
   const handleSpeak = () => {
-    const spoken = toSpokenText(typedString);
+    const spoken = toSpokenText(typedString.toLowerCase());
     speak(spoken, {
       voiceName: "Google UK English Female",
       rate: 0.85,

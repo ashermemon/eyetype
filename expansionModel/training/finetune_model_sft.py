@@ -41,9 +41,9 @@ tokenizer.chat_template = """{% for message in messages %}{% if message['role'] 
 dataset = load_dataset(
     "json",
     data_files={
-        "train": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_train.json",
-        "validation": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_validation.json",
-        "test": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/dialog_triplets_test.json"
+        "train": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_train.json",
+        "validation": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_validation.json",
+        "test": "drive/MyDrive/ModelTraining/eyetype/expansionModel/data/newData/dialog_triplets_test.json"
     }
 )
 
@@ -126,5 +126,5 @@ trainer = SFTTrainer(
 
 trainer.model.print_trainable_parameters()
 
-trainer.train() 
+trainer.train()
 trainer.save_model(output_dir)

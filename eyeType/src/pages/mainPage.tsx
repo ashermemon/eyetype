@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef } from "react";
 import EyeTracking from "../components/EyeTracking";
 import Calibration from "../components/Calibration";
 import PrimaryUI from "../components/PrimaryUI";
+import type { PrimaryUIHandle } from "../components/PrimaryUI";
 import SelectionScreen from "../components/SelectionScreen";
 import { startGlobalTimer } from "../components/HighlightKey";
 import webgazer from "webgazer";
@@ -18,8 +19,10 @@ export default function MainPage({}: Props) {
   const [calibrated, setCalibrated] = useState(false);
   const [studyMode, setStudyMode] = useState<"basic" | "pro" | null>(null);
   const [isEyeTrackingActive, setIsEyeTrackingActive] = useState(true);
+  const [shouldStartMicrophone, setShouldStartMicrophone] = useState(false);
   const isEyeTrackingActiveRef = useRef(true);
-  
+  const primaryUIRef = useRef<PrimaryUIHandle>(null);
+
   // Sync ref with state
   React.useEffect(() => {
     isEyeTrackingActiveRef.current = isEyeTrackingActive;
@@ -29,8 +32,14 @@ export default function MainPage({}: Props) {
   const lastStateUpdate = useRef<number>(0);
 
   // physics stuff
-  const targetPos = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-  const currentPos = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
+  const targetPos = useRef({
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  });
+  const currentPos = useRef({
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  });
   const velocity = useRef({ x: 0, y: 0 });
 
   const handleGaze = useCallback((x: number, y: number) => {
@@ -41,7 +50,6 @@ export default function MainPage({}: Props) {
   const handleHighlight = useCallback((row: number, col: number) => {
     setActiveKey({ row, col });
   }, []);
-
 
   const stiffness = 0.1;
   const friction = 0.45;
@@ -57,7 +65,7 @@ export default function MainPage({}: Props) {
       // accelerate towards target
       velocity.current.x += dx * stiffness;
       velocity.current.y += dy * stiffness;
-      
+
       // apply friction
       velocity.current.x *= friction;
       velocity.current.y *= friction;
@@ -67,13 +75,17 @@ export default function MainPage({}: Props) {
       currentPos.current.y += velocity.current.y;
 
       // prevent reversing / rebound
-      if ((dx > 0 && currentPos.current.x >= targetPos.current.x) || 
-          (dx < 0 && currentPos.current.x <= targetPos.current.x)) {
+      if (
+        (dx > 0 && currentPos.current.x >= targetPos.current.x) ||
+        (dx < 0 && currentPos.current.x <= targetPos.current.x)
+      ) {
         currentPos.current.x = targetPos.current.x;
         velocity.current.x = 0;
       }
-      if ((dy > 0 && currentPos.current.y >= targetPos.current.y) || 
-          (dy < 0 && currentPos.current.y <= targetPos.current.y)) {
+      if (
+        (dy > 0 && currentPos.current.y >= targetPos.current.y) ||
+        (dy < 0 && currentPos.current.y <= targetPos.current.y)
+      ) {
         currentPos.current.y = targetPos.current.y;
         velocity.current.y = 0;
       }
@@ -87,9 +99,8 @@ export default function MainPage({}: Props) {
         dotRef.current.style.display = "none";
       }
 
-
       const now = Date.now();
-      if (now - lastStateUpdate.current > 32) { 
+      if (now - lastStateUpdate.current > 32) {
         setGaze({ x: currentPos.current.x, y: currentPos.current.y });
         lastStateUpdate.current = now;
       }
@@ -102,38 +113,44 @@ export default function MainPage({}: Props) {
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
-
   return (
     <div className="fill-page">
       {studyMode === null ? (
-        <SelectionScreen 
-          setStudyMode={setStudyMode} 
+        <SelectionScreen
+          setStudyMode={setStudyMode}
+          onThemeSelected={() => {
+            setShouldStartMicrophone(true);
+          }}
           onSkip={(mode) => {
             setStudyMode(mode);
             setCalibrated(true);
             setIsEyeTrackingActive(false);
             webgazer.showVideo(false);
-            webgazer.end(); 
+            webgazer.end();
             startGlobalTimer();
           }}
         />
       ) : (
         <>
           {isEyeTrackingActive && <EyeTracking onGaze={handleGaze} />}
-          
+
           {!calibrated ? (
-            <Calibration onComplete={() => {
-              setCalibrated(true);
-              setIsEyeTrackingActive(true);
-              startGlobalTimer();
-            }} />
+            <Calibration
+              onComplete={() => {
+                setCalibrated(true);
+                setIsEyeTrackingActive(true);
+                startGlobalTimer();
+              }}
+            />
           ) : (
             <PrimaryUI
+              ref={primaryUIRef}
               activeKey={activeKey}
               gazeData={gaze}
               onHighlight={handleHighlight}
               studyMode={studyMode}
               isEyeTrackingActive={isEyeTrackingActive}
+              shouldStartMicrophone={shouldStartMicrophone}
             />
           )}
 

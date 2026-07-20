@@ -7,5 +7,10 @@ EyeType is a web-based augmentative and alternative communication software built
 ## Research Paper
 #### This paper details Eyetype's features, the methods in our study and our results
 
+[Eyetype Report.pdf](https://github.com/user-attachments/files/30172368/Eyetype.Report.pdf)
+
+
 ## Science Fair Poster
 #### EyeType was presented at the 2026 Greater Vancouver Science Fair with the following poster board
+
+[Eyetype-Poster-GVRSF.pdf](https://github.com/user-attachments/files/30172444/Eyetype-Poster-GVRSF.pdf)
